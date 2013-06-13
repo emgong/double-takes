@@ -10,6 +10,10 @@ $radius: 4px
 *
   box-sizing: border-box
 
+.lime
+  background: $green
+  height: 6px
+
 body
   font-family: 'Source Sans Pro', sans-serif
   color: $dark-color
@@ -50,7 +54,8 @@ header
     float: right
     margin: 14px 0 0 0
 
-    h1
+  &.no-video
+    padding: 42px 0 60px 0
 
 .logo
   margin: 0
@@ -105,14 +110,13 @@ header
     color: $dark-color
 
 .cta
-  border: 1px solid #57ca00
-  border-bottom: 1px solid #51bb00
+  color: $light-color
+  text-shadow: none
   margin-right: 20px
-  text-shadow: 0 1px 0 rgba(#fff, .6)
-  +linear-gradient ($green, #64e800)
+  background: $dark-color
 
   &:hover
-    color: $dark-color
+    color: $light-color
 
 .title
   background: $dark-color
@@ -121,8 +125,8 @@ header
     position: relative
     top: -48px
 
-.no-video
-  padding: 78px 0 0 0
+  &.no-video
+    padding: 78px 0 0 0
 
 .video
   background: $dark-color
