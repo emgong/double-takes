@@ -20,9 +20,8 @@
     <header>
       <div class="container">
         <a href="/">
-        <div class="blog">
-          <h1 class="logo">double takes</h1>
-        </div></a>
+          <h1 class="logo"><div class="blog">double takes</div></h1>
+        </a>
 
         <nav>
           <a class="cta button" href="http://testdouble.com">Pair With Us</a><a class="button" href="/archive.html">Archives</a>

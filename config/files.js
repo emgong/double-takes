@@ -12,5 +12,11 @@
  */
 
 module.exports = require(process.env['LINEMAN_MAIN']).config.extend('files', {
-  //Override file patterns here
+  css: {
+    vendor: [
+      "vendor/css/normalize.css",
+      "vendor/css/**/*.css"
+    ]
+  }
+
 });
