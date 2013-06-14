@@ -62,7 +62,10 @@ header
   margin: 0
   padding: 0
   display: block
-  +retina-image (/images/logo, 68px 61px)
+  +retina-image (/img/logo, 68px 61px)
+  background-repeat: no-repeat
+  height: 61px
+  width: 68px
   +size (68px 61px)
   float: left
   color: $dark-color
@@ -132,6 +135,7 @@ header
 
 .video
   background: $dark-color
+  // border: 6px solid $light-color
   border-radius: $radius
   position: relative
   padding-bottom: 56.25%

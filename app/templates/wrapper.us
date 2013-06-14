@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700' rel='stylesheet' type='text/css'>
+    <link rel="alternate" type="application/rss+xml" title="<%= site.title %> | feed" href="/index.xml" />
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= site.title %><%= post ? ' | '+post.title() : '' %></title>
+
+    <link rel="stylesheet" type="text/css" href="<%= css %>" media="all" />
+  </head>
+
+  <body class="index">
+    <div class="green-strip"></div>
+    <header>
+      <div class="container">
+        <a href="/">
+        <div class="blog">
+          <h1 class="logo">double takes</h1>
+        </div></a>
+
+        <nav>
+          <a class="cta button" href="http://testdouble.com">Pair With Us</a><a class="button" href="/archive.html">Archives</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="title">
+      <div class="container">
+        <div class="video">
+          <iframe frameborder="0" height="315" src="http://www.youtube.com/embed/PWHyE1Ru4X0" width="560"></iframe>
+        </div>
+
+        <h1>Using Lineman.js for front end web development.</h1>
+
+        <div class="byline">
+          <span class="date">June, 3, 2013</span> by <a href="#"><span class="author">Justin Searls</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tldr">
+      <div class="container">
+        <div class="tldr_tag">
+          TL<span>;</span>DR
+        </div>
+
+        <h2>Code Like a Fudge Brownie.</h2>
+
+        <p>Cupcake wypas pastry sweet roll. Cake ice cream caramels apple pie donut chupa chups. Sugar plum dessert
+        liquorice caramels jelly sugar plum ice cream applicake. Jelly beans tart carrot cake caramels liquorice macaroon
+        gummi bears bonbon gummies. Jelly-o tootsie roll cupcake marzipan jelly. Biscuit bear claw oat cake powder. Jelly
+        beans liquorice chocolate cake lemon drops gummies carrot cake cupcake gingerbread biscuit. Caramels tootsie roll
+        caramels. Candy cheesecake gummies croissant chocolate cake tiramisu topping. Carrot cake chocolate cake topping
+        dessert.</p>
+      </div>
+    </section>
+
+    <article>
+      <div class="container">
+        <%= yield %>
+        <div class="pagination">
+          <a class="button" href="#">Previous</a><a class="button" href="#">Next</a>
+        </div>
+      </div>
+    </article>
+
+    <footer>
+      <div class="container">
+        <nav>
+          <a href="http://testdouble.com">Pair with us</a><a href="/archive.html">Archives</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="<%= js %>"></script>
+  </body>
+</html>
