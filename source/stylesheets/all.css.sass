@@ -11,7 +11,7 @@ $radius: 4px
 
 .green-strip
   background: $green
-  height: 6px
+  height: 12px
 
 body
   font-family: 'Source Sans Pro', sans-serif
@@ -28,11 +28,13 @@ h1
   color: $light-color
   margin: 0 0 24px 0
   text-shadow: 0 2px 4px rgba(#000, .8)
+  font-weight: 200
 
 h2
   font-size: 28px
   margin: 0
   margin-bottom: 10px
+  font-weight: 200
 
 p
   line-height: 1.6
@@ -82,6 +84,7 @@ header
     +transform (scale(1.05))
 
 .blog
+  display: none //<--waiting for feedback from branding
   font-size: 13px
   font-weight: 200
   position: relative
@@ -129,14 +132,12 @@ header
 
 .video
   background: $dark-color
-  border: 6px solid $green
   border-radius: $radius
   position: relative
   padding-bottom: 56.25%
   padding-top: 25px
   height: 0
   width: 100%
-  box-shadow: 0 4px 8px rgba(#1a3d00, .8)
   margin: 0 0 24px 0
   +animation (drop 1s)
 
@@ -166,6 +167,9 @@ header
   padding: 34px 0 8px 0
   text-shadow: 0 1px 0 rgba(#fff, .6)
   +linear-gradient (#b1b1b1, $grey)
+
+  h2
+    text-shadow: 0 1px 0 rgba(#fff, .4)
 
 .tldr_tag
   padding: 2px 6px
