@@ -20,7 +20,7 @@
     <header>
       <div class="container">
         <a href="/">
-          <h1 class="logo"><div class="blog">double takes</div></h1>
+          <h1 class="logo"><div class="blog">double&nbsp;takes</div></h1>
         </a>
 
         <nav>
