@@ -1,6 +1,4 @@
 ---
-author:
-  name: "Justin Searls"
 title: "Learning to love again with Lineman.js"
 tldr:
   title: "Lineman generates happiness"
@@ -9,9 +7,12 @@ tldr:
         the most fun a person can have while flying on an airplane. Oops, I just wasted
         my tl;dr section.
         """
+date: "2013-06-15"
+author:
+  name: "Justin Searls"
 video:
-  url: "http://www.youtube.com/embed/PWHyE1Ru4X0"
   type: "youtube"
+  url: "http://www.youtube.com/embed/PWHyE1Ru4X0"
 ---
 
 Summary Cupcake wypas pastry sweet roll. Cake ice cream caramels apple pie donut chupa chups. Sugar plum dessert liquorice caramels jelly sugar plum ice cream applicake. Jelly beans tart carrot cake caramels liquorice macaroon gummi bears bonbon gummies.
