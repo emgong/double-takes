@@ -17,7 +17,7 @@
 
   <body class="index">
     <div class="green-strip"></div>
-    <header>
+    <header <% if(!post || !post.get('video')) { %>class="no-video"<% } %>>
       <div class="container">
         <a href="/">
           <h1 class="logo"><div class="blog">double&nbsp;takes</div></h1>
