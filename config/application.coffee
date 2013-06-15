@@ -21,7 +21,7 @@ replaceTask = (search, replace, type = "common") ->
   _(lineman.config.application.appTasks[type]).tap (tasks) ->
     tasks[_(tasks).indexOf(search)] = replace
 
-module.exports = lineman.config.extend "application"
+module.exports = lineman.config.extend "application",
 
   # Use grunt-markdown-blog in lieu of Lineman's built-in homepage task
   appTasks:
@@ -30,6 +30,7 @@ module.exports = lineman.config.extend "application"
 
   markdown:
     options: _(siteConfig).extend
+      dateFormat: 'MMMM Do, YYYY'
       layouts:
         wrapper: "app/templates/wrapper.us"
         index: "app/templates/index.us"

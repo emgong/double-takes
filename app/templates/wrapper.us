@@ -29,45 +29,7 @@
       </div>
     </header>
 
-    <section class="title">
-      <div class="container">
-        <div class="video">
-          <iframe frameborder="0" height="315" src="http://www.youtube.com/embed/PWHyE1Ru4X0" width="560"></iframe>
-        </div>
-
-        <h1>Using Lineman.js for front end web development.</h1>
-
-        <div class="byline">
-          <span class="date">June, 3, 2013</span> by <a href="#"><span class="author">Justin Searls</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="tldr">
-      <div class="container">
-        <div class="tldr_tag">
-          TL<span>;</span>DR
-        </div>
-
-        <h2>Code Like a Fudge Brownie.</h2>
-
-        <p>Cupcake wypas pastry sweet roll. Cake ice cream caramels apple pie donut chupa chups. Sugar plum dessert
-        liquorice caramels jelly sugar plum ice cream applicake. Jelly beans tart carrot cake caramels liquorice macaroon
-        gummi bears bonbon gummies. Jelly-o tootsie roll cupcake marzipan jelly. Biscuit bear claw oat cake powder. Jelly
-        beans liquorice chocolate cake lemon drops gummies carrot cake cupcake gingerbread biscuit. Caramels tootsie roll
-        caramels. Candy cheesecake gummies croissant chocolate cake tiramisu topping. Carrot cake chocolate cake topping
-        dessert.</p>
-      </div>
-    </section>
-
-    <article>
-      <div class="container">
-        <%= yield %>
-        <div class="pagination">
-          <a class="button" href="#">Previous</a><a class="button" href="#">Next</a>
-        </div>
-      </div>
-    </article>
+    <%= yield %>
 
     <footer>
       <div class="container">

@@ -1,29 +1,49 @@
-<article class="post">
-  <div class="title">
+<section class="title <% if(!post.get('video')) { %>no-video<% } %>">
+  <div class="container">
+    <% if(post.get('video')) { %>
+      <div class="video">
+        <% if(post.get('video').type == "youtube") { %>
+          <iframe frameborder="0" height="315" src="<%= post.get('video').url %>" width="560"></iframe>
+        <% } %>
+        <!-- Presumably implement other embed types like vimeo -->
+      </div>
+    <% } %>
+
     <h1><a href="/<%= post.htmlPath() %>"><%= post.title() %></a></h1>
-    <p><%= post.date() %></p>
+
+    <div class="byline">
+      <span class="date"><%= post.date() %></span>
+      <% if(post.get('author')) { %>
+       by <a href="#"><span class="author"><%= post.get('author').name %></span></a>
+      <% } %>
+    </div>
   </div>
-  <section>
-    <%= post.content() %>
+</section>
+
+<% if(post.get('tldr')) { %>
+  <section class="tldr">
+    <div class="container">
+      <div class="tldr_tag">
+        TL<span>;</span>DR
+      </div>
+
+      <h2><%= post.get('tldr').title %></h2>
+
+      <p><%= post.get('tldr').body %></p>
+    </div>
   </section>
-  <section class="navigation">
+<% } %>
+
+<article>
+  <div class="container">
+    <%= post.content() %>
+    <div class="pagination">
       <% if(site.newerPost(post)) { %>
-        <span class="newer"><a href="/<%= site.newerPost(post).htmlPath() %>">&#8672;&nbsp;newer</a></span>
+        <a class="button" href="/<%= site.newerPost(post).htmlPath() %>">Newer</a>
       <% } %>
       <% if(site.olderPost(post)) { %>
-        <span class="older"><a href="/<%= site.olderPost(post).htmlPath() %>">older&nbsp;&#8674;</a></span>
+        <a class="button" href="/<%= site.olderPost(post).htmlPath() %>">Previous</a>
       <% } %>
-    </section>
-  <section class="comments">
-    <% if(site.disqus) { %>
-      <div id="disqus_thread"></div>
-      <script type="text/javascript">
-        window.disqus_identifier="";
-        window.disqus_url="<%= site.url+"/"+post.htmlPath() %>";
-        window.disqus_title="<%= post.title() %>";
-      </script>
-        <script type="text/javascript" src="http://disqus.com/forums/<%= site.disqus %>/embed.js"></script>
-        <noscript><a href="http://<%= site.disqus %>.disqus.com/?url=ref">View the discussion thread.</a></noscript>
-    <% } %>
-  </section>
+    </div>
+  </div>
 </article>
