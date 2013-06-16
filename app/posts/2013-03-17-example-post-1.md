@@ -10,6 +10,7 @@ tldr:
 date: "2013-06-15"
 author:
   name: "Justin Searls"
+  url: "http://about.me/searls"
 video:
   type: "youtube"
   url: "http://www.youtube.com/embed/PWHyE1Ru4X0"
