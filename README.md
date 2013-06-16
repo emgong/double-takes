@@ -1,26 +1,40 @@
-# lineman-blog
+# double-takes
 
-Turns out that [lineman](http://linemanjs.com) makes a great blogging engine!
+Home of Test Double's official blog
 
-## Getting Started
+## Adding a post
 
-Here's how to publish a new blog in minutes:
+First, add a post as a markdown file to `app/posts`. Name it like so: "YYYY-MM-DD-url-slug-title.md"
 
-1. Clone into this repository
-2. [Install lineman](https://github.com/testdouble/lineman#getting-started) if you haven't yet.
-3. Run `lineman run` while you work on writing markdown files under `app/posts`
-4. Install [heroku](https://toolbelt.heroku.com) if you haven't, then run `heroku create --buildpack http://github.com/testdouble/heroku-buildpack-lineman.git`
-5. Commit your post and `git push heroku master`, and your blog is hosted on the web with apache2!
+So, for example, you might create a post named `app/posts2013-06-15-kramer-is-super-cool.md`.
 
-## Features
+Each post is comprised of a header (which supplies necessary metadata for the layouts to render appropriately) and a post body.
 
-* Just add markdown posts with an ".md" extension to `app/posts` and when you `lineman run` or `lineman build`, they'll be rendered.
-* Configure your blog in `config/application.coffee`
-* Customize your blog templates in `app/templates`.
-* RSS is generated for you at `/index.xml`
-* Disqus support is included if you configure it.
-* You can, of course, add any Less/CSS or CoffeeScript/JavaScript as you can with any other Lineman application. [See Lineman's documentation](https://github.com/testdouble/lineman).
-* For more info on publishing with heroku, [see details about Heroku & Lineman](https://github.com/testdouble/lineman#heroku).
-* To build static assets to deploy some other way, just run `lineman build` and put the `dist` directory's contents somewhere.
+So here's an example post, with all the goodies filled out.
 
+``` markdown
+---
+title: "Kramer sure is super cool"
+tldr:
+  title: "Kramer writes great code"
+  body: """
+        Here I write a really quick conclusion about Kramer and his code.
+        """
+date: "2013-06-15"
+author:
+  name: "Justin Searls"
+video:
+  type: "youtube"
+  url: "http://www.youtube.com/embed/PWHyE1Ru4X0"
+---
 
+# section title here
+
+first real paragraph here
+```
+
+That said, more minimal header configuration are possible, too. For instance, if you omit the author field, a byline won't display. If you omit a video object, no video will display (and the title will be reformatted somewhat).
+
+Additionally, "date" and "title" are only necessary if the file name's date differs from the title or publication date. In general, it's a bad idea to change the file slug once the page gets deployed since the hyperlink will break, so if a change is needed make sure to favor the header variables.
+
+In fact, if you don't supply a header at all, your post should still render okay. However, it's probably the case that you want to display at least an author name or a tl;dr section.
