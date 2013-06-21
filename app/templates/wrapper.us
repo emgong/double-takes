@@ -20,7 +20,8 @@
     <header <% if(!post || !post.get('video')) { %>class="no-video"<% } %>>
       <div class="container">
         <a href="/">
-          <h1 class="logo"><div class="blog">double&nbsp;takes</div></h1>
+          <h1 class="logo"></h1>
+          <div class="blog">double&nbsp;takes</div>
         </a>
 
         <nav>

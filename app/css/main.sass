@@ -48,7 +48,7 @@ p
 
 header
   padding: 42px 0 98px 0
-  max-height: 200px
+  max-height: 220px
   +clearfix
 
   nav
@@ -60,17 +60,30 @@ header
 
 .logo
   margin: 0
+  margin-top: 6px
   padding: 0
   display: block
-  +retina-image (/img/logo, 68px 61px)
-  +size (68px 61px)
   float: left
   color: $dark-color
+  +retina-image (/img/logo, 68px 61px)
+  +size (68px 61px)
   +animation (appear 1s)
   +transition (all .5s)
 
   &:hover
     +transform (rotateY(360deg))
+
+.blog
+  +animation (appear 1s)
+  +transition (all .5s)
+  color: $dark-color
+  float: left
+  font-size: 3.5em
+  font-weight: 200
+  text-shadow: 0 1px 0 white
+  margin-left: 0.5em
+  padding-left: 0.4em
+  border-left: 2px solid $dark-color
 
 +keyframes (appear)
   0%
@@ -81,14 +94,6 @@ header
   90%
     opacity: 1
     +transform (scale(1.05))
-
-.blog
-  font-size: 13px
-  font-weight: 200
-  position: relative
-  top: 64px
-  left: 2px
-  text-shadow: 0 1px 0 white
 
 .button
   border: 1px solid rgba($dark-color, .5)
@@ -233,4 +238,16 @@ footer
   .logo
     float: none
     margin: auto
+
+  .blog
+    margin: 0 auto
+    margin-top: 20px
+    margin-bottom: 20px
+    padding-left: 0
+    padding-bottom: 10px
+    text-align: center
+    float: none
+    font-size: 2em
+    border-left: none
+    border-top: 2px solid $dark-color
 
