@@ -36,7 +36,7 @@ h2
   margin-bottom: 10px
   font-weight: 200
 
-p
+p, li
   line-height: 1.6
   font-size: 18px
   margin: 0 0 24px 0
@@ -200,6 +200,28 @@ header
 article
   padding: 34px 0 8px 0
   text-shadow: 0 1px 0 white
+
+  h1
+    color: $dark-color
+    font-size: 36px
+    text-shadow: 0 1px 0 white
+
+  h2
+    font-size: 28px
+
+  p,li
+    code
+      background-color: #eee
+      padding: 0px 2px 0px 2px
+      border: 1px solid rgba($dark-color, .3)
+      border-radius: $radius
+
+    a
+      text-shadow: none
+
+
+pre
+  text-shadow: none !important //it really is important!
 
 footer
   +clearfix
