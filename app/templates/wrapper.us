@@ -25,7 +25,7 @@
         </a>
 
         <nav>
-          <a class="cta button" href="http://testdouble.com">Pair With Us</a><a class="button" href="/archive.html">Archives</a>
+          <a class="cta button" href="http://testdouble.com/#inquiry/pair-with-you">Pair With Us</a><a class="button" href="/archive.html">Archives</a>
         </nav>
       </div>
     </header>
@@ -35,7 +35,7 @@
     <footer>
       <div class="container">
         <nav>
-          <a href="http://testdouble.com">Pair with us</a><a href="/archive.html">Archives</a>
+          <a href="http://testdouble.com/#inquiry/pair-with-you">Pair with us</a><a href="/archive.html">Archives</a>
         </nav>
       </div>
     </footer>
