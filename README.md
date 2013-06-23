@@ -1,6 +1,6 @@
 # double-takes
 
-Home of Test Double's official blog. You can see the (secret!) preview page up here: http://limitless-dawn-5136.herokuapp.com
+Home of Test Double's official blog. http://blog.testdouble.com
 
 ## Adding a post
 
