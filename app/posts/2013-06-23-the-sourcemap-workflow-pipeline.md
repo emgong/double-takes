@@ -15,7 +15,7 @@ tldr:
 
         in staging:
 
-        - to visualize/debug a single piece of both of the above in a staging environment
+        - to visualize/debug a single piece of a minified bundle of javascript files in a staging or production environment
 
         HELP FORMATTING!
         """
