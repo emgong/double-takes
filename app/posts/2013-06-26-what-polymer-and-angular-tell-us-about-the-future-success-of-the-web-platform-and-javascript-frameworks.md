@@ -10,7 +10,7 @@ tldr:
         """
 ---
 
-Yehuda Katz recently gave a talk entitled ["The Future of the Client-Side Web"](https://www.youtube.com/watch?v=EcyxXPILO8E) in which he highlighted the current challenges that web standards bodies face when trying to design APIs for web developers to use. In this talk, Yehuda highlighted Google's recently announced [Polymer Project](http://www.polymer-project.org/) as a good example of the right way to push the web platform forward.
+Yehuda Katz recently gave a talk entitled ["The Future of the Client-Side Web"](https://www.youtube.com/watch?v=EcyxXPILO8E) in which he detailed the current challenges that web standards bodies face when trying to design APIs for web developers to use. In this talk, Yehuda also highlighted Google's recently announced [Polymer Project](http://www.polymer-project.org/) as a good example of the right way to push the web platform forward.
 
 Polymer provides a "low enough" level API that gives web developers the power to redefine the way they write markup using the power of newer features coming to JavaScript in [ES6](http://tc39wiki.calculist.org/es6/). The specifics of the implementation aren't relevant to what I want to say here, but Yehuda does a great job covering the details at a high level in the video; I suggest you watch it if they interest you.
 
