@@ -18,13 +18,13 @@ What I found interesting was the _message_ that was at the heart of the talk, he
 
 > web platform standards bodies need to focus less on getting implementations of new APIs right the first time (hello [AppCache](https://www.w3.org/Bugs/Public/show_bug.cgi?id=14702)) and instead provide web developers with a set of lower level APIs that are exposed to JavaScript. When this approach has been followed, developers are capable of iterating far faster than standards bodies which results in consensus on API design being reached faster and with less upfront design.
 
-This is a really fundamental shift in thinking that the web-standards people need to embrace; however, I believe this approach has already been validated by a number of well-known JavaScript libraries.
+This is a fundamental shift in thinking that should be embraced and I believe this approach has already been validated by a number of well-known JavaScript libraries.
 
 # The Backbone Lesson
 
 Since its release, [Backbone](http://documentcloud.github.io/backbone/) has exploded in popularity and many [other](https://github.com/chaplinjs/chaplin) [frameworks](https://github.com/marionettejs/backbone.marionette) have since been built on top of the low-level components it provides. [Jeremy Ashkenas](http://www.twitter.com/jashkenas) and the team at [Document Cloud](http://www.documentcloud.org) did an amazing job of releasing a set of components that can be adapted to fit almost any scenario when building a web application&mdash;from simple uses of Backbone.View inside an existing legacy application all the way up to writing a self-contained application that runs in the browser.
 
-When I first started working in Backbone almost two years ago I remember feeling overwhelmed at how I was supposed to use all the pieces provided. I believe this speaks to the nature of how Backbone was created, and looking back now it is clear to me that Backbone follows the design model that Yehuda praises in his talk; it gave us a low-level set of components and didn't really enforce any particular design decisions on how to use them&mdash;aside from an important guiding principle: get your data out of the DOM.
+When I first started working in Backbone almost two years ago, I remember feeling overwhelmed at how I was supposed to use all the pieces provided. I believe this speaks to the essence of how Backbone was created, and looking back now it is clear to me that Backbone follows the design model that Yehuda praises in his talk; it gave us a low-level set of components and didn't really enforce any particular design decisions on how to use them&mdash;aside from an important guiding principle: get your data out of the DOM.
 
 # The Ember Conundrum
 
@@ -34,13 +34,14 @@ It seems to me like the Ember team and contributors would be better served by fo
 
 # The Angular Approach
 
-Initially I was skeptical about the power of [Angular](http://www.angularjs.org), having spent a good 18 months of my life invested in writing applications with Backbone I wasn't eager to make a jump to another framework. Thankfully my skepticism was quickly swept aside as I discovered the beauty in the simplicity of the Angular API. With Angular, I don't have to extend framework built-in objects or methods; I can just use POJSO's (Plain Old JavaScript Objects) and functions. I also don't have to spend a lot of time thinking about how to structure my application thanks to [`angular.module`] and built-in Dependency Injection. Angular _really_ hits the sweet spot between low-level components and _tightly scoped_ high-level abstractions. It provides high-level features that each have a singular focus as well as low-level components that I can craft into domain-specific solutions within my applications.
+Initially I was skeptical about the power of [Angular](http://www.angularjs.org), having spent a good 18 months of my life invested in writing applications with Backbone I wasn't eager to make a jump to another framework. Thankfully my skepticism was quickly swept aside as I discovered the beauty in the simplicity of the Angular API. With Angular, I don't have to extend framework built-in objects or methods; I can just use POJSO's (Plain Old JavaScript Objects) and functions. I also don't have to spend a lot of time thinking about how to structure my application thanks to [`angular.module`](http://docs.angularjs.org/guide/module) and built-in [dependency injection](http://docs.angularjs.org/guide/di). Angular _really_ hits the sweet spot between low-level components and _tightly scoped_ high-level abstractions. It provides high-level features that each have a singular focus as well as low-level components that I can craft into domain-specific solutions within my applications.
 
-The ability to craft custom markup through [`angular.directive`](http://docs.angularjs.org/guide/directive) is an interesting high-level piece in that it has the power to create custom components that are as coarse or granular as you need them to be. Angular is _just_ opinionated enough that it allows developers to work with the low-level components provided to craft higher level abstractions. In fact, I think that's the core benefit of Angular. Having the power to abstract:
+The ability to craft custom markup through [`angular.directive`](http://docs.angularjs.org/guide/directive) is an interesting high-level piece in that it has the power to create custom components that are as coarse or granular as you need them to be. Angular is _just_ opinionated enough that it allows developers to work with the low-level components provided to craft higher level abstractions. In fact, I think that is the core benefit of Angular. Having the power to abstract:
 
 ```html
 <div id="chart" data-type="bar">
   <div class="legend"></div>
+  ... lots of other stuff
 </div>
 ```
 
@@ -65,4 +66,4 @@ The awesome thing about Angular and Polymer is that you can use them to achieve 
 
 # Moving the Web Forward with Low-Level APIs
 
-I think Yehuda has it right; standards bodies need to focus less on getting high-level APIs right up front and more on providing developers with enough low-level APIs with which to experiment. The same principle applies to the design of JavaScript application frameworks. My hope is that the standards bodies _and_ JavaScript framework authors embrace this decentralized approach to design going forward. Ideally, this will move the web development community beyond rhetoric and zero-sum games, and into an age of innovation.
+I think Yehuda has it right; standards bodies need to focus less on getting high-level APIs right up front and more on providing developers with enough low-level APIs with which to experiment. The same principle applies to the design of JavaScript application frameworks. My hope is that the standards bodies _and_ JavaScript framework authors embrace this decentralized approach to design going forward. Ideally this will move the web development community beyond rhetoric and zero-sum thinking, and into an age of innovation.
