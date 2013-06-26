@@ -4,7 +4,7 @@ author:
   name: "David Mosher"
   url: "http://www.youtube.com/user/vidjadavemo/videos"
 tldr:
-  title: "don't try to get everything right upfront"
+  title: "don\'t try to get everything right upfront"
   body: """
         the web platform and javascript frameworks are going to be more successful if their authors offer low-level APIs that developers can play with instead of trying to get high-level APIs designed correctly the first time.
         """
