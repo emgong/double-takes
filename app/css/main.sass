@@ -3,6 +3,7 @@
 $light-color: #fafafa
 $dark-color: #231F20
 $green: #6eff00
+$orange: darkorange
 $grey: #c1c1c1
 $radius: 4px
 
@@ -21,7 +22,10 @@ body
 
 a
   text-decoration: none
-  color: $green
+  color: $orange
+
+article a
+  border-bottom: 1px solid $orange
 
 h1,h2,h3
   margin: 0
@@ -187,6 +191,9 @@ header
 
 .date, .author
   font-weight: 700
+
+.author
+  color: $green
 
 .tldr
   padding: 34px 0 8px 0
