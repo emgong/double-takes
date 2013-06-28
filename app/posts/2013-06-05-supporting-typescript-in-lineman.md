@@ -36,7 +36,7 @@ $ lineman new ts-test
 $ cd ts-test
 ```
 
-## Add Dependency   {add-ts-dependency}
+<h2 id="add-ts-dependency">Add Dependency</h2>
 
 Add the `grunt-typescript` NPM module as a dependency in your project by adding
 it to `package.js`.
@@ -58,7 +58,7 @@ Warning: Task "typescript" not found. Use --force to continue.
 Aborted due to warnings.
 ```
 
-## Load the Task    {#load-ts-task}
+<h2 id="load-ts-task">Load the Task</h2>
 
 Configure Lineman to load the `grunt-typescript` NPM module by adding it to the
 `loadNpmTasks` array in `config/application.js`. Lineman will invoke [Grunt's
@@ -89,7 +89,7 @@ js: 0 files, map: 0 files, declaration: 0 files
 Done, without errors.
 ```
 
-## Add some TypeScript    {#add-ts-src}
+<h2 id="add-ts-src">Add some TypeScript</h2>
 
 Create a new file `app/js/greeter.ts`. This will be the TypeScript source that
 is compiled into JavaScript. If you remember our typescript config block
@@ -121,7 +121,7 @@ any arbitrary grunt task, this would be sufficient; simply run `lineman grunt
 &lt;task&gt;`. However, if we run `lineman build`, the typescript task will not
 be run. Let's add it to the Lineman build process.
 
-## Compile during Lineman build    {#add-ts-to-build}
+<h2 id="add-ts-to-build">Compile during Lineman build</h2>
 
 You can add grunt tasks to either the beginning or the end of the Lineman build
 process using `prependTasks` or `appendTasks`, respectively. Since we want the
@@ -143,7 +143,7 @@ rest of our application. We need to add the typescript-generated javascript to
 the [`concat` task's source
 list](https://github.com/testdouble/lineman/blob/7a73c9786594d1e3ec48d9c1affa479e0c78d1bd/config/application.coffee#L80).
 
-## Concatenate/Minify   {#concat-ts-js}
+<h2 id="concat-ts-js">Concatenate/Minify</h2>
 
 There are a number of different ways to do this. One of which, is to simply
 modify the concat-task configuration block in `config/application.js`.
