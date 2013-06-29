@@ -1,58 +1,60 @@
-<header>
-  <div class="container">
-    <% if(post.get('video')) { %>
-      <div class="video">
-        <% if(post.get('video').type == "youtube") { %>
-          <iframe frameborder="0" height="315" src="<%= post.get('video').url %>" width="560"></iframe>
-        <% } %>
-        <!-- Presumably implement other embed types like vimeo -->
-      </div>
-    <% } %>
-
-    <h1><a href="/<%= post.htmlPath() %>"><%= post.title() %></a></h1>
-
-    <div class="byline">
-      <time datetime="<%= post.time() %>"><%= post.date() %></time>
-      <% if(post.get('author')) { %>
-      by
-      <span class="author">
-        <% if(post.get('author').url) { %>
-        <a href="<%= post.get('author').url %>">
-        <% } %>
-          <%= post.get('author').name %>
-        <% if(post.get('author').url) { %>
-        </a>
-        <% } %>
-      </span>
-      <% } %>
-    </div>
-  </div>
-</header>
-
-<% if(post.get('tldr')) { %>
-  <section class="tldr">
+<article role="article">
+  <header>
     <div class="container">
-      <div class="tldr_tag">
-        TL<span>;</span>DR
+      <% if(post.get('video')) { %>
+        <div class="video">
+          <% if(post.get('video').type == "youtube") { %>
+            <iframe frameborder="0" height="315" src="<%= post.get('video').url %>" width="560"></iframe>
+          <% } %>
+          <!-- Presumably implement other embed types like vimeo -->
+        </div>
+      <% } %>
+
+      <h1><a href="/<%= post.htmlPath() %>"><%= post.title() %></a></h1>
+
+      <div class="byline">
+        <time datetime="<%= post.time() %>"><%= post.date() %></time>
+        <% if(post.get('author')) { %>
+        by
+        <span class="author">
+          <% if(post.get('author').url) { %>
+          <a href="<%= post.get('author').url %>">
+          <% } %>
+            <%= post.get('author').name %>
+          <% if(post.get('author').url) { %>
+          </a>
+          <% } %>
+        </span>
+        <% } %>
       </div>
+    </div>
+  </header>
 
-      <h2><%= post.get('tldr').title %></h2>
+  <% if(post.get('tldr')) { %>
+    <section class="tldr">
+      <div class="container">
+        <div class="tldr_tag">
+          TL<span>;</span>DR
+        </div>
 
-      <p><%= post.get('tldr').body %></p>
+        <h2><%= post.get('tldr').title %></h2>
+
+        <p><%= post.get('tldr').body %></p>
+      </div>
+    </section>
+  <% } %>
+
+  <section class="post-body">
+    <div class="container">
+      <%= post.content() %>
+      <div class="pagination">
+        <% if(site.newerPost(post)) { %>
+          <a class="button" href="/<%= site.newerPost(post).htmlPath() %>">Newer</a>
+        <% } %>
+        <% if(site.olderPost(post)) { %>
+          <a class="button" href="/<%= site.olderPost(post).htmlPath() %>">Previous</a>
+        <% } %>
+      </div>
     </div>
   </section>
-<% } %>
-
-<article>
-  <div class="container">
-    <%= post.content() %>
-    <div class="pagination">
-      <% if(site.newerPost(post)) { %>
-        <a class="button" href="/<%= site.newerPost(post).htmlPath() %>">Newer</a>
-      <% } %>
-      <% if(site.olderPost(post)) { %>
-        <a class="button" href="/<%= site.olderPost(post).htmlPath() %>">Previous</a>
-      <% } %>
-    </div>
-  </div>
 </article>
