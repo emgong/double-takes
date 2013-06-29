@@ -1,8 +1,9 @@
-<section class="title no-video">
+<header role="heading" class="no-video">
   <div class="container">
     <h1>all our double takes</h1>
   </div>
-</section>
+</header>
+
 <section class="archives">
   <div class="container">
     <ul>

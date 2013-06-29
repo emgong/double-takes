@@ -28,7 +28,9 @@
       </div>
     </header>
 
-    <%= yield %>
+    <main role="main">
+      <%= yield %>
+    </main>
 
     <footer>
       <div class="container">

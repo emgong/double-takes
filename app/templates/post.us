@@ -1,4 +1,4 @@
-<section class="title <% if(!post.get('video')) { %>no-video<% } %>">
+<header class="<% if(!post.get('video')) { %>no-video<% } %>">
   <div class="container">
     <% if(post.get('video')) { %>
       <div class="video">
@@ -27,7 +27,7 @@
       <% } %>
     </div>
   </div>
-</section>
+</header>
 
 <% if(post.get('tldr')) { %>
   <section class="tldr">
