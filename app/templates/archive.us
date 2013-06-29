@@ -9,10 +9,8 @@
       <% _(site.posts).chain().reverse().each(function(post){ %>
         <a href="/<%= post.htmlPath() %>">
           <li>
-            <%= _(post.title()).truncate(75) %>
-            <div class="date">
-              <%= post.date() %>
-            </div>
+            <span><%= _(post.title()).truncate(75) %></span>
+            <time><%= post.date() %></time>
           </li>
         </a>
       <% }) %>
