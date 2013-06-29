@@ -7,12 +7,12 @@
   <div class="container">
     <ul>
       <% _(site.posts).chain().reverse().each(function(post){ %>
-        <a href="/<%= post.htmlPath() %>">
-          <li>
+        <li>
+          <a href="/<%= post.htmlPath() %>">
             <span><%= _(post.title()).truncate(75) %></span>
             <time><%= post.date() %></time>
-          </li>
-        </a>
+          </a>
+        </li>
       <% }) %>
     </ul>
   </div>

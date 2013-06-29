@@ -14,14 +14,16 @@
     <div class="byline">
       <time><%= post.date() %></time>
       <% if(post.get('author')) { %>
-       by
+      by
+      <span class="author">
         <% if(post.get('author').url) { %>
-          <a href="<%= post.get('author').url %>">
+        <a href="<%= post.get('author').url %>">
         <% } %>
-        <span class="author"><%= post.get('author').name %></span>
+          <%= post.get('author').name %>
         <% if(post.get('author').url) { %>
-          </a>
+        </a>
         <% } %>
+      </span>
       <% } %>
     </div>
   </div>
