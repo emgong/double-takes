@@ -8,10 +8,10 @@
   <div class="container">
     <ul>
       <% _(site.posts).chain().reverse().each(function(post){ %>
-        <li>
-          <a href="/<%= post.htmlPath() %>">
-            <span><%= _(post.title()).truncate(75) %></span>
-            <time datetime="<%= post.time() %>"><%= post.date() %></time>
+        <li class="h-entry">
+          <a class="u-url" href="/<%= post.htmlPath() %>">
+            <span class="e-name"><%= _(post.title()).truncate(75) %></span>
+            <time class="dt-published" datetime="<%= post.time() %>"><%= post.date() %></time>
           </a>
         </li>
       <% }) %>
