@@ -12,7 +12,7 @@
     <h1><a href="/<%= post.htmlPath() %>"><%= post.title() %></a></h1>
 
     <div class="byline">
-      <time><%= post.date() %></time>
+      <time datetime="<%= post.time() %>"><%= post.date() %></time>
       <% if(post.get('author')) { %>
       by
       <span class="author">
