@@ -7,6 +7,8 @@
 
 module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application",
 
+  loadNpmTasks: 'grunt-contrib-copy'
+
   markdown:
     options:
       author: "the test double agents"
@@ -43,6 +45,9 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
   prependTasks:
     common: "markdown:dev"
     dist: "markdown:dist"
+  appendTasks:
+    common: "copy:dev"
+    dist: "copy:dist"
   removeTasks:
     common: "pages:dev"
     dist: "pages:dist"
@@ -53,6 +58,12 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
     compile:
       options:
         bundleExec: true
+
+  copy:
+    dev:
+      files: [ expand: true, cwd: 'static', src: '**', dest: 'generated' ]
+    dist:
+      files: [ expand: true, cwd: 'static', src: '**', dest: 'dist' ]
 
   watch:
     markdown:
