@@ -10,7 +10,7 @@
     <title><%= site.title %><%= post ? ' | '+post.title() : '' %></title>
 
     <link rel="stylesheet" type="text/css" href="<%= css %>" media="all" />
-    <!--[if lt IE 9]> <script src="js/html5shiv-printshiv.js"></script> <![endif]-->
+    <script src="js/html5shiv-printshiv.js"></script>
   </head>
 
   <body class="index">
