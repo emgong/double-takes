@@ -1,15 +1,14 @@
 {
-  "name": "some-lineman-blog",
-  "title": "An HTML/JS/CSS app",
+  "name": "double-take",
+  "title": "Test Double: Double Takes",
   "version": "0.0.1",
+  "description": "The Test Double blog",
+  "homepage": "http://blog.testdouble.com",
   "private": true,
-  "author": {
-    "name": "John Doe",
-    "company": "ACME, Inc."
-  },
+  "author": "Double Agents <everyone@testdouble.com> (http://testdouble.com)",
   "dependencies": {
     "lineman": ">=0.11.6",
-    "grunt-markdown-blog": ">= 0.2.0",
+    "grunt-markdown-blog": ">=0.2.0",
     "underscore": "~>1.4.4",
     "grunt-contrib-copy": "~0.4.1"
   }
