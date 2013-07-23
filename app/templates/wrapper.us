@@ -13,9 +13,9 @@
     <script src="js/html5shiv-printshiv.js"></script>
   </head>
 
-  <body class="index">
+  <body class="index <% if(!post || !post.get('video')) { %>no-video<% } %>">
     <div class="green-strip"></div>
-    <header role="banner" <% if(!post || !post.get('video')) { %>class="no-video"<% } %>>
+    <header role="banner">
       <div class="container">
         <a href="/">
           <h1 class="logo"></h1>
