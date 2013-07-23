@@ -4,12 +4,26 @@
   "version": "0.0.1",
   "description": "The Test Double blog",
   "homepage": "http://blog.testdouble.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/testdouble/double-take.git"
+  },
+  "bugs": "https://github.com/testdouble/double-take/issues",
   "private": true,
   "author": "Double Agents <everyone@testdouble.com> (http://testdouble.com)",
-  "dependencies": {
+  "contributors": [
+    "Justin Searls <justin@testdouble.com>",
+    "Dave Mosher <dave@testdouble.com>",
+    "Jason Karns <jason@testdouble.com>",
+    "Joel Helbling <joel@testdouble.com>"
+  ],
+  "devDependencies": {
     "lineman": ">=0.11.6",
     "grunt-markdown-blog": ">=0.2.0",
     "underscore": "~>1.4.4",
     "grunt-contrib-copy": "~0.4.1"
+  },
+  "scripts": {
+    "prepublish": "lineman build"
   }
 }
