@@ -1,4 +1,4 @@
-<header class="<% if(!post.get('video')) { %>no-video<% } %>">
+<header>
   <div class="container">
     <% if(post.get('video')) { %>
       <div class="video">

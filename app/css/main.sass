@@ -150,12 +150,8 @@ main header
   h1 a
     color: $light-color
 
-  .container
-    position: relative
-    top: -48px
-
-  &.no-video
-    padding: 78px 0 0 0
+  .video, h1, .byline
+    margin: 24px 0
 
 .video
   background: $dark-color
@@ -167,7 +163,6 @@ main header
   height: 0
   width: 100%
   // box-shadow: 0 4px 8px rgba(#1a3d00, .8)
-  margin: 0 0 24px 0
   +animation (drop 1s)
 
   iframe
@@ -239,7 +234,7 @@ article
     font-size: 24px
     margin-bottom: 8px
 
-  p,li
+  p, li
     code
       font-family: 'Source Code Pro', monospace
       padding: 0px 2px 0px 2px
