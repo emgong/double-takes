@@ -17,10 +17,12 @@
     <div class="green-strip"></div>
     <header role="banner">
       <div class="container">
-        <a href="/">
-          <h1 class="logo"></h1>
-          <div class="blog">double&nbsp;takes</div>
-        </a>
+        <h1>
+          <a href="/">
+            <span class="logo skm">Test Double |</span>
+            <span class="title">double&nbsp;takes</span>
+          </a>
+        </h1>
 
         <nav>
           <a class="cta button" href="http://testdouble.com/#inquiry/pair-with-you">Pair With Us</a><a class="button" href="/archive.html">Archives</a>
