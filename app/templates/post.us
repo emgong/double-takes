@@ -1,5 +1,5 @@
 <article role="article">
-  <header>
+  <header role="heading">
     <div class="container">
       <% if(post.get('video')) { %>
         <div class="video">
@@ -10,7 +10,7 @@
         </div>
       <% } %>
 
-      <h1><a href="/<%= post.htmlPath() %>"><%= post.title() %></a></h1>
+      <h1><a href="/<%= post.htmlPath() %>" rel="bookmark self"><%= post.title() %></a></h1>
 
       <div class="byline">
         <time datetime="<%= post.time() %>"><%= post.date() %></time>
@@ -18,7 +18,7 @@
         by
         <span class="author">
           <% if(post.get('author').url) { %>
-          <a href="<%= post.get('author').url %>">
+          <a href="<%= post.get('author').url %>" rel="author">
           <% } %>
             <%= post.get('author').name %>
           <% if(post.get('author').url) { %>
@@ -31,17 +31,15 @@
   </header>
 
   <% if(post.get('tldr')) { %>
-    <section class="tldr">
+    <aside class="tldr" role="complementary">
       <div class="container">
-        <div class="tldr_tag">
-          TL<span>;</span>DR
-        </div>
+        <abbr class="tldr_tag" title="Too Long; Didn't Read">TL<span>;</span>DR</abbr>
 
         <h2><%= post.get('tldr').title %></h2>
 
         <p><%= post.get('tldr').body %></p>
       </div>
-    </section>
+    </aside>
   <% } %>
 
   <section class="post-body">
@@ -51,11 +49,12 @@
   </section>
 </article>
 
-<nav class="pagination">
+<nav class="pagination" role="navigation">
+  <h2>Article Pagination</h2>
   <% if(site.newerPost(post)) { %>
-    <a class="button" href="/<%= site.newerPost(post).htmlPath() %>">Newer</a>
+    <a class="button" href="/<%= site.newerPost(post).htmlPath() %>" rel="next">Newer</a>
   <% } %>
   <% if(site.olderPost(post)) { %>
-    <a class="button" href="/<%= site.olderPost(post).htmlPath() %>">Previous</a>
+    <a class="button" href="/<%= site.olderPost(post).htmlPath() %>" rel="previous">Previous</a>
   <% } %>
 </nav>

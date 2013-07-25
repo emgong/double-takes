@@ -40,6 +40,11 @@ h3
 nav
   font-size: 16px
 
+  h1, h2, h3
+    position: absolute
+    overflow: hidden
+    +size(0 0)
+
 blockquote
   margin-left: 20px
   padding-left: 20px
@@ -56,6 +61,9 @@ p
 
 li
   margin: 0 0 10px 0
+
+abbr[title]
+  border: none
 
 .container
   width: 90%
