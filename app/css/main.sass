@@ -70,8 +70,17 @@ li
 
 header[role=banner]
   margin-top: 42px
-  max-height: 220px
-  +clearfix
+  max-height: 70px
+  text-align: justify
+
+  .container::after
+    content: ''
+    display: inline-block
+    width: 100%
+
+  h1, nav
+    display: inline-block
+    vertical-align: middle
 
   h1
     margin: 0
@@ -99,10 +108,6 @@ header[role=banner]
     margin-left: .3em
     padding-left: 0.4em
     border-left: 1px solid $dark-color
-
-  nav
-    float: right
-    margin: 14px 0 0 0
 
 +keyframes (appear)
   0%
@@ -321,7 +326,7 @@ footer
   h1
     font-size: 36px
 
-  header
+  header[role=banner]
     nav
       display: none
 
@@ -338,17 +343,18 @@ footer
         padding: 3px
 
 @media (max-width: 474px)
-  .logo
-    float: none
-    margin: auto
-
-  .blog
-    margin: 0 auto
-    margin-top: 20px
-    margin-bottom: 20px
-    padding: 10px 0px 10px 0px
+  header[role=banner]
     text-align: center
-    float: none
-    font-size: 2em
-    border-left: none
-    border-top: 1px solid $dark-color
+
+    h1
+      display: block
+
+    .logo, .title
+      display: block
+      margin: 12px auto
+
+    .title
+      padding: 10px 0 0
+      font-size: .57em
+      border-left: none
+      border-top: 1px solid $dark-color
