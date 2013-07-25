@@ -27,7 +27,7 @@ a
 article a
   border-bottom: 1px solid $ocean-blue
 
-h1,h2,h3
+h1, h2, h3
   margin: 0
   font-weight: 200
 
@@ -146,10 +146,14 @@ header[role=banner]
 
 main header
   margin-top: 98px
-  background: $dark-color
   padding: 6px 0 24px
+  background: $dark-color
+  color: $light-color
+  font-weight: 400
+  font-size: 18px
+  text-shadow: 0 1px 3px rgba(#000, .8)
 
-  h1 a
+  a
     color: $light-color
 
   .video, h1, .byline
@@ -183,15 +187,10 @@ main header
     +transform (translateY(-120px))
 
 .byline
-  color: $light-color
-  font-weight: 400
-  text-shadow: 0 1px 3px rgba(#000, .8)
-  font-size: 18px
-
   time, .author
     font-weight: 700
 
-  .author a
+  a
     color: $green
 
 .tldr
@@ -338,9 +337,7 @@ footer
         margin: 0px 5px 12px 0px
         padding: 3px
 
-
 @media (max-width: 474px)
-
   .logo
     float: none
     margin: auto
