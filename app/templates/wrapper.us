@@ -13,7 +13,7 @@
     <script src="js/html5shiv-printshiv.js"></script>
   </head>
 
-  <body class="index <% if(!post || !post.get('video')) { %>no-video<% } %>">
+  <body class="index <% if(post && post.get('video')) { %>screencast<% } %>">
     <div class="green-strip"></div>
     <header role="banner">
       <div class="container">

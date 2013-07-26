@@ -71,15 +71,13 @@ li
   white-space: nowrap
   overflow: hidden
 
-header[role=banner]
-  margin-top: 42px
-  max-height: 70px
-  text-align: justify
+.screencast header[role=banner]
+  margin-bottom: 1.75em
 
-  .container::after
-    content: ''
-    display: inline-block
-    width: 100%
+header[role=banner]
+  margin: 42px 0 1.1em
+  text-align: justify
+  font-size: 56px
 
   h1, nav
     display: inline-block
@@ -87,8 +85,8 @@ header[role=banner]
 
   h1
     margin: 0
-    font-size: 56px
     text-shadow: 0 1px 0 white
+    font-size: 1em
 
     a
       display: block
@@ -110,7 +108,8 @@ header[role=banner]
   .title
     margin-left: .3em
     padding-left: 0.4em
-    border-left: 1px solid $dark-color
+    border: 0 solid $dark-color
+    border-left-width: 1px
 
 +keyframes (appear)
   0%
@@ -150,11 +149,7 @@ header[role=banner]
   &:hover
     color: $light-color
 
-.no-video main header
-  margin-top: 60px
-
 main header
-  margin-top: 98px
   padding: 6px 0 24px
   background: $dark-color
   color: $light-color
@@ -232,7 +227,7 @@ main header
     margin: 0 1px
 
 article
-  padding: 34px 0 8px 0
+  margin: 34px 0 28px
   text-shadow: 0 1px 0 white
 
   h1, h2
@@ -348,6 +343,7 @@ footer
 @media (max-width: 474px)
   header[role=banner]
     text-align: center
+    font-size: 36px
 
     h1
       display: block
@@ -358,6 +354,13 @@ footer
 
     .title
       padding: 10px 0 0
-      font-size: .57em
-      border-left: none
-      border-top: 1px solid $dark-color
+      border-width: 1px 0 0
+
+@media (min-width: 475px)
+  header[role=banner]
+    max-height: 70px // clip the generated content
+
+    .container::after
+      content: ''
+      display: inline-block
+      width: 100%
