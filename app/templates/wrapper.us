@@ -14,7 +14,6 @@
   </head>
 
   <body class="index <% if(post && post.get('video')) { %>screencast<% } %>">
-    <div class="green-strip"></div>
 
     <header role="banner">
       <div class="container">
