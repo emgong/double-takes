@@ -26,7 +26,7 @@
         </h1>
 
         <nav role="navigation">
-          <h2>Site Navigation</h2>
+          <h2 class="visually-hidden">Site Navigation</h2>
           <a class="cta button" href="http://testdouble.com/#inquiry/pair-with-you">Pair With Us</a>
           <a class="button" href="/archive.html" rel="directory archives">Archives</a>
         </nav>
@@ -40,7 +40,7 @@
     <footer role="contentinfo">
       <div class="container">
         <nav role="navigation">
-          <h2>Site Navigation</h2>
+          <h2 class="visually-hidden">Site Navigation</h2>
           <a href="http://testdouble.com/#inquiry/pair-with-you">Pair with us</a>
           <a href="/archive.html" rel="directory archives">Archives</a>
         </nav>

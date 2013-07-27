@@ -40,11 +40,6 @@ h3
 nav
   font-size: 16px
 
-  h1, h2, h3
-    position: absolute
-    overflow: hidden
-    +size(0 0)
-
 blockquote
   margin-left: 20px
   padding-left: 20px
@@ -75,6 +70,15 @@ abbr[title]
   text-indent: 100%
   white-space: nowrap
   overflow: hidden
+
+// a11y-safe hide: ttp://yhoo.it/18j3OxG
+.visually-hidden
+  position: absolute
+  *clip: rect(1px 1px 1px 1px)
+  clip: rect(1px, 1px, 1px, 1px)
+  top: 0
+  left: 0
+
 
 .screencast header[role=banner]
   margin-bottom: 1.75em

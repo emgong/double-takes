@@ -51,7 +51,7 @@
 </article>
 
 <nav class="pagination" role="navigation">
-  <h2>Article Pagination</h2>
+  <h2 class="visually-hidden">Article Pagination</h2>
   <% if(site.newerPost(post)) { %>
     <a class="button" href="/<%= site.newerPost(post).htmlPath() %>" rel="next">Newer</a>
   <% } %>
