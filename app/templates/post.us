@@ -47,14 +47,15 @@
   <section class="post-body">
     <div class="container">
       <%= post.content() %>
-      <div class="pagination">
-        <% if(site.newerPost(post)) { %>
-          <a class="button" href="/<%= site.newerPost(post).htmlPath() %>">Newer</a>
-        <% } %>
-        <% if(site.olderPost(post)) { %>
-          <a class="button" href="/<%= site.olderPost(post).htmlPath() %>">Previous</a>
-        <% } %>
-      </div>
     </div>
   </section>
 </article>
+
+<nav class="pagination">
+  <% if(site.newerPost(post)) { %>
+    <a class="button" href="/<%= site.newerPost(post).htmlPath() %>">Newer</a>
+  <% } %>
+  <% if(site.olderPost(post)) { %>
+    <a class="button" href="/<%= site.olderPost(post).htmlPath() %>">Previous</a>
+  <% } %>
+</nav>

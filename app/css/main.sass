@@ -119,31 +119,38 @@ header[role=banner]
     +transform (scale(1.05))
 
 .button
-  border: 1px solid rgba($dark-color, .5)
-  border-bottom: 1px solid rgba(#151414, .5)
-  text-shadow: 0 1px 0 white
   display: inline-block
-  text-align: center
-  padding-top: 5px
+  height: 33px
+  min-width: 112px
+  margin: 0 10px
+  border: 1px solid rgba($dark-color, .5)
+  border-bottom-color: rgba(#151414, .5)
   border-radius: $radius
-  +size (112px 33px)
-  font-weight: 700
-  color: rgba($dark-color, .8)
-  +transition (all .3s ease)
   box-shadow: 0 1px 0 white
+  text-align: center
+  line-height: 31px
+  color: rgba($dark-color, .8)
+  font-weight: 700
+  text-shadow: 0 1px 0 white
+  +transition (all .3s ease)
 
-  &:hover
-    border: 1px solid rgba($dark-color, 1)
-    border-bottom: 1px solid rgba(#151414, 1)
+  &:hover, &:focus
     color: $dark-color
+    border-color: rgba($dark-color, 1)
+    border-bottom-color: rgba(#151414, 1)
 
-.cta
+.button:first-child
+  margin-left: 0
+
+.button:last-child
+  margin-right: 0
+
+.button.cta
   color: $light-color
   text-shadow: none
-  margin-right: 20px
   background: $dark-color
 
-  &:hover
+  &:hover, &:focus
     color: $light-color
 
 main header
@@ -224,7 +231,7 @@ main header
     margin: 0 1px
 
 .post-body
-  margin: 34px 0 28px
+  margin: 34px 0 20px
   text-shadow: 0 1px 0 white
 
   h1, h2
@@ -314,11 +321,7 @@ footer
 
 .pagination
   text-align: center
-  margin: 20px auto
-
-  .button
-    display: inline-block
-    margin: 0 10px
+  margin: 20px auto 28px
 
 @media (max-width: 740px)
   h1
