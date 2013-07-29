@@ -89,7 +89,9 @@ header[role=banner]
 
   h1, nav
     display: inline-block
-    vertical-align: middle
+
+  nav
+    vertical-align: super
 
   h1
     margin: 0
@@ -101,6 +103,7 @@ header[role=banner]
 
   .logo, .title
     display: inline-block
+    vertical-align: top
     color: $dark-color
     +animation (appear 1s)
     +transition (all .5s)
