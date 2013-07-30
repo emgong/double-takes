@@ -40,7 +40,7 @@ to figure out how to write tests for real-world JavaScript (or, if you're just
 interested in getting inside the head of someone else on the topic), then
 perhaps 75 minutes will be a reasonable investment of your time.
 
-## overview
+# overview
 
 Now, a few brief notes on the presentation itself.
 
@@ -71,7 +71,7 @@ small(er) units with a named, usable API. In what should shock no one, slightly
 simpler units lead to slightly simpler tests. This codebase could use even more
 refactoring, but that's beyond the scope of this discussion.
 
-## libraries
+# libraries
 
 I used and described several libraries during the presentation, you can find
 them here:

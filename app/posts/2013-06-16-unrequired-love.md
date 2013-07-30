@@ -15,7 +15,7 @@ Also, keep in mind that this post is only discussing "JavaScript that runs in
 browsers". It's not at all concerned with Node.js or npm or anything having to
 do with dependency management of JavaScript in that ecosystem.
 
-## ground rule
+# ground rule
 
 Because lots of people use Require and report back that they're getting a lot
 of value out of it, I think it's important to lay down a quick ground rule
@@ -34,7 +34,7 @@ If you're using Require and it's helping you deliver great software, then rock
 on! That's fantastic. Please keep diving deeper into whatever you do that's
 working, and keep searching wider for even better methods.
 
-## Require is not required
+# Require is not required
 
 Given that there are many ways to write working software, it should be obvious
 that working JavaScript-heavy web applications *can and are* being written
@@ -47,7 +47,7 @@ context, then ask some open questions about what value people see in Require,
 and finally spin a few of my own crackpot conspiracy theories about what's
 driving Require's success.
 
-## my own experience
+# my own experience
 
 For some context before talking about Require, I'll talk about the basic
 structure of most of the JavaScript code I write. The punchline is that in
@@ -55,14 +55,14 @@ spite of not using Require, I really love almost every aspect of my client-side
 application development. I simply don't find myself yearning for a third-party
 dependency management tool.
 
-### tiny units
+## tiny units
 
 I write *really tiny units* (whether the unit being considered is a framework's
 pseudo-class, an anonymous object, or a bag of functions). Usually every method
 is less than five lines, every file is less than forty lines, and every unit
 has at most three or four dependencies on other units.
 
-### namespaces
+## namespaces
 
 I build a namespace as I grow my code and attach it to the window. I usually
 use my little [extend.js](https://github.com/searls/extend.js/) library to
@@ -111,7 +111,7 @@ advantages:
   refactor operations where needing to keep units & files in lock-step is
   inconvenient.
 
-### feedback-driven code design
+## feedback-driven code design
 
 I'm really mindful of how each unit depends on each other unit in the systems I
 write. Out-of-the-blue references to an object property-chain as lengthy as
@@ -128,7 +128,7 @@ I'm very confident that this particular design pressure has resulted in
 better-factored code, particularly code concerned with application
 initialization that runs as the page finishes loading.
 
-### minimal 3rd party dependencies
+## minimal 3rd party dependencies
 
 As I've grown more skilled with JavaScript, the number of tools I keep in my
 toolbox has gotten smaller, not bigger. I have a handful of libraries I
@@ -144,7 +144,7 @@ the pressure to hesitate before adding third party libraries. (Besides, the
 best libraries have a no-conflict mode that yields the namespace control back
 to the user.)
 
-### lots of tests
+## lots of tests
 
 I love test-driving all those tiny JavaScript units. I personally use Jasmine
 and a concoction of Jasmine helpers I've written. I'm not even sure why this
@@ -152,7 +152,7 @@ should be relevant to the discussion of Require, but for the fact I seem to get
 a lot of e-mail and Github Issues from people trying (and struggling) to use
 various testing and build tools in the context of apps that use Require.
 
-### great build tools
+## great build tools
 
 At [test double](http://testdouble.com), we wrote
 [Lineman](http://www.linemanjs.com) to be a hassle-free way to write fat-client
@@ -163,12 +163,12 @@ change in the load order, but it's usually only something I encounter once or
 twice a month (and hardly a big enough pain to warrant orienting my entire
 application around Require).
 
-## open questions
+# open questions
 
 I'm curious why so many folks adopt Require, especially when they do so on
 their first JavaScript rodeo.
 
-### what value does it add for you?
+## what value does it add for you?
 
 Given everything I've said above, I'm really curious to know:
 
@@ -179,7 +179,7 @@ I'd love to see a response post that specifically addresses what *someone like
 me* would get out of using Require that I'm currently not getting some other
 way. Whatever that benefit is, I've so far failed to find it.
 
-### why break from the default?
+## why break from the default?
 
 A whole bunch of testing, productivity, build, and deploy tools don't work
 out-of-the-box with Require. I know, because I maintain a few of them! I feel
@@ -207,7 +207,7 @@ system were to emerge for the browser. (And I hope one does, because having a
 ubiquitous system for packaging, discovering, and resolving dependencies could
 drastically improve the infrastructure of the web.)
 
-## conspiracy theories
+# conspiracy theories
 
 All of my conspiracy theories as to why Require has become popular are rooted
 in a suspicion that folks are **cargo-culting** the dependency management
@@ -219,7 +219,7 @@ another programming ecosystem. This realization was the impetus of my concern
 that what Require actually addresses is a gap in the understanding of many
 inexperienced JavaScript developers.
 
-### misunderstood weirdness
+## misunderstood weirdness
 
 Everyone knows that JavaScript is weird in relation to other languages, but few
 can articulate clearly *how* it is weird. Without clearly understanding what
@@ -237,7 +237,7 @@ JavaScript applications much more efficiently from this frame of mind than I
 can of the import/require schemes made possible by Java's classpath and Ruby's
 load paths.
 
-### tool envy
+## tool envy
 
 Another conspiracy theory of mine is that Require doesn't solve any "real"
 problem that can't also be solved with a better understanding of JavaScript,
@@ -257,7 +257,7 @@ convenience of the latter has always cost me down the road. As a result, unless
 Require solves a problem that's not also solved by "thinking harder about the
 design of my code", I wouldn't feel an urgency to adopt it.
 
-### unabashed cargo-culting
+## unabashed cargo-culting
 
 While the previous two examples are derived from the impulse to carry our
 practices from one ecosystem to another (even if they don't jive with the
@@ -277,7 +277,7 @@ There's really not much more to say about or to this group, as I doubt I'm
 going to convince them to spend time soaking in JavaScript and learning to love
 working in the browser.
 
-## conclusion
+# conclusion
 
 One of the reasons this issue doesn't sit well with me is that I see a lot of
 people advocating Require to others, but for their own benefit and not for the

@@ -8,7 +8,7 @@ video:
   type: "youtube"
 ---
 
-## overview
+# overview
 
 This is the first of a series of screencasts focused on AngularJS; in it you will walk through building a sample application with AngularJS to learn some of the basics along with some commentary that contrasts it with jQuery / Backbone.JS, this episode covers:
 
@@ -21,7 +21,7 @@ This is the first of a series of screencasts focused on AngularJS; in it you wil
 * Angulars [jqLite](http://docs.angularjs.org/api/angular.element) facilities
 * Facilities for [dependency injection](http://docs.angularjs.org/guide/di) in AngularJS
 
-## other resources
+# other resources
 
 * [angularjs](http://angularjs.org)
 * [bite sized angular videos](http://www.egghead.io/)

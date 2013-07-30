@@ -42,7 +42,7 @@ This is a fundamental shift in thinking that should be embraced and I believe
 this approach has already been validated by a number of well-known JavaScript
 libraries.
 
-## The Backbone Lesson
+# The Backbone Lesson
 
 Since its release, [Backbone](http://documentcloud.github.io/backbone/) has
 exploded in popularity and many [other](https://github.com/chaplinjs/chaplin)
@@ -63,7 +63,7 @@ praises in his talk; it gave us a low-level set of components and didn't really
 enforce any particular design decisions on how to use them&mdash;aside from an
 important guiding principle: get your data out of the DOM.
 
-## The Ember Conundrum
+# The Ember Conundrum
 
 A recent blog post comparing [Ember](http://emberjs.com/) and
 Angular&mdash;originally entitled ["AngularJS vs Ember, It's not even
@@ -86,7 +86,7 @@ high-level rich-web application framework right the first time. Perhaps this is
 why the path to Ember's 1.0 release has been so full of frequent, [backwards
 compatibility breaking](http://meta.stackoverflow.com/a/163861) API changes.
 
-## The Angular Approach
+# The Angular Approach
 
 Initially I was skeptical about the power of
 [Angular](http://www.angularjs.org), having spent a good 18 months of my life
@@ -126,7 +126,7 @@ into
 
 is an incredibly powerful idea.
 
-## Web Components and the future of Markup
+# Web Components and the future of Markup
 
 One of the most exciting changes to the Web Platform in the last five years is
 the upcoming [Web
@@ -159,7 +159,7 @@ all the other great features they provide. I'm eager to see how the lower-level
 features in ES6 and low-level libraries like Polymer are going to be used by
 developers to create even more amazing frameworks in the future.
 
-## Moving the Web Forward with Low-Level APIs
+# Moving the Web Forward with Low-Level APIs
 
 I think Yehuda has it right; standards bodies need to focus less on getting
 high-level APIs right up front and more on providing developers with enough
