@@ -147,7 +147,6 @@ abbr[title]
   border-radius: $radius
   box-shadow: 0 1px 0 white
   text-align: center
-  line-height: 31px
   color: rgba($dark-color, .8)
   font-weight: 700
   text-shadow: 0 1px 0 white
@@ -157,6 +156,12 @@ abbr[title]
     color: $dark-color
     border-color: rgba($dark-color, 1)
     border-bottom-color: rgba(#151414, 1)
+
+  &:before
+    content: ''
+    display: inline-block
+    height: 100%
+    vertical-align: middle
 
 .button.cta
   color: $light-color
