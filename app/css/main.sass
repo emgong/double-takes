@@ -137,7 +137,6 @@ abbr[title]
   display: inline-block
   height: 33px
   min-width: 112px
-  margin: 0 8px
   border: 1px solid rgba($dark-color, .5)
   border-bottom-color: rgba(#151414, .5)
   border-radius: $radius
@@ -154,11 +153,11 @@ abbr[title]
     border-color: rgba($dark-color, 1)
     border-bottom-color: rgba(#151414, 1)
 
-.button:first-of-type
-  margin-left: 0
+  &:not(:first-of-type)
+    margin-left: 8px
 
-.button:last-of-type
-  margin-right: 0
+  &:not(:last-of-type)
+    margin-right: 8px
 
 .button.cta
   color: $light-color
