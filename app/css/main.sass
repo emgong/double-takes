@@ -79,10 +79,10 @@ abbr[title]
   left: 0
 
 
-.screencast header[role=banner]
+.screencast .masthead
   margin-bottom: 1.75em
 
-header[role=banner]
+.masthead
   margin: 42px 0 1.1em
   text-align: justify
   font-size: 56px
@@ -339,7 +339,7 @@ footer
   h1
     font-size: 36px
 
-  header[role=banner]
+  .masthead
     nav
       display: none
 
@@ -356,7 +356,7 @@ footer
         padding: 3px
 
 @media (max-width: 474px)
-  header[role=banner]
+  .masthead
     text-align: center
     font-size: 36px
 
@@ -372,7 +372,7 @@ footer
       border-width: 1px 0 0
 
 @media (min-width: 475px)
-  header[role=banner]
+  .masthead
     max-height: 70px // clip the generated content
 
     .container::after
