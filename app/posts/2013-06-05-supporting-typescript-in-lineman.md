@@ -117,8 +117,8 @@ Done, without errors.
 ```
 
 Now we've got the task working independently from the Lineman build process. For
-any arbitrary grunt task, this would be sufficient; simply run `lineman grunt
-&lt;task&gt;`. However, if we run `lineman build`, the typescript task will not
+any arbitrary grunt task, this would be sufficient; simply run <code>lineman grunt
+&lt;task&gt;</code>. However, if we run `lineman build`, the typescript task will not
 be run. Let's add it to the Lineman build process.
 
 <h1 id="add-ts-to-build">Compile during Lineman build</h1>
