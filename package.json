@@ -22,8 +22,5 @@
     "grunt-markdown-blog": ">=0.2.0",
     "underscore": "~>1.4.4",
     "grunt-contrib-copy": "~0.4.1"
-  },
-  "scripts": {
-    "prepublish": "lineman build"
   }
 }
