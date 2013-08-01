@@ -14,18 +14,20 @@
   </head>
 
   <body class="index <% if(post && post.get('video')) { %>screencast<% } %>">
-    <div class="green-strip"></div>
-    <header role="banner">
+
+    <header class="masthead" role="banner">
       <div class="container">
         <h1>
           <a href="/">
-            <span class="logo skm">Test Double |</span>
-            <span class="title">double&nbsp;takes</span>
+            <span class="logo skm">Test&nbsp;Double |</span>
+            <span class="title">Double&nbsp;Takes</span>
           </a>
         </h1>
 
-        <nav>
-          <a class="cta button" href="http://testdouble.com/#inquiry/pair-with-you">Pair With Us</a><a class="button" href="/archive.html">Archives</a>
+        <nav role="navigation">
+          <h2 class="visually-hidden">Site Navigation</h2>
+          <a class="cta button" href="http://testdouble.com/#inquiry/pair-with-you">Pair With Us</a>
+          <a class="button" href="/archive.html" rel="directory archives">Archives</a>
         </nav>
       </div>
     </header>
@@ -34,10 +36,12 @@
       <%= yield %>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <div class="container">
-        <nav>
-          <a href="http://testdouble.com/#inquiry/pair-with-you">Pair with us</a><a href="/archive.html">Archives</a>
+        <nav role="navigation">
+          <h2 class="visually-hidden">Site Navigation</h2>
+          <a href="http://testdouble.com/#inquiry/pair-with-you">Pair with us</a>
+          <a href="/archive.html" rel="directory archives">Archives</a>
         </nav>
       </div>
     </footer>

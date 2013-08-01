@@ -10,9 +10,8 @@ $radius: 4px
 *
   box-sizing: border-box
 
-.green-strip
-  background: $green
-  height: 12px
+html
+  border-top: 12px solid $green
 
 body
   font-family: 'Source Sans Pro', sans-serif
@@ -23,9 +22,6 @@ body
 a
   text-decoration: none
   color: $ocean-blue
-
-article a
-  border-bottom: 1px solid $ocean-blue
 
 h1, h2, h3
   margin: .35em 0
@@ -60,6 +56,9 @@ p
 li
   margin: 0 0 10px 0
 
+abbr[title]
+  border: none
+
 .container
   width: 90%
   max-width: 960px
@@ -71,17 +70,28 @@ li
   white-space: nowrap
   overflow: hidden
 
-.screencast header[role=banner]
+// a11y-safe hide: ttp://yhoo.it/18j3OxG
+.visually-hidden
+  position: absolute
+  *clip: rect(1px 1px 1px 1px)
+  clip: rect(1px, 1px, 1px, 1px)
+  top: 0
+  left: 0
+
+
+.screencast .masthead
   margin-bottom: 1.75em
 
-header[role=banner]
+.masthead
   margin: 42px 0 1.1em
   text-align: justify
   font-size: 56px
 
   h1, nav
     display: inline-block
-    vertical-align: middle
+
+  nav
+    vertical-align: super
 
   h1
     margin: 0
@@ -93,6 +103,7 @@ header[role=banner]
 
   .logo, .title
     display: inline-block
+    vertical-align: top
     color: $dark-color
     +animation (appear 1s)
     +transition (all .5s)
@@ -110,6 +121,7 @@ header[role=banner]
     padding-left: 0.4em
     border: 0 solid $dark-color
     border-left-width: 1px
+    text-transform: lowercase
 
 +keyframes (appear)
   0%
@@ -122,31 +134,41 @@ header[role=banner]
     +transform (scale(1.05))
 
 .button
-  border: 1px solid rgba($dark-color, .5)
-  border-bottom: 1px solid rgba(#151414, .5)
-  text-shadow: 0 1px 0 white
   display: inline-block
-  text-align: center
-  padding-top: 5px
+  height: 33px
+  min-width: 112px
+  margin: 0 8px
+  &:first-of-type
+    margin-left: 0
+  &:last-of-type
+    margin-right: 0
+  border: 1px solid rgba($dark-color, .5)
+  border-bottom-color: rgba(#151414, .5)
   border-radius: $radius
-  +size (112px 33px)
-  font-weight: 700
-  color: rgba($dark-color, .8)
-  +transition (all .3s ease)
   box-shadow: 0 1px 0 white
+  text-align: center
+  color: rgba($dark-color, .8)
+  font-weight: 700
+  text-shadow: 0 1px 0 white
+  +transition (all .3s ease)
 
-  &:hover
-    border: 1px solid rgba($dark-color, 1)
-    border-bottom: 1px solid rgba(#151414, 1)
+  &:hover, &:focus
     color: $dark-color
+    border-color: rgba($dark-color, 1)
+    border-bottom-color: rgba(#151414, 1)
 
-.cta
+  &:before
+    content: ''
+    display: inline-block
+    height: 100%
+    vertical-align: middle
+
+.button.cta
   color: $light-color
   text-shadow: none
-  margin-right: 20px
   background: $dark-color
 
-  &:hover
+  &:hover, &:focus
     color: $light-color
 
 main header
@@ -226,19 +248,16 @@ main header
     top: -2px
     margin: 0 1px
 
-article
-  margin: 34px 0 28px
+.post-body
+  margin: 34px 0 20px
   text-shadow: 0 1px 0 white
 
-  h1, h2
+  h1
     font-size: 36px
     margin-bottom: 24px
 
-  h3
-    font-size: 28px
-
-  h4
-    font-size: 24px
+  a
+    border-bottom: 1px solid $ocean-blue
 
   p, li
     code
@@ -294,19 +313,16 @@ pre
     word-break: none
 
 footer
-  +clearfix
   background: $green
-  padding: 0 0 8px 0
+  text-align: right
+  border: 1px solid transparent
 
   nav
-    float: right
-    margin: 14px 0 0 0
+    margin: 17px 3px
 
     a
       display: inline-block
-      text-align: center
-      padding-top: 5px
-      +size (112px 33px)
+      margin: 0 16px
       font-weight: 700
       color: rgba($dark-color, .8)
       +transition (all .3s ease)
@@ -314,17 +330,13 @@ footer
 
 .pagination
   text-align: center
-  margin: 20px auto
+  margin: 20px auto 28px
 
-  .button
-    display: inline-block
-    margin: 0 10px
-
-@media (max-width: 740px)
+@media (max-width: 755px)
   h1
     font-size: 36px
 
-  header[role=banner]
+  .masthead
     nav
       display: none
 
@@ -341,7 +353,7 @@ footer
         padding: 3px
 
 @media (max-width: 474px)
-  header[role=banner]
+  .masthead
     text-align: center
     font-size: 36px
 
@@ -357,7 +369,7 @@ footer
       border-width: 1px 0 0
 
 @media (min-width: 475px)
-  header[role=banner]
+  .masthead
     max-height: 70px // clip the generated content
 
     .container::after
