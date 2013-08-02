@@ -93,7 +93,7 @@ Done, without errors.
 
 Create a new file `app/js/greeter.ts`. This will be the TypeScript source that
 is compiled into JavaScript. If you remember our typescript config block
-specifies the source as 'app/js/**/*.ts', so any filename with a '.ts' extension
+specifies the source as <code>app/js/&#x002A;&#x002A;/&#x002A;.ts</code>, so any filename with a '.ts' extension
 (within any subdirectory) will be compiled into the same JavaScript file. (For
 more info, refer to `grunt-typescript`'s
 [configuration](https://github.com/k-maru/grunt-typescript).)
