@@ -1,52 +1,46 @@
 <article role="article" class="h-entry">
 
   <header role="heading">
-    <div class="container">
-      <% if(post.get('video')) { %>
-        <div class="video">
-          <% if(post.get('video').type == "youtube") { %>
-            <iframe class="u-video" frameborder="0" height="315" src="<%= post.get('video').url %>" width="560"></iframe>
-          <% } %>
-          <!-- Presumably implement other embed types like vimeo -->
-        </div>
-      <% } %>
-
-      <h1 class="p-name"><a class="u-url" href="/<%= post.htmlPath() %>" rel="bookmark self"><%= post.title() %></a></h1>
-
-      <div class="byline">
-        <time class="dt-published" datetime="<%= post.time() %>"><%= post.date() %></time>
-        <% if(post.get('author')) { %>
-        by
-        <span class="author p-author h-card">
-          <% if(post.get('author').url) { %>
-          <a class="u-url" href="<%= post.get('author').url %>" rel="author">
-          <% } %>
-            <%= post.get('author').name %>
-          <% if(post.get('author').url) { %>
-          </a>
-          <% } %>
-        </span>
+    <% if(post.get('video')) { %>
+      <div class="video">
+        <% if(post.get('video').type == "youtube") { %>
+          <iframe class="u-video" frameborder="0" height="315" src="<%= post.get('video').url %>" width="560"></iframe>
         <% } %>
+        <!-- Presumably implement other embed types like vimeo -->
       </div>
+    <% } %>
+
+    <h1 class="p-name"><a class="u-url" href="/<%= post.htmlPath() %>" rel="bookmark self"><%= post.title() %></a></h1>
+
+    <div class="byline">
+      <time class="dt-published" datetime="<%= post.time() %>"><%= post.date() %></time>
+      <% if(post.get('author')) { %>
+      by
+      <span class="author p-author h-card">
+        <% if(post.get('author').url) { %>
+        <a class="u-url" href="<%= post.get('author').url %>" rel="author">
+        <% } %>
+          <%= post.get('author').name %>
+        <% if(post.get('author').url) { %>
+        </a>
+        <% } %>
+      </span>
+      <% } %>
     </div>
   </header>
 
   <% if(post.get('tldr')) { %>
     <aside class="tldr p-summary" role="complementary">
-      <div class="container">
-        <abbr class="tldr_tag" title="Too Long; Didn't Read">TL<span>;</span>DR</abbr>
+      <abbr class="tldr_tag" title="Too Long; Didn't Read">TL<span>;</span>DR</abbr>
 
-        <h2><%= post.get('tldr').title %></h2>
+      <h2><%= post.get('tldr').title %></h2>
 
-        <p><%= post.get('tldr').body %></p>
-      </div>
+      <p><%= post.get('tldr').body %></p>
     </aside>
   <% } %>
 
   <section class="post-body e-content">
-    <div class="container">
-      <%= post.content() %>
-    </div>
+    <%= post.content() %>
   </section>
 </article>
 

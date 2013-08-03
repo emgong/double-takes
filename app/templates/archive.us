@@ -1,20 +1,16 @@
 <header role="heading">
-  <div class="container">
-    <h1>all our double takes</h1>
-  </div>
+  <h1>all our double takes</h1>
 </header>
 
 <section class="archives">
-  <div class="container">
-    <ul>
-      <% _(site.posts).chain().reverse().each(function(post){ %>
-        <li class="h-entry">
-          <a class="u-url" href="/<%= post.htmlPath() %>">
-            <span class="e-name"><%= _(post.title()).truncate(75) %></span>
-            <time class="dt-published" datetime="<%= post.time() %>"><%= post.date() %></time>
-          </a>
-        </li>
-      <% }) %>
-    </ul>
-  </div>
+  <ul>
+    <% _(site.posts).chain().reverse().each(function(post){ %>
+      <li class="h-entry">
+        <a class="u-url" href="/<%= post.htmlPath() %>">
+          <span class="e-name"><%= _(post.title()).truncate(75) %></span>
+          <time class="dt-published" datetime="<%= post.time() %>"><%= post.date() %></time>
+        </a>
+      </li>
+    <% }) %>
+  </ul>
 </section>
