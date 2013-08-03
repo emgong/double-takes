@@ -93,9 +93,9 @@ Done, without errors.
 
 Create a new file `app/js/greeter.ts`. This will be the TypeScript source that
 is compiled into JavaScript. If you remember our typescript config block
-specifies the source as <code>app/js/&#x002A;&#x002A;/&#x002A;.ts</code>, so any filename with a '.ts' extension
-(within any subdirectory) will be compiled into the same JavaScript file. (For
-more info, refer to `grunt-typescript`'s
+specifies the source as <code>app/js/\*\*/\*.ts</code>, so any filename with a
+'.ts' extension (within any subdirectory) will be compiled into the same
+JavaScript file. (For more info, refer to `grunt-typescript`'s
 [configuration](https://github.com/k-maru/grunt-typescript).)
 
 ```typescript
@@ -116,10 +116,10 @@ js: 1 file, map: 0 files, declaration: 0 files
 Done, without errors.
 ```
 
-Now we've got the task working independently from the Lineman build process. For
-any arbitrary grunt task, this would be sufficient; simply run <code>lineman grunt
-&lt;task&gt;</code>. However, if we run `lineman build`, the typescript task will not
-be run. Let's add it to the Lineman build process.
+Now we've got the task working independently from the Lineman build process.
+For any arbitrary grunt task, this would be sufficient; simply run `lineman
+grunt <task>`.  However, if we run `lineman build`, the typescript task will
+not be run. Let's add it to the Lineman build process.
 
 <h1 id="add-ts-to-build">Compile during Lineman build</h1>
 
