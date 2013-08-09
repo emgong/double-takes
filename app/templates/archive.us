@@ -1,11 +1,9 @@
-<header role="heading">
-  <div class="container">
+<article>
+  <header role="heading">
     <h1>all our double takes</h1>
-  </div>
-</header>
+  </header>
 
-<section class="archives">
-  <div class="container">
+  <section class="archives">
     <ul>
       <% _(site.posts).chain().reverse().each(function(post){ %>
         <li class="h-entry">
@@ -16,5 +14,5 @@
         </li>
       <% }) %>
     </ul>
-  </div>
-</section>
+  </section>
+</article>

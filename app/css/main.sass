@@ -59,10 +59,14 @@ li
 abbr[title]
   border: none
 
-.container
-  width: 90%
-  max-width: 960px
-  margin: auto
+body>header, body>footer, main>article>*
+  padding-left: 5%
+  padding-right: 5%
+
+@media (min-width: 1066px)
+  body>header, body>footer, main>article>*
+    padding-left: calc(50% - 960px/2)
+    padding-right: calc(50% - 960px/2)
 
 // Scott Kellum image replacement http://bit.ly/Aazp14
 .skm
@@ -70,7 +74,7 @@ abbr[title]
   white-space: nowrap
   overflow: hidden
 
-// a11y-safe hide: ttp://yhoo.it/18j3OxG
+// a11y-safe hide: http://yhoo.it/18j3OxG
 .visually-hidden
   position: absolute
   *clip: rect(1px 1px 1px 1px)
@@ -172,7 +176,8 @@ abbr[title]
     color: $light-color
 
 main header
-  padding: 6px 0 24px
+  padding-top: 6px
+  padding-bottom: 24px
   background: $dark-color
   color: $light-color
   font-weight: 400
@@ -372,7 +377,7 @@ footer
   .masthead
     max-height: 70px // clip the generated content
 
-    .container::after
+    &::after
       content: ''
       display: inline-block
       width: 100%
