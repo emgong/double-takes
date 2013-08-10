@@ -30,8 +30,8 @@ Who knows why that is. Browsers.
 
 Anyway, here's how I recommend going about hosting your own fonts on the web.
 
-1. Find OTF or TTF files for the various weights and styles of your font. 2.
-Visit [Font Squirrel's webfont
+1. Find OTF or TTF files for the various weights and styles of your font.
+2. Visit [Font Squirrel's webfont
 generator](http://www.fontsquirrel.com/tools/webfont-generator) and upload each
 weight and style of your font that you'd like, selecting the **Optimal** option.
 3. Download your kit, then copy all the newly generated `eog`, `.svg.`, `.ttf`,
