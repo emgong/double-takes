@@ -14,7 +14,7 @@ author:
   url: "http://about.me/searls"
 ---
 
-When I first added a webfont to <a href="testdouble.com">test double</a>'s web
+When I first added a webfont to <a href="http://testdouble.com">test double</a>'s web
 site, I didn't realize that only hosting a ".woff" file was not enough
 to ensure sharp rendering across browsers and operating systems. The font
 looked fine in Safari on OS X, a little aliased on Chrome on OS X, a jagged
