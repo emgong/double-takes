@@ -31,7 +31,7 @@
 
   <% if(post.get('tldr')) { %>
     <aside class="tldr p-summary" role="complementary">
-      <abbr class="tldr_tag" title="Too Long; Didn't Read">TL<span>;</span>DR</abbr>
+      <abbr class="tldr-tag" title="Too Long; Didn't Read">TL<span>;</span>DR</abbr>
 
       <h2><%= post.get('tldr').title %></h2>
 
