@@ -1,22 +1,10 @@
-/* Not used yet *//*
 @font-face {
   font-family: 'Source Code Pro';
-  font-style: normal;
-  font-weight: 200;
-  src: local('Source Code Pro ExtraLight'), local('SourceCodePro-ExtraLight'), url(../webfonts/source_code_pro_200.woff) format('woff');
-}
-*/
-@font-face {
-  font-family: 'Source Code Pro';
-  font-style: normal;
+  src: url('../webfonts/sourcecodepro-regular-webfont.eot');
+  src: url('../webfonts/sourcecodepro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../webfonts/sourcecodepro-regular-webfont.woff') format('woff'),
+       url('../webfonts/sourcecodepro-regular-webfont.ttf') format('truetype'),
+       url('../webfonts/sourcecodepro-regular-webfont.svg#source_sans_proregular') format('svg');
   font-weight: 400;
-  src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(../webfonts/source_code_pro_400.woff) format('woff');
-}
-/* Not used yet *//*
-@font-face {
-  font-family: 'Source Code Pro';
   font-style: normal;
-  font-weight: 700;
-  src: local('Source Code Pro Bold'), local('SourceCodePro-Bold'), url(../webfonts/source_code_pro_700.woff) format('woff');
 }
-*/
