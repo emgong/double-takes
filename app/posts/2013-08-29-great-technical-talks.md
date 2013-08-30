@@ -20,8 +20,8 @@ I'm about to undertake the task of reviewing [submissions to the JavaScript trac
 
 1. Timeless aspects of writing software that are always relevant, applied to the technologies we tend to find ourselves working with today
 2. Near-term trends and innovations that people can grapple with or adopt today in hopes of being well-positioned tomorrow
-3. Medium-term rumblings emerging from ongoing conversations in communities and standards groups to address the intractable problems of today. Nuanced discussion of issues like these are an opportunity both to analyze the nature of today's hard problems and to provide informed speculation as to the sort of solutions that may soon emerge
-4. Long-term visions of the future that contextualize today's fashions within the broader strokes of computing history and upon which we can find inspiration to play and experiment with bold, new ideas that might spur the next big thing
+3. Medium-term rumblings from ongoing conversations in communities and standards groups to address the intractable problems of today. Nuanced discussion of issues like these is an opportunity both to analyze the nature of today's hard problems and to provide informed speculation as to the sort of solutions that may soon emerge
+4. Long-term visions of the future that contextualize today's fashions within the broader strokes of computing history and upon which we can find inspiration to play and experiment with bold, new ideas that we otherwise wouldn't make time for
 
 I expect that most talks will fall into the first two categories (as they're the most abundant and immediately relevant), but I'm working hard to secure a few high-quality talks in the third and fourth categories, as well.
 
@@ -29,18 +29,18 @@ I expect that most talks will fall into the first two categories (as they're the
 
 It's tempting when discussing this topic to try to separate the approach of a talk (its "design") from its in-person execution (its "delivery"), because shortcomings in a talk's design often appear to be overcome by exceptional delivery. 
 
-The sentiment, "well sure, it's a surface-level summary talk, but it will be fantastically delivered," seems to be a common one. I'd maintain that such a talk is marginally more successful than it would have been if presented poorly. Obvious information is no less obvious when papered over by an entertaining presentation.
+The sentiment, "well sure, it's a surface-level summary talk, but it will be fantastically delivered," seems to be a common one. I'd maintain that such a talk is only marginally more successful than it would have been if presented poorly. Obvious information is no less obvious when papered over by an entertaining presentation.
 
 Similarly, a talk with a groundbreaking, earth-shatteringly important design cannot be saved from a dry, boring, or poorly-prepared delivery.  It's almost impossible to weed this out by reading an abstract, so don't be surprised if I reach out to you directly to try to gauge your commitment to deliver something that's truly worth attendees' time.
 
 ## problematic assumptions
 
-Conference talks that fail to meet their potential often have one of these attributes:
+Conference talks that fail to meet their potential often exhibit one of these tendencies:
 
 * Assumes a broad survey of all a tool's features is the most  appropriate (or digestible) format for novice attendees
 * Is designed as if the talk's value is equivalent to the sum of information it contains
 * Avoids the discomfort of engaging with complex topics by way of rhetorical flourishes or hand-waving. By making complex things seem simple, they might succeed to inspire an audience only to set them up for disappointment upon being reacquainted with reality
-* Associates depth and nuance with "advanced" talks, as if digging into the complex rationale behind a topic is somehow not as valuable for novices 
+* Associates depth and nuance with "advanced" talks, as if digging into the rationale that informs a given topic is somehow not as valuable to novices 
 * Seeks to satiate the curiosities of attendees as opposed to equipping them with what they need to embark on a journey of their own
 
 If you plan on submitting a talk to a technical conference, first ask yourself if your topic is at risk of one of the above problems. Feel free to [contact me](mailto:justin@testdouble.com) if you would like my feedback!
