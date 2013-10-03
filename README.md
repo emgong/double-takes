@@ -39,3 +39,7 @@ That said, more minimal header configuration are possible, too. For instance, if
 Additionally, "date" and "title" are only necessary if the file name's date differs from the title or publication date. In general, it's a bad idea to change the file slug once the page gets deployed since the hyperlink will break, so if a change is needed make sure to favor the header variables.
 
 In fact, if you don't supply a header at all, your post should still render okay. However, it's probably the case that you want to display at least an author name or a tl;dr section.
+
+## Running and building the blog
+
+Here's [a screencast](https://www.youtube.com/watch?v=raznFJedCZM) that shows how the site is built.
