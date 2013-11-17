@@ -1,13 +1,13 @@
-<article>
-  <h1>Our Thoughts Thus Far.</h1>
-
-  <section class="archives">
-    <ul>
-      <% _(site.posts).chain().clone().reverse().each(function(post){ %>
-        <li>
-          <a href="/<%= post.htmlPath() %>">Blog #<%= _(site.posts).indexOf(post) %>: <%= _(post.title()).truncate(75) %></a>
-        </li>
-      <% }) %>
-    </ul>
-  </section>
-</article>
+<h1 class="blog">Our Thoughts Thus Far.</h1>
+<div class="post">
+  <h2>Posts 1 to 20</h2>
+</div>
+<div class="blogwrap archive">
+  <ul>
+    <% _(site.posts).chain().clone().reverse().each(function(post){ %>
+      <li>
+        <a href="/<%= post.htmlPath() %>">Blog #<%= _(site.posts).indexOf(post) %>: <%= _(post.title()).truncate(75) %></a>
+      </li>
+    <% }) %>
+  </ul>
+</div>
