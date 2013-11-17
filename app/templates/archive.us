@@ -3,7 +3,7 @@
 
   <section class="archives">
     <ul>
-      <% _(site.posts).chain().reverse().each(function(post){ %>
+      <% _(site.posts).chain().clone().reverse().each(function(post){ %>
         <li>
           <a href="/<%= post.htmlPath() %>">Blog #<%= _(site.posts).indexOf(post) %>: <%= _(post.title()).truncate(75) %></a>
         </li>
