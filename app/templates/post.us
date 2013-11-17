@@ -1,4 +1,4 @@
-<h1 class="blog">Blog #??</h1>
+<h1 class="blog">Blog #<%= _(site.posts).indexOf(post) %></h1>
 <div class="post">
   <h2><%= post.title() %></h2>
 </div>
