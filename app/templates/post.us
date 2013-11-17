@@ -1,55 +1,30 @@
-<article role="article" class="h-entry">
-
-  <header role="heading">
-    <% if(post.get('video')) { %>
-      <div class="video">
-        <% if(post.get('video').type == "youtube") { %>
-          <iframe class="u-video" frameborder="0" height="315" src="<%= post.get('video').url %>" width="560"></iframe>
-        <% } %>
-        <!-- Presumably implement other embed types like vimeo -->
-      </div>
-    <% } %>
-
-    <h1 class="p-name"><a class="u-url" href="/<%= post.htmlPath() %>" rel="bookmark self"><%= post.title() %></a></h1>
-
-    <div class="byline">
-      <time class="dt-published" datetime="<%= post.time() %>"><%= post.date() %></time>
-      <% if(post.get('author')) { %>
-      by
-      <span class="author p-author h-card">
-        <% if(post.get('author').url) { %>
-        <a class="u-url" href="<%= post.get('author').url %>" rel="author">
-        <% } %>
-          <%= post.get('author').name %>
-        <% if(post.get('author').url) { %>
-        </a>
-        <% } %>
-      </span>
+<h1 class="blog">Blog #??</h1>
+<div class="post">
+  <h2><%= post.title() %></h2>
+</div>
+<div class="blogwrap">
+  <% if(post.get('video')) { %>
+    <div class='embed-container'>
+      <% if(post.get('video').type == "youtube") { %>
+        <iframe class="u-video" frameborder="0" src="<%= post.get('video').url %>" allowfullscreen></iframe>
       <% } %>
+      <!-- Presumably implement other embed types like vimeo -->
     </div>
-  </header>
-
+  <% } %>
   <% if(post.get('tldr')) { %>
-    <aside class="tldr p-summary" role="complementary">
-      <abbr class="tldr-tag" title="Too Long; Didn't Read">TL<span>;</span>DR</abbr>
-
-      <h2><%= post.get('tldr').title %></h2>
-
+    <div class="blogblip">
+      <h3><%= post.get('tldr').title %></h3>
       <p><%= post.get('tldr').body %></p>
-    </aside>
+    </div>
   <% } %>
-
-  <section class="post-body e-content">
-    <%= post.content() %>
-  </section>
-</article>
-
-<nav class="pagination" role="navigation">
-  <h2 class="visually-hidden">Article Pagination</h2>
-  <% if(site.newerPost(post)) { %>
-    <a class="button" href="/<%= site.newerPost(post).htmlPath() %>" rel="next">Newer</a>
-  <% } %>
+  <%= post.content() %>
+</div>
+<div class="blognav">
   <% if(site.olderPost(post)) { %>
-    <a class="button" href="/<%= site.olderPost(post).htmlPath() %>" rel="previous">Previous</a>
+    <a href="/<%= site.olderPost(post).htmlPath() %>" class="left">Previous</a>
   <% } %>
-</nav>
+  <% if(site.newerPost(post)) { %>
+    <a href="/<%= site.newerPost(post).htmlPath() %>" class="right">Newer</a>
+  <% } %>
+  <div class="clear"></div>
+</div>

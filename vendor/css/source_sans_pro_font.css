@@ -1,3 +1,4 @@
+/*
 @font-face {
   font-family: 'Source Sans Pro';
   src: url('../webfonts/sourcesanspro-extralight-webfont.eot');
@@ -8,9 +9,8 @@
   font-weight: 200;
   font-style: normal;
 }
+*/
 
-/* Not in use yet */
-/*
 @font-face {
   font-family: 'Source Sans Pro';
   src: url('../webfonts/sourcesanspro-light-webfont.eot');
@@ -21,7 +21,6 @@
   font-weight: 300;
   font-style: normal;
 }
-*/
 
 @font-face {
   font-family: 'Source Sans Pro';
@@ -34,7 +33,6 @@
   font-style: normal;
 }
 
-/*
 @font-face {
   font-family: 'Source Sans Pro';
   src: url('../webfonts/sourcesanspro-semibold-webfont.eot');
@@ -45,8 +43,7 @@
   font-weight: 600;
   font-style: normal;
 }
-*/
-
+/*
 @font-face {
   font-family: 'Source Sans Pro';
   src: url('../webfonts/sourcesanspro-bold-webfont.eot');
@@ -57,3 +54,4 @@
   font-weight: 700;
   font-style: normal;
 }
+*/

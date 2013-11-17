@@ -1,16 +1,11 @@
 <article>
-  <header role="heading">
-    <h1>all our double takes</h1>
-  </header>
+  <h1>Our Thoughts Thus Far.</h1>
 
   <section class="archives">
     <ul>
       <% _(site.posts).chain().reverse().each(function(post){ %>
-        <li class="h-entry">
-          <a class="u-url" href="/<%= post.htmlPath() %>">
-            <span class="e-name"><%= _(post.title()).truncate(75) %></span>
-            <time class="dt-published" datetime="<%= post.time() %>"><%= post.date() %></time>
-          </a>
+        <li>
+          <a href="/<%= post.htmlPath() %>">Blog #??: <%= _(post.title()).truncate(75) %></a>
         </li>
       <% }) %>
     </ul>

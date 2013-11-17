@@ -5,7 +5,9 @@
 
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no"> -->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+
     <link rel="alternate" type="application/rss+xml" title="<%= site.title %> | feed" href="/index.xml" />
     <title><%= site.title %><%= post ? ' | '+post.title() : '' %></title>
 
@@ -13,34 +15,30 @@
     <script src="/js/html5shiv-printshiv.js"></script>
   </head>
 
-  <body class="index <% if(post && post.get('video')) { %>screencast<% } %>">
 
-    <header class="masthead" role="banner">
-      <h1>
-        <a href="/">
-          <span class="logo skm">Test&nbsp;Double |</span>
-          <span class="title">Double&nbsp;Takes</span>
-        </a>
-      </h1>
+  <body>
+    <span class="logo dark skm">Test Double</span>
+    <a id="right-menu" href="#right-menu"><span class="menu dark skm">Menu</span></a>
+    <div id="sidr-right" class="sidr right">
+      <span class="close skm">Close</span>
+      <p class="menu1">
+        <a href="http://testdouble.com/agency.html">Our Agency</a><br/>
+        <a href="http://testdouble.com/work.html">Our Work</a><br/>
+        <a href="http://blog.testdouble.com">Our Thinking</a>
+      </p>
+      <p class="menu3">
+        <a href="http://twitter.com/testdouble"><span class="twitter skm">Twitter</span></a>
+        <a href="http://github.com/testdouble"><span class="github skm">Github</a></a>
+      </p>
+      <p class="menu4">
+        614.349.4279<br />
+        <a href="mailto:hello@testdouble.com">hello@testdouble.com</a><br />Columbus, Ohio
+      </p>
+    </div>
 
-      <nav role="navigation">
-        <h2 class="visually-hidden">Site Navigation</h2>
-        <a class="cta button" href="http://testdouble.com/#inquiry/pair-with-you">Pair With Us</a>
-        <a class="button" href="/archive.html" rel="directory archives">Archives</a>
-      </nav>
-    </header>
-
-    <main role="main">
+    <div class="content">
       <%= yield %>
-    </main>
-
-    <footer role="contentinfo">
-      <nav role="navigation">
-        <h2 class="visually-hidden">Site Navigation</h2>
-        <a href="http://testdouble.com/#inquiry/pair-with-you">Pair with us</a>
-        <a href="/archive.html" rel="directory archives">Archives</a>
-      </nav>
-    </footer>
+    </div>
 
     <script type="text/javascript" src="<%= js %>"></script>
     <script type="text/javascript">
