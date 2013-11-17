@@ -1,12 +1,12 @@
-<h1 class="blog">Our Thoughts Thus Far.</h1>
+<h1 class="blog">Nice Thinking.</h1>
 <div class="post">
-  <h2>Posts 1 to 20</h2>
+  <h2>Blog posts 0 through <%= site.posts.length-1 %>.</h2>
 </div>
 <div class="blogwrap archive">
   <ul>
     <% _(site.posts).chain().clone().reverse().each(function(post){ %>
       <li>
-        <a href="/<%= post.htmlPath() %>">Blog #<%= _(site.posts).indexOf(post) %>: <%= _(post.title()).truncate(75) %></a>
+        <span class="ordinal">#<%= _(site.posts).indexOf(post) %> </span><a href="/<%= post.htmlPath() %>"><%= _(post.title()).truncate(75) %></a>
       </li>
     <% }) %>
   </ul>
