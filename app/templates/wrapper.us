@@ -24,7 +24,10 @@
       <p class="menu1">
         <a href="http://testdouble.com/agency.html">Our Agency</a><br/>
         <a href="http://testdouble.com/work.html">Our Work</a><br/>
-        <a href="/">Our Thinking</a>
+        <a href="/">Our Thinking</a><br/>
+        <span class="sub-nav">
+          &#8627;&nbsp;<a href="/archive.html">Archive</a>
+        </span>
       </p>
       <p class="menu3">
         <a href="http://twitter.com/testdouble"><span class="twitter skm">Twitter</span></a>
