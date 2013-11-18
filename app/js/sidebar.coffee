@@ -6,6 +6,10 @@ root.Sidebar = class Sidebar
       name: "sidr-right"
       side: "right"
 
-    $(".close").on 'click', ->
+    $(".close").on eventType(), ->
       $.sidr("close", "sidr-right")
     @
+
+eventType = ->
+  return 'touchstart' if 'ontouchstart' of document.documentElement
+  'click'
