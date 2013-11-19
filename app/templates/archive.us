@@ -1,4 +1,4 @@
-<h1 class="blog">Blog #0-<%= site.posts.length-1 %></h1>
+<h1 class="blog">Posts #0-<%= site.posts.length-1 %></h1>
 <div class="post">
   <h2>Nice Thinking.</h2>
 </div>

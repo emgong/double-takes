@@ -12,16 +12,18 @@
     <title><%= site.title %><%= post ? ' | '+post.title() : '' %></title>
 
     <link rel="stylesheet" type="text/css" href="<%= css %>" media="all" />
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
     <script src="/js/html5shiv-printshiv.js"></script>
   </head>
 
-
   <body>
-    <span class="logo dark skm">Test Double</span>
-    <a id="right-menu" href="#right-menu"><span class="menu dark skm">Menu</span></a>
-    <div id="sidr-right" class="sidr right">
+    <a id="logo-link" href="http://mighty-stream-8852.herokuapp.com"><span class="logo dark skm">Test Double</span></a>
+    <span id="right-menu" class="menu dark skm">Menu</span>
+
+    <nav id="sidr-right" class="sidr right">
       <span class="close skm">Close</span>
-      <p class="menu1">
+      <p class="pages">
         <a href="http://mighty-stream-8852.herokuapp.com/agency.html">Our Agency</a><br/>
         <a href="http://mighty-stream-8852.herokuapp.com/work.html">Our Work</a><br/>
         <a href="/">Our Thinking</a><br/>
@@ -29,15 +31,18 @@
           &#8627;&nbsp;<a href="/archive.html">Archive</a>
         </span>
       </p>
-      <p class="menu3">
+      <p class="services">
         <a href="http://twitter.com/testdouble"><span class="twitter skm">Twitter</span></a>
         <a href="http://github.com/testdouble"><span class="github skm">Github</a></a>
       </p>
-      <p class="menu4">
-        614.349.4279<br />
-        <a href="mailto:hello@testdouble.com">hello@testdouble.com</a><br />Columbus, Ohio
+      <p class="contact-info">
+        614.349.4279
+        <br />
+        <a href="mailto:hello@testdouble.com">hello@testdouble.com</a>
+        <br />
+        Columbus, Ohio
       </p>
-    </div>
+    </nav>
 
     <div class="content">
       <%= yield %>
