@@ -18,14 +18,14 @@
   </head>
 
   <body>
-    <a id="logo-link" href="http://mighty-stream-8852.herokuapp.com"><span class="logo dark skm">Test Double</span></a>
+    <a id="logo-link" href="http://www.testdouble.com"><span class="logo dark skm">Test Double</span></a>
     <span id="right-menu" class="menu dark skm">Menu</span>
 
     <nav id="sidr-right" class="sidr right">
       <span class="close skm">Close</span>
       <p class="pages">
-        <a href="http://mighty-stream-8852.herokuapp.com/agency.html">Our Agency</a><br/>
-        <a href="http://mighty-stream-8852.herokuapp.com/work.html">Our Work</a><br/>
+        <a href="http://www.testdouble.com/agency.html">Our Agency</a><br/>
+        <a href="http://www.testdouble.com/work.html">Our Work</a><br/>
         <a href="/">Our Thinking</a><br/>
         <span class="sub-nav">
           &#8627;&nbsp;<a href="/archive.html">Archive</a>
