@@ -18,6 +18,20 @@
     </div>
   <% } %>
   <%= post.content() %>
+  <% if(post.get('author')) { %>
+    <div class="byline">
+      &mdash;
+      <% if(post.get('author').url) { %>
+        <a href="<%= post.get('author').url %>">
+      <% } %>
+      <%= post.get('author').name %>
+      <% if(post.get('author').url) { %>
+        </a>
+      <% } %>
+    </div>
+  <% } %>
+
+  </div>
 </div>
 <div class="blognav">
   <% if(site.olderPost(post)) { %>
