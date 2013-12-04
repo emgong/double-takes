@@ -30,6 +30,13 @@
       <% } %>
     </div>
   <% } %>
+  <div class="share">
+    <% if(post.get('reddit')) { %>
+      <a href="https://news.ycombinator.com/submitlink?u=<%= encodeURIComponent(site.url+'/'+post.htmlPath()) %>&amp;t=<%= encodeURIComponent(post.title()) %>">
+        Like this post? Share it with others on Hacker News.
+      </a>
+    <% } %>
+  </div>
 </div>
 <div class="blognav">
   <% if(site.olderPost(post)) { %>
