@@ -6,8 +6,9 @@ author:
 tldr:
   title: "An appeal to fairness"
   body: """
-				&ldquo;I'm asking conference organizers who claim to have a fair talk selection process to be transparent when any speakers are invited outside of it.&rdquo;
+        &ldquo;I'm asking conference organizers who claim to have a fair talk selection process to be transparent when any speakers are invited outside of it.&rdquo;
         """
+reddit: true
 ---
 
 A chuckle, followed by, "I haven't responded to a CFP in years."
