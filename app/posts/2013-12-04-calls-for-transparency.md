@@ -4,7 +4,7 @@ author:
   name: "Justin Searls"
   url: "http://twitter.com/searls"
 tldr:
-  title: "A message to conference organizers"
+  title: "An appeal to fairness"
   body: """
 				&ldquo;I'm asking conference organizers who claim to have a fair talk selection process to be transparent when any speakers are invited outside of it.&rdquo;
         """
