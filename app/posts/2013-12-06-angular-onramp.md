@@ -89,7 +89,7 @@ This is the server side template which renders a collection of songs.
         <td><%= song.artist %></td>
         <td><%= song.album %></td>
         <td><%= song.time %></td>
-        <td><%= link_to "Download", song.file %></td>
+        <td><%= link_to "Download", song.download %></td>
       </tr>
     <% end %>
   </tbody>
@@ -296,6 +296,32 @@ Filter: <input ng-model="query">
 </table>
 ```
 
+# Demo Table
+<div id="mixtape-demo-table">
+Filter: <input ng-model="query" placeholder="The Black Keys" style="border:2px inset;">
+<table ng-controller="songListCtrl">
+  <thead>
+    <tr>
+      <th><a href="" ng-click="predicate = 'name'; reverse=!reverse">Name</a></th>
+      <th><a href="" ng-click="predicate = 'artist'; reverse=!reverse">Artist</a></th>
+      <th><a href="" ng-click="predicate = 'album'; reverse=!reverse">Album</a></th>
+      <th><a href="" ng-click="predicate = 'time'; reverse=!reverse">Time</a></th>
+      <th>Download</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr ng-repeat="song in songs | orderBy:predicate:reverse | filter:query">
+      <td>{{ song.name }}</td>
+      <td>{{ song.artist }}</td>
+      <td>{{ song.album }}</td>
+      <td>{{ song.time }}</td>
+      <td><a href="{{ song.download }}">Download</a></td>
+      </tr>
+  </tbody>
+</table>
+</div>
+
 # Next: Angular Throwdown
 
 That's it for this tutorial, but you should have the tools to add the following on your own.
@@ -307,3 +333,65 @@ That's it for this tutorial, but you should have the tools to add the following 
 
 The goal of this tutorial was providing a recipe for making small changes to the functionality of an app with Angular. We wanted the changes to be small to give us a place to use Angular without rewriting the existing codebase which makes it easier to get started.
 
+<script>
+(function() {
+  "use strict";
+
+  var songFixtures = [
+    {
+      name: "My Love",
+      artist: "The Bird and the Bee",
+      album: "Ray Guns Are Not Just The Future",
+      time: "3:46",
+      download: "#",
+    },
+    {
+      name: "Neighbors",
+      artist: "The Long Division",
+      album: "Multiply",
+      time: "2:25",
+      download: "#",
+    },
+    {
+      name: "Middle Distance Runner",
+      artist: "Sea Wolf",
+      album: "Leaves In The River",
+      time: "3:28",
+      download: "#",
+    },
+    {
+      name: "Good Old Vinyl",
+      artist: "Jim Noir",
+      album: "Jim Noir",
+      time: "3:40",
+      download: "#",
+    },
+    {
+      name: "The Desperate Man",
+      artist: "The Black Keys",
+      album: "Rubber Factory",
+      time: "3:54",
+      download: "#",
+    }
+  ]
+
+  function loadScript() {
+    if (window.angular === undefined) {
+      $.getScript('https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js', mixtape);
+    } else {
+      mixtape();
+    }
+  }
+
+  function mixtape() {
+    angular.module("mixtape", []).
+      controller("songListCtrl", function ($scope) {
+        $scope.songs = songFixtures;
+      })
+    angular.bootstrap("#mixtape-demo-table", ["mixtape"])
+  }
+
+  window.addEventListener("load", loadScript);
+
+})();
+</script>
