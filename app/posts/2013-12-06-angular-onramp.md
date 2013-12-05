@@ -12,15 +12,61 @@ author:
 reddit: "true"
 ---
 
-This tutorial is designed to give backend developers a place to put Angular to work for them, today. We have a html table of records and two feature requests:
+This tutorial is designed to give backend developers a place to put Angular to work for them, today. It starts with a hypothetical site which has table of records rendered server side. The tutorial gently guides the reader through moving the rendering from the server and to the client with Angular and uses the momentum from that to add two new features:
 
 * Sort table by column
 * Filter table by input field
 
 Rather than adding a jQuery plugin we're going to use Angular to complete these requests.
 
-# The Server Side Start
+# The Table To Start
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Artist</th>
+      <th>Album</th>
+      <th>Time</th>
+      <th>Download</th>
+    </tr>
+  </thead>
 
+  <tbody>
+      <td >My Love</td>
+      <td >The Bird and the Bee</td>
+      <td >Ray Guns Are Not Just The Future</td>
+      <td >3:46</td>
+      <td><a href="#">Download</a></td>
+    </tr>
+      <td >Neighbors</td>
+      <td >The Long Division</td>
+      <td >Multiply</td>
+      <td >2:25</td>
+      <td><a href="#">Download</a></td>
+    </tr>
+      <td >Middle Distance Runner</td>
+      <td >Sea Wolf</td>
+      <td >Leaves In The River</td>
+      <td >3:28</td>
+      <td><a href="#">Download</a></td>
+    </tr>
+      <td >Good Old Vinyl</td>
+      <td >Jim Noir</td>
+      <td >Jim Noir</td>
+      <td >3:40</td>
+      <td><a href="#">Download</a></td>
+    </tr>
+      <td >The Desperate Man</td>
+      <td >The Black Keys</td>
+      <td >Rubber Factory</td>
+      <td >3:54</td>
+      <td><a href="#">Download</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+# The Server Side Template
 This is the server side template which renders a collection of songs.
 
 
@@ -250,9 +296,9 @@ Filter: <input ng-model="query">
 </table>
 ```
 
-# Next
+# Next: Angular Throwdown
 
-We can build out more lightweight frontend features from here:
+That's it for this tutorial, but you should have the tools to add the following on your own.
 * pagination
 * in-place CRUD
 * async, parellel file uploads
