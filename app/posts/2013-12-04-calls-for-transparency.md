@@ -13,7 +13,7 @@ reddit: true
 
 A chuckle, followed by, "I haven't responded to a CFP in years."
 
-That was the response to my question, "what do you think of the recent trend of conferences issuing blind calls for proposals?" which I had posed to a somewhat prominent speaker while I was at [Øredev](http://oredev.org). It wasn't the first time I'd heard a variation on this line—the subtext being, of course, that the aforementioend speaker is a Big Enough Deal™ to garner direct invitations to speak from conferences.
+That was the response to my question, "what do you think of the recent trend of conferences issuing blind calls for proposals?" which I had posed to a somewhat prominent speaker while I was at [Øredev](http://oredev.org). It wasn't the first time I'd heard a variation on this line—the subtext being, of course, that the aforementioned speaker is a Big Enough Deal™ to garner direct invitations to speak from conferences.
 
 I speak at a few conferences a year, but I typically have to stomach about a dozen rejections for every acceptance (and my sense is that my batting average is actually pretty good!). I'm sure regularly-invited speakers enjoy the privilege of not needing to compete for the opportunity to speak at conferences, but it certainly doesn't *feel very fair* from the perspective of us plebeians who must risk discouragement by submitting proposals.
 
