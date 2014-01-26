@@ -63,7 +63,7 @@ Keep in mind, however, that extract refactors are generally quite painful to und
 
 Even after the refactor is completed successfully, more work remains! To ensure that every unit in your system is paired with a well-designed (I call it "symmetrical") unit test, you now have to design a new unit test that characterizes the behavior of the new child object. This is hugely problematic, because characterization tests are a tool for dealing with legacy code, and as such should never be necessary if all the code was test-driven. And yet, if we define "characterization test" as "wrapping an untested unit with tests to verify its behavior," that's exactly the situation at hand: writing tests for an already-implemented unit that has no matching unit test.
 
-This is made extra painful, because the new test is not written in a normal TDD rhythm, but instead runs the same risks as "test-after-development". Namely, because the code already exists, your characterization test can exercise every line of the new child unit without any certainty that the test demands all of the unit's behaviors. So even though you've done the extra (and laudable) work of covering the new unit, the upper bound on that test's quality is lower than if you'd test-driven that unit from scratch. That observation alone suggests the activity is wasteful.
+Because the new test is not written in a normal TDD rhythm, the developer runs the same risks as one would when practicing "test-after-development". Namely, because the code already exists, your characterization test can exercise each line of the new child unit without any certainty that the test demands all of the unit's behaviors. So even though you've done the extra (and laudable) work of covering the new unit, the upper bound on that test's quality is lower than if you'd test-driven that unit from scratch. That observation alone suggests the activity is wasteful.
 
 <figure>
   ![Fig 4. Child Characterization Test](/img/tdd-fail/child-characterization-test.svg)
@@ -106,26 +106,26 @@ Even though I'm usually on team "Yay mocks!", their use in a situation like this
 
 Tests that specify both logical behavior and unit collaboration like this are very difficult to read, comprehend, and change. And yet, this frightening scenario probably describes the vast majority of tests in which test doubles are used. It's no wonder I hear so many complaints of "over-mocking" in unit tests, a claim that until relatively recently befuddled me.
 
-The solution to this mess is also a lot of work. The parent unit needs to be refactored such that it only facilitates collaboration between other units and contains no implementation logic of its own. That means the parent unit's other behaviors not implemented by the previously extracted child will also need to be extracted into new units (including all the time-consuming activities described thus far). Finally, the parent's original test can be thrown out and rewritten strictly as a "specification of collaboration", ensuring that the units interact with each other as needed. Oh, and because there's no longer a fully integrated test to make sure the parent unit works anymore, a separate integration test ought to be written.
+The solution to this mess is also a lot of work. The parent unit needs to be refactored such that it only facilitates collaboration between other units and contains no implementation logic of its own. That means the parent unit's other behaviors not implemented by the previously extracted child will also need to be extracted into new units (including all the time-consuming activities described thus far). Finally, the parent's original test should be *thrown away* and rewritten strictly as a "specification of collaboration", ensuring that the units interact with each other as needed. Oh, and because there's no longer a fully integrated test to make sure the parent unit works anymore, a separate integration test ought to be written.
 
 <figure>
   ![Fig 7. Redo](/img/tdd-fail/redo.svg)
-  <figcaption>Fig. 7 — A second child object is extracted to encapsulate any remaining behavior in the parent, the parent's test is then replaced with an test specifying the interaction of the two children.</figcaption>
+  <figcaption>Fig. 7 — A second child object is extracted to encapsulate any remaining behavior in the parent, the parent's test is then replaced with a test specifying the interaction of the two children.</figcaption>
 </figure>
 
 **Ouch.** It takes such rigor and discipline to maintain a clean codebase, comprehensible tests, and fast build times when you take this approach that it's no wonder few teams fall short of realizing their hopes with TDD.
 
 ## A Successful Approach to TDD
 
-Instead, let's chart a different course by introducing a very different workflow.
+Instead, I'd like to chart a different course by introducing a very different TDD workflow from that shown above.
 
-First, consider the conclusion of the roundabout, painful process detailed above: 
+First, consider the resulting artifacts of the roundabout, painful process detailed in the previous example: 
 
-* A parent unit that depends on the logical behavior implemented in two child units. 
-* The parent's unit test, which specifies the interaction of the two children.
-* The children each having a unit test specifying the logic for which they're responsible.
+* A parent unit that depends on logical behavior implemented in two child units
+* The parent's unit test, which specifies the interaction of the two children
+* The two child units, each with a unit test specifying the logic for which they're responsible
 
-If this is where we're bound to end up, why not head in that direction from the outset? That's the approach I take, and as a result I think of TDD primarily as an aid in the task of **reductionism**.
+If this is where we're bound to end up, why not head in that direction from the outset? That's the approach I take, and as a result I think of TDD as an exercise in **reductionism**.
 
 Here's my process:
 
@@ -143,11 +143,13 @@ Here's my process:
 
 **(3)** Identify an entry point for the feature and establish a public-facing contract to get started (e.g. "I'll add a controller action that returns profits for a given month and a year")
 
+This would also be a good opportunity to encode the public contract in an integration test. This post isn't about integration testing, but I'd recommend a test that both runs in a separate process and uses the application in the same way a real user would (e.g. by sending HTTP requests). Having an integration test for regression safety from the start can help us *avoid* scratching that itch from our unit tests.
+
 <figure>
   ![Fig 10. Step 3](/img/tdd-fail/step3.svg)
 </figure>
 
-**(4)** Start writing a test for the entry point, but *instead of immediately trying to solve the problem*, intentionally defer writing any implementation logic! Instead, break down the problem by dreaming up all of the objects you wish you had at your disposal (e.g. "This controller would be simple if only it could depend on something that gave it revenue by month and on something else that gave it costs by month")
+**(4)** Start writing a unit test for the entry point, but *instead of immediately trying to solve the problem*, intentionally defer writing any implementation logic! Instead, break down the problem by dreaming up all of the objects you wish you had at your disposal (e.g. "This controller would be simple if only it could depend on something that gave it revenue by month and on something else that gave it costs by month")
 
 This step improves your design by encouraging small, single-purpose units by default.
 
@@ -155,7 +157,7 @@ This step improves your design by encouraging small, single-purpose units by def
   ![Fig 11. Step 4](/img/tdd-fail/step4.svg)
 </figure>
 
-**(5)** Implement the entry point with TDD by writing your test as if those imagined units did exist. Inject test doubles into the entry point for the dependencies you think you'll need and specify the subject's interaction with the dependencies in your test. Interaction tests specify "collaboration" units that only govern the interaction between other units and contain no logic themselves.
+**(5)** Implement the entry point with TDD by writing your test as if those imagined units did exist. Inject test doubles into the entry point for the dependencies you think you'll need and specify the subject's interaction with the dependencies in your test. Interaction tests specify "collaboration" units which only govern the usage of other units and contain no logic themselves.
 
 This step can improve your design because it gives you an opportunity to discover a usable API for your new dependencies. If an interaction is hard to test, it's cheap to change a method signature because the dependency doesn't actually exist yet!
 
@@ -165,7 +167,7 @@ This step can improve your design because it gives you an opportunity to discove
 
 **(6)** Repeat steps (4) and (5) for each newly-imagined object, discovering ever-more-fine-grained collaborator objects. 
 
-Human nature seems to panic at this step ("we'll be overrun by tiny classes!"), but in practice it's manageable with good code organization. Because each object is small, understandable, and single-use, it's usually painless to delete any or all the units under an obsoleted subtree of your object graph. (I've come to pity codebases with many large, oft-reused objects, as it's rarely feasible to delete them when requirements change.)
+Human nature seems to panic at this step ("we'll be overrun by tiny classes!"), but in practice it's manageable with good code organization. Because each object is small, understandable, and single-use, it's usually painless to delete any or all the units under an obsoleted subtree of your object graph when requirements change. (I've come to pity codebases with many large, oft-reused objects, as it's rarely feasible to delete them, even after they no longer fit their original purpose.)
 
 <figure>
   ![Fig 13. Step 6](/img/tdd-fail/step6.svg)
@@ -175,7 +177,7 @@ Human nature seems to panic at this step ("we'll be overrun by tiny classes!"), 
 
 The goal of this game is to discover as many collaboration objects as necessary in order to define leaf nodes that implement a piece of narrowly-defined logic that your feature needs.
 
-Tests of "logical units" exhaustively specify useful behavior and should give the author confidence that the unit is both complete and correct. Logical units's tests remain simple because there's no need to use test doubles—they merely provide various inputs and assert appropriate outputs.
+Tests of "logical units" exhaustively specify useful behavior and should give the author confidence that the unit is both complete and correct. Logical units' tests remain simple because there's no need to use test doubles—they merely provide various inputs and assert appropriate outputs.
 
 <figure>
   ![Fig 14. Step 7](/img/tdd-fail/step7.svg)
@@ -183,13 +185,13 @@ Tests of "logical units" exhaustively specify useful behavior and should give th
 
 I like to call this process "Fake it until you make it™", and while it's definitely based on the keen insights of [GOOS](http://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627), it places a fresh emphasis on reductionism. I also find value in discriminating the responsibilities "collaboration units" from "logical units" for clearer tests and more maintainable code.
 
-Note also that there is no heavy refactor step necessary when you take this approach to TDD. Extract refactors become an exceptional case and not part one's routine, which means all the downstream costs of extract refactors that I detailed earlier can be easily avoided.
+Note also that there is no heavy refactor step necessary when you take this approach to TDD. Extract refactors become an exceptional case and not part of one's routine, which means all the downstream costs of extract refactors that I detailed earlier can be avoided.
 
-### Thank You
+### Changing how we teach TDD
 
-It took me the better part of four years to understand my frustrations with TDD well enough to articulate this post. After plenty of time wandering the wilderness and mulling over these issues, I can say I finally find TDD to be an entirely productive, happy exercise. I don't practice it as often as I should, but when I do, the anxiety and fear that I experience when I try to tackle a complex feature becomes much more manageable than when I go without TDD.
+It took me the better part of four years to understand my frustrations with TDD well enough to articulate this post. After plenty of time wandering the wilderness and mulling over these issues, I can say I finally find TDD to be an entirely productive, happy exercise. TDD isn't worth the time investment for every endeavor, but it's an effective tool for confronting the anxiety & perceived complexity one faces when building a hopefully long-lived system.
 
-This post reflects my current thinking based on my experience up-to-now, but I would never pretend to believe it's the only right way to build great software, much less the only useful way to practice TDD.
+My goal in sharing this with you is that we begin teaching others that *this* is what test-driven development is all about. Novices have little to gain by being put through the useless pain that results from the simplistic assumptions of classical TDD. Let's find ways to teach a more valuable TDD workflow that gives students an immediately valuable tool for breaking down confusingly large problems into manageably small ones.
 
 <!--
 
