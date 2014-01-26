@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500" height="440" viewBox="0, 0, 500, 440">
+  <g id="Background">
+    <rect x="0" y="0" width="500" height="440" fill="#FFFFFF"/>
+  </g>
+  <g id="Layer 1">
+    <g>
+      <path d="M170.723,80.809 L330.277,80.809 L330.277,157.129 L170.723,157.129 z" fill="#FFFFFF"/>
+      <path d="M170.723,80.809 L330.277,80.809 L330.277,157.129 L170.723,157.129 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 248.986, 121.619)">
+      <tspan x="-67.2" y="-10.381" font-family="SourceCodePro-Light" font-size="16" fill="#000000">Monthly Profit </tspan>
+      <tspan x="-52.8" y="9.619" font-family="SourceCodePro-Light" font-size="16" fill="#000000">Report Page</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 250, 30.391)">
+      <tspan x="-96" y="4.215" font-family="SourceCodePro-Regular" font-size="20" fill="#000000">/profits/2013/12</tspan>
+    </text>
+    <path d="M0.5,60.789 L500.5,60.789" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0.684" stroke-dasharray="3,2"/>
+    <path d="M252.5,46.676 L251.5,80.809" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0.684"/>
+    <g>
+      <path d="M282.57,182.34 L442.125,182.34 L442.125,258.66 L282.57,258.66 z" fill="#FFFFFF"/>
+      <path d="M282.57,182.34 L442.125,182.34 L442.125,258.66 L282.57,258.66 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 360.08, 208.988)">
+      <tspan x="-52.8" y="4.172" font-family="SourceCodePro-Light" font-size="16" fill="#000000">CostCounter</tspan>
+    </text>
+    <path d="M246.246,157.129 L150.5,182.34" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M246.246,157.129 L365.5,182.34" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <g>
+      <path d="M8.98,283.461 L138.934,283.461 L138.934,330.324 L8.98,330.324 z" fill="#FFFFFF"/>
+      <path d="M8.98,283.461 L138.934,283.461 L138.934,330.324 L8.98,330.324 z" fill-opacity="0" stroke="#00BA00" stroke-width="2"/>
+    </g>
+    <path d="M135.167,258.66 L91.5,283.461" fill-opacity="0" stroke="#00BA00" stroke-width="2"/>
+    <path d="M-233.809,9.887 L-233.5,9.5" fill-opacity="0" stroke="#00BA00" stroke-width="2" stroke-linecap="round"/>
+    <text transform="matrix(1, 0, 0, 1, 88.788, 319.324)">
+      <tspan x="-76.805" y="2.5" font-family="SourceCodePro-Light" font-size="13" fill="#000000">- fetch(2013,12)</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 73.457, 297.636)">
+      <tspan x="-58.8" y="4.257" font-family="SourceCodePro-Light" font-size="14" fill="#000000">InvoiceFetcher</tspan>
+    </text>
+    <g>
+      <path d="M331.547,101.418 C320.864,101.418 312.203,93.134 312.203,82.916 C312.203,72.698 320.864,64.414 331.547,64.414 C342.23,64.414 350.891,72.698 350.891,82.916 C350.891,93.134 342.23,101.418 331.547,101.418 z" fill="#FFFFFF"/>
+      <path d="M331.547,101.418 C320.864,101.418 312.203,93.134 312.203,82.916 C312.203,72.698 320.864,64.414 331.547,64.414 C342.23,64.414 350.891,72.698 350.891,82.916 C350.891,93.134 342.23,101.418 331.547,101.418 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+    <path d="M319.621,82.543 C319.621,82.543 328.52,88.871 328.52,94.707 C328.52,100.543 336.453,71.512 345.191,74.527" fill-opacity="0" stroke="#00B000" stroke-width="2"/>
+    <text transform="matrix(1, 0, 0, 1, 366.996, 236.167)">
+      <tspan x="-76.805" y="2.5" font-family="SourceCodePro-Light" font-size="13" fill="#000000">- count(2013,12)</tspan>
+    </text>
+    <g>
+      <path d="M162.586,283.461 L299.908,283.461 L299.908,330.324 L162.586,330.324 z" fill="#FFFFFF"/>
+      <path d="M162.586,283.461 L299.908,283.461 L299.908,330.324 L162.586,330.324 z" fill-opacity="0" stroke="#00BA00" stroke-width="2"/>
+    </g>
+    <path d="M170.723,258.66 L205.756,283.461" fill-opacity="0" stroke="#00BA00" stroke-width="2"/>
+    <text transform="matrix(1, 0, 0, 1, 244.91, 319.324)">
+      <tspan x="-76.805" y="2.5" font-family="SourceCodePro-Light" font-size="13" fill="#000000">- apply(invoices)</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 228.747, 297.636)">
+      <tspan x="-58.8" y="4.257" font-family="SourceCodePro-Light" font-size="14" fill="#000000">PaymentApplier</tspan>
+    </text>
+    <g>
+      <path d="M22.583,361.878 L162.534,361.878 L162.534,408.741 L22.583,408.741 z" fill="#FFFFFF"/>
+      <path d="M22.583,361.878 L162.534,361.878 L162.534,408.741 L22.583,408.741 z" fill-opacity="0" stroke="#00BA00" stroke-width="2"/>
+    </g>
+    <path d="M164.895,330.324 L117.5,361.878" fill-opacity="0" stroke="#00BA00" stroke-width="2"/>
+    <text transform="matrix(1, 0, 0, 1, 104.637, 397.741)">
+      <tspan x="-76.805" y="2.5" font-family="SourceCodePro-Light" font-size="13" fill="#000000">- verify(invoice)</tspan>
+    </text>
+    <text transform="matrix(1, -0.004, 0.004, 1, 95.189, 377.226)">
+      <tspan x="-46.2" y="4.257" font-family="SourceCodePro-Light" font-size="14" fill="#000000">AchVerifier</tspan>
+    </text>
+    <g>
+      <path d="M218.168,361.878 L355.49,361.878 L355.49,408.741 L218.168,408.741 z" fill="#FFFFFF"/>
+      <path d="M218.168,361.878 L355.49,361.878 L355.49,408.741 L218.168,408.741 z" fill-opacity="0" stroke="#00BA00" stroke-width="2"/>
+    </g>
+    <path d="M214.134,330.324 L282.57,361.878" fill-opacity="0" stroke="#00BA00" stroke-width="2"/>
+    <text transform="matrix(1, 0, 0, 1, 300.492, 397.741)">
+      <tspan x="-76.805" y="2.5" font-family="SourceCodePro-Light" font-size="13" fill="#000000">- add(payments)</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 284.329, 376.052)">
+      <tspan x="-50.4" y="4.257" font-family="SourceCodePro-Light" font-size="14" fill="#000000">PaymentAdder</tspan>
+    </text>
+    <g>
+      <path d="M56.09,182.34 L215.645,182.34 L215.645,258.66 L56.09,258.66 z" fill="#FFFFFF"/>
+      <path d="M56.09,182.34 L215.645,182.34 L215.645,258.66 L56.09,258.66 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 135.367, 208.988)">
+      <tspan x="-52.8" y="3.678" font-family="SourceCodePro-Light" font-size="16" fill="#000000">MoneyFinder</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 142.283, 236.167)">
+      <tspan x="-76.805" y="2.5" font-family="SourceCodePro-Light" font-size="13" fill="#000000">- find(2013,12)</tspan>
+    </text>
+    <g>
+      <g>
+        <path d="M54.198,174.205 L158.627,174.205 C162.923,174.205 166.405,176.191 166.405,178.641 L166.405,188.73 C166.405,191.18 162.923,193.166 158.627,193.166 L54.198,193.166 C49.903,193.166 46.421,191.18 46.421,188.73 L46.421,178.641 C46.421,176.191 49.903,174.205 54.198,174.205 z" fill="#FFFFFF"/>
+        <path d="M54.198,174.205 L158.627,174.205 C162.923,174.205 166.405,176.191 166.405,178.641 L166.405,188.73 C166.405,191.18 162.923,193.166 158.627,193.166 L54.198,193.166 C49.903,193.166 46.421,191.18 46.421,188.73 L46.421,178.641 C46.421,176.191 49.903,174.205 54.198,174.205 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      </g>
+      <text transform="matrix(1, 0, 0, 1, 107.967, 183.186)">
+        <tspan x="-57.938" y="4.52" font-family="SourceCodePro-Bold" font-size="14" fill="#000000">Collaboration</tspan>
+      </text>
+    </g>
+    <g>
+      <g>
+        <path d="M170.364,73.436 L274.792,73.436 C279.088,73.436 282.57,75.422 282.57,77.871 L282.57,87.961 C282.57,90.411 279.088,92.396 274.792,92.396 L170.364,92.396 C166.068,92.396 162.586,90.411 162.586,87.961 L162.586,77.871 C162.586,75.422 166.068,73.436 170.364,73.436 z" fill="#FFFFFF"/>
+        <path d="M170.364,73.436 L274.792,73.436 C279.088,73.436 282.57,75.422 282.57,77.871 L282.57,87.961 C282.57,90.411 279.088,92.396 274.792,92.396 L170.364,92.396 C166.068,92.396 162.586,90.411 162.586,87.961 L162.586,77.871 C162.586,75.422 166.068,73.436 170.364,73.436 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      </g>
+      <text transform="matrix(1, 0, 0, 1, 224.133, 82.416)">
+        <tspan x="-57.938" y="4.52" font-family="SourceCodePro-Bold" font-size="14" fill="#000000">Collaboration</tspan>
+      </text>
+    </g>
+    <g>
+      <g>
+        <path d="M161.945,270.363 L266.373,270.363 C270.669,270.363 274.151,272.349 274.151,274.799 L274.151,284.888 C274.151,287.338 270.669,289.324 266.373,289.324 L161.945,289.324 C157.649,289.324 154.167,287.338 154.167,284.888 L154.167,274.799 C154.167,272.349 157.649,270.363 161.945,270.363 z" fill="#FFFFFF"/>
+        <path d="M161.945,270.363 L266.373,270.363 C270.669,270.363 274.151,272.349 274.151,274.799 L274.151,284.888 C274.151,287.338 270.669,289.324 266.373,289.324 L161.945,289.324 C157.649,289.324 154.167,287.338 154.167,284.888 L154.167,274.799 C154.167,272.349 157.649,270.363 161.945,270.363 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      </g>
+      <text transform="matrix(1, 0, 0, 1, 215.714, 279.344)">
+        <tspan x="-57.938" y="4.52" font-family="SourceCodePro-Bold" font-size="14" fill="#000000">Collaboration</tspan>
+      </text>
+    </g>
+    <g>
+      <path d="M214.159,202.188 C203.476,202.188 194.815,193.904 194.815,183.686 C194.815,173.467 203.476,165.184 214.159,165.184 C224.842,165.184 233.503,173.467 233.503,183.686 C233.503,193.904 224.842,202.188 214.159,202.188 z" fill="#FFFFFF"/>
+      <path d="M214.159,202.188 C203.476,202.188 194.815,193.904 194.815,183.686 C194.815,173.467 203.476,165.184 214.159,165.184 C224.842,165.184 233.503,173.467 233.503,183.686 C233.503,193.904 224.842,202.188 214.159,202.188 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+    <path d="M202.233,183.312 C202.233,183.312 211.132,189.64 211.132,195.476 C211.132,201.312 219.065,172.281 227.803,175.297" fill-opacity="0" stroke="#00B000" stroke-width="2"/>
+    <g>
+      <path d="M300.992,297.393 C292.619,297.393 285.83,290.9 285.83,282.891 C285.83,274.881 292.619,268.389 300.992,268.389 C309.366,268.389 316.154,274.881 316.154,282.891 C316.154,290.9 309.366,297.393 300.992,297.393 z" fill="#FFFFFF"/>
+      <path d="M300.992,297.393 C292.619,297.393 285.83,290.9 285.83,282.891 C285.83,274.881 292.619,268.389 300.992,268.389 C309.366,268.389 316.154,274.881 316.154,282.891 C316.154,290.9 309.366,297.393 300.992,297.393 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+    <path d="M291.645,282.598 C291.645,282.598 298.619,287.558 298.619,292.132 C298.619,296.707 304.838,273.952 311.687,276.315" fill-opacity="0" stroke="#00B000" stroke-width="2"/>
+    <path d="M0.5,0.5 L499.5,0.5 L499.5,439.5 L0.5,439.5 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+  </g>
+  <defs/>
+</svg>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500" height="440" viewBox="0, 0, 500, 440">
+  <g id="Background">
+    <rect x="0" y="0" width="500" height="440" fill="#FFFFFF"/>
+  </g>
+  <g id="Layer 1">
+    <g>
+      <path d="M170.723,80.809 L330.277,80.809 L330.277,157.129 L170.723,157.129 z" fill="#FFFFFF"/>
+      <path d="M170.723,80.809 L330.277,80.809 L330.277,157.129 L170.723,157.129 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 248.986, 121.619)">
+      <tspan x="-67.2" y="-10.381" font-family="SourceCodePro-Light" font-size="16" fill="#000000">Monthly Profit </tspan>
+      <tspan x="-52.8" y="9.619" font-family="SourceCodePro-Light" font-size="16" fill="#000000">Report Page</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 250, 30.391)">
+      <tspan x="-96" y="4.215" font-family="SourceCodePro-Regular" font-size="20" fill="#000000">/profits/2013/12</tspan>
+    </text>
+    <path d="M0.5,60.789 L500.5,60.789" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0.684" stroke-dasharray="3,2"/>
+    <path d="M252.5,46.676 L251.5,80.809" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0.684"/>
+    <g>
+      <path d="M56.09,182.34 L215.645,182.34 L215.645,258.66 L56.09,258.66 z" fill="#FFFFFF"/>
+      <path d="M56.09,182.34 L215.645,182.34 L215.645,258.66 L56.09,258.66 z" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-dasharray="6,5"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 133.6, 220.988)">
+      <tspan x="-62.4" y="-7.828" font-family="SourceCodePro-Light" font-size="16" fill="#000000">Finds Revenue </tspan>
+      <tspan x="-38.4" y="12.172" font-family="SourceCodePro-Light" font-size="16" fill="#000000">By Month</tspan>
+    </text>
+    <g>
+      <path d="M282.57,182.34 L442.125,182.34 L442.125,258.66 L282.57,258.66 z" fill="#FFFFFF"/>
+      <path d="M282.57,182.34 L442.125,182.34 L442.125,258.66 L282.57,258.66 z" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-dasharray="6,5"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 360.08, 220.988)">
+      <tspan x="-52.8" y="-7.828" font-family="SourceCodePro-Light" font-size="16" fill="#000000">Finds Costs </tspan>
+      <tspan x="-38.4" y="12.172" font-family="SourceCodePro-Light" font-size="16" fill="#000000">By Month</tspan>
+    </text>
+    <path d="M246.246,157.129 L150.5,182.34" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M246.246,157.129 L365.5,182.34" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <g>
+      <path d="M7.832,116.711 L164.77,116.711 L164.77,163.574 L7.832,163.574 z" fill="#FFFFFF"/>
+      <path d="M7.832,116.711 L164.77,116.711 L164.77,163.574 L7.832,163.574 z" fill-opacity="0" stroke="#00BA00" stroke-width="2"/>
+    </g>
+    <path d="M170.723,101.418 L87.5,116.711" fill-opacity="0" stroke="#00BA00" stroke-width="2"/>
+    <path d="M-233.809,9.887 L-233.5,9.5" fill-opacity="0" stroke="#00BA00" stroke-width="2" stroke-linecap="round"/>
+    <text transform="matrix(1, 0, 0, 1, 98.465, 151.129)">
+      <tspan x="-76.805" y="2.5" font-family="SourceCodePro-Light" font-size="13" fill="#000000">- find(2013,12)</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 88.465, 128.92)">
+      <tspan x="-75.6" y="4.291" font-family="SourceCodePro-Light" font-size="14" fill="#000000">MoneyFinder (Fake)</tspan>
+    </text>
+    <g>
+      <path d="M336.56,120.357 L493.5,120.357 L493.5,167.221 L336.56,167.221 z" fill="#FFFFFF"/>
+      <path d="M336.56,120.357 L493.5,120.357 L493.5,167.221 L336.56,167.221 z" fill-opacity="0" stroke="#00BA00" stroke-width="2"/>
+    </g>
+    <path d="M330.277,101.418 L415.167,120.357" fill-opacity="0" stroke="#00BA00" stroke-width="2"/>
+    <text transform="matrix(1, 0, 0, 1, 427.195, 154.775)">
+      <tspan x="-76.805" y="2.5" font-family="SourceCodePro-Light" font-size="13" fill="#000000">- count(2013,12)</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 417.195, 132.566)">
+      <tspan x="-75.6" y="4.291" font-family="SourceCodePro-Light" font-size="14" fill="#000000">CostCounter (Fake)</tspan>
+    </text>
+    <g>
+      <path d="M331.547,101.418 C320.864,101.418 312.203,93.134 312.203,82.916 C312.203,72.698 320.864,64.414 331.547,64.414 C342.23,64.414 350.891,72.698 350.891,82.916 C350.891,93.134 342.23,101.418 331.547,101.418 z" fill="#FFFFFF"/>
+      <path d="M331.547,101.418 C320.864,101.418 312.203,93.134 312.203,82.916 C312.203,72.698 320.864,64.414 331.547,64.414 C342.23,64.414 350.891,72.698 350.891,82.916 C350.891,93.134 342.23,101.418 331.547,101.418 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+    <path d="M319.621,82.543 C319.621,82.543 328.52,88.871 328.52,94.707 C328.52,100.543 336.453,71.512 345.191,74.527" fill-opacity="0" stroke="#00B000" stroke-width="2"/>
+    <g>
+      <g>
+        <path d="M171.547,73.436 L275.976,73.436 C280.272,73.436 283.754,75.422 283.754,77.871 L283.754,87.961 C283.754,90.411 280.272,92.396 275.976,92.396 L171.547,92.396 C167.252,92.396 163.77,90.411 163.77,87.961 L163.77,77.871 C163.77,75.422 167.252,73.436 171.547,73.436 z" fill="#FFFFFF"/>
+        <path d="M171.547,73.436 L275.976,73.436 C280.272,73.436 283.754,75.422 283.754,77.871 L283.754,87.961 C283.754,90.411 280.272,92.396 275.976,92.396 L171.547,92.396 C167.252,92.396 163.77,90.411 163.77,87.961 L163.77,77.871 C163.77,75.422 167.252,73.436 171.547,73.436 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      </g>
+      <text transform="matrix(1, 0, 0, 1, 225.316, 82.416)">
+        <tspan x="-57.938" y="4.52" font-family="SourceCodePro-Bold" font-size="14" fill="#000000">Collaboration</tspan>
+      </text>
+    </g>
+    <path d="M0.5,0.5 L499.5,0.5 L499.5,439.5 L0.5,439.5 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+  </g>
+  <defs/>
+</svg>

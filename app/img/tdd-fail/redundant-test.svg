@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500" height="440" viewBox="0, 0, 500, 440">
+  <g id="Background">
+    <rect x="0" y="0" width="500" height="440" fill="#FFFFFF"/>
+  </g>
+  <g id="Layer 1">
+    <g>
+      <path d="M41.012,39.425 L199.108,38.405 L214.532,55.736 L215.818,215.794 C215.818,215.794 52.575,216.813 44.868,216.813 C37.161,216.813 41.012,39.425 41.012,39.425 z" fill="#FFFFFF"/>
+      <path d="M41.012,39.425 L199.108,38.405 L214.532,55.736 L215.818,215.794 C215.818,215.794 52.575,216.813 44.868,216.813 C37.161,216.813 41.012,39.425 41.012,39.425 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 127.434, 25.619)">
+      <tspan x="-32.13" y="6.235" font-family="SourceSansPro-Light" font-size="18" fill="#000000">Unit Test</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 91.84, 90.27)">
+      <tspan x="-36.322" y="-0.89" font-family="SourceCodePro-Bold" font-size="13" fill="#E30000">itShould</tspan>
+    </text>
+    <path d="M130.357,86.177 C138.56,84.201 140.403,85.39 147.281,88.288 C150.063,89.46 154.484,85.948 158.28,86.862 C161.311,87.592 163.292,89.299 166.74,89.714 C172.048,90.353 177.074,87.575 181.969,87.575" fill-opacity="0" stroke="#CB0000" stroke-width="1" stroke-linecap="round"/>
+    <path d="M128.662,121.142 C133.356,119.738 167.981,122.016 168.429,121.828 C169.499,121.377 169.783,119.831 170.967,119.689 C173.531,119.38 174.696,122.233 176.89,122.541 C179.312,122.881 184.232,121.828 187.042,121.828" fill-opacity="0" stroke="#CB0000" stroke-width="1" stroke-linecap="round"/>
+    <path d="M129.508,153.941 C137.143,147.92 147.073,154.446 148.97,153.913 C149.64,153.725 152.711,150.161 154.046,150.348 C157.781,150.873 156.153,155.936 160.815,154.626 C162.904,154.039 163.718,151.366 165.891,151.061 C169.597,150.541 167.091,154.289 170.967,153.2 C177.669,151.318 181.9,147.934 188.734,151.774" fill-opacity="0" stroke="#CB0000" stroke-width="1" stroke-linecap="round"/>
+    <g>
+      <path d="M281.004,38.815 L439.09,37.884 L454.513,53.719 L455.798,199.956 C455.798,199.956 292.566,200.888 284.86,200.888 C277.153,200.888 281.004,38.815 281.004,38.815 z" fill="#FFFFFF"/>
+      <path d="M281.004,38.815 L439.09,37.884 L454.513,53.719 L455.798,199.956 C455.798,199.956 292.566,200.888 284.86,200.888 C277.153,200.888 281.004,38.815 281.004,38.815 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 383.418, 141.202)">
+      <tspan x="-85.002" y="-64.5" font-family="SourceCodePro-Light" font-size="16" fill="#000000">doStuff() {</tspan>
+      <tspan x="-85.002" y="15.5" font-family="SourceCodePro-Light" font-size="16" fill="#000000">  </tspan>
+      <tspan x="-65.802" y="15.5" font-family="SourceCodePro-Bold" font-size="16" fill="#00C200">  </tspan>
+      <tspan x="-85.002" y="35.5" font-family="SourceCodePro-Light" font-size="16" fill="#000000">}</tspan>
+    </text>
+    <path d="M316.786,95.919 C325.193,109.341 336.559,93.275 347.79,94.88 C355.932,96.043 363.53,101.46 370.79,103.88 C375.851,105.567 375.909,100.456 378.79,99.88 C380.996,99.439 400.447,105.442 408.79,99.88" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-linecap="round"/>
+    <path d="M317.918,129.956 C324.187,131.932 330.242,134.474 336.922,133.917 C347.825,133.008 348.625,123.836 355.922,120.917 C362.424,118.316 373.084,128.723 377.922,127.917 C381.03,127.399 383.882,120.41 386.922,120.917 C393.834,122.069 397.084,127.917 407.922,127.917" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-linecap="round"/>
+    <text transform="matrix(1, 0, 0, 1, 367.42, 19.749)">
+      <tspan x="-23.796" y="6" font-family="SourceSansPro-Light" font-size="18" fill="#000000">Parent</tspan>
+    </text>
+    <g>
+      <path d="M282.843,250.833 L435.497,249.896 L450.39,265.828 L451.631,412.966 C451.631,412.966 294.008,413.903 286.566,413.903 C279.125,413.903 282.843,250.833 282.843,250.833 z" fill="#FFFFFF"/>
+      <path d="M282.843,250.833 L435.497,249.896 L450.39,265.828 L451.631,412.966 C451.631,412.966 294.008,413.903 286.566,413.903 C279.125,413.903 282.843,250.833 282.843,250.833 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 376.292, 359.481)">
+      <tspan x="-85.002" y="-64.5" font-family="SourceCodePro-Light" font-size="16" fill="#000000">do() {</tspan>
+      <tspan x="-85.002" y="15.5" font-family="SourceCodePro-Light" font-size="16" fill="#000000">}</tspan>
+    </text>
+    <path d="M313.251,319.95 C332.272,329.423 351.207,313.911 357.917,313.911 C360.854,313.911 362.89,316.595 365.798,316.911 C373.01,317.696 382.397,313.911 390.755,313.911" fill-opacity="0" stroke="#00D300" stroke-width="1" stroke-linecap="round"/>
+    <path d="M313.251,352.573 C339.058,336.44 339.049,350.534 356.255,350.534 C364.667,350.534 371.62,348.079 379.255,345.534 C381.938,344.639 403.52,348.534 409.255,348.534" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-linecap="round"/>
+    <text transform="matrix(1, 0, 0, 1, 366.273, 151.764)">
+      <tspan x="-48" y="5.5" font-family="SourceCodePro-Light" font-size="16" fill="#000002">child.do()</tspan>
+    </text>
+    <g>
+      <path d="M47.029,260.391 L199.683,259.453 L214.577,275.386 L215.818,422.524 C215.818,422.524 58.194,423.461 50.753,423.461 C43.311,423.461 47.029,260.391 47.029,260.391 z" fill="#FFFFFF"/>
+      <path d="M47.029,260.391 L199.683,259.453 L214.577,275.386 L215.818,422.524 C215.818,422.524 58.194,423.461 50.753,423.461 C43.311,423.461 47.029,260.391 47.029,260.391 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 127.434, 246.953)">
+      <tspan x="-35.685" y="6" font-family="SourceSansPro-Light" font-size="18" fill="#000000">Child Test</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 127.434, 299.521)">
+      <tspan x="-71.916" y="-0.89" font-family="SourceCodePro-Light" font-size="13" fill="#000000">itShould</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 127.434, 331.4)">
+      <tspan x="-71.916" y="-0.89" font-family="SourceCodePro-Bold" font-size="13" fill="#00CB00">itShouldInstead</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 370.418, 233.702)">
+      <tspan x="-18.918" y="6" font-family="SourceSansPro-Light" font-size="18" fill="#000000">Child</tspan>
+    </text>
+    <path d="M131.539,297.539 C142.301,283.239 142.453,303.394 150.5,302.5 C154.953,302.005 161.722,287.574 191.5,297.5" fill-opacity="0" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+    <path d="M177.5,328.064 C181.332,335.327 185.409,324.304 187.436,324.304 C189.24,324.304 191.756,329.23 194.546,328.016 C195.944,327.407 197.417,322.46 198.812,323.066 C200.871,323.962 202.105,326.778 204.5,326.778" fill-opacity="0" stroke="#00C600" stroke-width="2" stroke-linecap="round"/>
+    <text transform="matrix(1, 0, 0, 1, 91.84, 126.747)">
+      <tspan x="-36.322" y="-0.89" font-family="SourceCodePro-Bold" font-size="13" fill="#E30000">itShould</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 93.353, 157.154)">
+      <tspan x="-34.809" y="-0.89" font-family="SourceCodePro-Bold" font-size="13" fill="#E30000">itShould</tspan>
+    </text>
+  </g>
+  <defs/>
+</svg>

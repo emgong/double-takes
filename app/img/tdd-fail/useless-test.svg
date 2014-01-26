@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500" height="440" viewBox="0, 0, 500, 440">
+  <g id="Background">
+    <rect x="0" y="0" width="500" height="440" fill="#FFFFFF"/>
+  </g>
+  <g id="Layer 1">
+    <g>
+      <path d="M41.012,39.69 L199.108,38.67 L214.532,56.001 L215.818,216.059 C215.818,216.059 52.575,217.078 44.868,217.078 C37.161,217.078 41.012,39.69 41.012,39.69 z" fill="#FFFFFF"/>
+      <path d="M41.012,39.69 L199.108,38.67 L214.532,56.001 L215.818,216.059 C215.818,216.059 52.575,217.078 44.868,217.078 C37.161,217.078 41.012,39.69 41.012,39.69 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 127.434, 25.619)">
+      <tspan x="-32.13" y="6.235" font-family="SourceSansPro-Light" font-size="18" fill="#000000">Unit Test</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 127.434, 90.27)">
+      <tspan x="-71.916" y="-0.89" font-family="SourceCodePro-Light" font-size="13" fill="#000000">itShould</tspan>
+    </text>
+    <path d="M130.357,86.177 C138.56,84.201 140.403,85.39 147.281,88.288 C150.063,89.46 154.484,85.948 158.28,86.862 C161.311,87.592 163.292,89.299 166.74,89.714 C172.048,90.353 177.074,87.575 181.969,87.575" fill-opacity="0" stroke="#00C000" stroke-width="1" stroke-linecap="round"/>
+    <text transform="matrix(1, 0, 0, 1, 93.279, 127.374)">
+      <tspan x="-37.761" y="-0.89" font-family="SourceCodePro-Light" font-size="13" fill="#000000">itShould</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 92.263, 155.154)">
+      <tspan x="-36.745" y="-0.89" font-family="SourceCodePro-Light" font-size="13" fill="#000000">itShould</tspan>
+    </text>
+    <path d="M128.662,121.142 C133.356,119.738 167.981,122.016 168.429,121.828 C169.499,121.377 169.783,119.831 170.967,119.689 C173.531,119.38 174.696,122.233 176.89,122.541 C179.312,122.881 184.232,121.828 187.042,121.828" fill-opacity="0" stroke="#00C000" stroke-width="1" stroke-linecap="round"/>
+    <path d="M129.508,153.941 C137.143,147.92 147.073,154.446 148.97,153.913 C149.64,153.725 152.711,150.161 154.046,150.348 C157.781,150.873 156.153,155.936 160.815,154.626 C162.904,154.039 163.718,151.366 165.891,151.061 C169.597,150.541 167.091,154.289 170.967,153.2 C177.669,151.318 181.9,147.934 188.734,151.774" fill-opacity="0" stroke="#00C000" stroke-width="1" stroke-linecap="round"/>
+    <g>
+      <path d="M281.004,38.815 L439.09,37.884 L454.513,53.719 L455.798,199.956 C455.798,199.956 292.566,200.888 284.86,200.888 C277.153,200.888 281.004,38.815 281.004,38.815 z" fill="#FFFFFF"/>
+      <path d="M281.004,38.815 L439.09,37.884 L454.513,53.719 L455.798,199.956 C455.798,199.956 292.566,200.888 284.86,200.888 C277.153,200.888 281.004,38.815 281.004,38.815 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 383.418, 141.202)">
+      <tspan x="-85.002" y="-64.5" font-family="SourceCodePro-Light" font-size="16" fill="#000000">doStuff() {</tspan>
+      <tspan x="-85.002" y="15.5" font-family="SourceCodePro-Light" font-size="16" fill="#000000">  </tspan>
+      <tspan x="-65.802" y="15.5" font-family="SourceCodePro-Bold" font-size="16" fill="#00C200">  </tspan>
+      <tspan x="-85.002" y="35.5" font-family="SourceCodePro-Light" font-size="16" fill="#000000">}</tspan>
+    </text>
+    <path d="M316.786,95.919 C325.193,109.341 336.559,93.275 347.79,94.88 C355.932,96.043 363.53,101.46 370.79,103.88 C375.851,105.567 375.909,100.456 378.79,99.88 C380.996,99.439 400.447,105.442 408.79,99.88" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-linecap="round"/>
+    <path d="M317.918,129.956 C324.187,131.932 330.242,134.474 336.922,133.917 C347.825,133.008 348.625,123.836 355.922,120.917 C362.424,118.316 373.084,128.723 377.922,127.917 C381.03,127.399 383.882,120.41 386.922,120.917 C393.834,122.069 397.084,127.917 407.922,127.917" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-linecap="round"/>
+    <text transform="matrix(1, 0, 0, 1, 367.42, 19.749)">
+      <tspan x="-23.796" y="6" font-family="SourceSansPro-Light" font-size="18" fill="#000000">Parent</tspan>
+    </text>
+    <g>
+      <path d="M330.791,278.638 L449.903,277.907 L461.524,290.338 L462.493,405.147 C462.493,405.147 339.503,405.878 333.696,405.878 C327.89,405.878 330.791,278.638 330.791,278.638 z" fill="#FFFFFF"/>
+      <path d="M330.791,278.638 L449.903,277.907 L461.524,290.338 L462.493,405.147 C462.493,405.147 339.503,405.878 333.696,405.878 C327.89,405.878 330.791,278.638 330.791,278.638 z" fill-opacity="0" stroke="#B9BBBC" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 375.127, 344.285)">
+      <tspan x="-32.295" y="-30.793" font-family="SourceCodePro-Light" font-size="13" fill="#B3B5B0">do() {</tspan>
+      <tspan x="-32.295" y="37.207" font-family="SourceCodePro-Light" font-size="13" fill="#B3B5B0">}</tspan>
+    </text>
+    <path d="M354.518,332.569 C369.359,339.96 384.134,327.857 389.369,327.857 C391.661,327.857 393.25,329.951 395.519,330.198 C401.146,330.81 408.471,327.857 414.992,327.857" fill-opacity="0" stroke="#BEBCBC" stroke-width="1" stroke-linecap="round"/>
+    <path d="M354.518,358.024 C374.654,345.435 374.647,356.433 388.073,356.433 C394.636,356.433 400.061,354.517 406.019,352.531 C408.113,351.833 424.952,354.872 429.427,354.872" fill-opacity="0" stroke="#BEBCBC" stroke-width="1" stroke-linecap="round"/>
+    <text transform="matrix(1, 0, 0, 1, 366.273, 151.764)">
+      <tspan x="-48" y="5.5" font-family="SourceCodePro-Light" font-size="16" fill="#000002">child.do()</tspan>
+    </text>
+    <g>
+      <path d="M47.029,260.391 L199.683,259.453 L214.577,275.386 L215.818,422.524 C215.818,422.524 58.194,423.461 50.753,423.461 C43.311,423.461 47.029,260.391 47.029,260.391 z" fill="#FFFFFF"/>
+      <path d="M47.029,260.391 L199.683,259.453 L214.577,275.386 L215.818,422.524 C215.818,422.524 58.194,423.461 50.753,423.461 C43.311,423.461 47.029,260.391 47.029,260.391 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 127.434, 246.953)">
+      <tspan x="-35.685" y="6" font-family="SourceSansPro-Light" font-size="18" fill="#000000">Child Test</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 127.434, 299.521)">
+      <tspan x="-71.916" y="-0.89" font-family="SourceCodePro-Light" font-size="13" fill="#000000">itShould</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 127.434, 331.4)">
+      <tspan x="-71.916" y="-0.89" font-family="SourceCodePro-Light" font-size="13" fill="#000000">itShouldInstead</tspan>
+    </text>
+    <path d="M131.539,297.539 C142.301,283.239 142.453,303.394 150.5,302.5 C154.953,302.005 161.722,287.574 191.5,297.5" fill-opacity="0" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+    <g>
+      <path d="M177.5,328.064 C181.332,335.327 185.409,324.304 187.436,324.304 C189.24,324.304 191.756,329.23 194.546,328.016 C195.944,327.407 197.417,322.46 198.812,323.066 C200.871,323.962 202.105,326.778 204.5,326.778" fill="#FFFFFF"/>
+      <path d="M177.5,328.064 C181.332,335.327 185.409,324.304 187.436,324.304 C189.24,324.304 191.756,329.23 194.546,328.016 C195.944,327.407 197.417,322.46 198.812,323.066 C200.871,323.962 202.105,326.778 204.5,326.778" fill-opacity="0" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g>
+      <path d="M233.479,234.134 L319.329,233.912 L327.705,237.681 L328.403,272.481 C328.403,272.481 239.758,272.703 235.573,272.703 C231.388,272.703 233.479,234.134 233.479,234.134 z" fill="#FFFFFF"/>
+      <path d="M233.479,234.134 L319.329,233.912 L327.705,237.681 L328.403,272.481 C328.403,272.481 239.758,272.703 235.573,272.703 C231.388,272.703 233.479,234.134 233.479,234.134 z" fill-opacity="0" stroke="#00C000" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 282.991, 252.808)">
+      <tspan x="-35.282" y="4.707" font-family="SourceCodePro-Bold" font-size="16" fill="#00C400">do()</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 280.18, 222.51)">
+      <tspan x="-37.152" y="5.098" font-family="SourceSansPro-Black" font-size="16" fill="#00C800">Fake Child</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 391.473, 265.407)">
+      <tspan x="-18.918" y="6" font-family="SourceSansPro-Light" font-size="18" fill="#B0B1B1">Child</tspan>
+    </text>
+    <g>
+      <path d="M191.5,162.764 L227.507,205.242" fill-opacity="0" stroke="#00C200" stroke-width="1"/>
+      <path d="M225.219,207.182 L232.68,211.345 L229.796,203.302 z" fill="#00C200" fill-opacity="1" stroke="#00C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M191.5,128.5 L246.911,198.445" fill-opacity="0" stroke="#00C200" stroke-width="1"/>
+      <path d="M244.56,200.308 L251.879,204.716 L249.263,196.583 z" fill="#00C200" fill-opacity="1" stroke="#00C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M191.5,89.81 L264.868,198.05" fill-opacity="0" stroke="#00C200" stroke-width="1"/>
+      <path d="M262.385,199.733 L269.357,204.672 L267.352,196.367 z" fill="#00C200" fill-opacity="1" stroke="#00C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M354.518,169.544 L332.076,214.161" fill-opacity="0" stroke="#00C200" stroke-width="1"/>
+      <path d="M329.396,212.813 L328.481,221.308 L334.756,215.509 z" fill="#00C200" fill-opacity="1" stroke="#00C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+  </g>
+  <defs/>
+</svg>
