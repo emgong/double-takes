@@ -17,7 +17,7 @@ The problems with how TDD is typically introduced are fundamental, because they 
   <figcaption>Fig. 1 — Seriously, though, WTF?</figcaption>
 </figure>
 
-I think this illustration captures why arguments between developers over TDD tend to be unsatisfyingly dissonant. When a developer lodges a complaint like, "mock objects were everywhere and it was awful", another developer operating from the context of the taller mountain might reply, "huh? Mock objects are everywhere and it's wonderful!" In fact, it's typical for folks to talk over one another other in debates about TDD, and I believe it's because we use the same words and tools to describe and practice entirely unrelated activities. What's a valid problem with TDD from the mountain on the left comes across as nonsense to someone scaling the mountain on the right.
+I think this illustration captures why arguments between developers over TDD tend to be unsatisfyingly dissonant. When a developer lodges a complaint like, "mock objects were everywhere and it was awful", another developer operating from the context of the taller mountain might reply, "huh? Mock objects are everywhere and it's wonderful!" In fact, it's typical for folks to talk over one another in debates about TDD, and I believe it's because we use the same words and tools to describe and practice entirely unrelated activities. What's a valid problem with TDD from the mountain on the left comes across as nonsense to someone scaling the mountain on the right.
 
 If I'm right (judge for yourself below), I think this argument might explain why so many developers who were once excited by the promise and initial experience of TDD eventually grew disillusioned with it.
 
@@ -42,7 +42,7 @@ For starters, if you intend for every test to make some progress in *directly so
   <figcaption>Fig. 2 — Consider the above. If a new requirement were introduced, most developers would feel inclined to add additional complexity to the existing unit as opposed to preemptively assuming that the new requirement should demand the creation of a new unit.</figcaption>
 </figure>
 
-Preventing your code's design from growing into a large, sprawling mess is left as an exercise for the programmer. This is why many TDD advocates call for a "heavy refactor step" after tests pass, because they recognize this workflow requires intervention on the part of the developer to step back and identify any opportunities to simplify the design.
+Preventing your code's design from growing into a large, sprawling mess is left as an exercise to the developer. This is why many TDD advocates call for a "heavy refactor step" after tests pass, because they recognize this workflow requires intervention on the part of the developer to step back and identify any opportunities to simplify the design.
 
 Refactoring after each green test is gospel among TDD advocates ("red-green-refactor", after all), but in practice most developers often skip it mistakenly, because nothing about the TDD workflow inherently compels people to refactor until they've got a mess on their hands. 
 
@@ -102,7 +102,7 @@ It's at this point that I've seen numerous teams reach a complete dead end, with
 
 ### Failure #6: Making a Mess with Mocks
 
-Even though I'm usually on team "Yay mocks!", their use in a situation like this one is unfortunate. First, by replacing the child unit with a test double, the parent unit's test is going to become convoluted: part of the test will specify bits of logical behavior carried out by the parent, while other parts will specify the intended collaboration between the parent and child object. In addition to juggling both concerns, the tester's hands will be tied in *how* the parent-child collaboration is specified because any stubbing will need to be made to agree with whatever logic the parent implements.
+Even though I'm usually on team "Yay mocks!", their use in a situation like this one is unfortunate. First, by replacing the child unit with a test double, the parent unit's test is going to become convoluted: part of the test will specify bits of logical behavior carried out by the parent, while other parts will specify the intended collaboration between the parent and child objects. In addition to juggling both concerns, the tester's hands will be tied in *how* the parent-child collaboration is specified because any stubbing will need to be made to agree with whatever logic the parent implements.
 
 Tests that specify both logical behavior and unit collaboration like this are very difficult to read, comprehend, and change. And yet, this frightening scenario probably describes the vast majority of tests in which test doubles are used. It's no wonder I hear so many complaints of "over-mocking" in unit tests, a claim that until relatively recently befuddled me.
 
@@ -113,7 +113,7 @@ The solution to this mess is also a lot of work. The parent unit needs to be ref
   <figcaption>Fig. 7 — A second child object is extracted to encapsulate any remaining behavior in the parent, the parent's test is then replaced with a test specifying the interaction of the two children.</figcaption>
 </figure>
 
-**Ouch.** It takes such rigor and discipline to maintain a clean codebase, comprehensible tests, and fast build times when you take this approach that it's no wonder few teams fall short of realizing their hopes with TDD.
+**Ouch.** It takes such rigor and discipline to maintain a clean codebase, comprehensible tests, and fast build times when you take this approach that it's no wonder why few teams ultimately realize their goals with TDD.
 
 ## A Successful Approach to TDD
 
@@ -125,7 +125,7 @@ First, consider the resulting artifacts of the roundabout, painful process detai
 * The parent's unit test, which specifies the interaction of the two children
 * The two child units, each with a unit test specifying the logic for which they're responsible
 
-If this is where we're bound to end up, why not head in that direction from the outset? That's the approach I take, and as a result I think of TDD as an exercise in **reductionism**.
+If this is where we're bound to end up, why not head in that direction from the outset? My approach to TDD considers this, and could be described as an exercise in **reductionism**.
 
 Here's my process:
 
@@ -149,7 +149,7 @@ This would also be a good opportunity to encode the public contract in an integr
   ![Fig 10. Step 3](/img/tdd-fail/step3.svg)
 </figure>
 
-**(4)** Start writing a unit test for the entry point, but *instead of immediately trying to solve the problem*, intentionally defer writing any implementation logic! Instead, break down the problem by dreaming up all of the objects you wish you had at your disposal (e.g. "This controller would be simple if only it could depend on something that gave it revenue by month and on something else that gave it costs by month")
+**(4)** Start writing a unit test for the entry point, but *instead of immediately trying to solve the problem*, intentionally defer writing any implementation logic! Instead, break down the problem by dreaming up all of the objects you wish you had at your disposal (e.g. "This controller would be simple if only it could depend on something that gave it revenue by month and on something else that gave it costs by month").
 
 This step improves your design by encouraging small, single-purpose units by default.
 
@@ -183,7 +183,7 @@ Tests of "logical units" exhaustively specify useful behavior and should give th
   ![Fig 14. Step 7](/img/tdd-fail/step7.svg)
 </figure>
 
-I like to call this process "Fake it until you make it™", and while it's definitely based on the keen insights of [GOOS](http://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627), it places a fresh emphasis on reductionism. I also find value in discriminating the responsibilities "collaboration units" from "logical units" for clearer tests and more maintainable code.
+I like to call this process "Fake it until you make it™", and while it's definitely based on the keen insights of [GOOS](http://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627), it places a fresh emphasis on reductionism. I also find value in discriminating between the responsibilities of "collaboration units" and "logical units", both for clearer tests and also for more consistent code.
 
 Note also that there is no heavy refactor step necessary when you take this approach to TDD. Extract refactors become an exceptional case and not part of one's routine, which means all the downstream costs of extract refactors that I detailed earlier can be avoided.
 
