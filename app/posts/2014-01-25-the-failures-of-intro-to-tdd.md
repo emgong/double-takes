@@ -23,13 +23,13 @@ If I'm right (judge for yourself below), I think this argument might explain why
 
 ## Teaching "classic TDD" with code katas.
 
-Let's talk about using [code katas](http://en.wikipedia.org/wiki/Kata_(programming) to teach TDD. 
+Let's talk about using [code katas](http://en.wikipedia.org/wiki/Kata_(programming) to teach TDD.
 
 I started the group with a brief demonstration of test-driving a function that returns the Fibonacci number for a given index. I was stumbling over myself to emphasize that the entire day's examples were *not very realistic*, but might at least illustrate the basic rhythm of "red-green-refactor". Later, we moved on to a walkthrough of [Uncle Bob's bowling game kata](http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata). Finally, we finished the day with the attendees pairing off to implement their own Roman-to-Arabic numeral conversion function.
 
-The next day I stood at the whiteboard and asked the class to summarize what they perceived as the *benefits* of TDD. Unsurprisingly (but importantly), every attendee perceived TDD as being about correctness: "code free of defects", "automated regression testing vs. manual", "changing code without fear of breaking it," etc. 
+The next day I stood at the whiteboard and asked the class to summarize what they perceived as the *benefits* of TDD. Unsurprisingly (but importantly), every attendee perceived TDD as being about correctness: "code free of defects", "automated regression testing vs. manual", "changing code without fear of breaking it," etc.
 
-When I reacted to their answers by telling the class that TDD's primary benefit is to improve the *design* of our code, they were caught entirely off guard. And when I told them that any regression safety gained by TDD is at best secondary and at worst illusory, they started looking over their shoulders to make sure their manager didn't hear me. This did not sound like the bill of goods they had been sold. 
+When I reacted to their answers by telling the class that TDD's primary benefit is to improve the *design* of our code, they were caught entirely off guard. And when I told them that any regression safety gained by TDD is at best secondary and at worst illusory, they started looking over their shoulders to make sure their manager didn't hear me. This did not sound like the bill of goods they had been sold.
 
 Instead, let's pretend that I had sold the code katas above as emblematic of my everyday routine, as opposed to what they are: trivial example exercises. What if I'd turned the students loose under the false premise that TDD as it's practiced in kata exercises would prove useful in their day jobs?
 
@@ -44,7 +44,7 @@ For starters, if you intend for every test to make some progress in *directly so
 
 Preventing your code's design from growing into a large, sprawling mess is left as an exercise to the developer. This is why many TDD advocates call for a "heavy refactor step" after tests pass, because they recognize this workflow requires intervention on the part of the developer to step back and identify any opportunities to simplify the design.
 
-Refactoring after each green test is gospel among TDD advocates ("red-green-refactor", after all), but in practice most developers often skip it mistakenly, because nothing about the TDD workflow inherently compels people to refactor until they've got a mess on their hands. 
+Refactoring after each green test is gospel among TDD advocates ("red-green-refactor", after all), but in practice most developers often skip it mistakenly, because nothing about the TDD workflow inherently compels people to refactor until they've got a mess on their hands.
 
 Some teachers deal with this problem by exhorting developers to refactor rigorously with an appeal to virtues like discipline and professionalism. That doesn't sound like much of a solution to me, however. Rather than question the professionalism of someone who's already undertaken the huge commitment to practice TDD, I'd rather question whether the design of my tools and practices are *encouraging me to do the right thing* at each step in my workflow.
 
@@ -57,7 +57,7 @@ Nevertheless, suppose that you *do* take the initiative to perform an extract re
   <figcaption>Fig. 3 — Extracting part of a unit's responsibility into a new child unit. The original test remains unchanged to assure us that the refactor didn't break anything.</figcaption>
 </figure>
 
-Keep in mind, however, that extract refactors are generally quite painful to undertake. Extract refactors often require intense analysis and focus in order to detangle one complex parent object into one tidy child object and one now-slightly-less complex parent. Paraphrasing a conversation with [Brandon Keepers](http://twitter.com/bkeepers), "it's easier to take two balls of yarn and tie them into a knot than it is to take a single knot of yarn and pull them into two balls." 
+Keep in mind, however, that extract refactors are generally quite painful to undertake. Extract refactors often require intense analysis and focus in order to detangle one complex parent object into one tidy child object and one now-slightly-less complex parent. Paraphrasing a conversation with [Brandon Keepers](http://twitter.com/bkeepers), "it's easier to take two balls of yarn and tie them into a knot than it is to take a single knot of yarn and pull them into two balls."
 
 ### Failure #3: Characterization Tests of Greenfield Code
 
@@ -83,20 +83,20 @@ Worse yet, the developer implementing the change has no reason to expect the par
   <figcaption>Fig. 5 — A change in the child object causes the parent's test to break, requiring the parent's test to be redesigned even though the parent object itself didn't change.</figcaption>
 </figure>
 
-Imagine if the child object were used in two places—or ten! A trivial change in an oft-depended-on unit could result in hours and hours of painstaking test fixes for everything that depends on the changed unit. 
+Imagine if the child object were used in two places—or ten! A trivial change in an oft-depended-on unit could result in hours and hours of painstaking test fixes for everything that depends on the changed unit.
 
 ### Failure #5: Eliminating Redundancy Sacrifices Regression Value
 
 If we hope to avoid the eventual pain wrought by redundant test execution, our intrepid attempt to undergo a simple *extract method refactor* now requires us to redesign the parent unit's test.
 
-Recall that the parent's unit test was written with correctness and regression safety in mind, so its original author will probably not appreciate my prescription to remove the redundancy: replace the real instance of the child unit from the parent's test with a test double in its place. 
+Recall that the parent's unit test was written with correctness and regression safety in mind, so its original author will probably not appreciate my prescription to remove the redundancy: replace the real instance of the child unit from the parent's test with a test double in its place.
 
 <figure>
   ![Fig 6. "Useless" test](/img/tdd-fail/useless-test.svg)
   <figcaption>Fig. 6 — The parent test with its previously-real instance of the child unit replaced with a test double</figcaption>
 </figure>
 
-"Well now the test is worthless and doesn't actually verify anything!" the original author might argue. And because of the philosophy under which this code was originally written (that TDD is about solving problems incrementally with a side effect of total regression safety), his complaint would be completely valid. His point could be countered with, "but that unit is already tested separately," but without an additional integration test to ensure the units work correctly together, the original author's concerns aren't likely to be be assuaged.
+"Well now the test is worthless and doesn't actually verify anything!" the original author might argue. And because of the philosophy under which this code was originally written (that TDD is about solving problems incrementally with a side effect of total regression safety), his complaint would be completely valid. His point could be countered with, "but that unit is already tested separately," but without an additional integration test to ensure the units work correctly together, the original author's concerns aren't likely to be assuaged.
 
 It's at this point that I've seen numerous teams reach a complete dead end, with some being "pro-mocking" and others being "anti-mocking", but with neither really understanding that this disagreement is merely a symptom of the fallacious assumptions that classical TDD encourages us to make.
 
@@ -119,7 +119,7 @@ The solution to this mess is also a lot of work. The parent unit needs to be ref
 
 Instead, I'd like to chart a different course by introducing a very different TDD workflow from that shown above.
 
-First, consider the resulting artifacts of the roundabout, painful process detailed in the previous example: 
+First, consider the resulting artifacts of the roundabout, painful process detailed in the previous example:
 
 * A parent unit that depends on logical behavior implemented in two child units
 * The parent's unit test, which specifies the interaction of the two children
@@ -165,7 +165,7 @@ This step can improve your design because it gives you an opportunity to discove
   ![Fig 12. Step 5](/img/tdd-fail/step5.svg)
 </figure>
 
-**(6)** Repeat steps (4) and (5) for each newly-imagined object, discovering ever-more-fine-grained collaborator objects. 
+**(6)** Repeat steps (4) and (5) for each newly-imagined object, discovering ever-more-fine-grained collaborator objects.
 
 Human nature seems to panic at this step ("we'll be overrun by tiny classes!"), but in practice it's manageable with good code organization. Because each object is small, understandable, and single-use, it's usually painless to delete any or all the units under an obsoleted subtree of your object graph when requirements change. (I've come to pity codebases with many large, oft-reused objects, as it's rarely feasible to delete them, even after they no longer fit their original purpose.)
 
