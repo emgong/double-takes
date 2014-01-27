@@ -96,7 +96,7 @@ Recall that the parent's unit test was written with correctness and regression s
   <figcaption>Fig. 6 — The parent test with its previously-real instance of the child unit replaced with a test double</figcaption>
 </figure>
 
-"Well now the test is worthless and doesn't actually verify anything!" the original author might argue. And because of the philosophy under which this code was originally written (that TDD is about solving problems incrementally with a side effect of total regression safety), his complaint would be completely valid. His point could be countered with, "but that unit is already tested separately," but without an additional integration test to ensure the units work correctly together, the original author's concerns aren't likely to be assuaged.
+"Well now the test is worthless and doesn't actually verify anything!" the original author might argue. And because of the philosophy under which this code was originally written (that TDD is about solving problems incrementally with a side effect of total regression safety), their complaint would be completely valid. Their point could be countered with, "but that unit is already tested separately," but without an additional integration test to ensure the units work correctly together, the original author's concerns aren't likely to be assuaged.
 
 It's at this point that I've seen numerous teams reach a complete dead end, with some being "pro-mocking" and others being "anti-mocking", but with neither really understanding that this disagreement is merely a symptom of the fallacious assumptions that classical TDD encourages us to make.
 
