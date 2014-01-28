@@ -28,6 +28,9 @@
       <% if(post.get('author').url) { %>
         </a>
       <% } %>
+      <% if(post.get('author').googlePlus) { %>
+        <link rel="author" href="<%= post.get('author').googlePlus %>"/>
+      <% } %>
     </div>
   <% } %>
   <div class="share">

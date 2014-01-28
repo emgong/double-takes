@@ -3,6 +3,7 @@ title: "The Failures of \"Intro to TDD\""
 author:
   name: "Justin Searls"
   url: "http://twitter.com/searls"
+  googlePlus: "https://plus.google.com/+JustinSearlsTestDouble"
 reddit: true
 ---
 
