@@ -19,8 +19,7 @@
   ],
   "dependencies": {
     "grunt-markdown-blog": ">=0.2.4",
-    "underscore": "~>1.4.4",
     "grunt-contrib-copy": "~0.4.1",
-    "lineman": "~0.23.3"
+    "lineman": "~0.24.0"
   }
 }
