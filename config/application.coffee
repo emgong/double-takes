@@ -53,6 +53,7 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
     dist: "pages:dist"
 
   enableSass: true
+  enableAssetFingerprint: true
 
   sass:
     compile:
