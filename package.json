@@ -21,7 +21,6 @@
     "grunt-markdown-blog": ">=0.2.4",
     "underscore": "~>1.4.4",
     "grunt-contrib-copy": "~0.4.1",
-    "lineman": "~0.23.2",
-    "grunt-asset-fingerprint": "~0.1.0"
+    "lineman": "~0.23.3"
   }
 }
