@@ -49,7 +49,7 @@ First, the sample code is hosted on Github at
 The anonymous jQuery and the Backbone specs can be found on the `master-specs`
 and `backbone-specs` branches, respectively. The application is a Lineman app,
 and you can find out how to install and run it on [Lineman's
-README](https://github.com/testdouble/lineman).
+README](https://github.com/linemanjs/lineman).
 
 Second, the presentation is not intended to discuss the values and virtues of
 either the broader topic of unit testing or these particular tests. Instead, my
@@ -79,5 +79,5 @@ them here:
 * [jasmine-fixture](https://github.com/searls/jasmine-fixture)
 * [jasmine-given](https://github.com/searls/jasmine-given)
 * [jasmine-stealth](https://github.com/searls/jasmine-stealth)
-* [Lineman](https://github.com/testdouble/lineman)
+* [Lineman](https://github.com/linemanjs/lineman)
 * included with Lineman, [testem](https://github.com/airportyh/testem)

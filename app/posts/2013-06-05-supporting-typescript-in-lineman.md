@@ -141,7 +141,7 @@ Now we've got the task running as part of the Lineman build process. However,
 the typescript-generated javascript is not being concatenated/minified with the
 rest of our application. We need to add the typescript-generated javascript to
 the [`concat` task's source
-list](https://github.com/testdouble/lineman/blob/7a73c9786594d1e3ec48d9c1affa479e0c78d1bd/config/application.coffee#L80).
+list](https://github.com/linemanjs/lineman/blob/7a73c9786594d1e3ec48d9c1affa479e0c78d1bd/config/application.coffee#L80).
 
 <h1 id="concat-ts-js">Concatenate/Minify</h1>
 

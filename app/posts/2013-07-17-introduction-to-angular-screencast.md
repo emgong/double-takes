@@ -26,4 +26,4 @@ This is the first of a series of screencasts focused on AngularJS; in it you wil
 * [angularjs](http://angularjs.org)
 * [bite sized angular videos](http://www.egghead.io/)
 * [lineman-angular-template](https://github.com/davemo/lineman-angular-template)
-* [lineman](https://github.com/testdouble/lineman)
+* [lineman](https://github.com/linemanjs/lineman)
