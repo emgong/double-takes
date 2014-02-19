@@ -18,7 +18,7 @@
     "Joel Helbling <joel@testdouble.com>"
   ],
   "devDependencies": {
-    "lineman": "~0.24.0",
+    "lineman": "~0.24.9",
     "lineman-blog": "~0.0.2",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-html-validation": "~0.1.13",
