@@ -1,15 +1,15 @@
 {
-  "name": "double-take",
+  "name": "double-takes",
   "title": "Test Double | Our Thinking",
   "version": "0.0.1",
-  "description": "the official blog of test double",
+  "private": true,
   "homepage": "http://blog.testdouble.com",
+  "description": "the official blog of test double",
   "repository": {
     "type": "git",
-    "url": "https://github.com/testdouble/double-take.git"
+    "url": "https://github.com/testdouble/double-takes.git"
   },
-  "bugs": "https://github.com/testdouble/double-take/issues",
-  "private": true,
+  "bugs": "https://github.com/testdouble/double-takes/issues",
   "author": "Double Agents <everyone@testdouble.com> (http://testdouble.com)",
   "contributors": [
     "Justin Searls <justin@testdouble.com>",
@@ -18,6 +18,9 @@
     "Joel Helbling <joel@testdouble.com>",
     "Zach Briggs <zach@testdouble.com>"
   ],
+  "scripts": {
+    "start": "lineman run"
+  },
   "devDependencies": {
     "lineman": "~0.24.9",
     "lineman-blog": "~0.0.2",
