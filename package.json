@@ -1,8 +1,8 @@
 {
   "name": "double-take",
-  "title": "Test Double: Double Takes",
+  "title": "Test Double | Our Thinking",
   "version": "0.0.1",
-  "description": "The Test Double blog",
+  "description": "the official blog of test double",
   "homepage": "http://blog.testdouble.com",
   "repository": {
     "type": "git",
@@ -15,7 +15,8 @@
     "Justin Searls <justin@testdouble.com>",
     "Dave Mosher <dave@testdouble.com>",
     "Jason Karns <jason@testdouble.com>",
-    "Joel Helbling <joel@testdouble.com>"
+    "Joel Helbling <joel@testdouble.com>",
+    "Zach Briggs <zach@testdouble.com>"
   ],
   "devDependencies": {
     "lineman": "~0.24.9",
