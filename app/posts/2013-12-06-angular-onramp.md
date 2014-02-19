@@ -303,25 +303,25 @@ Filter: <input ng-model="query">
 
 # Demo Table
 <div id="mixtape-demo-table">
-Filter: <input ng-model="query" placeholder="The Black Keys" style="border:2px inset;" />
-<table ng-controller="songListCtrl">
+Filter: <input data-ng-model="query" placeholder="The Black Keys" style="border:2px inset;" />
+<table data-ng-controller="songListCtrl">
   <thead>
     <tr>
-      <th><a href="" ng-click="predicate = 'name'; reverse=!reverse">Name</a></th>
-      <th><a href="" ng-click="predicate = 'artist'; reverse=!reverse">Artist</a></th>
-      <th><a href="" ng-click="predicate = 'album'; reverse=!reverse">Album</a></th>
-      <th><a href="" ng-click="predicate = 'time'; reverse=!reverse">Time</a></th>
+      <th><a href="" data-ng-click="predicate = 'name'; reverse=!reverse">Name</a></th>
+      <th><a href="" data-ng-click="predicate = 'artist'; reverse=!reverse">Artist</a></th>
+      <th><a href="" data-ng-click="predicate = 'album'; reverse=!reverse">Album</a></th>
+      <th><a href="" data-ng-click="predicate = 'time'; reverse=!reverse">Time</a></th>
       <th>Download</th>
     </tr>
   </thead>
 
   <tbody>
-    <tr ng-repeat="song in songs | orderBy:predicate:reverse | filter:query">
+    <tr data-ng-repeat="song in songs | orderBy:predicate:reverse | filter:query">
       <td>{{ song.name }}</td>
       <td>{{ song.artist }}</td>
       <td>{{ song.album }}</td>
       <td>{{ song.time }}</td>
-      <td><a href="{{ song.download }}">Download</a></td>
+      <td><a data-ng-href="{{ song.download }}">Download</a></td>
       </tr>
   </tbody>
 </table>
