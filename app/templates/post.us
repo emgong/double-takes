@@ -4,9 +4,9 @@
 </div>
 <div class="blogwrap">
   <% if(post.get('video')) { %>
-    <div class='embed-container'>
+    <div class="embed-container">
       <% if(post.get('video').type == "youtube") { %>
-        <iframe class="u-video" src="<%= post.get('video').url %>" allowfullscreen></iframe>
+        <iframe class="u-video" src="<%= post.get('video').url %>" allowfullscreen="allowfullscreen"></iframe>
       <% } %>
       <!-- Presumably implement other embed types like vimeo -->
     </div>

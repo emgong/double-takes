@@ -21,6 +21,6 @@ It would make my day if you'd [watch it](https://www.youtube.com/watch?v=HHcEjAQ
 
 Here are the slides, hosted on [SpeakerDeck](https://speakerdeck.com/searls/javascript-testing-tactics):
 
-<script async class="speakerdeck-embed" data-id="2e622e200d920131bc823a0c6aea0d93" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+<script async="async" class="speakerdeck-embed" data-id="2e622e200d920131bc823a0c6aea0d93" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
 Finally, you might have noticed that the slide deck was written in Markdown (as a wink to the fact that the talk was about advice that you *wouldn't* find in a README). So, naturally, [I've decided to post the entire talk's text as a README to Github](https://github.com/testdouble/javascript-testing-tactics/blob/master/README.md).

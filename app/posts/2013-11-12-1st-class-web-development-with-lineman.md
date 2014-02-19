@@ -17,5 +17,5 @@ This talk was delivered at [Øredev](http://www.oredev.com) in Malmö, Sweden. I
 
 Here are the slides, hosted on [SpeakerDeck](https://speakerdeck.com/searls/1st-class-web-development-with-lineman):
 
-<script async class="speakerdeck-embed" data-id="e45f5c702a8801316e596e0eb2f78328" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+<script async="async" class="speakerdeck-embed" data-id="e45f5c702a8801316e596e0eb2f78328" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 

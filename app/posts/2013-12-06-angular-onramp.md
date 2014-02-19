@@ -303,7 +303,7 @@ Filter: <input ng-model="query">
 
 # Demo Table
 <div id="mixtape-demo-table">
-Filter: <input ng-model="query" placeholder="The Black Keys" style="border:2px inset;">
+Filter: <input ng-model="query" placeholder="The Black Keys" style="border:2px inset;" />
 <table ng-controller="songListCtrl">
   <thead>
     <tr>
