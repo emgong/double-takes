@@ -17,12 +17,10 @@
     "Jason Karns <jason@testdouble.com>",
     "Joel Helbling <joel@testdouble.com>"
   ],
-  "dependencies": {
-    "grunt-markdown-blog": ">=0.2.4",
-    "grunt-contrib-copy": "~0.4.1",
-    "lineman": "~0.24.0"
-  },
   "devDependencies": {
+    "lineman": "~0.24.0",
+    "lineman-blog": "~0.0.2",
+    "grunt-contrib-copy": "~0.4.1",
     "grunt-html-validation": "~0.1.13",
     "grunt-htmlhint": "~0.4.0"
   }
