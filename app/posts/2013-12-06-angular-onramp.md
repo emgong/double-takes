@@ -32,30 +32,35 @@ Rather than adding a jQuery plugin we're going to use Angular to complete these 
   </thead>
 
   <tbody>
+    <tr>
       <td >My Love</td>
       <td >The Bird and the Bee</td>
       <td >Ray Guns Are Not Just The Future</td>
       <td >3:46</td>
       <td><a href="#">Download</a></td>
     </tr>
+    <tr>
       <td >Neighbors</td>
       <td >The Long Division</td>
       <td >Multiply</td>
       <td >2:25</td>
       <td><a href="#">Download</a></td>
     </tr>
+    <tr>
       <td >Middle Distance Runner</td>
       <td >Sea Wolf</td>
       <td >Leaves In The River</td>
       <td >3:28</td>
       <td><a href="#">Download</a></td>
     </tr>
+    <tr>
       <td >Good Old Vinyl</td>
       <td >Jim Noir</td>
       <td >Jim Noir</td>
       <td >3:40</td>
       <td><a href="#">Download</a></td>
     </tr>
+    <tr>
       <td >The Desperate Man</td>
       <td >The Black Keys</td>
       <td >Rubber Factory</td>
