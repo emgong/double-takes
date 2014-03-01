@@ -22,7 +22,7 @@
     "start": "lineman run"
   },
   "devDependencies": {
-    "lineman": "~0.24.9",
+    "lineman": ">= 0.25.0",
     "lineman-blog": "~0.0.2",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-html-validation": "~0.1.13",
