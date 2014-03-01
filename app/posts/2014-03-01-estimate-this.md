@@ -9,7 +9,7 @@ reddit: true
 
 As a software development agency, prospective clients will often ask for an estimate of how much time & money the custom software they want will cost.
 
-Inside the software world, this debate is settled: estimates suck. In a group, this terse declaration is used as a sort of tribal banner to identify other developers of the same ilk. 
+Inside the software world, this debate is settled: estimates suck. In a group, this terse declaration is used as a sort of tribal banner to identify other developers of the same ilk.
 
 I worry, however, that the community spends so much time reveling  in estimate-bashing, that we've collectively gotten worse at explaining the trouble with estimates to software outsiders.
 
@@ -21,7 +21,7 @@ Here are a few example responses to the question, "can you estimate this for me?
 * "Estimates put too much pressure on our developers", as if clients are adversaries to protect oneself from
 * "Sorry, but people who ask for estimates simply aren't a good fit for &lt;Insert Agency Name&gt;", disregarding the fact that most people have no idea why competent developers might refuse to give estimates
 
-Responses like these are more likely to come off as pretentious than persuasive. 
+Responses like these are more likely to come off as pretentious than persuasive.
 
 Some studio runners take pride in turning away anyone who so much as utters the "e"-word. Other firms jump at the chance to win any work, and eagerly provide (and even contractually commit to!) detailed estimates. Worst of all, some of the biggest players in the industry habitually lowball their estimates up front, with the intention of later employing their well-staffed legal departments to ensnare clients in a supremely profitable death by a thousand change requests.
 
@@ -29,7 +29,7 @@ The more responsible approach, it seems to me, is to make a best effort to educa
 
 ### Have some empathy.
 
-Imagine yourself in the shoes of someone hoping to pay others to write an application on their behalf. They are embarking on an expensive venture to buy something intangible, made out of mysterious code they can't comprehend, and from people who have them at a tremendous informational disadvantage. That's a lot of unknowns! 
+Imagine yourself in the shoes of someone hoping to pay others to write an application on their behalf. They are embarking on an expensive venture to buy something intangible, made out of mysterious code they can't comprehend, and from people who have them at a tremendous informational disadvantage. That's a lot of unknowns!
 
 If I were swimming in a sea of variables, I'd try to fix as many constants as I possibly could. If only I could convert the intangible aspects of purchasing software services into something tangible, then I would have greater control over the project's success. Or so I might expect.
 
@@ -45,7 +45,7 @@ It's entirely reasonable for someone to naïvely start a conversation with a sof
 
 ### Articulating the dangers inherent in that assumption.
 
-Earlier, I mentioned that specifying a complete system up front actually adds to the project's risk of failure. That risk is separate from but compounded by seeking fixed-price quotes from  software developers based on estimates of a fixed scope. 
+Earlier, I mentioned that specifying a complete system up front actually adds to the project's risk of failure. That risk is separate from but compounded by seeking fixed-price quotes from  software developers based on estimates of a fixed scope.
 
 One reason developers bristle at in-depth system specifications is because they prematurely solidify the whole team's opinion of what "done" should look like, even though few finished applications ever resemble their initial designs upon completion. From an outsider's perspective, the intangibility of software seems scary, but an insider will recognize that software's inherent malleability can also be its greatest asset. If the team starts by building something very small, the highly-variable nature of software allows them to build incrementally in whichever direction seems best, allowing the eventual design of the system to emerge organically over time. While such an approach might see one's kitchen remodel ultimately encroach well into the bathroom, it can confidently ensure a software system will never do more than it absolutely needs to do.
 
@@ -67,7 +67,7 @@ As it happens, great developers employ a number of proven practices for building
 * Minimize commitments. At the end of each week, give the client the opportunity to cut their losses and end the engagement if the team isn't showing progress commensurate with their rates
 * Find a common language. Run a 1-2 day paid "inception project" to break down the most important aspect of the application into an initial backlog of sufficiently small, technically viable units of work—all the while educating the client about their role as a product owner
 * Aggressively address risky unknowns. Sometimes, a poorly understood aspect of the system that won't be needed for weeks carries with it a valid risk of blowing the project's budget out of the water. To avoid that outcome, pull forward focused research activities ("spikes") to eliminate these unknowns toward the beginning of the project, before sunk costs can become too great
-* Be a fantastic partner. Great development agencies openly exhibit a desire for close and honest collaboration with their clients. Their developers will have lots of experience coaching clients on the skills it takes to be a successful product owner 
+* Be a fantastic partner. Great development agencies openly exhibit a desire for close and honest collaboration with their clients. Their developers will have lots of experience coaching clients on the skills it takes to be a successful product owner
 
 The goal of these practices is to put the client in a position to make an informed decision about each feature when they'll be best-equipped to do so: just before developers should start implementing that feature.
 
