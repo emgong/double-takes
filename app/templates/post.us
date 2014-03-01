@@ -1,6 +1,6 @@
-<h1 class="blog">Post #<%= _(site.posts).indexOf(post) %></h1>
+<h2 class="blog">Post #<%= _(site.posts).indexOf(post) %></h2>
 <div class="post">
-  <h2><a href="/<%= post.htmlPath() %>"><%= post.title() %></a></h2>
+  <h1><a href="/<%= post.htmlPath() %>"><%= post.title() %></a></h1>
 </div>
 <div class="blogwrap">
   <% if(post.get('video')) { %>
