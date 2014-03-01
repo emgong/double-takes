@@ -69,7 +69,7 @@ As it happens, great developers employ a number of proven practices for building
 * Aggressively address risky unknowns. Sometimes, a poorly understood aspect of the system that won't be needed for weeks carries with it a valid risk of blowing the project's budget out of the water. To avoid that outcome, pull forward focused research activities ("spikes") to eliminate these unknowns toward the beginning of the project, before sunk costs can become too great
 * Be a fantastic partner. Great development agencies openly exhibit a desire for close and honest collaboration with their clients. Their developers will have lots of experience coaching clients on the skills it takes to be a successful product owner 
 
-The goal of these practices is to put the client in the position to make informed decisions at the moment they'll be best-equipped to make them: as late as possible. 
+The goal of these practices is to put the client in a position to make an informed decision about each feature when they'll be best-equipped to do so: just before developers should start implementing that feature.
 
 ### Avoiding an impasse.
 
