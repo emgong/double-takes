@@ -15,7 +15,7 @@
     <link rel="icon" href="<%= cdn %>/img/favicon.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="<%= cdn %>/img/apple-touch-icon.png" />
     <link rel="publisher" href="https://plus.google.com/116429043459865908397" />
-    <% if(post && post.get('author').googlePlus) { %>
+    <% if(post && post.get('author') && post.get('author').googlePlus) { %>
     <link rel="author" href="<%= post.get('author').googlePlus %>" />
     <% } %>
     <script src="<%= cdn %>/js/html5shiv-printshiv.js"></script>
