@@ -1,3 +1,4 @@
 $ ->
+  waitForImagesUnder("body")
   new Sidebar().init()
-  waitForImagesUnder('body')
+
