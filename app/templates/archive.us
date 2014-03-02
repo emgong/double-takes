@@ -1,6 +1,6 @@
-<h1 class="blog">Posts #0-<%= site.posts.length-1 %></h1>
+<h2 class="blog">Posts #0-<%= site.posts.length-1 %></h2>
 <div class="post">
-  <h2>Nice Thinking.</h2>
+  <h1>Nice Thinking.</h1>
 </div>
 <div class="blogwrap archive">
   <ul>
