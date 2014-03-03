@@ -11,10 +11,7 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
 
   markdown:
     options:
-      author: "the test double agents"
       title: "<%= pkg.title %>"
-      description: "<%= pkg.description %>"
-      url: "<%= pkg.homepage %>"
       dateFormat: 'MMMM Do, YYYY'
 
     dev:
