@@ -31,15 +31,17 @@ The more responsible approach, it seems to me, is to make a best effort to educa
 
 Imagine yourself in the shoes of someone hoping to pay others to write an application on their behalf. They are embarking on an expensive venture to buy something intangible, made out of mysterious code they can't comprehend, and from people who have them at a tremendous informational disadvantage. That's a lot of unknowns!
 
-If I were swimming in a sea of variables, I'd try to fix as many constants as I possibly could. If only I could convert the intangible aspects of purchasing software services into something tangible, then I would have greater control over the project's success. Or so I might expect.
+If I were the one swimming in that sea of variables, I'd try to fix as many constants as I possibly could. If only I could convert the intangible aspects of purchasing software services into something tangible, then I would have greater control over the project's success. Or so I might expect.
 
-Because the vast majority of things people buy in their lifetime are physical goods, it's hard to fault someone for trying to buy software services in the same way they'd go about remodeling their kitchen: design it up front, shop the plan around to a number of contractors, and choose the best proposal from a number of quotes. This approach makes sense when building physical things, because:
+The vast majority of things people buy in their lifetime are physical goods, it's hard to fault someone for trying to buy software services in the same way they'd go about remodeling their kitchen: design it up front, shop the plan around to a number of contractors, and choose the best proposal from a number of quotes. This approach makes sense when building physical things, because:
 
 * Changing the design partway through will require rework and increase overall expense, so one can only benefit from starting with a complete and detailed plan
 * Pitting contractors against one another to propose a price and schedule will externalize the buyer's own expertise deficit, because the contractors will be under competitive pressure to minimize their price
 * Contractors participate in a local, reputation-sensitive economy and will be incentivized to swallow any losses in the event that cost overruns exceed their quoted price (in the absence of changes requested by the client)
 
 Any experienced developer will recognize that literally none of these conditions are true when buying software development services.
+
+Nevertheless, it's important to keep in mind that, in the real world, people who want to buy software services are usually under very real constraints: they might have a legitimately hard deadline, or users might demand a minimum set of functionality, or they might be under severe budget constraints. Only after spending the time to uncover and empathize with someone's constraints can anyone begin to define an approach that's appropriate for their situation.
 
 It's entirely reasonable for someone to naïvely start a conversation with a software studio under the presumption (or hope) that paying someone to write software will compare to paying someone to remodel a kitchen. Consequently, it's our responsibility as professionals to do our best to articulate the dangers inherent in that assumption.
 
