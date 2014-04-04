@@ -193,17 +193,3 @@ Note also that there is no heavy refactor step necessary when you take this appr
 It took me the better part of four years to understand my frustrations with TDD well enough to articulate this post. After plenty of time wandering the wilderness and mulling over these issues, I can say I finally find TDD to be an entirely productive, happy exercise. TDD isn't worth the time investment for every endeavor, but it's an effective tool for confronting the anxiety & perceived complexity one faces when building a hopefully long-lived system.
 
 My goal in sharing this with you is that we begin teaching others that *this* is what test-driven development is all about. Novices have little to gain by being put through the useless pain that results from the simplistic assumptions of classical TDD. Let's find ways to teach a more valuable TDD workflow that gives students an immediately valuable tool for breaking down confusingly large problems into manageably small ones.
-
-<!--
-
-The problems tackled by most code katas don't resemble real systems in two obvious ways: they give the student an algorithmic problem to solve and they're small enough to fit inside a single unit of functionality without becoming a mess. Part of this is a result of the obvious limitations of an hour-long exercise, but I suspect the real reason is that most TDD evangelists pray at the alter of the algorithm.
-
-## The Church of Algorithms
-
-The root of the problem is the same thing that plagues both computer science academia and job interviews: our egos trick us into believing that writing software is a **serious undertaking** to implement intrinsically complex *algorithms* and/or *business logic*. In reality, however, most of the world's software is only incidentally complex: our code *does many things*, but few of those things are nontrivially hard.
-
-Logical complexity comes across as intellectually impressive, so programmers tend to over-emphasize its importance. I can count on one hand the number of complex algorithms I've had to carefully think about, implement, and analyze over the course of my career. And yet, everything about the software world seems focused on these rare feats: college curricula are generally obsessed with algorithms, software jobs are distributed based on candidates' ability to implement algorithms on whiteboards, and programming language designers prioritize logical expressiveness over code organization.
-
-Incidental complexity is a lot less sexy, by comparison. That an application has to perform umpteen unrelated tasks in a certain order whenever a user clicks a button sounds more like an administrative task than an intellectual one. Nevertheless, this accurately describes the code I write every day. The single most important skill for managing incidental complexity in software is **reductionism**: how to successfully break a large task into ever-smaller ones. After all, the major risk posed by incidental complexity is that some day the mess will grow so large that it will cease to be comprehensible.
-
--->
