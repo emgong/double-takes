@@ -245,17 +245,17 @@ I use Quicktime to capture my screen as I present.
   <figcaption>Setting up audio input on Quicktime's Screen Recording utility</figcaption>
 </figure>
 
-I do this in order to have a direct feed for later, even if the talk's video is being recorded. VGA is a lossy format and video of projector screens will wash out, so I prefer to composite a direct feed of my screen with whatever was recorded on camera by the conference.
+I do this in order to have a direct feed for later, even if the talk's video is being recorded by camera.Keep in mind that VGA is a lossy transport and video shot of projector screens will wash out, so it's much nicer to compose a direct feed screencast over whatever was recorded on camera by the conference.
 
 Three things to worry about:
 
-* Be sure the audio input is set up to your system's microphone (or a direct feed if the conference can provide you one), as the default does not pick up mic audio
+* Be sure the audio input is set to your system's microphone (or a direct feed if the conference can provide you one), as the default does not pick up mic audio
 * Start the recording **after** you've connected to the monitor and finished setting up your display resolution, or the final video will be distorted or cropped
 * Finish the recording and **save the file** before disconnecting the monitor or sleeping your machine. Either event can cause Quicktime to lose the entire recording into the ether, never to return.
 
 ## Use a remote
 
-I use a [Logitech R400 presenter remote](http://www.logitech.com/en-us/product/wireless-presenter-r400) even if I know I'm going to be at my keyboard for the entire duration of my talk. I want to be able to use hand gestures as punctuation even between slide builds, and dropping my arm to hit the right arrow on my keyboard simply takes too much time. (The Keynote iPhone app is a poor substitute; it relies on a working Bonjour-friendly wifi network and my clammy nervous thumbs fail to swipe accurately enough under pressure.)
+I use a [Logitech R400 presenter remote](http://www.logitech.com/en-us/product/wireless-presenter-r400) even if I know I'm going to be at my keyboard for the entire duration of my talk. I want to be able to use hand gestures even as I transition slides, and dropping my arm to hit the right arrow on my keyboard simply takes too much time. (The Keynote iPhone app is a poor substitute; it relies on a working Bonjour-friendly wifi network and my clammy nervous thumbs fail to swipe accurately enough under pressure.)
 
 Also, somehow, having a remote in my hand gives me something safe to squeeze and fiddle with, subconsciously increasing my confidence a bit. I'll take what I can get.
 
@@ -263,7 +263,7 @@ Oh, and always bring extra AAA batteries. In the excitement of wrapping a talk, 
 
 ## Disconnect
 
-I always disconnect from wifi and flip my phone into Airplane mode. The last thing I want is to have to shake the distraction from my phone buzzing in my pocket ("Are people tweeting at me? Is it good? Oh no, what was I just saying?!").
+I always disconnect my Mac from wifi and flip my phone into Airplane mode before I go on-stage. The last thing I want is to have to shake the distraction caused by my phone buzzing in my pocket ("Are people tweeting at me? Is it good? Oh no, what was I just saying?!").
 
 ## Deliver the talk
 
