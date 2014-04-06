@@ -17,7 +17,7 @@ When an idea for a talk does come, I spend a little time asking myself whether i
 
 Looking back, most of my talks have emerged from insights gained from three-to-six months of client service. I try to prompt myself by asking, "what's new and interesting about this client? Am I learning something that could help others solve meaningful problems that face most software teams?"
 
-Finally, I pitch the idea to my friends. If I can't get my close colleagues excited about expounding on a topic, then I'm probably not going to be able to convince near-strangers to give spot in their conference lineup. I probably informally pitch two or three talk ideas a month in passing conversation before investing the time to submit to any calls for proposal.
+Finally, I pitch the idea to my friends. If I can't get my close colleagues excited about expounding on a topic, then I'm probably not going to be able to convince near-strangers to give me a spot in their conference lineup. I probably informally pitch two or three talk ideas a month in passing conversation before investing the time to submit to any calls for proposal.
 
 ## Write an abstract
 
@@ -183,7 +183,7 @@ One last note on fonts: I don't try to colorize the syntax of my code slides. I'
 
 ## Illustrate effectively
 
-Perhaps "a picture is worth a thousand words" and "a word is worth a thousand pictures" can both be true simultaneously, because effective use of words and images can make a good talk a great one. It's obvious that simple illustrations can be terrific way of condensing complex ideas in a slide deck. This is intimidating if, like me, you can't draw at all. I can do some basic image manipulation, but simple illustrations are not at all my forte.
+Perhaps "a picture is worth a thousand words" and "a word is worth a thousand pictures" can both be true simultaneously, because effective use of both words and images can make a good talk a great one. It's obvious that simple illustrations can be a terrific way of condensing complex ideas in a slide deck. This is intimidating if, like me, you can't draw at all. I can do some basic image manipulation, but simple illustrations are not at all my forte.
 
 One idea: hire a designer! [Marissa Hile](http://marissahile.com) did the best illustrations in my Lineman talk. Her artwork was the visual glue that held the whole thing together.
 
@@ -205,17 +205,17 @@ Aside from extraordinary circumstances like that, however, I typically wait unti
 
 ## Sprinkle in variety
 
-The best structure and the best branding in the world won't serve its purpose if it's followed so reverently as to bore the audience. A little breathing room is needed to sprinkle in jokes, asides, and insights to keep the energy level high throughout the talk.
+The best structure and the best branding in the world won't serve their purpose if they're followed so reverently as to bore the audience. A little breathing room is needed to sprinkle in jokes, asides, and insights to keep the energy level high throughout the talk.
 
-In my paper notes (presented above), I kept a separate sheet of tangential points that came to mind as I worked. I used them as a sort of seasoning to break out of the monotony my rigid pattern of test suite summaries.
+In my paper notes (presented above), I kept a separate sheet of tangential points that came to mind as I worked. I used them as a sort of seasoning to break out of the monotony of my rigid test suite summaries.
 
 One way the tension between inspiring and informing audiences manifests itself is that talks which are too densely packed don't seem to have time for moments of levity. One of the failures of my test suites talk was its ambition: by cramming in so many points over 405 slide builds, I knew I didn't leave any time to establish rapport with the audience. This is something that I think [Aaron Patterson](https://twitter.com/tenderlove) does masterfully in his talks (his intro at [Madison Ruby 2013](http://confreaks.com/videos/2626-madisonruby2013-yak-shaving-is-best-shaving) won the audience over before his "talk" even started).
 
 ## Tweak, tweak, tweak
 
-I usually wrap up a start-to-finish first draft of my slide deck while using overly wordy text elements to make my points for me. Obviously, splatting a bunch of meaty paragraphs on the screen would lose the audience's attention in a hurry, but it can be useful for validating the points one wants to make in the context of where one wants to make them. It also helps me remember everything I want to say at a given slide when I'm only starting to memorize the points I want to make.
+I usually wrap up a start-to-finish first draft of my slide deck while using overly wordy text elements to make my points for me. Obviously, splatting a bunch of meaty paragraphs on the screen would lose the audience's attention in a hurry, but it can be useful for validating the points one wants to make in the context of where one wants to make them. It also helps me remember what to say at a given slide when I'm only starting to memorize the points I want to make.
 
-I may start with a thirty-word point on a slide. Each time I visit the slide, I try to uncover a way to make it a little bit briefer. My goal with textual slides is to eventually whittle them down to something that will fit on two lines, still at an extremely large font size.
+I may start with thirty words of text on each slide. Whenever I subsequently visit the slide, I try to uncover a way to make it a little bit briefer. My goal with textual slides is to eventually whittle them down to something that will fit on two lines (and still at an extremely large font size).
 
 Sometimes, a point is so complex that I'd need a dozen textual slides to effectively make it. When this happens, I go to work brainstorming visual metaphors or illustrations to help me make the point with fewer spoken and written words. [Brandon](https://twitter.com/bkeepers) gave me the idea of explaining the complex idea of preemptive abstraction in code bases by using yarn as a visual analogy.
 
@@ -232,7 +232,9 @@ The trick is to keep these screencasts really short (sub-30 seconds), because on
 
 ## Run-through
 
-I don't like to "rehearse"
+I don't like to "rehearse" in the sense of practicing my talk in advance as I intend to perform it on stage. First, rehearsal makes me feel cheesy and uncomfortable, which makes me less likely to actually do it. Second, when I can remember my own rehearsal, then I tend to get inside my own head while I'm actually speaking—every time I stumble over a sentence on stage I'll mentally curse at myself and compare the experience to my rehearsal, causing me to lock up for several seconds of panic.
+
+Instead, I just "run through" the slides dozens of times before the talk. I usually run through the slides rapidly to establish visual familiarity and comfort. At least three or four times, though, I will run through more slowly and whisper under my breath what I think I want to say on a slide (beyond the words on the slide itself). The quasi-spoken run-throughs are absolutely crucial to identifying solid segues from each slide to the next.
 
 ## Record your screen
 
