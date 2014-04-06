@@ -11,14 +11,14 @@
     <link rel="alternate" type="application/rss+xml" title="<%= site.title %> | feed" href="/index.xml" />
     <title><%= site.title %><%= post ? ' | '+post.title() : '' %></title>
 
-    <link rel="stylesheet" type="text/css" href="<%= cdn %><%= css %>" media="all" />
-    <link rel="icon" href="<%= cdn %>/img/favicon.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="<%= cdn %>/img/apple-touch-icon.png" />
+    <link rel="stylesheet" type="text/css" href="<%= css %>" media="all" />
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon.png" />
     <link rel="publisher" href="https://plus.google.com/116429043459865908397" />
     <% if(post && post.get('author') && post.get('author').googlePlus) { %>
     <link rel="author" href="<%= post.get('author').googlePlus %>" />
     <% } %>
-    <script src="<%= cdn %>/js/html5shiv-printshiv.js"></script>
+    <script src="/js/html5shiv-printshiv.js"></script>
   </head>
 
   <body>
@@ -52,7 +52,7 @@
       <%= yield %>
     </div>
 
-    <script type="text/javascript" src="<%= cdn %><%= js %>"></script>
+    <script type="text/javascript" src="<%= js %>"></script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-32958269-1']);

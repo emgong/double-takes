@@ -1,6 +1,5 @@
-module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application",
-
-  loadNpmTasks: [ 'grunt-contrib-copy', 'grunt-html-validation', 'grunt-htmlhint' ]
+module.exports = (lineman) ->
+  loadNpmTasks: ['grunt-html-validation', 'grunt-htmlhint']
 
   appendTasks:
     common: "copy:dev"
@@ -9,18 +8,14 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
   enableSass: true
   enableAssetFingerprint: true
 
+  assetFingerprint:
+    options:
+      cdnPrefixForRootPaths: "http://cdn.testdouble.com"
+
   markdown:
     options:
       title: "<%= pkg.title %>"
       dateFormat: 'MMMM Do, YYYY'
-
-    dev:
-      context:
-        cdn: ""
-
-    dist:
-      context:
-        cdn: "http://cdn.testdouble.com"
 
   sass:
     options:
