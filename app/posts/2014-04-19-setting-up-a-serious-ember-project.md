@@ -5,7 +5,7 @@ author:
   url: "http://twitter.com/searls"
   googlePlus: "https://plus.google.com/+JustinSearlsTestDouble"
 video:
-  url: "http://www.youtube.com/embed/Qn1uEKQj9Es"
+  url: "http://www.youtube.com/embed/_4_jD9ZAu1w"
   type: "youtube"
 reddit: true
 ---
