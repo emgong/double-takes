@@ -16,7 +16,8 @@
     "Dave Mosher <dave@testdouble.com>",
     "Jason Karns <jason@testdouble.com>",
     "Joel Helbling <joel@testdouble.com>",
-    "Zach Briggs <zach@testdouble.com>"
+    "Zach Briggs <zach@testdouble.com>",
+    "Todd Kaufman <todd@testdouble.com>"
   ],
   "scripts": {
     "start": "lineman run"
