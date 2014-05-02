@@ -8,6 +8,14 @@ video:
   url: "http://www.youtube.com/embed/ZauLosiTcbc"
   type: "youtube"
 reddit: true
+tldr:
+  title: "Introduction to Ember.js"
+  body: """
+        This is Part 1 of a series of
+        <a href="http://emberjs.com">Ember</a> screencasts.
+        <a href="/posts/2014-05-02-ember-routes-models-templates-and-controllers.html">Part 2</a>
+        """
+
 ---
 
 This is the first edition in what I hope will be a multi-part series covering [Ember](http://emberjs.com).
