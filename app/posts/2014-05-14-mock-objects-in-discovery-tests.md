@@ -17,9 +17,10 @@ and distance it from the now too-conflated-to-be-useful term "unit test".
 
 The screencast may provide you with a clearer picture about what some people who talk about
 mock objects as a *good thing* really mean, by illustrating and demonstrating their
-very narrow and rigorous purpose. We use mock objects in a way that is fundamentally
-different than other practicioners of TDD, but we both confuse the community by
-using the same language to describe differently-motivated activities.
+very narrow, but well-defined purpose. This use of mock objects is fundamentally
+different than how they're used by other practitioners of TDD, but both tribes
+tend to confuse the community by using the same language to describe
+differently-motivated activities.
 
 Here are some links to things covered or mentioned in the screencast:
 
