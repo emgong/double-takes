@@ -1,5 +1,5 @@
 ---
-title: "Enacting Change"
+title: "Enacting Change."
 author:
   name: "Todd Kaufman"
   url: "http://twitter.com/toddkaufman"
