@@ -33,7 +33,7 @@
   <% if(!post.get('skipFeedbackRequest')) { %>
     <p class="call-for-feedback">
       If you enjoy this <%= post.get('video') ? "video" : "post" %>, let us know by <a href="http://twitter.com/testdouble">twitter</a>
-      or <a href="mailto:hello@testdouble.com">e-mail</a>!  If you'd like to discuss it, <a href="https://github.com/testdouble/feedback/issues/new">open an issue</a> on our feedback
+      or <a href="mailto:hello@testdouble.com">e&#8209;mail</a>!  If you'd like to discuss it, <a href="https://github.com/testdouble/feedback/issues/new">open an issue</a> on our feedback
       repo<%= post.get('reddit') ? ' or share it on <a href="https://news.ycombinator.com/submitlink?u=' + encodeURIComponent(site.url+'/'+post.htmlPath()) + '&amp;t=' + encodeURIComponent(post.title()) + '">HN</a>': "" %>!
     </p>
   <% } %>
