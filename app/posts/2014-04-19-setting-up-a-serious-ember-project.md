@@ -45,6 +45,3 @@ Here are some links to things covered or mentioned in the screencast:
 * [ActiveModel::Serializers](https://github.com/rails-api/active_model_serializers)
 * [lineman + rails](http://linemanjs.com/rails.html)
 * [the Ember Community](http://emberjs.com/community/)
-
-If you enjoy the screencast, please let us know by [twitter](http://twitter.com/testdouble)
-or [e-mail](mailto:hello@testdouble.com)!

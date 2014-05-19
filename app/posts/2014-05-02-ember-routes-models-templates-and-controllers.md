@@ -29,6 +29,3 @@ Here are some links to things covered or mentioned in the screencast:
 * [Ember's Model guide](http://emberjs.com/guides/models/)
 * [Ember's Controller guide](http://emberjs.com/guides/controllers/)
 * [Ember's Built-in Views guide](http://emberjs.com/guides/views/built-in-views/)
-
-If you enjoy the screencast, please let us know by [twitter](http://twitter.com/testdouble)
-or [e-mail](mailto:hello@testdouble.com)!

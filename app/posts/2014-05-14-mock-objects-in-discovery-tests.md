@@ -53,6 +53,3 @@ Here are some links to things covered or mentioned in the screencast:
 * [jasmine-given](https://www.github.com/searls/jasmine-given)
 * [node-sandboxed-module](https://github.com/felixge/node-sandboxed-module)
 * [jasmine-stealth](https://www.github.com/searls/jasmine-stealth)
-
-If you enjoy the screencast, please let us know by [twitter](http://twitter.com/testdouble)
-or [e-mail](mailto:hello@testdouble.com)!
