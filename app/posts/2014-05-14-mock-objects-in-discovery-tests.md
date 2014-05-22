@@ -42,6 +42,7 @@ I tend to write a deep and wide tree with lots of collaborators when reducing a
 very complex task, and I tend to arrive at much flatter trees when the task is
 either simple or well-understood.
 
+
 Here are some links to things covered or mentioned in the screencast:
 
 * [The screencast's example code](https://github.com/testdouble/discovery-testing)
