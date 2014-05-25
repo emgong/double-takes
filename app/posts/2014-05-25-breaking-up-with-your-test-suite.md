@@ -10,7 +10,7 @@ video:
 reddit: true
 ---
 
-In this day and age, we have a thousand ways and reasons to test our code. On it's face, this is great! But the sword is double-edged: when I open a test that I'm not familiar with, I have to determine why it exists from any of a thousand possible reasons. If I want to add my own tests, I must choose from any of a thousand possible methods.
+In this day and age, we have a thousand ways and reasons to test our code. On it's face, this is great! But the sword is double-edged: when I open a test that I'm not familiar with, I have to determine why it exists from any of a thousand possible reasons. If I want to add my own tests, I must decide how to implement it from any of a thousand possible methods.
 
 The most immediate abstraction we have for wrangling the motivations and implementations of our tests is the "test suite". By cordoning off each group of tests based on the value we hope to get out of them, we can develop unprecedented clarity in our working relationship with tests.
 
