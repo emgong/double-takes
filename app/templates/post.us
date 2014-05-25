@@ -1,3 +1,9 @@
+<% if(post.get('redirect')) { %>
+<script>
+  window.location.href = "<%= post.get('redirect') %>"
+</script>
+<% } %>
+
 <h2 class="blog">Post #<%= _(site.posts).indexOf(post) %></h2>
 <div class="post">
   <h1><a href="/<%= post.htmlPath() %>"><%= post.title() %></a></h1>

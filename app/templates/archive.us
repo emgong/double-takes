@@ -5,8 +5,8 @@
 <div class="blogwrap archive">
   <ul>
     <% _(site.posts).chain().clone().reverse().each(function(post){ %>
-      <li>
-        <span class="ordinal">#<%= _(site.posts).indexOf(post) %> </span><a href="/<%= post.htmlPath() %>"><%= _(post.title()).truncate(75) %></a>
+      <li class="<%= post.get('redirect') ? "redirected" : "" %>">
+        <span class="ordinal">#<%= _(site.posts).indexOf(post) %> </span><a href="<%= post.get('redirect') ? post.get('redirect') : '/'+post.htmlPath() %>"><%= _(post.title()).truncate(75) %></a>
       </li>
     <% }) %>
   </ul>
