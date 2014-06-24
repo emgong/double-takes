@@ -245,7 +245,7 @@ The above adds a few things in the interest of keeping the memory footprint of t
 
 * Loads all of the IDs from Mongo at once, so that it can slice them into batches of 1000 (`ids.each_slice(1000).each_with_index`), reducing the lifespan of Mongoid's cursors
 * Every 15 batches (an arbitrary number), it loops through all `ActiveModel::Errors` and `ActiveRecord::Associations::HasManyAssociation` instances to clear out any potential reference to the new ActiveRecord objects (obviously, this is something you would never want to do on a running web server, but turned out fine for a one-off rake process)
-* After eliminating the known rogue references, it kicks off GC manually.
+* After eliminating the known rogue references, it kicks off GC manually
 
 Somewhat surprisingly, this worked perfectly. The memory overhead for my batch remained roughly constant once it initially warmed up, and no data integrity issues were introduced.
 
@@ -276,7 +276,7 @@ All told, we experienced about an hour of downtime.
 
 ## Parting thoughts
 
-I'm not sure how much of this experience is generally applicable. In hindsight, I was really fortunate that my model was as simple as it was, that the application was taking so little advantage of Mongo-specific features, and that I was permitted an hour of downtime to complete the migration. (This approach would have dovetailed nicely into a zero-downtime scheme in fact, but would required more effort to ensure no new Mongo records fell through the cracks.)
+I'm not sure how much of this experience is generally applicable. In hindsight, I was really fortunate that my model was as simple as it was, that the application was taking so little advantage of Mongo-specific features, and that I was permitted an hour of downtime to complete the migration. (This approach would have dovetailed nicely into a zero-downtime scheme in fact, but would require more effort to ensure no new Mongo records fell through the cracks.)
 
 Perhaps heretically, I was also pleased with how smooth everything went in lieu of tests; the application didn't previously have any automated tests, and I didn't add any during this transition. Fortunately, the application is small enough that I can get through about 90% of its logical branches manually in under a minute.
 
