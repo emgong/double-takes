@@ -9,9 +9,9 @@ video:
 tldr:
   title: "Misdirection For Profit"
   body: """
-        This screencast demonstrates separating domain logic from the framework
+        This screencast demonstrates separating domain logic from the framework.
 The demo application is written in JavaScript, uses Angular to handle
-the DOM, and employes Lineman as a build tool. The accompanying post lays out the why
+the DOM, and employes Lineman as a build tool. The accompanying post lays out why
 I believe that separation is a good idea.
         """
 ---
