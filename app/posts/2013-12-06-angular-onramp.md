@@ -263,13 +263,60 @@ No change to our JavaScript for this feature. ([Read](http://docs.angularjs.org/
 
 Seriously, that's it.
 
+Or, we can keep the view really clean and retain this functionality by adding one little method to the javascript. Here I called it reverseOrder:
+
+**song_list_ctrl.js**
+```Javascript
+angular.module("app").controller("songListCtrl", function($scope, $http){
+
+      $http.get('/api/songs').then(function(response) {
+        $scope.songs = response.data;
+      });
+
+      $scope.forward = false;
+
+      $scope.reverseOrder = function(string){
+        $scope.column = string;
+        $scope.forward = !$scope.forward;
+      }
+
+    });
+```
+
+Then your view will look thusly:
+
+```html
+<table ng-controller="songListCtrl">
+  <thead>
+    <tr>
+      <th><a href="" ng-click="reverseOrder('name')">Name</a></th>
+      <th><a href="" ng-click="reverseOrder('artist')">Artist</a></th>
+      <th><a href="" ng-click="reverseOrder('album')">Album</a></th>
+      <th><a href="" ng-click="reverseOrder('time')">Time</a></th>
+      <th>Download</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr ng-repeat="song in songs | orderBy:column:forward">
+      <td>{{ song.name }}</td>
+      <td>{{ song.artist }}</td>
+      <td>{{ song.album }}</td>
+      <td>{{ song.time }}</td>
+      <td><a href="{{ song.download }}">Download</a></td>
+      </tr>
+  </tbody>
+</table>
+```
+When another programmer looks at this (or when you look at it after NOT looking at it for six months), you can see what it does right away.
+
 # Feature Request: Filter on Input
 
 Once again, no change to our JavaScript. ([Read](http://docs.angularjs.org/tutorial/step_03) about filtering repeaters.) Here are the changes to the HTML in isolation.
 ```html
 Filter: <input ng-model="query">
 ...
-    <tr ng-repeat="song in songs | orderBy:predicate:reverse | filter:query">
+    <tr ng-repeat="song in songs | orderBy:column:forward | filter:query">
 ...
 ```
 
@@ -281,16 +328,16 @@ Filter: <input ng-model="query">
 <table ng-controller="songListCtrl">
   <thead>
     <tr>
-      <th><a href="" ng-click="predicate = 'name'; reverse=!reverse">Name</a></th>
-      <th><a href="" ng-click="predicate = 'artist'; reverse=!reverse">Artist</a></th>
-      <th><a href="" ng-click="predicate = 'album'; reverse=!reverse">Album</a></th>
-      <th><a href="" ng-click="predicate = 'time'; reverse=!reverse">Time</a></th>
+      <th><a href="" ng-click="reverseOrder('name')">Name</a></th>
+      <th><a href="" ng-click="reverseOrder('artist')">Artist</a></th>
+      <th><a href="" ng-click="reverseOrder('album')">Album</a></th>
+      <th><a href="" ng-click="reverseOrder('time')">Time</a></th>
       <th>Download</th>
     </tr>
   </thead>
 
   <tbody>
-    <tr ng-repeat="song in songs | orderBy:predicate:reverse | filter:query">
+    <tr ng-repeat="song in songs | orderBy:column:forward | filter:query">
       <td>{{ song.name }}</td>
       <td>{{ song.artist }}</td>
       <td>{{ song.album }}</td>
@@ -307,16 +354,16 @@ Filter: <input data-ng-model="query" placeholder="The Black Keys" style="border:
 <table data-ng-controller="songListCtrl">
   <thead>
     <tr>
-      <th><a href="" data-ng-click="predicate = 'name'; reverse=!reverse">Name</a></th>
-      <th><a href="" data-ng-click="predicate = 'artist'; reverse=!reverse">Artist</a></th>
-      <th><a href="" data-ng-click="predicate = 'album'; reverse=!reverse">Album</a></th>
-      <th><a href="" data-ng-click="predicate = 'time'; reverse=!reverse">Time</a></th>
+      <th><a href="" ng-click="reverseOrder('name')">Name</a></th>
+      <th><a href="" ng-click="reverseOrder('artist')">Artist</a></th>
+      <th><a href="" ng-click="reverseOrder('album')">Album</a></th>
+      <th><a href="" ng-click="reverseOrder('time')">Time</a></th>
       <th>Download</th>
     </tr>
   </thead>
 
   <tbody>
-    <tr data-ng-repeat="song in songs | orderBy:predicate:reverse | filter:query">
+    <tr data-ng-repeat="song in songs | orderBy:column:forward | filter:query">
       <td>{{ song.name }}</td>
       <td>{{ song.artist }}</td>
       <td>{{ song.album }}</td>
