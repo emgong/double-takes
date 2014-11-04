@@ -1,5 +1,5 @@
 module.exports = (lineman) ->
-  loadNpmTasks: ['grunt-html-validation', 'grunt-htmlhint']
+  loadNpmTasks: lineman.config.application.loadNpmTasks.concat('grunt-html-validation', 'grunt-htmlhint')
 
   appendTasks:
     common: "copy:dev"
