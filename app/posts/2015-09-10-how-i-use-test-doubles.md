@@ -41,7 +41,7 @@ There are four episodes in this series:
 
 Some links of things referenced in the series so far:
 * The [actual project](https://github.com/searls/game-of-life-java-example) as worked on in the screencasts (feel free to finish it!)
-* My wiki on testing topics
+* [My wiki on testing topics](https://github.com/testdouble/contributing-tests/wiki)
 * [Our new testdouble.js library](https://github.com/testdouble/testdouble.js)
 * [GOOS](http://www.growing-object-oriented-software.com)
 * [Code Retreat](http://coderetreat.org)
