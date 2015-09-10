@@ -48,10 +48,23 @@ Finally, we spend ample time to ensure our clients have a plan for operating and
 
 ## Purchasing based on cost. 
 
-When purchasing pencils, then it may make sense to base that purchase on the lowest cost per pencil. Pencils are, after all, fairly similar in regards to quality, efficiency, ease of use, and general value for the dollar. Software developers, however, are not. When procuring custom software development services, you are in essence buying software developers which vary wildly in quality, efficiency, ease of use. and general value for the dollar. Evaluating the level of developers is hard, we spend a lot of time doing it. People have touted and disputed the 10x developer, but what we have experienced is that there are developers who are much better than others at building custom software. Really exceptional developers know when to challenge product owners on the features being discussed, when to evaluate alternative solutions to problems that aren’t being discussed. When to absorb the cost of adopting a new technology in order to reduce the overall cost of the projects. When to spend the extra time refactoring a solution that doesn’t seem to be clear enough to maintain. Identifying the types of developers that excel at solving these problems is really hard, we encourage all of our clients to spend the time talking to our team so that they have a level of trust that we are the best firm for their problem. Further we’d love if they talked to current and past clients about what it is like working with us on a day to day basis so that they understand that our cost may be higher but so is our value.
+When purchasing pencils, then it may make sense to base that purchase on the lowest cost per pencil. Pencils are, after all, fairly similar in regards to quality, efficiency, ease of use, and general value for the dollar. Software developers, unfortunately, are not. When procuring custom software development services, you are in essence buying software developers which vary wildly in quality, efficiency, ease of use, and general value for the dollar. 
 
-## Conflating "faster" and "better".
+Evaluating the aptitude of a software developer is hard, even for highly-experienced developers like ourselves.
 
-Procuring custom software development is a challenging process and one that shouldn’t be undertaken blindly based using an RFP or other disconnected process. Hopefully companies realize that the mistakes above can be avoided by spending some time working with custom software agencies to establish trust and a greater understanding of how they work.
+People have touted and disputed the notion of a "10x developer
+", but our experience tells us that there are massive variances in skill, communication, creativity, and professionalism among today's programmers—all of these attributes directly influence the quality of the custom software they can be expected to produce. 
 
-DISCLAIMER: We’d appreciate any opportunity to talk to clients about their custom software needs, we’ll confidently refer you elsewhere if we don’t believe Test Double is right fit for your organization.
+Truly exceptional developers know:
+
+*  When to challenge product owners on the features being discussed, and when to evaluate alternative solutions to the problems that _aren’t_ being discussed
+* When to absorb the cost of adopting a new technology, and when chasing after a new-and-shiny technology won't be worthwhile
+* When to spend time refactoring working code so that it's easier to change the next time someone looks at it, and when to defer clean-up tasks until more is known about how it might need to change in the future
+
+Comparing two consultancies based solely on cost is easy, identifying the developers who excel at balancing the trade-offs above is hard. To better equip prospective clients to make the right decisions for their needs, we encourage them to take their time to get to know us before making a long time commitment. Further, because there's no better way to judge the competency of a developer than to work closely with them for a few months, we love when prospective clients ask to talk with others who've worked with us previously.
+
+## Conclusion
+
+Procuring custom software development is a challenging process and one that shouldn’t be undertaken blindly based using an RFP or other disconnected, commodity-mindset process. Hopefully companies realize that many of the pitfalls discussed above can be avoided by investing the time to collaborate closely with a software agency—first on a small commitment to establish trust, then on larger endeavors once the partnership proves fruitful.
+
+[**DISCLAIMER:** If you find yourself in need of custom software, we'd of course appreciate the opportunity to [talk to you about it](mailto:hello@testdouble.com). Even if it's clear that Test Double isn't the best fit for you, our broad network enables us to confidently refer dozens of prospects each year to the developers that are right for them.]
