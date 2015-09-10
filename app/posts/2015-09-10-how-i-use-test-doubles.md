@@ -36,10 +36,11 @@ as an example problem to work through together, one test at a time.
 Episodes so far in the series:
 * [Part 1](https://www.youtube.com/watch?v=aeX5OXO-w30&index=1&list=PLIuJbrOVyGjl0keQ-QyiMEOCvmabJEf0t)
 * [Part 2](https://www.youtube.com/watch?v=jGs55tQS7ww&index=2&list=PLIuJbrOVyGjl0keQ-QyiMEOCvmabJEf0t)
-* Part 3 (uploading…)
+* [Part 3](https://www.youtube.com/watch?v=iL2l_pbOlug&list=PLIuJbrOVyGjl0keQ-QyiMEOCvmabJEf0t&index=3)
 
 Some links of things referenced in the series so far:
 * My wiki on testing topics
 * [Our new testdouble.js library](https://github.com/testdouble/testdouble.js)
 * [GOOS](http://www.growing-object-oriented-software.com)
 * [Code Retreat](http://coderetreat.org)
+* The original implementation this series is based on is [on GitHub](https://github.com/searls/junit-mocha-example/tree/2015-08-31-group/src/main/java/com/conway)
