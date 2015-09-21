@@ -1,3 +1,11 @@
+---
+title: "Buying Software is not Buying Software Services"
+author:
+  name: "Todd Kaufman"
+  url: "http://twitter.com/toddkaufman"
+reddit: false
+---
+
 I get to talk to a lot of people about what we do at Test Double and I’m constantly amazed by the number of interesting and unique challenges that face businesses from different industries. It seems like there should be off the-shelf solutions for most of what people need after 40 or so years of commercial software sales, but existing solutions often don’t have the required features, they raise support concerns, or they require extensive customization to meet the needs of the business. Companies then turn to agencies like ours, for a custom software solution.
 
 Unfortunately, many companies use the same mindset for purchasing services that they would when buying packaged software (or pencils or staplers or other commodity products). This mindset can create a number of headaches for both buyer and seller; leading to a defensive relationship between the the two and resulting in custom software that's _still_ a poor match for their needs.
@@ -6,7 +14,7 @@ Most businesses that we talk to are either at a loss with how to select a partne
 
 ## Forcing a delivery date
 
-Clients who are purchasing commodity products or services can typically get a fairly narrow range for estimates for time and cost. It makes sense when building a house, painting a room, or manufacturing a widget that you can accurately predict when you will be done. It has been done many times before and the steps to completion are very well known. Unfortunately,  custom software development is not well known. If the problem a customer is trying to solve is already well understood, then the chances are that they can find something off-the-shelf or with open source that will do exactly what they want. They won’t need a firm like ours in that case. Assuming that what they need actually is unique, then it is difficult at best for us to forecast when exactly we’ll be done. The very uniqueness of the problem that drives clients to buying our services in the first place is the same thing that limits our ability to tell clients explicitly when we’ll be done. Instead, we try to guide our clients to focus on minimizing scope, reducing complexity, and eliminating risk throughout the process. Doing these things and openly sharing information about our progress and the remaining work allows us to narrow in on a delivery date and communicate that to our clients consistently from the start of the project.
+Clients who are purchasing commodity products or services can typically get a fairly narrow range of estimates for time and cost. It makes sense when building a house, painting a room, or manufacturing a widget that you can accurately predict when you will be done. It has been done many times before and the steps to completion are very well known. Unfortunately,  custom software development is not well known. If the problem a customer is trying to solve is already well understood, then the chances are that they can find something off-the-shelf or with open source that will do exactly what they want. They won’t need a firm like ours in that case. Assuming that what they need actually is unique, then it is difficult at best for us to forecast when exactly we’ll be done. The very uniqueness of the problem that drives clients to buying our services in the first place is the same thing that limits our ability to tell clients explicitly when we’ll be done. Instead, we try to guide our clients to focus on minimizing scope, reducing complexity, and eliminating risk throughout the process. Doing these things and openly sharing information about our progress and the remaining work allows us to narrow in on a delivery date and communicate that to our clients consistently from the start of the project.
 
 ## Fixing scope
 
