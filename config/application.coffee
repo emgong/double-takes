@@ -1,11 +1,13 @@
 module.exports = (lineman) ->
-  loadNpmTasks: lineman.config.application.loadNpmTasks.concat('grunt-html-validation', 'grunt-htmlhint')
+  loadNpmTasks: lineman.config.application.loadNpmTasks.concat('grunt-html-validation', 'grunt-htmlhint', 'grunt-sass')
 
   appendTasks:
     common: "copy:dev"
     dist: "copy:dist"
 
-  enableSass: true
+  prependTasks:
+    common: lineman.config.application.prependTasks.common.concat("sass")
+
   enableAssetFingerprint: true
 
   assetFingerprint:
@@ -16,10 +18,6 @@ module.exports = (lineman) ->
     options:
       title: "<%= pkg.title %>"
       dateFormat: 'MMMM Do, YYYY'
-
-  sass:
-    options:
-      bundleExec: true
 
   copy:
     dev:
