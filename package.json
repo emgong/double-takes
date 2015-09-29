@@ -20,7 +20,8 @@
     "Todd Kaufman <todd@testdouble.com>"
   ],
   "scripts": {
-    "start": "lineman run"
+    "start": "lineman run",
+    "postinstall": "lineman build"
   },
   "devDependencies": {
     "lineman": ">= 0.28.3",
