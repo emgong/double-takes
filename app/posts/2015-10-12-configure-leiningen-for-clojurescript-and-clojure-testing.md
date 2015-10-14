@@ -126,7 +126,7 @@ The `run` function will execute all of the tests that match the reader. Using th
   (deftest do-i-work
     (is (= 1 2)))
 ```
-Now that we have tests, lets tell the PhantomJS runner how to execute them.  In `runner.js`, replace the comment in `page.evaluate...` with `cljs.cash_management.test.run();`
+Now that we have tests, lets tell the PhantomJS runner how to execute them.  In `runner.js`, replace the comment in `page.evaluate...` with `cljs.my_namespaced_app.test.run();`
 
 Finally, we need to add a `:test-commands` entry that will hook all of this together. It creates one test named "unit", that will run PhantomJS with a couple of arguments: the location of our script and the static HTML page that will load the compiled test code.  Our final lein-cljsbuild will look like this:
 
