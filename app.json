@@ -1,0 +1,10 @@
+{
+  "name":"double-takes",
+  "scripts":{},
+  "env":{
+    "NPM_CONFIG_PRODUCTION":{
+      "required":true
+    }
+  },
+  "addons":[]
+}
