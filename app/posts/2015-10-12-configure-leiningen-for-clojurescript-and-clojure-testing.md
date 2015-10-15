@@ -36,7 +36,7 @@ Next, to ensure our existing Midje tests can run, you'll need to add `:test-path
 
 ## Build configuration
 
-Within the `:builds` sequence for lein-cljsbuild, we began with two profiles; one for basic development, and one with advanced optimizations.  I've added a new one called `:test`that includes the paths to the source and the tests.  This makes it extremely convenient because allows cljsbuild to compile in all three sequences at once and gives you a test suite alongside the library code.  Below is the new `:builds` sequence:
+Within the `:builds` sequence for lein-cljsbuild, we began with two profiles; one for basic development, and one with advanced optimizations.  I've added a new one called `:test`that includes the paths to the source and the tests.  This makes it extremely convenient because it allows cljsbuild to compile in all three sequences at once and gives you a test suite alongside the library code.  Below is the new `:builds` sequence:
 
 ``` clojure
 :builds {:minify {:source-paths ["src-cljs"]
@@ -58,9 +58,9 @@ Within the `:builds` sequence for lein-cljsbuild, we began with two profiles; on
 
 So far, what we've seen has been fairly straightforward.  We've moved our existing Clojure tests, created a home for our ClojureScript tests and created a new test suite build.  Now, we're going to talk about the more tricky bits; how to actually get our ClojureScript tests to execute using PhantomJS.
 
-There are several components needed to get this to work.  The first component, we've already completed by adding a test build that compiles the tests into JavaScript so that it they can be run by PhantomJS.
+There are several components needed to get this to work.  The first component, we've already completed by adding a test build that compiles the tests into JavaScript so they can be run by PhantomJS.
 
-Let's next create a script that will fire up headless browser that we'll eventually use to execute our tests.  As you can see from the new `:test` profile, we're outputting the compiled JavaScript to a `resources` directory.  We'll create this new PhantomJS script and save it to a new `resources/test/phantom` path as `runner.js`.  Below is the script:
+Let's next create a script that will fire up a headless browser that we'll eventually use to execute our tests.  As you can see from the new `:test` profile, we're outputting the compiled JavaScript to a `resources` directory.  We'll create this new PhantomJS script and save it to a new `resources/test/phantom` path as `runner.js`.  Below is the script:
 
 ```javascript
 var page = require('webpage').create();
