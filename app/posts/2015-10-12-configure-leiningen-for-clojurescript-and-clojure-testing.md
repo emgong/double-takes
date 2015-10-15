@@ -117,7 +117,7 @@ Since we're hopefully going to have many ClojureScript tests, lets create a file
   (run-all-tests #"cljs.my-namespaced-app.*-test"))
 ```
 
-The `run` function will execute all of the tests that match the reader. Using this pattern, we can create our first _real_ test. Let's create a new file called `foo_test.cljs` and save it to the `test/cljs/my_namespaced_app` directory.
+The `run` function will execute all of the tests that match the regular expression. Using this pattern, we can create our first _real_ test. Let's create a new file called `foo_test.cljs` and save it to the `test/cljs/my_namespaced_app` directory.
 
 ```clojure
 (ns cljs.my-namespaced-app.foo-test
