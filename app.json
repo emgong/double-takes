@@ -6,7 +6,7 @@
       "required":true
     }
   },
-  "addons":[]
+  "addons":[],
   "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-nodejs"
