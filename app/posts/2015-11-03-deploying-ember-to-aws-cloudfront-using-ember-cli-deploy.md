@@ -32,7 +32,7 @@ I need to edit the bucket permissions to allow public read access to the files t
 1. Select the `app.[appdomain].com` bucket, click **Properties**, click **Permissions**, and click **Add bucket policy**
 1. Copy and paste the following policy into the Bucket Policy Editor (change `app.[appdomain].com` to match the name of the bucket):
 
-    ```json
+    ```javascript
     {
       "Version":"2012-10-17",
       "Statement": [{
@@ -56,7 +56,7 @@ I need to create a set of access keys that allow upload access to S3.
 1. In box **1**, type a name for the user (I used the name of my Ember app), then click **Create**.
 1. Click **Show User Credentials** and copy the Access Key ID and Secret Access Key into a file named `.env.deploy.production` in the root of the ember-cli app:
 
-    ```
+    ```bash
     AWS_KEY=[Access Key ID]
     AWS_SECRET=[Secret Access Key]
     AWS_BUCKET=app.[appdomain].com
@@ -71,13 +71,13 @@ I need to create a set of access keys that allow upload access to S3.
 
 I've admired the [ember-cli-deploy](http://ember-cli.github.io/ember-cli-deploy/) project from a distance since [Luke Melia's great talk on deploying Ember apps at EmberConf](https://www.youtube.com/watch?v=4EDetv_Rw5U). This seems like a great chance to try it out.
 
-```
+```bash
 $ ember install ember-cli-deploy
 ```
 
 I'm going to deploy everything (including my `index.html`) to S3, so I've installed the following [ember-cli-deploy plugins](http://ember-cli.github.io/ember-cli-deploy/docs/v0.5.x/plugins/):
 
-```
+```bash
 $ ember install ember-cli-deploy-build
 $ ember install ember-cli-deploy-gzip
 $ ember install ember-cli-deploy-manifest
@@ -98,7 +98,7 @@ ENV.s3 {
 
 Now I can upload my Ember application build to S3 with one command:
 
-```
+```bash
 $ ember deploy
 ```
 
@@ -209,20 +209,20 @@ From StartSSL, I get a few different files:
 
 Amazon requires a single file for the CA's certificates, so I run the following command to combine `sub.class1.server.ca.pem` and `ca.pem` into one file that contains both:
 
-```
+```bash
 $ cat sub.class1.server.ca.pem ca.pem > ca-bundle.pem
 ```
 
 Uploading the certificate files requires the [AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html). If it's not already installed, it can be installed via Homebrew:
 
-```
+```bash
 $ brew install awscli
 $ aws configure
 ```
 
 I use the following command to upload my SSL certificate to AWS:
 
-```
+```bash
 $ aws iam upload-server-certificate --server-certificate-name [appdomain] --certificate-body file:///path/to/certificates/ssl.crt --private-key file:///path/to/certificates/ssl.key --certificate-chain file:///path/to/certificates/ca-bundle.pem --path /cloudfront/[appdomain]/
 ```
 
@@ -252,13 +252,13 @@ After CloudFront updates this change through its network, anyone accessing my Em
 
 When I make changes to my Ember application that are ready to be deployed, I can easily deploy them with the ember-cli-deploy command:
 
-```
+```bash
 $ ember deploy
 ```
 
 Fingerprinted assets like the app's CSS and JavaScript have unique names, so I don't worry about CloudFront caching for these objects. I do, however, need to invalidate the CloudFront cache for my `index.html`. I can do this with the AWS CLI (replace `[distributionid]` with the proper CloudFront ID):
 
-```
+```bash
 // This first command only needs to be run once per aws-cli installation to enable the preview CloudFront commands
 $ aws configure set preview.cloudfront true
 
