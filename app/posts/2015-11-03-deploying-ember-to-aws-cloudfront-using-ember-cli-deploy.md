@@ -126,7 +126,7 @@ When I click the **Endpoint** link to `app.[appdomain].com.s3-website-us-east-1.
         </Condition>
           <Redirect>
             <HostName>app.[appdomain].com.s3-website-us-east-1.amazonaws.com</HostName>
-            <ReplaceKeyPrefixWith>#!/</ReplaceKeyPrefixWith>
+            <ReplaceKeyPrefixWith>#/</ReplaceKeyPrefixWith>
           </Redirect>
       </RoutingRule>
     </RoutingRules>
@@ -178,7 +178,7 @@ I visit `app.[appdomain].com`, and I see my Ember application delivered via Clou
         </Condition>
         <Redirect>
           <HostName>app.[appdomain].com</HostName>
-          <ReplaceKeyPrefixWith>#!/</ReplaceKeyPrefixWith>
+          <ReplaceKeyPrefixWith>#/</ReplaceKeyPrefixWith>
         </Redirect>
       </RoutingRule>
     </RoutingRules>
