@@ -44,7 +44,7 @@ I need to edit the bucket permissions to allow public read access to the files t
     }
     ```
 
-1. Click **Save**.
+1. Click **Save**
 
 ### Create AWS Access Keys
 
