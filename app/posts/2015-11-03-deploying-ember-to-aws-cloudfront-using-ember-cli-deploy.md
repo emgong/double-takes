@@ -98,7 +98,7 @@ ENV.s3 {
 Now I can upload my Ember application build to S3 with one command:
 
 ```bash
-$ ember deploy
+$ ember deploy production
 ```
 
 ### Enable Static Site Hosting on S3
@@ -252,7 +252,7 @@ After CloudFront updates this change through its network, anyone accessing my Em
 When I make changes to my Ember application that are ready to be deployed, I can easily deploy them with the ember-cli-deploy command:
 
 ```bash
-$ ember deploy
+$ ember deploy production
 ```
 
 Fingerprinted assets like the app's CSS and JavaScript have unique names, so I don't worry about CloudFront caching for these objects. I do, however, need to invalidate the CloudFront cache for my `index.html`. I can do this with the AWS CLI (replace `[distributionid]` with the proper CloudFront ID):
