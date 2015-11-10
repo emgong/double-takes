@@ -268,3 +268,5 @@ $ aws cloudfront create-invalidation --distribution-id [distributionid] --invali
 
 - I really don't like having to run that ugly CLI command at the end to invalidate my `index.html`, so I'm working on an [ember-cli-deploy plugin](http://ember-cli.github.io/ember-cli-deploy/docs/v0.5.x/plugins/) to automate this step
 - Once I've got the CloudFront invalidation step automated, I plan on creating an [ember-cli-deploy plugin pack](http://ember-cli.github.io/ember-cli-deploy/docs/v0.5.x/plugin-packs/) that contains all of the plugins needed for this deployment strategy
+
+**UPDATE:** These two enhancements are [now available](/posts/2015-11-10-introducing-ember-cli-deploy-cloudfront-and-ember-cli-deploy-aws-pack.html)!
