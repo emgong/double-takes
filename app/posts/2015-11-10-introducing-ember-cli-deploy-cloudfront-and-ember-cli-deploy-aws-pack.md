@@ -3,6 +3,13 @@ title: "New plugins to deploy Ember to CloudFront."
 author:
   name: "Kevin Pfefferle"
   url: "http://twitter.com/kpfefferle"
+tldr:
+  title: "Two new plugins!"
+  body: """
+        <a href='https://github.com/kpfefferle/ember-cli-deploy-cloudfront'>ember-cli-deploy-cloudfront</a>
+        <br>
+        <a href='https://github.com/kpfefferle/ember-cli-deploy-aws-pack'>ember-cli-deploy-aws-pack</a>
+        """
 ---
 
 Last week, I blogged about [deploying Ember to AWS CloudFront](/posts/2015-11-03-deploying-ember-to-aws-cloudfront-using-ember-cli-deploy.html). At the end of the post, I noted two improvements I'd like to make:
