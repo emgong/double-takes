@@ -1,5 +1,5 @@
 ---
-title: "Introducing ember&#8209;cli&#8209;deploy&#8209;cloudfront and ember&#8209;cli&#8209;deploy&#8209;aws&#8209;pack."
+title: "New plugins to deploy Ember to CloudFront."
 author:
   name: "Kevin Pfefferle"
   url: "http://twitter.com/kpfefferle"
