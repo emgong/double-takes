@@ -8,7 +8,7 @@ module.exports = (lineman) ->
   prependTasks:
     common: lineman.config.application.prependTasks.common.concat("sass")
 
-  enableAssetFingerprint: true
+  enableAssetFingerprint: if process.env.HEROKU_APP_NAME == "testdoubleblog" then true else false
 
   assetFingerprint:
     options:
