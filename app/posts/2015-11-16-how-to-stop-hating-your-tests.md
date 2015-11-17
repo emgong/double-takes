@@ -22,3 +22,13 @@ materiaizing by tweaking their tools, workflow, and perspective.
 The [video above](https://www.youtube.com/watch?v=a6gel0eVeNw) was recorded at
 [RubyConf 2015](http://rubyconf.org) on November, 15, 2015 (incidentally, Test
 Double's 4th anniversary!).
+
+I referenced a few things in the talk that I ought to link to here:
+
+* A talk on creatively making targeted test suites,
+[Breaking Up (With) Your Test Suite](http://blog.testdouble.com/posts/2014-05-25-breaking-up-with-your-test-suite.html)
+* A [screencast on 'Discovery Testing'](http://blog.testdouble.com/posts/2015-09-10-how-i-use-test-doubles.html)
+* A [wiki of testing topics](http://github.com/testdouble/contributing-tests/wiki)
+I assembled while preparing the talk
+* A [test double library](http://github.com/testdouble/testdouble.js) for JavaScript
+that we maintain
