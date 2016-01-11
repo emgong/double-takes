@@ -6,7 +6,7 @@ Home of Test Double's official blog. http://blog.testdouble.com
 
 First, add a post as a markdown file to `app/posts`. Name it like so: "YYYY-MM-DD-url-slug-title.md"
 
-So, for example, you might create a post named `app/posts2013-06-15-kramer-is-super-cool.md`.
+So, for example, you might create a post named `app/posts/2013-06-15-kramer-is-super-cool.md`.
 
 Each post is comprised of a header (which supplies necessary metadata for the layouts to render appropriately) and a post body.
 
