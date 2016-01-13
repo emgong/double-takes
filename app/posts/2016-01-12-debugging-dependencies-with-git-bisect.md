@@ -25,8 +25,8 @@ my app. Fix it!"
 
 Though cathartic, that approach is decidedly unproductive. It's a bummer for the
 gem's maintainer, to start. It comes across as entitled, too, as if you're requesting
-warranty service for something you almost certainly never paid for. Most
-persuasively, doing so wastes your own time, because the maintainer will
+warranty service for something you almost certainly never paid for.
+Doing so wastes your own time, because the maintainer will
 probably ask you to reproduce the issue, which you won't be able to easily do,
 since you can't just upload your employer's super secret proprietary app to the
 public (sidenote: loads of people actually do this anyway, out of apparent
