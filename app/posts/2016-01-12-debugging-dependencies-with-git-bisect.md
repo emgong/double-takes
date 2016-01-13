@@ -53,7 +53,7 @@ Weirich](https://en.wikipedia.org/wiki/Jim_Weirich)'s
 which I do my best to lovingly maintain. A test [started
 failing](https://github.com/rspec-given/rspec-given/issues/18) when RSpec 3.3 was
 upgraded to 3.4—and I had no idea why—so
-[@myronmarsten](https://github.com/myronmarston) suggested I use [git
+[@myronmarston](https://github.com/myronmarston) suggested I use [git
 bisect](https://git-scm.com/docs/git-bisect)'s `run` command against the failing
 test of my code.
 
