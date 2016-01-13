@@ -32,7 +32,7 @@ since you can't just upload your employer's super secret proprietary app to the
 public (sidenote: loads of people actually do this anyway, out of apparent
 ignorance or desparation).
 
-So, the issue ends in a stalemate with neither party providinfg the information
+So, the issue ends in a stalemate with neither party providing the information
 needed to definitively fix or dismiss the problem. Months pass as the issue
 whithers on the vine, never to be closed due to the ambiguity surrounding
 the failure's root cause.
