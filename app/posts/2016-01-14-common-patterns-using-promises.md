@@ -23,3 +23,5 @@ Unfortunately I had to cut them because I did a poor job repeating for the micro
 If you have questions about JavaScript promises, feel free to [tweet them at me][twitter].
 
 [twitter]: https://twitter.com/neall
+
+<script async class="speakerdeck-embed" data-id="ba779c119cb748eab8fe34dd09161777" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
