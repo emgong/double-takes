@@ -14,14 +14,12 @@ someone who has heard of Ember but probably hasn't really tried it out.
 It shows off some simple code and some of my favorite parts of the Ember ecosystem
 in an attempt to get people interested in trying out Ember.
 
-> Are you overwhelmed by JavaScript framework fatigue? Do you wish for the
-> benefits of the newest front-end advancements without continually rewriting
-> your application? Let's take a look at the latest version of Ember. We'll
-> review the tooling, debugging, and addons that have made Ember a growing
-> choice for innovative companies like Heroku, Travis CI, Square, and Nest. See
-> how Ember adopts the best from other frameworks while bringing us the future
-> of JavaScript today. You'll leave this session with a clear understanding of
-> how Ember fits into your front-end toolbox and why it might be the ideal
-> choice for your next project.
+Are you overwhelmed by JavaScript framework fatigue? Do you wish for the benefits
+of the newest front-end advancements without continually rewriting your
+application? Let's take a look at the latest version of Ember. We'll review the
+tooling, debugging, and addons that have made Ember a growing choice for
+innovative companies like Heroku, Travis CI, Square, and Nest. See how Ember
+adopts the best from other frameworks while bringing us the future of JavaScript
+today.
 
 <script async class="speakerdeck-embed" data-id="15d79fad801b41ab86fb8df6f763ebb7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
