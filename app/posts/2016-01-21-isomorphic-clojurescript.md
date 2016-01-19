@@ -184,7 +184,7 @@ You'll see that Reagent has a `render-to-static-markup` function that mirrors th
 
 If you build (`lein cljsbuild once server`) and run the application (`node resources/public/js/server-side/server.js`) as before, you should see output similar to the image below.  Check out the network tab - there isn't any JavaScript sent to the client at this time.
 
-![server rendered code](../img/isomorphic-clojurescript/server-render.png)
+![server rendered code](../img/isomorphic-clojurescript/server-rendering.jpg)
 
 ## Create Client Side Application
 
@@ -409,7 +409,7 @@ Next, add a script tag to include the compiled client side code.
 
 We've finally got everything wired up. `lein cljsbuild once app server` and `node resources/public/js/server-side/server.js`.  You should see "home page" output to both the browser and server consoles.
 
-![client rendered code 1](../img/isomorphic-clojurescript/client-1.png)
+![client rendered code 1](../img/isomorphic-clojurescript/client-1.jpg)
 
 Now we could totally stop here because we have a functioning isomorphic application, but lets add some other goodies.
 
@@ -459,7 +459,7 @@ Add a new client side route and some navigation to `(ns demo.core)`.
 
 Build both the app and server then fire up the Node application once again. You'll see the home page along with the new navigation. Click "Page One".  You'll see "Page One" in browser console, but not in server console. All is now rendering client side.
 
-![client rendered code 2](../img/isomorphic-clojurescript/client-2.png)
+![client rendered code 2](../img/isomorphic-clojurescript/client-2.jpg)
 
 Now for a little fun and to show off some basic JavaScript interop, let's add an alert.
 
@@ -481,7 +481,7 @@ Now for a little fun and to show off some basic JavaScript interop, let's add an
 
 Rebuild the app and server and start the app once more.
 
-![client rendered code 2](../img/isomorphic-clojurescript/client-3.png)
+![client rendered code 2](../img/isomorphic-clojurescript/client-3.jpg)
 
 ## Next Steps
 
