@@ -59,6 +59,10 @@ Since we'll be targeting Node.js, we need to add a package.json file at the proj
 }
 ```
 
+We can also delete the template Clojure code, as we'll be replacing it with ClojureScript.
+
+`rm -rf src/ test/`
+
 ### Create an Express App
 
 We'll be using Express as our Node.js web application framework.  Run the following command to install it.
@@ -254,7 +258,7 @@ Next, we'll need to add [Secretary](https://github.com/gf3/secretary) for basic 
 Now, let's create some client side markup.  We'll define a default route, a Reagent atom to keep state, a function `app-view` that we'll call to determine the page requested, and some basic markup to display for that page.
 
 ```
-;src/demo/core.clj
+;src/demo/core.cljs
 
 (ns demo.core
   (:require [reagent.core :as reagent :refer [atom]]
