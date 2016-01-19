@@ -19,7 +19,7 @@ With many Single Page Application-type architectures, when a user first hits the
 
 ## Creating an Isomorphic ClojureScript App
 
-For this application, I'm going to assume that you already have Java, Leiningen and Node.js already installed.
+For this application, I'm going to assume that you already have Java (> 1.7.0), Leiningen (2.5.3) and Node.js (v5.4.1) already installed.
 
 ### Create New Project
 
