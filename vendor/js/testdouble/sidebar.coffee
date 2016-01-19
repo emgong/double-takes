@@ -10,13 +10,13 @@ root.Sidebar = class Sidebar
       onOpen: -> enablePageLinks()
       onClose: -> disablePageLinks()
 
-    $("#right-menu").on 'touchstart click', =>
+    $("#right-menu").on 'click', =>
       @toggle()
 
     $(document).on 'keyup', (e) =>
       @close() if e.keyCode == escapeKey
 
-    $(".close").on 'touchstart click', =>
+    $(".close").on 'click', =>
       @close()
 
     @
