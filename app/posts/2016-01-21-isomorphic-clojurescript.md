@@ -291,7 +291,7 @@ In our server side template, we've previously defined a div with the id `app` to
   (:require [reagent.core :as reagent :refer [atom]]
             [secretary.core :as secretary :refer-macros [defroute]]
             [pushy.core :as pushy :refer [push-state!]]
-            [cljsnode.core :as core])
+            [demo.core :as core])
   (:import goog.History))
 
 (enable-console-print!)
@@ -402,7 +402,7 @@ Next, add a script tag to include the compiled client side code.
     [:script {:type "text/javascript" :src "goog/base.js"}]
     [:script {:type "text/javascript" :src "app.js"}]
     [:script {:type                    "text/javascript"
-              :dangerouslySetInnerHTML {:__html "goog.require('cljsnode.client');"}}]]])
+              :dangerouslySetInnerHTML {:__html "goog.require('demo.client');"}}]]])
 
 
 
