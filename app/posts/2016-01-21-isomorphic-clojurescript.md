@@ -285,7 +285,7 @@ Now, let's create some client side markup.  We'll define a default route, a Reag
 In our server side template, we've previously defined a div with the id `app` to use for our client side application render to.  We have just created some basic markup for it, but now we need to actually render the markup.  Create a new namespace where we'll use Reagent to render a component to the div.  You'll see we call the `app-view` function from here to render the markup for the page requested.
 
 ```
-; src-clien/demo/client.cljs
+; src-client/demo/client.cljs
 
 (ns demo.client
   (:require [reagent.core :as reagent :refer [atom]]
