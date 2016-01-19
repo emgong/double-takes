@@ -130,6 +130,7 @@ Now that everything is wired up, let's test out this simple server and route. Fi
 We have our server up and running, but let's go even further by creating a server rendered page.  For this example, we'll be using [Reagent](http://reagent-project.github.io/), a minimalistic interface between ClojureScript and React.js.
 
 In order to use Reagent, it's necessary to install React.js on the server side as well.  Install it by executing:
+
 `npm install react react-dom --save`
 
 and add Reagent to `project.clj`
