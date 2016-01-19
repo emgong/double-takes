@@ -419,7 +419,15 @@ Next, add a script tag to include the compiled client side code.
 
 ```
 
-We've finally got everything wired up. `lein cljsbuild once app server` and `node resources/public/js/server-side/server.js`.  You should see "home page" output to both the browser and server consoles.
+We've finally got everything wired up. Our build command has changed though. Now we build both the server and client sides with:
+
+`lein cljsbuild once app server`
+
+...and we can run the server code in the same old way:
+
+`node resources/public/js/server-side/server.js`.
+
+You should see "home page" output to both the browser and server consoles.
 
 ![client rendered code 1](../img/isomorphic-clojurescript/client-1.jpg)
 
