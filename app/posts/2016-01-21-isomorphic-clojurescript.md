@@ -391,6 +391,14 @@ Next, add a script tag to include the compiled client side code.
 
 ```
 ;src/site/tools.cljs
+
+(ns site.tools
+  (:require [reagent.core :as reagent :refer [atom]]
+            [secretary.core :as secretary :refer-macros [defroute]]
+            [demo.core :as core]))
+
+(enable-console-print!)
+
 (defn template [{:keys [body]}]
   [:html
    [:head
@@ -404,7 +412,10 @@ Next, add a script tag to include the compiled client side code.
     [:script {:type                    "text/javascript"
               :dangerouslySetInnerHTML {:__html "goog.require('demo.client');"}}]]])
 
-
+(defn ^:export render-page [path]
+  (reagent/render-to-static-markup (do
+                                     (secretary/dispatch! path)
+                                     (template {:body core/app-view}))))
 
 ```
 
