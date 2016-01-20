@@ -201,7 +201,7 @@ First, let's do some refactoring. Create a new namespace `(ns site.tools)` and m
 ; src/site/tools.cljs
 
 (ns site.tools
-  (:require [reagent.core :as reagent :refer [atom]]))
+  (:require [reagent.core :as reagent]))
 
 (enable-console-print!)
 
@@ -261,11 +261,8 @@ Now, let's create some client side markup.  We'll define a default route, a Reag
 ;src/demo/core.cljs
 
 (ns demo.core
-  (:require [reagent.core :as reagent :refer [atom]]
-            [secretary.core :as secretary :refer-macros [defroute]]
-            [goog.events :as events]
-            [goog.history.EventType :as EventType])
-  (:import goog.History))
+  (:require [reagent.core :refer [atom]]
+            [secretary.core :as secretary :refer-macros [defroute]]))
 
 (def current-page (atom nil))
 
@@ -292,9 +289,9 @@ In our server side template, we've previously defined a div with the id `app` to
 ; src-client/demo/client.cljs
 
 (ns demo.client
-  (:require [reagent.core :as reagent :refer [atom]]
-            [secretary.core :as secretary :refer-macros [defroute]]
-            [pushy.core :as pushy :refer [push-state!]]
+  (:require [reagent.core :as reagent]
+            [secretary.core :as secretary]
+            [pushy.core :as pushy]
             [demo.core :as core])
   (:import goog.History))
 
@@ -302,7 +299,7 @@ In our server side template, we've previously defined a div with the id `app` to
 
 (reagent/render-component [core/app-view] (.getElementById js/document "app"))
 
-(push-state! secretary/dispatch!
+(pushy/push-state! secretary/dispatch!
   (fn [x] (when (secretary/locate-route x) x)))
 
 ```
@@ -311,8 +308,8 @@ Next, we'll change our `render-page` function to dispatch the default client rou
 
 ```
 (ns site.tools
-  (:require [reagent.core :as reagent :refer [atom]]
-            [secretary.core :as secretary :refer-macros [defroute]]
+  (:require [reagent.core :as reagent]
+            [secretary.core :as secretary]
             [demo.core :as core]))
 
 (enable-console-print!)
@@ -369,7 +366,6 @@ Because we've built these separately, as it stands now, the server has no idea t
 
 (ns demo.server
   (:require [cljs.nodejs :as nodejs]
-            [demo.core :as core]
             [site.tools :as tools]))
 
 (nodejs/enable-util-print!)
@@ -397,8 +393,8 @@ Next, add a script tag to include the compiled client side code.
 ;src/site/tools.cljs
 
 (ns site.tools
-  (:require [reagent.core :as reagent :refer [atom]]
-            [secretary.core :as secretary :refer-macros [defroute]]
+  (:require [reagent.core :as reagent]
+            [secretary.core :as secretary]
             [demo.core :as core]))
 
 (enable-console-print!)
@@ -443,11 +439,8 @@ Add a new client side route and some navigation to `(ns demo.core)`.
 ;src/demo/core.cljs
 
 (ns demo.core
-  (:require [reagent.core :as reagent :refer [atom]]
-            [secretary.core :as secretary :refer-macros [defroute]]
-            [goog.events :as events]
-            [goog.history.EventType :as EventType])
-  (:import goog.History))
+  (:require [reagent.core :refer [atom]]
+            [secretary.core :as secretary :refer-macros [defroute]])) 
 
 (def current-page (atom nil))
 
