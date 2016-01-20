@@ -213,7 +213,7 @@ First, let's do some refactoring. Create a new namespace `(ns site.tools)` and m
             :content "width=device-width, initial-scale=1.0"}]]
    [:body
     [:div#app
-      [:h1 "Server Rendering"]]]])
+      [:h1 "Server Rendering!!!"]]]])
 
 (defn ^:export render-page [path]
   (reagent/render-to-static-markup (template)))
