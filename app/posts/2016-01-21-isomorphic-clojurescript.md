@@ -170,7 +170,7 @@ Change `src-server/demo/server.cljs` to require Reagent and call a function `han
       [:h1 "Server Rendering!!!"]]]])
 
 (defn ^:export render-page [path]
-  (reagent/render-to-static-markup (template)))
+  (reagent/render-to-static-markup [template]))
 
  (defn handle-request [req res]
    (.send res (render-page (.-path req))))
@@ -331,7 +331,7 @@ Next, we'll change our `render-page` function to dispatch the default client rou
 (defn ^:export render-page [path]
   (reagent/render-to-static-markup (do
                                      (secretary/dispatch! path)
-                                     (template {:body core/app-view}))))
+                                     [template {:body core/app-view}])))
 
 ```
 
@@ -419,7 +419,7 @@ Next, add a script tag to include the compiled client side code.
 (defn ^:export render-page [path]
   (reagent/render-to-static-markup (do
                                      (secretary/dispatch! path)
-                                     (template {:body core/app-view}))))
+                                     [template {:body core/app-view}])))
 
 ```
 
