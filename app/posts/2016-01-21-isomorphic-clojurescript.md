@@ -72,7 +72,7 @@ We'll be using Express as our Node.js web application framework.  Run the follow
 Now that it's installed, let's create a new server and a single route.  Create a new file `src-server/demo/server.cljs` and add the following code:
 
 ```
-;src-server/demo/server.cljs
+; src-server/demo/server.cljs
 
 (ns demo.server
   (:require [cljs.nodejs :as nodejs]))
@@ -258,7 +258,7 @@ Next, we'll need to add [Secretary](https://github.com/gf3/secretary) for basic 
 Now, let's create some client side markup.  We'll define a default route, a Reagent atom to keep state, a function `app-view` that we'll call to determine the page requested, and some basic markup to display for that page.
 
 ```
-;src/demo/core.cljs
+; src/demo/core.cljs
 
 (ns demo.core
   (:require [reagent.core :refer [atom]]
@@ -307,6 +307,8 @@ In our server side template, we've previously defined a div with the id `app` to
 Next, we'll change our `render-page` function to dispatch the default client route and render the home page markup on initial page load.
 
 ```
+; src/site/tools.cljs
+
 (ns site.tools
   (:require [reagent.core :as reagent]
             [secretary.core :as secretary]
@@ -362,7 +364,7 @@ Because we've built these separately, as it stands now, the server has no idea t
 
 
 ```
-;src-server/demo/server.cljs
+; src-server/demo/server.cljs
 
 (ns demo.server
   (:require [cljs.nodejs :as nodejs]
@@ -390,7 +392,7 @@ Because we've built these separately, as it stands now, the server has no idea t
 Next, add a script tag to include the compiled client side code.
 
 ```
-;src/site/tools.cljs
+; src/site/tools.cljs
 
 (ns site.tools
   (:require [reagent.core :as reagent]
@@ -436,7 +438,7 @@ Now we could totally stop here because we have a functioning isomorphic applicat
 Add a new client side route and some navigation to `(ns demo.core)`.
 
 ```
-;src/demo/core.cljs
+; src/demo/core.cljs
 
 (ns demo.core
   (:require [reagent.core :refer [atom]]
@@ -481,7 +483,7 @@ Build both the app and server then fire up the Node application once again. You'
 Now for a little fun and to show off some basic JavaScript interop, let's add an alert.
 
 ```
-;src/demo/core.cljs
+; src/demo/core.cljs
 
 ...
 
