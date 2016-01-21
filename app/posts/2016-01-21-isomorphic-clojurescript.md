@@ -72,7 +72,7 @@ We'll be using Express as our Node.js web application framework.  Run the follow
 Now that it's installed, let's create a new server and a single route.  Create a new file `src-server/demo/server.cljs` and add the following code:
 
 ```
-;src-server/demo/server.cljs
+; src-server/demo/server.cljs
 
 (ns demo.server
   (:require [cljs.nodejs :as nodejs]))
@@ -170,7 +170,7 @@ Change `src-server/demo/server.cljs` to require Reagent and call a function `han
       [:h1 "Server Rendering!!!"]]]])
 
 (defn ^:export render-page [path]
-  (reagent/render-to-static-markup (template)))
+  (reagent/render-to-static-markup [template]))
 
  (defn handle-request [req res]
    (.send res (render-page (.-path req))))
@@ -201,7 +201,7 @@ First, let's do some refactoring. Create a new namespace `(ns site.tools)` and m
 ; src/site/tools.cljs
 
 (ns site.tools
-  (:require [reagent.core :as reagent :refer [atom]]))
+  (:require [reagent.core :as reagent]))
 
 (enable-console-print!)
 
@@ -213,7 +213,7 @@ First, let's do some refactoring. Create a new namespace `(ns site.tools)` and m
             :content "width=device-width, initial-scale=1.0"}]]
    [:body
     [:div#app
-      [:h1 "Server Rendering"]]]])
+      [:h1 "Server Rendering!!!"]]]])
 
 (defn ^:export render-page [path]
   (reagent/render-to-static-markup (template)))
@@ -258,14 +258,11 @@ Next, we'll need to add [Secretary](https://github.com/gf3/secretary) for basic 
 Now, let's create some client side markup.  We'll define a default route, a Reagent atom to keep state, a function `app-view` that we'll call to determine the page requested, and some basic markup to display for that page.
 
 ```
-;src/demo/core.cljs
+; src/demo/core.cljs
 
 (ns demo.core
-  (:require [reagent.core :as reagent :refer [atom]]
-            [secretary.core :as secretary :refer-macros [defroute]]
-            [goog.events :as events]
-            [goog.history.EventType :as EventType])
-  (:import goog.History))
+  (:require [reagent.core :refer [atom]]
+            [secretary.core :as secretary :refer-macros [defroute]]))
 
 (def current-page (atom nil))
 
@@ -292,9 +289,9 @@ In our server side template, we've previously defined a div with the id `app` to
 ; src-client/demo/client.cljs
 
 (ns demo.client
-  (:require [reagent.core :as reagent :refer [atom]]
-            [secretary.core :as secretary :refer-macros [defroute]]
-            [pushy.core :as pushy :refer [push-state!]]
+  (:require [reagent.core :as reagent]
+            [secretary.core :as secretary]
+            [pushy.core :as pushy]
             [demo.core :as core])
   (:import goog.History))
 
@@ -302,7 +299,7 @@ In our server side template, we've previously defined a div with the id `app` to
 
 (reagent/render-component [core/app-view] (.getElementById js/document "app"))
 
-(push-state! secretary/dispatch!
+(pushy/push-state! secretary/dispatch!
   (fn [x] (when (secretary/locate-route x) x)))
 
 ```
@@ -310,9 +307,11 @@ In our server side template, we've previously defined a div with the id `app` to
 Next, we'll change our `render-page` function to dispatch the default client route and render the home page markup on initial page load.
 
 ```
+; src/site/tools.cljs
+
 (ns site.tools
-  (:require [reagent.core :as reagent :refer [atom]]
-            [secretary.core :as secretary :refer-macros [defroute]]
+  (:require [reagent.core :as reagent]
+            [secretary.core :as secretary]
             [demo.core :as core]))
 
 (enable-console-print!)
@@ -331,7 +330,7 @@ Next, we'll change our `render-page` function to dispatch the default client rou
 (defn ^:export render-page [path]
   (reagent/render-to-static-markup (do
                                      (secretary/dispatch! path)
-                                     (template {:body core/app-view}))))
+                                     [template {:body core/app-view}])))
 
 ```
 
@@ -365,11 +364,10 @@ Because we've built these separately, as it stands now, the server has no idea t
 
 
 ```
-;src-server/demo/server.cljs
+; src-server/demo/server.cljs
 
 (ns demo.server
   (:require [cljs.nodejs :as nodejs]
-            [demo.core :as core]
             [site.tools :as tools]))
 
 (nodejs/enable-util-print!)
@@ -394,11 +392,11 @@ Because we've built these separately, as it stands now, the server has no idea t
 Next, add a script tag to include the compiled client side code.
 
 ```
-;src/site/tools.cljs
+; src/site/tools.cljs
 
 (ns site.tools
-  (:require [reagent.core :as reagent :refer [atom]]
-            [secretary.core :as secretary :refer-macros [defroute]]
+  (:require [reagent.core :as reagent]
+            [secretary.core :as secretary]
             [demo.core :as core]))
 
 (enable-console-print!)
@@ -419,7 +417,7 @@ Next, add a script tag to include the compiled client side code.
 (defn ^:export render-page [path]
   (reagent/render-to-static-markup (do
                                      (secretary/dispatch! path)
-                                     (template {:body core/app-view}))))
+                                     [template {:body core/app-view}])))
 
 ```
 
@@ -440,14 +438,11 @@ Now we could totally stop here because we have a functioning isomorphic applicat
 Add a new client side route and some navigation to `(ns demo.core)`.
 
 ```
-;src/demo/core.cljs
+; src/demo/core.cljs
 
 (ns demo.core
-  (:require [reagent.core :as reagent :refer [atom]]
-            [secretary.core :as secretary :refer-macros [defroute]]
-            [goog.events :as events]
-            [goog.history.EventType :as EventType])
-  (:import goog.History))
+  (:require [reagent.core :refer [atom]]
+            [secretary.core :as secretary :refer-macros [defroute]])) 
 
 (def current-page (atom nil))
 
@@ -488,7 +483,7 @@ Build both the app and server then fire up the Node application once again. You'
 Now for a little fun and to show off some basic JavaScript interop, let's add an alert.
 
 ```
-;src/demo/core.cljs
+; src/demo/core.cljs
 
 ...
 
