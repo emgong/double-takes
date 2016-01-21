@@ -127,7 +127,7 @@ We have the code to start the server, but can't actually fire it up yet.  Let's 
 ```
 We add a new build named `server` and tell the compiler to output our compiled file to `resources/public/js/server-side/server.js`. Here we also specify the target of this build to Node by setting `:target :nodejs`.  The `:main demo.server-side` tells the compiler where to find the main function to call when starting the Node application.
 
-Now that everything is wired up, let's test out this simple server and route. First, build the app by `lein cljsbuild once server`.  You should see that the output is placed where we set it in `project.clj`. Now, start up the Node application with `node resources/public/js/server-side/server.js`. The server should have started on port 3000.  Open up your browser to http://localhost:3000 and you should see "Hello World!" Congrats!  You have a working ClojureScript application running on Node.js!  
+Now that everything is wired up, let's test out this simple server and route. First, build the app by `lein cljsbuild once server`.  You should see that the output is placed where we set it in `project.clj`. Now, start up the Node application with `node resources/public/js/server-side/server.js`. The server should have started on port 3000.  Open up your browser to http://localhost:3000 and you should see "Hello World!" Congrats!  You have a working ClojureScript application running on Node.js!
 
 ### Create a Server Rendered Page
 
@@ -189,13 +189,16 @@ You'll see that Reagent has a `render-to-static-markup` function that mirrors th
 
 If you build (`lein cljsbuild once server`) and run the application (`node resources/public/js/server-side/server.js`) as before, you should see output similar to the image below.  Check out the network tab - there isn't any JavaScript sent to the client at this time.
 
-![server rendered code](../img/isomorphic-clojurescript/server-rendering.jpg)
+<figure>
+  ![server rendered code](../img/isomorphic-clojurescript/server-rendering.jpg)
+</figure>
+
 
 ## Create Client Side Application
 
 We've increased performance by rendering the initial page on the server, now we'd like to render other components on the client side.  Let's create our client side application.
 
-First, let's do some refactoring. Create a new namespace `(ns site.tools)` and move some functions from `(ns demo.server)` there.  
+First, let's do some refactoring. Create a new namespace `(ns site.tools)` and move some functions from `(ns demo.server)` there.
 
 ```
 ; src/site/tools.cljs
@@ -431,7 +434,9 @@ We've finally got everything wired up. Our build command has changed though. Now
 
 You should see "home page" output to both the browser and server consoles.
 
-![client rendered code 1](../img/isomorphic-clojurescript/client-1.jpg)
+<figure>
+  ![client rendered code 1](../img/isomorphic-clojurescript/client-1.jpg)
+</figure>
 
 Now we could totally stop here because we have a functioning isomorphic application, but lets add some other goodies.
 
@@ -442,7 +447,7 @@ Add a new client side route and some navigation to `(ns demo.core)`.
 
 (ns demo.core
   (:require [reagent.core :refer [atom]]
-            [secretary.core :as secretary :refer-macros [defroute]])) 
+            [secretary.core :as secretary :refer-macros [defroute]]))
 
 (def current-page (atom nil))
 
@@ -478,7 +483,9 @@ Add a new client side route and some navigation to `(ns demo.core)`.
 
 Build both the app and server then fire up the Node application once again. You'll see the home page along with the new navigation. Click "Page One".  You'll see "Page One" in browser console, but not in server console. All is now rendering client side.
 
-![client rendered code 2](../img/isomorphic-clojurescript/client-2.jpg)
+<figure>
+  ![client rendered code 2](../img/isomorphic-clojurescript/client-2.jpg)
+</figure>
 
 Now for a little fun and to show off some basic JavaScript interop, let's add an alert.
 
@@ -500,7 +507,9 @@ Now for a little fun and to show off some basic JavaScript interop, let's add an
 
 Rebuild the app and server and start the app once more.
 
-![client rendered code 2](../img/isomorphic-clojurescript/client-3.jpg)
+<figure>
+  ![client rendered code 2](../img/isomorphic-clojurescript/client-3.jpg)
+</figure>
 
 ## Next Steps
 
