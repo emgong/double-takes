@@ -20,7 +20,7 @@ Take a deep breath
 I know you thought you were finished, but the worst thing you can do is rush
 through this last bit.  There's a good chance resolving this conflict is going
 to be difficult. The stakes are high.  There's a good chance you'll break your
-cool new feature here. Not only that but **someone else** worked hard too, and
+cool new feature here. Not only that, but **someone else** worked hard too, and
 you don't want to break their stuff either.
 
 So take a breath and make sure you're ready to concentrate a bit and get this
@@ -31,7 +31,7 @@ Read the other commit
 
 Ok, you know what your change was but what's this conflict about? The reason
 you've got a conflict is that **someone else** made a change that overlaps with
-your changes (omg, what a jerk!). Angry as you might be though, the appropriate
+your changes (omg, what a jerk!). Angry as you might be, the appropriate
 reaction here is empathy. What was this other person trying to accomplish?
 What will it look like if it breaks?
 
@@ -56,7 +56,7 @@ this is especially tempting if you didn't stop to take a breath).
 If you've got an automated test suite here, that's great. Run it. But also be
 aware that no test suite is perfect; and not everyone tests things the same way
 that you do. The "someone else" who made "that other commit" can tell you what
-tests they used. Ask them about it. Ideally you want to repeat whatver they did
+tests they used. Ask them about it. Ideally you want to repeat whatever they did
 (automated or not).  Practically there might be some shortcuts, but two people
 can do a better job of making that judgement call than one.
 
