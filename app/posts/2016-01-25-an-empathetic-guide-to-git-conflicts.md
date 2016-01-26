@@ -1,3 +1,11 @@
+---
+title: "An Empathetic Guide to Git Conflicts"
+author:
+  name: "Kevin Baribeau"
+  url: "http://twitter.com/kbaribeau"
+reddit: false
+---
+
 We've all seen this story. You've worked hard on some cool new stuff and are ready to push, but the universe has other ideas.
 
 BBZZZT!
@@ -43,7 +51,7 @@ they need to work together, but the **important** part is here. In a vaccuum,
 the risk of something breaking here is about equal between your changes and
 that pesky "other commit". It's tempting to re-test only your changes, and
 to forget about that other commit (or worse, to skip testing altogether,
-this is especially tempting if you neglected to stop and take a breath).
+this is especially tempting if you didn't stop to take a breath).
 
 If you've got an automated test suite here, that's great. Run it. But also be
 aware that no test suite is perfect; and not everyone tests things the same way
