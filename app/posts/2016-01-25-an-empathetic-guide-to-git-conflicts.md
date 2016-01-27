@@ -41,7 +41,7 @@ other commit. Pair on the rest of the resolution if that's your thing.
 Resolve the conflict
 --------------------
 
-This is the part you press some buttons in your editor, it's something you need to get good it, but it's not very interesting.
+This is the part you press some buttons in your editor, it's something you need to get good at, but it's not very interesting.
 [Take a look here if you're having trouble](http://knightlab.northwestern.edu/2014/12/19/how-the-git-mergetool-solved-my-anxiety-fears-and-most-importantly-my-merge-conflicts/).
 
 Once you've pushed all the necessary buttons, let's move on.
