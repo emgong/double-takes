@@ -29,7 +29,7 @@ next part right.
 Read the other commit
 ----------------------
 
-Ok, you know what your change was but what's this conflict about? The reason
+Ok, you know what your change was, but what's this conflict about? The reason
 you've got a conflict is that **someone else** made a change that overlaps with
 your changes (omg, what a jerk!). Angry as you might be, the appropriate
 reaction here is empathy. What was this other person trying to accomplish?
