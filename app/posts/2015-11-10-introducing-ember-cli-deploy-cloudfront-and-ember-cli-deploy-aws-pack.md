@@ -39,6 +39,9 @@ The ember-cli-deploy-cloudfront plugin automates the CloudFront cache invalidati
     }
     ```
 
+    *Note: Make sure the keys used here for CloudFront have the proper permissions.
+    If you're using the same keys as before, you will need to add CloudFrontFullAccess via IAM.*
+
 1. Run the ember-cli-deploy pipeline with the activation flag
 
     ```bash
