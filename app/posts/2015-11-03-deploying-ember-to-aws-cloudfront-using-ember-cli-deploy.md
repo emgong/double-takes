@@ -264,6 +264,8 @@ $ aws configure set preview.cloudfront true
 $ aws cloudfront create-invalidation --distribution-id [distributionid] --invalidation-batch "{\"CallerReference\": \"$(uuidgen)\", \"Paths\":{\"Quantity\":1,\"Items\":[\"/index.html\"]}}"
 ```
 
+*Note: This command assumes that your aws-cli user has CloudFront permissions.*
+
 ## Next Steps
 
 - I really don't like having to run that ugly CLI command at the end to invalidate my `index.html`, so I'm working on an [ember-cli-deploy plugin](http://ember-cli.github.io/ember-cli-deploy/docs/v0.5.x/plugins/) to automate this step
