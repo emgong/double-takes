@@ -3,12 +3,15 @@ title: "React reconciliation."
 author:
   name: "Dean Radcliffe"
   url: "http://www.twitter.com/deaniusdev"
+tldr:
+  title: "Reconcilable Differences with React and VDOM"
+  body: """
+        A recipe detailing a way to integrate DOM-mutating plugins into a React
+        application, based on an understanding of how React does Reconciliation
+        of VDOMs.
+        """
 reddit: false
 ---
-
-# Reconcilable Differences with React and VDOM
-
-TL;DR A recipe detailing a way to integrate DOM-mutating plugins into a React application, based on an understanding of how React does Reconciliation of VDOMs.
 
 # The Halcyon Days of Pure React
 Early on in one's ReactJS days, you learn of one-way data flow and commit this mantra to memory
