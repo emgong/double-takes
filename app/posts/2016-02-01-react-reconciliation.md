@@ -13,7 +13,8 @@ tldr:
 reddit: false
 ---
 
-# The Halcyon Days of Pure React
+## The Halcyon Days of Pure React
+
 Early on in one's ReactJS days, you learn of one-way data flow and commit this mantra to memory
 
 > The UI is a (pure) function of the state
@@ -24,7 +25,7 @@ But DOM mutations can occur in many ways. You could be using a JQuery plugin or 
 
 Those who caution to *"never mutate the DOM underneath React"*, miss out on having a backup plan if they are not able to Reactify All The Things. Personally, I find the utility of existing JQuery plugins too compelling to opt to rewrite each one I use immediately - so I set out to detail a hybrid option.
 
-# Act 1 - Setting the Stage
+## Act 1 - Setting the Stage
 
 Our investigation starts with the following scenario: A nested list is rendered (from an object given to React, via `props`). Then, `render` turns this into DOM with a series of `<ol>` and `<li>` lists and list items with classes that nestable wants. Lastly, we want to initialize the JQuery nestable plugin to make the lists drag-and-drop re-orderable.
 
@@ -40,7 +41,7 @@ Here's how this works:
 
 It appears to work fine from the user's point of view, but notice that after we drag a node around - the React Inspector is not aware of the change. This breaks our sync, and leads to confusion. Let's try and remedy that.
 
-# Act 2 - Closing the Loop
+## Act 2 - Closing the Loop
 
 *"No problem"*, you say. You're cool as a cucumber, knowing that in a situation like this, we need an event handler to feed the current value of the tree back into React. You even know to avoid `state` except in container components, and use `props` as much as possible. So you look up the nestable docs, and scale up to the following:
 
@@ -74,11 +75,11 @@ ReactDOM.render(
 
 Yet- when you start to test its behavior now, you get a sinking feeling, your pulse races, and your blood pressure shoots up a couple dozen points. Something is not right.
 
-# Act 3 - Something's Rotten in the State of the DOM
+## Act 3 - Something's Rotten in the State of the DOM
 
 Unfortunately, we have two very anomalous behaviors, indicated by the animations below:
 
-#### Error 1 - Tucking one subtree under another causes the subsequent subtree to vanish!
+### Error 1 - Tucking one subtree under another causes the subsequent subtree to vanish!
 
 ![image](https://s3.amazonaws.com/www.deanius.com/react-td/subtree-deletion.gif)
 
@@ -88,7 +89,7 @@ Unfortunately, we have two very anomalous behaviors, indicated by the animations
 
 While these errors appear different on the surface, they are essentially the same kind of error caused by the phase of the React lifecycle called [Reconciliation](https://facebook.github.io/react/docs/reconciliation.html).
 
-# Act 4 - Reconciling with the Past
+## Act 4 - Reconciling with the Past
 
 Remember that React has an internal model of state, and when we update `props` or `state`, `render` is invoked again to return a new VDOM. This VDOM gets compared to the current state, as well as the current DOM, and changes flow to the real DOM.
 
@@ -119,7 +120,7 @@ Invariant Violation: processUpdates(): Unable to find child 1 of element. This p
 
 That's not helpful. So let's look at what works.
 
-# Act 5 - Denoument
+## Act 5 - Denoument
 
 It's actually been right under our nose all along. Not a lifecycle method, not a configuration option, but the same way we got React markup into the DOM from the beginning. We mounted React to the DOM initially, so we can completely clear up its state by [unmounting](https://facebook.github.io/react/blog/2015/10/01/react-render-and-top-level-api.html).
 
@@ -140,13 +141,14 @@ While this may seem crude, it actually ensures that any state the user sees is g
 
 We're simply allowing that to be untrue momentarily while the user interacts with us, and we're taking the performance hit of clobbering more DOM than we theoretically need to, in order to preserve logical correctness that is easy to reason about, and to use a plugin that makes the grievous mistake of not being compatible with every JS framework that wasn't even out yet when it was written :)
 
-# Reconciled, and Happy
+## Reconciled, and Happy
 
 Our problem was a two-part one - 1) not knowing how to correctly blow away the DOM under React, and 2) not knowing that our particular plugin comes up against edge cases inherent in React.
 
 But now we're empowered. If we are sticking to `props` instead of `state`, and find ourselves in a corner where React's VDOM reconciliation fails to clear out old nodes correctly, we can unmount and remount and then we'll know that we are back in sync after every render cycle.
 
 The React team knows this needs to be done sometimes, and [speaks to this](https://facebook.github.io/react/blog/2015/10/01/react-render-and-top-level-api.html):
+
 > Unfortunately not everything around you is built using React. At the root of your tree you still have to write some plumbing code to connect the outer world into React.
 
 Problems like these will arise from time to time, but in the end I think the React model is the cleanest I've seen. I have to give a nod to some of its predecessors, though: The KnockoutJS ViewModel library, and the reactive-coffee library for reactive UI are libraries I've used that follow these principles, and I've been using or contributing to these since 2007. Flowing truth from objects to DOM is definitely the way to stay happy.
