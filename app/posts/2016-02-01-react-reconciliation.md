@@ -37,7 +37,9 @@ componentDidMount: function() {
 }
 ```
 Here's how this works:
-![image](https://s3.amazonaws.com/www.deanius.com/react-td/no-react-sync.gif)
+<figure>
+  ![image](/img/react/no-react-sync.gif)
+</figure>
 
 It appears to work fine from the user's point of view, but notice that after we drag a node around—the React Inspector is not aware of the change. This breaks our sync, and leads to confusion. Let's try and remedy that.
 
@@ -83,11 +85,15 @@ Unfortunately, we have two very anomalous behaviors, indicated by the animations
 
 #### Error 1:  Tucking one subtree under another causes the subsequent subtree to vanish!
 
-![image](https://s3.amazonaws.com/www.deanius.com/react-td/subtree-deletion.gif)
+<figure>
+  ![image](/img/react/subtree-deletion.gif)
+</figure>
 
 #### Error 2: Dragging a node out to the root adds it twice!
 
-![image](https://s3.amazonaws.com/www.deanius.com/react-td/addition-to-root.gif)
+<figure>
+  ![image](/img/react/addition-to-root.gif)
+</figure>
 
 While these errors appear unrelated on the surface, they are essentially the same kind of error caused by the phase of the React lifecycle called [Reconciliation](https://facebook.github.io/react/docs/reconciliation.html).
 
