@@ -1,3 +1,11 @@
+---
+title: "React reconciliation."
+author:
+  name: "Dean Radcliffe"
+  url: "http://www.twitter.com/deaniusdev"
+reddit: false
+---
+
 # Reconcilable Differences with React and VDOM
 
 TL;DR A recipe detailing a way to integrate DOM-mutating plugins into a React application, based on an understanding of how React does Reconciliation of VDOMs.
@@ -142,7 +150,6 @@ Problems like these will arise from time to time, but in the end I think the Rea
 
 You just need to be aware of a few edge cases, and sometimes learn some of the implementation details of the framework you're working with.
 
-Dean
 
 PS Thanks to Gordon Kristan, from Sprout Social whose presentation on this topic at Chicago React inspired this post.
 PPS Play with [a JSBin for this article](http://jsbin.com/zifodo)
