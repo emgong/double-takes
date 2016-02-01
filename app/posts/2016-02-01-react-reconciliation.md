@@ -27,7 +27,7 @@ Those who caution to *"never mutate the DOM underneath React"*, miss out on havi
 
 ## Act 1: Setting the Stage
 
-Our investigation starts with the following scenario: A nested list is rendered (from an object given to React, via `props`). Then, `render` turns this into DOM with a series of `<ol>` and `<li>` lists and list items with classes that nestable wants. Lastly, we want to initialize the jQuery nestable plugin to make the lists drag-and-drop and reorderable.
+Our investigation starts with the following scenario: A nested list is created as an object, then given to React, via `props`. Next, `render` turns this state into DOM as a series of lists and list-items with classes that the [Nestable jQuery plugin](https://github.com/dbushell/Nestable) wants. Lastly, we want to initialize the Nestable plugin to make the lists drag-and-drop and reorderable.
 
 We decide that after mounting our component, we'll initialize the Nestable plugin on the rendered output. Keep in mind that—for this jQuery plugin—its source of truth is what's in the DOM, and it gives you a method you can call to get an object representation of that DOM—but we'll talk about that later.
 
@@ -45,7 +45,7 @@ It appears to work fine from the user's point of view, but notice that after we 
 
 ## Act 2: Closing the Loop
 
-*"No problem"*, you say. You're cool as a cucumber, knowing that in a situation like this, we need an event handler to feed the current value of the tree back into React. You even know to avoid `state` except in container components, and use `props` as much as possible. So you look up the nestable docs, and scale up to the following:
+*"No problem"*, you say. You're cool as a cucumber, knowing that in a situation like this, we need an event handler to feed the current value of the tree back into React. You even know to avoid `state` except in container components, and use `props` as much as possible. So you look up the Nestable plugin's docs, and write the following:
 
 ```js
 componentDidMount: function() {
@@ -161,7 +161,7 @@ The React team knows this needs to be done sometimes, and [speaks to it](https:/
 
 > Unfortunately not everything around you is built using React. At the root of your tree you still have to write some plumbing code to connect the outer world into React.
 
-Problems like these will arise from time to time, but in the end I think the React model is the cleanest I've seen. I have to give a nod to some of its predecessors, though: [KnockoutJS](http://knockoutjs.com) view models and [reactive-coffee](https://github.com/yang/reactive-coffee) are libraries I've used in the past that follow these principles, and I've been using or contributing to these since 2007. Flowing truth from objects to DOM is definitely the way to stay happy.
+Problems like these will arise from time to time, but in the end I think the React model is the cleanest I've seen. I have to give a nod to some of its predecessors, though: [KnockoutJS](http://knockoutjs.com) view models and [reactive-coffee](https://github.com/yang/reactive-coffee) are libraries I've used in the past that follow these principles, and I've been using or contributing to these since 2010. Flowing truth from objects to DOM is definitely the way to stay happy.
 
 You just need to be aware of a few edge cases, and sometimes learn some of the implementation details of the framework you're working with.
 
