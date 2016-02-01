@@ -2,7 +2,7 @@
 title: "React reconciliation."
 author:
   name: "Dean Radcliffe"
-  url: "http://www.twitter.com/deaniusdev"
+  url: "http://www.twitter.com/deaniusdevius"
 tldr:
   title: "Reconcilable Differences with React and VDOM"
   body: """
