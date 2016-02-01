@@ -145,3 +145,4 @@ You just need to be aware of a few edge cases, and sometimes learn some of the i
 Dean
 
 PS Thanks to Gordon Kristan, from Sprout Social whose presentation on this topic at Chicago React inspired this post.
+PPS Play with [a JSBin for this article](http://jsbin.com/zifodo)
