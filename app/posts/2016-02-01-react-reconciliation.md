@@ -5,11 +5,11 @@ TL;DR A recipe detailing a way to integrate DOM-mutating plugins into a React ap
 # The Halcyon Days of Pure React
 Early on in one's ReactJS days, you learn of one-way data flow and commit this mantra to memory
 
-> The UI is a (pure) function of the state 
+> The UI is a (pure) function of the state
 
 When you adhere to this 100%, you no longer have to ask the question *"What is my source of truth?"* You know that state - consisting of `props`, and an optional overlay layer called `state` - is turned into DOM through a method called `render` that returns VirtualDOM. React then applies that new VDOM to the real DOM in clever and minimal ways. As long as React is 100% in charge of that DOM underneath that mounted component, that's all you need to know.
 
-But DOM mutations can occur in many ways. You could be using a JQuery plugin or Chrome Extension that mutates the DOM without React knowing. Or - simply, a user may choose an option from a `<select>` , and now that DOM is in a state React is not aware of. 
+But DOM mutations can occur in many ways. You could be using a JQuery plugin or Chrome Extension that mutates the DOM without React knowing. Or - simply, a user may choose an option from a `<select>` , and now that DOM is in a state React is not aware of.
 
 Those who caution to *"never mutate the DOM underneath React"*, miss out on having a backup plan if they are not able to Reactify All The Things. Personally, I find the utility of existing JQuery plugins too compelling to opt to rewrite each one I use immediately - so I set out to detail a hybrid option.
 
@@ -56,7 +56,7 @@ const nestableChanged = (newTree) => {
 
 // on first load
 ReactDOM.render(
-	<Nestable data={exampleData()} onChange={nestableChanged} />, 
+	<Nestable data={exampleData()} onChange={nestableChanged} />,
 	container
 )
 ```
@@ -98,7 +98,7 @@ You can reason out Error #2 for yourself, based on the same logic of trying to p
 
 The nodes use `key`, which is a best practice for being able to let React identify them in a list, using something other than their position, but it's not enough, because in fact we're at an edge-case of React's diffing algorithm.
 
-> In the current implementation, you can express the fact that a sub-tree has been moved amongst its siblings, but you cannot tell that it has moved somewhere else. 
+> In the current implementation, you can express the fact that a sub-tree has been moved amongst its siblings, but you cannot tell that it has moved somewhere else.
 
 Since we've written our React component to fully be determined from `props`, what's safe to do - and what we really want to do - is clobber the old DOM and then re-render. Don't try using JQuery's `.empty()` either.. Trust me, dragons that way lie, in the form of:
 
@@ -131,7 +131,7 @@ We're simply allowing that to be untrue momentarily while the user interacts wit
 
 # Reconciled, and Happy
 
-Our problem was a two-part one - 1) not knowing how to correctly blow away the DOM under React, and 2) not knowing that our particular plugin comes up against edge cases inherent in React. 
+Our problem was a two-part one - 1) not knowing how to correctly blow away the DOM under React, and 2) not knowing that our particular plugin comes up against edge cases inherent in React.
 
 But now we're empowered. If we are sticking to `props` instead of `state`, and find ourselves in a corner where React's VDOM reconciliation fails to clear out old nodes correctly, we can unmount and remount and then we'll know that we are back in sync after every render cycle.
 
