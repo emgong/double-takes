@@ -41,8 +41,8 @@ approach](https://gist.github.com/tenderlove/44447d1b1e466a28eb3f) to
 monkey-patch and disable the ActiveSupport auto-loader while migrations were
 running, we jumped at the opportunity to wrap a well-tested gem around it.
 
-If you have the `good_migrations` gem in your Gemfile, it will simply raise
-a very explanatory error message whenever the Rails auto-loader attempts to load
+If you have the `good_migrations` gem in your Gemfile, your migrations will raise
+an error whenever the Rails auto-loader attempts to load
 a Ruby file from your project's `app/` directory, do its best to explain why
 this is almost certainly a problem, and then forward you to the Github README
 for more details. There's no API or configuration to worry about, and if you
