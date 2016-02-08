@@ -60,16 +60,11 @@ a few examples:
 In order to to make sure candidates are treated uniformly and fairly (and
 aren't turned down for reasons that don't matter), we introduced the idea of a
 **Bridge Agent**.  Superficially, Bridge Agents just handle scheduling, but
-more importantly they serve as a client's insider friend would. We found early
-on that candidates who had friends inside the company had a significant
-advantage because they had someone fighting to get them an extra interview if
-they flubbed the first one. Bridge Agents serve to fight for candidates who
-might have been judged unfairly, or to defend the process if a candidate is
-turned down, but might be earning an advantage politically.
-
-Bridge agents are explicitly not involved with evaluating the candidate in any
-sort of detail, so that they can be impartial when deciding whether to move the
-candidate forward in the process, or to end it.
+more importantly they serve a neutral party when deciding whether to move the
+candidate forward in the process, or to end it. Since they're present in every
+stage of the evaluation process, but never involved, they're in a position to
+play arbitrator if there's ever a claim that a candidate is being evaluated
+unfairly.
 
 
 ## Consistency problem #2: Overemphasis on technical knowledge
