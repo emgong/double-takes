@@ -71,8 +71,8 @@ unfairly.
 
 It's tempting to center an interview around finding holes in what the candidate
 knows about rails, or node, or whatever the latest framework is. But we're of
-the opinion that refactoring/design skills, consulting/communication chops, and
-testing kung-fu are more important. We want to emphasize breadth of skills over depth.
+the opinion that refactoring skills, communication chops, and testing kung-fu
+are more important. We want to emphasize breadth of skills over depth.
 
 To be fair, obscure framework knowledge is useful, but it's not necessary for
 everyone to have it. As a developer, if you don't know how to approach a
