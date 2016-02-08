@@ -96,7 +96,7 @@ candidate. For example:
 This is a relatively easy thing to slip in while pairing, and it's easy to mark
 as either a "Yes they can", or "No they can't" in your notes.
 
-The actual list of rubrics is still growing, but having our evaluation critiria writting
+The actual list of rubrics is still growing, but having our evaluation criteria written
 down in a shared space is a large part of what enables consistency.
 
 ## Consistency problem #3: Pairing Structure
