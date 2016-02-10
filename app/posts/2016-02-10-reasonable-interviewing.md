@@ -1,5 +1,5 @@
 ---
-title: "A reasonable approach to interviewing... and some improvements"
+title: "Consistency in Tech Interviewing"
 author:
   name: "Kevin Baribeau"
   url: "http://twitter.com/kbaribeau"
