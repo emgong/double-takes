@@ -22,11 +22,11 @@ some imaginary whiteboard stuff, or just talking randomly about might happen if
 we had code in front of us. We've also got a session devoted to soft skills,
 which is a pretty large part of being a successful developer.
 
-Still, we found we had problems with consistency. Candidates might succeed or
-fail based on which interviewers they had rather than on their own merit.
-If we're not consistent, the implication is that there's at least some
-guesswork in our screening process. Our hiring process directly affects our
-future as a company. Guesswork isn't the right way to go about it.
+Still, we had problems with consistency. Candidates might succeed or fail based
+on which interviewers they had rather than on their own merit.  If we're not
+consistent, the implication is that there's at least some guesswork in our
+screening process. Our hiring process directly affects our future as a company.
+Guesswork isn't the right way to go about it.
 
 So, we made a bit of a push to refine our process. We identified a few
 problems that were hurting our consistency, and made some adjustments to
@@ -56,7 +56,6 @@ whether to move the candidate forward in the process, or to end it. Since
 they're present in every stage of the evaluation process, but never involved,
 they're in a position to play arbitrator if there's ever a claim that a
 candidate is being evaluated unfairly.
-
 
 ## Consistency problem #2: Overemphasis on technical knowledge
 
@@ -105,10 +104,10 @@ method or two.
 
 When you're interviewing as a pair, there's still a power dynamic in play. The
 candidate is pretty likely to respond to suggestions that the interviewer
-gives. When the candidate has provides their own starting point, not only do we
-have an unbiased sample; having the candidate explain how they approached a
-problem that they've put a little thought into is a great way for them to show
-off their design chops.
+gives. When the candidate provides their own starting point, we've got an
+unbiased sample. Additionally, having the candidate explain how they
+approached a problem that they've put a little thought into is a great way for
+them to show off their design chops.
 
 Consistency in the second pairing interview is harder to handle. The second
 pairing session needs to vary a little to accomadate the candidate. Some
