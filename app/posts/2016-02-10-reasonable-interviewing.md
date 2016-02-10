@@ -8,22 +8,7 @@ reddit: false
 
 # A Beginning
 
-Imagine you work for a very small software company. Five or so developers.
-Someone tells you that it's time to hire #6, and you're in charge of
-interviewing. There should probably be some sort of semi-formalized process in
-order to hire people, but no one's laid that out yet. What do you do?
-
-You say, "The simplest thing is probably to just to pair with them and see if
-we can get any work done, let's just do that." That seems ok, right? Someone
-points out that we should be getting more than one opinion on each candidate,
-you say, "No problem, we can pair with them twice!" You're in love with
-the idea of completely avoiding the traditional interview (whiteboard coding?
-real coding is better, puzzle questions? again trumped by actually writing
-code), but after some discussion you're forced to concede when someone points
-out that we should be asking at least a couple of questions about how to be a
-consultant.
-
-So far, the process looks something like this:
+A year or so ago, Test Double's interviewing process looked something like this:
 
   * Initial set-up / scheduling call with candidate
   * Pairing session #1
@@ -31,15 +16,21 @@ So far, the process looks something like this:
   * One "real" interview, where we talk about consulting and soft skills
   * A short meeting where the interviewers all compare notes and make a decision
 
-# What next?
+There's not much there, we felt like we already had a pretty good process.
+We've got two interviews where we're actually writing code instead of doing
+some imaginary whiteboard stuff, or just talking randomly about might happen if
+we had code in front of us. We've also got a session devoted to soft skills,
+which is a pretty large part of being a successful developer.
 
-There's nothing catastrophically wrong with the above, but it's missing a lot
-of detail. Test Double started with a loose process like this, but we found
-that we weren't very consistent. Candidates might succeed or fail based on
-which interviewers they had rather than on their own merit.
+Still, we found we had problems with consistency. Candidates might succeed or
+fail based on which interviewers they had rather than on their own merit.
+If we're not consistent, the implication is that there's at least some
+guesswork in our screening process. Our hiring process directly affects our
+future as a company. Guesswork isn't the right way to go about it.
 
-We've identified a few problems that were hurting our consistency, and made some
-adjustments to address them.
+So, we made a bit of a push to refine our process. We identified a few
+problems that were hurting our consistency, and made some adjustments to
+address them.
 
 ##  Consistency problem #1: False Negatives
 
@@ -47,9 +38,8 @@ False positives (hiring someone not-great) are obviously a problem, but false
 negatives (failing to hire someone who is great) are too. Primarily, they mean
 we've wasted a bunch of time (both our time, and the candidate's), but also
 their existence implies that we're screening for things that don't actually
-matter. We've identified a few things that often come up in screenings that
-we don't think are important, and are always on the lookout for more. Here's
-a few examples:
+matter. There's no shortage of things that often come up in screenings that
+are absolutely not important. Here's a few examples:
 
    * Comp Sci chops (B-trees, graph theory, etc.)
    * Self-marketing (telling stories that put you in a positive light)
@@ -59,12 +49,13 @@ a few examples:
 
 In order to to make sure candidates are treated uniformly and fairly (and
 aren't turned down for reasons that don't matter), we introduced the idea of a
-**Bridge Agent**.  Superficially, Bridge Agents just handle scheduling, but
-more importantly they serve a neutral party when deciding whether to move the
-candidate forward in the process, or to end it. Since they're present in every
-stage of the evaluation process, but never involved, they're in a position to
-play arbitrator if there's ever a claim that a candidate is being evaluated
-unfairly.
+**Bridge Agent**. Bridge Agents are the people who serve as the main point of
+contact for any candidate. Superficially, their purpose is to handle
+scheduling, but more importantly they serve a neutral party when deciding
+whether to move the candidate forward in the process, or to end it. Since
+they're present in every stage of the evaluation process, but never involved,
+they're in a position to play arbitrator if there's ever a claim that a
+candidate is being evaluated unfairly.
 
 
 ## Consistency problem #2: Overemphasis on technical knowledge
@@ -96,7 +87,7 @@ candidate. For example:
 This is a relatively easy thing to slip in while pairing, and it's easy to mark
 as either a "Yes they can", or "No they can't" in your notes.
 
-The actual list of rubrics is still growing, but having our evaluation criteria written
+Our actual list of rubrics is still growing, but having our evaluation criteria written
 down in a shared space is a large part of what enables consistency.
 
 ## Consistency problem #3: Pairing Structure
@@ -119,19 +110,18 @@ have an unbiased sample; having the candidate explain how they approached a
 problem that they've put a little thought into is a great way for them to show
 off their design chops.
 
-While there is overlap in evaluation between the first and second pairing
-interviews, we try to vary the style of the second interview as much as can.
-We'll try to do the second interview on an existing large-ish project, rather
-than a small project that's just been started. We also try to vary the language
-we're using. We like to suggest that the candidate use their strongest language
-for the second interview, since there's more room for them to show off on a big
-project, but the priority is on whatever is the least stressful / most
-comfortable for them.
-
+Consistency in the second pairing interview is harder to handle. The second
+pairing session needs to vary a little to accomadate the candidate. Some
+candidates are best served by showing off their skills in more than one
+language, or by working on a large, existing project. Our structure should be
+aimed at giving the candidate the best possible chance of success in order to
+cut down on false negatives. Bridge Agents are in a good place to help define
+the structure here. Rubrics though, let us keep our evaluation consistent while
+varying our structure.
 
 # Wrap-up
 
-Our interview process has improved a lot, but it's important not to stop. We're
-constantly re-evaluating what works for us, and hope to have more changes to
-share with the world in the future.
-
+Our interview process has improved a lot, but it's important not to stop. A lot
+of our refinements have come out of routinely talking about what we want out of
+it, and questioning whether we're doing the right things. Hopefully we'll have more
+improvements to share in the future.
