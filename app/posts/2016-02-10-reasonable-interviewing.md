@@ -32,7 +32,7 @@ So, we made a bit of a push to refine our process. We identified a few
 problems that were hurting our consistency, and made some adjustments to
 address them.
 
-##  Consistency problem #1: False Negatives
+## Consistency problem #1: False Negatives
 
 False positives (hiring someone not-great) are obviously a problem, but false
 negatives (failing to hire someone who is great) are too. Primarily, they mean
@@ -110,7 +110,7 @@ approached a problem that they've put a little thought into is a great way for
 them to show off their design chops.
 
 Consistency in the second pairing interview is harder to handle. The second
-accommodate pairing session needs to vary a little to  the candidate. Some
+accommodate pairing session needs to vary a little to the candidate. Some
 candidates are best served by showing off their skills in more than one
 language, or by working on a large, existing project. Our structure should be
 aimed at giving the candidate the best possible chance of success in order to
