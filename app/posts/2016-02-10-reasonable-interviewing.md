@@ -16,14 +16,14 @@ A year or so ago, Test Double's interviewing process looked something like this:
   * One "real" interview, where we talk about consulting and soft skills
   * A short meeting where the interviewers all compare notes and make a decision
 
-There's not much there, we felt like we already had a pretty good process.
+There's not much there, but we felt like we already had a pretty good process.
 We've got two interviews where we're actually writing code instead of doing
 some imaginary whiteboard stuff, or just talking randomly about might happen if
 we had code in front of us. We've also got a session devoted to soft skills,
 which is a pretty large part of being a successful developer.
 
 Still, we had problems with consistency. Candidates might succeed or fail based
-on which interviewers they had rather than on their own merit.  If we're not
+on which interviewers they had rather than on their own merit. If we're not
 consistent, the implication is that there's at least some guesswork in our
 screening process. Our hiring process directly affects our future as a company.
 Guesswork isn't the right way to go about it.
