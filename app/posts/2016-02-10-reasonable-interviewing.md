@@ -110,7 +110,7 @@ approached a problem that they've put a little thought into is a great way for
 them to show off their design chops.
 
 Consistency in the second pairing interview is harder to handle. The second
-pairing session needs to vary a little to accomadate the candidate. Some
+accommodate pairing session needs to vary a little to  the candidate. Some
 candidates are best served by showing off their skills in more than one
 language, or by working on a large, existing project. Our structure should be
 aimed at giving the candidate the best possible chance of success in order to
