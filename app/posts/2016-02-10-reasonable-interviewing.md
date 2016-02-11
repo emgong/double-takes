@@ -107,11 +107,11 @@ approached a problem that they've put a little thought into is a great way for
 them to show off their design chops.
 
 Consistency in the second pairing interview is harder to handle. The second
-accommodate pairing session needs to vary a little to the candidate. Some
-candidates are best served by showing off their skills in more than one
-language, or by working on a large, existing project. Our structure should be
-aimed at giving the candidate the best possible chance of success in order to
-cut down on false negatives. Bridge Agents are in a good place to help define
+pairing session needs to vary a little to accommodate the candidate. Some
+candidates are best served by showing off their skills in an additional
+language, or by working on a large, existing project. In order to cut down on
+false negatives, our structure should be aimed at giving the candidate the best
+possible chance of success. Bridge Agents are in a good place to help define
 the structure here. Rubrics though, let us keep our evaluation consistent while
 varying our structure.
 
