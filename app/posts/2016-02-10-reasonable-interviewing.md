@@ -71,14 +71,11 @@ Additionally, people will accumulate technical knowledge over time. It's
 absolutely the easiest and most common way for a person to grow after you've
 hired them.
 
-Since we don't want to screen for deep technical knowledge, we avoid
-asking about it early in the process. This is helped along a bit by centering
-our process around pairing, but still needs to be made explicit. Explicitness
-is helped along by having a set of **rubrics**, which we use to evaluate candidates
-after every interview.
-
-A rubric is just a means of scoring how well a candidate did. For each
-interview, we have a bank of points that we'd like to see evaluated in a
+Since the temptation for interviewers is to ask about thier favorite deeply
+technical topic, we need to give them other things to talk about. They need a
+list of interview topics that matter to us as a company. So we developed a set
+of rubrics.  A rubric is just a means of scoring how well a candidate did. For
+each interview, we have a list of points that we'd like to see evaluated in a
 candidate. For example:
 
 * Given a few lines of code that we want to extract into a method, can the candidate identify the parameters that the method needs?
