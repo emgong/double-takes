@@ -1,5 +1,5 @@
 ---
-title: "Consistency in Tech Interviewing"
+title: "Three problems in Tech Interviewing"
 author:
   name: "Kevin Baribeau"
   url: "http://twitter.com/kbaribeau"
@@ -8,7 +8,8 @@ reddit: false
 
 # A Beginning
 
-A year or so ago, Test Double's interviewing process looked something like this:
+A year or so ago, we at Test Double decided our interview process needed some major refinements.
+For context, here's what we had:
 
   * Initial set-up / scheduling call with candidate
   * Pairing session #1
@@ -16,24 +17,20 @@ A year or so ago, Test Double's interviewing process looked something like this:
   * One "real" interview, where we talk about consulting and soft skills
   * A short meeting where the interviewers all compare notes and make a decision
 
-There's not much there, but we felt like we already had a pretty good process.
-We've got two interviews where we're actually writing code instead of doing
-some imaginary whiteboard stuff, or just talking randomly about what might
-happen if we had code in front of us. We've also got a session devoted to soft
-skills, which is a pretty large part of being a successful developer.
+Obviously, the above doesn't have much detail, but really we didn't *have* any
+details. Despite that, we still felt like we were doing relatively well,
+although we found we lacked consistency. Candidates might succeed or fail based
+on which interviewers they had rather than on their own merit. This implies
+that candidates are subject to the individual biases of our interviewers, which
+is not a great thing. We'd like to hire based on things that we've agreed on as
+a group, rather than hiring whoever got lucky enough to be paired with an
+interviewer who was willing to see their best side.
 
-Still, we had problems with consistency. Candidates might succeed or fail based
-on which interviewers they had rather than on their own merit. Our inconsistency
-implies that candidates are subject to the individual biases of our interviewers.
-We'd like to hire based on things that we've agreed on as a group, rather than
-hiring whoever got lucky enough to be paired with an interviewer who was
-willing to see their best side.
+We've actually made a ton of changes to our process in the past year, but in
+the interest of time, I'm going to focus on just three problems that we found
+and addressed while trying to improve our consistency.
 
-So, we made a bit of a push to refine our process. We identified a few
-problems that were hurting our consistency, and made some adjustments to
-address them.
-
-## Consistency problem #1: False Negatives
+## Problem #1: False Negatives
 
 False positives (hiring someone not-great) are obviously a problem, but false
 negatives (failing to hire someone who is great) are too. Primarily, they mean
@@ -59,7 +56,7 @@ of the evaluation process, but never directly evaluating the candidate, they're
 in a position to play arbitrator if there's ever a claim that a candidate is
 being evaluated unfairly.
 
-## Consistency problem #2: Overemphasis on technical knowledge
+## Problem #2: Overemphasis on technical knowledge
 
 It's tempting to center an interview around finding holes in what the candidate
 knows about [Ruby on Rails](http://rubyonrails.org/), or
@@ -89,7 +86,7 @@ as either a "Yes they can", or "No they can't" in your notes.
 Our actual list of rubrics is still growing, but having our evaluation criteria written
 down in a shared space is a large part of what enables consistency.
 
-## Consistency problem #3: Pairing Structure
+## Problem #3: Pairing Structure
 
 Saying that we're doing interviews by "pairing" is actually a pretty vague
 statement. A pairing session might be 45 minutes of sharing vim configs, or it
