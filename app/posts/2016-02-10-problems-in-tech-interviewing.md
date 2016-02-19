@@ -1,5 +1,5 @@
 ---
-title: "Three problems in Tech Interviewing"
+title: "Three Problems in Tech Interviewing"
 author:
   name: "Kevin Baribeau"
   url: "http://twitter.com/kbaribeau"
