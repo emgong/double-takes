@@ -23,10 +23,11 @@ happen if we had code in front of us. We've also got a session devoted to soft
 skills, which is a pretty large part of being a successful developer.
 
 Still, we had problems with consistency. Candidates might succeed or fail based
-on which interviewers they had rather than on their own merit. If we're not
-consistent, the implication is that there's at least some guesswork in our
-screening process. Our hiring process directly affects our future as a company.
-Guesswork isn't the right way to go about it.
+on which interviewers they had rather than on their own merit. Our inconsistency
+implies that candidates are subject to the individual biases of our interviewers.
+We'd like to hire based on things that we've agreed on as a group, rather than
+hiring whoever got lucky enough to be paired with an interviewer who was
+willing to see their best side.
 
 So, we made a bit of a push to refine our process. We identified a few
 problems that were hurting our consistency, and made some adjustments to
@@ -51,16 +52,18 @@ In order to to make sure candidates are treated uniformly and fairly (and
 aren't turned down for reasons that don't matter), we introduced the idea of a
 **Bridge Agent**. Bridge Agents are the people who serve as the main point of
 contact for any candidate. Superficially, their purpose is to handle
-scheduling, but more importantly they serve a neutral party when deciding
-whether to move the candidate forward in the process, or to end it. Since
-they're present in every stage of the evaluation process, but never involved,
-they're in a position to play arbitrator if there's ever a claim that a
-candidate is being evaluated unfairly.
+scheduling, but more importantly they serve as a neutral party when deciding
+whether to move the candidate forward in the process, or to end it (based on
+the evaluations we've collected so far). Since they're present in every stage
+of the evaluation process, but never directly evaluating the candidate, they're
+in a position to play arbitrator if there's ever a claim that a candidate is
+being evaluated unfairly.
 
 ## Consistency problem #2: Overemphasis on technical knowledge
 
 It's tempting to center an interview around finding holes in what the candidate
-knows about rails, or node, or whatever the latest framework is. But we're of
+knows about [Ruby on Rails](http://rubyonrails.org/), or
+[Node.js](https://nodejs.org/), or whatever the latest framework is. But we're of
 the opinion that refactoring skills, communication chops, and testing kung-fu
 are more important. We want to emphasize breadth of skills over depth.
 
@@ -71,14 +74,14 @@ Additionally, people will accumulate technical knowledge over time. It's
 absolutely the easiest and most common way for a person to grow after you've
 hired them.
 
-Since the temptation for interviewers is to ask about thier favorite deeply
-technical topic, we need to give them other things to talk about. They need a
-list of interview topics that matter to us as a company. So we developed a set
-of rubrics.  A rubric is just a means of scoring how well a candidate did. For
-each interview, we have a list of points that we'd like to see evaluated in a
-candidate. For example:
+Since the temptation for interviewers is to ask about their favorite deeply
+technical topic, we need to give them other things to talk about. So we
+developed a set of rubrics. A rubric is just a point we've written down that we'd
+like to evaluate the candidate on. The goal is to help us be more objective (and
+consistent!) by writing down (and agreeing on) the things that we'd like to
+evaluate. For example:
 
-* Given a few lines of code that we want to extract into a method, can the candidate identify the parameters that the method needs?
+> Given a few lines of code that we want to extract into a method, can the candidate identify the parameters that the method needs?
 
 This is a relatively easy thing to slip in while pairing, and it's easy to mark
 as either a "Yes they can", or "No they can't" in your notes.
@@ -93,11 +96,12 @@ statement. A pairing session might be 45 minutes of sharing vim configs, or it
 might be actually writing some code on a production system. We wanted to
 enforce a little bit more structure on our interviewing sessions.
 
-We made the first interview into a review of a take-home assignment.
-We instruct the candidates to spend less than two hours on this, as we'd like
-to avoid giving an advantage to candidates who have more spare time. Some
-candidates still cheat and send us a ton of code, but really all we need is a
-method or two.
+We made the first interview into a review of a take-home assignment.  We
+instruct the candidates to spend less than two hours on this, as we'd like to
+avoid giving an advantage to candidates who have the privilege of more spare
+time. Some candidates still cheat and send us a ton of code, but really all we
+need is a method or two; just enough to get us started talking about some code
+as a pair.
 
 When you're interviewing as a pair, there's still a power dynamic in play. The
 candidate is pretty likely to respond to suggestions that the interviewer
