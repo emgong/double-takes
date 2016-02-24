@@ -29,4 +29,4 @@ We are trying to improve the way the world builds software, we must show and she
 ## Empathy
 Understanding the perspective of those who maintain our software, use it on a daily basis, and operate businesses we work for is key in understanding the best approach to take with their software. We need to share the mindset of our teammates, users, product owners, stakeholders and clients if we want to do what is truly best for them. Putting the priorities of others ahead of our own, often leads to greater happiness and fulfillment of all.
 
-These values reflect the double agents currently employed at Test Double and the type of agents we want to hire in the future. If you think you line up pretty well with our purpose and values, please don’t hesitate to apply [here](www.testdouble.com/join)
+These values reflect the double agents currently employed at Test Double and the type of agents we want to hire in the future. If you think you line up pretty well with our purpose and values, please don’t hesitate to apply [here](mailto:join@testdouble.com)
