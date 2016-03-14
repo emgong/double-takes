@@ -544,7 +544,7 @@ consistent way to perform common tasks, and spend a lot of time complaining abou
 test doubles.
 
 It feels like I saw the same thing play out nearly a decade ago in Java.
-[JMockit](http://jmockit.org)'s abstractions overwhelmed all but the most ardent
+[jMock](http://jmock.org)'s abstractions overwhelmed all but the most ardent
 experts in isolation testing, whereas [EasyMock](http://easymock.org)'s
 slowly-expanding API encouraged teams to mock dependencies haphazardly and
 inconsistently. It took [Mockito](http://mockito.org)'s narrow API and
