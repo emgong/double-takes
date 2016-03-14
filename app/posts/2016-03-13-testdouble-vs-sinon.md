@@ -467,10 +467,17 @@ AssertionError: false == true
 ```
 
 The above error message isn't particularly helpful, and would require some
-debugging or `console.log()`'ing to figure out why the assertion failed. The
-root cause isn't that Sinon.js provides poor error messages, it's that it leaves
-all test assertions to the user's test framework, with no one being quite
-accountable to building failure messages that will help users.
+debugging or `console.log()`'ing to figure out why the assertion failed. As it
+happens, Sinon does provide its own assertion tools, but their messages are 
+still pretty limited:
+
+<div class="wide"></div>
+``` javascript
+sinon.assert.calledWithExactly(save, 'Jane') /* will throw:
+AssertError: expected spy to be called with exact arguments Jane
+    spy(Joe) 
+*/
+```
 
 ## Introspection
 
