@@ -5,6 +5,10 @@ author:
   url: "http://twitter.com/crebma"
 reddit: false
 ---
+<figure>
+  [![Self.conference logo](/img/self.conf.avatar-medium.png)](http://selfconference.org)
+</figure>
+
 [Self.conference](http://selfconference.org) is a thing I've been organizing for three years, and I love it. If you know me, you know that, because I talk about it way too much.
 
 ### Cool, what is it though?
