@@ -31,7 +31,7 @@ reddit: false
 
 Despite a history of pirating software (Photoshop, Blender, 3DS Max, Adobe Premiere), it was clear upon recruitment Agent 007 was engaging in this activity in order to quench his thirst for knowledge. Agent 007 started as a tinkerer and designer doing traditional print-design and page layout. He got his first computer in 1996 right when the internet hit mainstream and spent every hour he could tweaking HTML, JS, and CSS to create GeoCities webpages with animated GIFS.
 
-Agent 007 is an avid gamer. His favorite video games are Heroes of the Storm, The Witness, and Ori and the Blind Forest. His favorite board games are Keyflower, Carcasonne, Agricola, and Dominion.
+Agent 007 is an avid gamer. His favorite video games are Heroes of the Storm, The Witness, and Ori and the Blind Forest. His favorite board games are Keyflower, Carcassonne, Agricola, and Dominion.
 
 Agent 007 favorite bands are Ratatat, Hans Zimmer, Deadmau5, Green Day, and Beethoven.
 
