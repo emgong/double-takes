@@ -1,8 +1,8 @@
 ---
 title: "Agent Dossier: Dave Mosher"
 author:
-  name: "Amber Conville"
-  url: "http://twitter.com/crebma"
+  name: "Headquarters"
+  url: "http://testdouble.com"
 reddit: false
 ---
 <figure>
