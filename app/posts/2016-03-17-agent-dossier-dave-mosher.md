@@ -1,8 +1,8 @@
 ---
 title: "Agent Dossier: Dave Mosher"
 author:
-  name: "Headquarters"
-  url: "http://testdouble.com"
+  name: "M"
+  url: "http://twitter.com/crebma"
 reddit: false
 ---
 <figure>
