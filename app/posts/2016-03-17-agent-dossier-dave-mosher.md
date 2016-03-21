@@ -33,7 +33,7 @@ Despite a history of pirating software (Photoshop, Blender, 3DS Max, Adobe Premi
 
 Agent 007 is an avid gamer. His favorite video games are Heroes of the Storm, The Witness, and Ori and the Blind Forest. His favorite board games are Keyflower, Carcassonne, Agricola, and Dominion.
 
-Agent 007 favorite bands are Ratatat, Hans Zimmer, Deadmau5, Green Day, and Beethoven.
+Agent 007 loves music. His favorite bands are Ratatat, Hans Zimmer, Deadmau5, Green Day, and Beethoven.
 
 **CONTACT**:
 
