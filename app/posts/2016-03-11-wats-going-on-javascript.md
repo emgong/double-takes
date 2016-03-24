@@ -3,10 +3,12 @@ title: "Wat's Going On, JavaScript Edition"
 author:
   name: "Schoon"
   url: "http://twitter.com/Schoonology"
+video:
+  type: "wistia"
+  url: "https://fast.wistia.net/embed/iframe/mk5lvhoqgt"
 reddit: false
----
 
-<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 28px 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_mk5lvhoqgt videoFoam=true playerColor=00e600 preload=true playButton=false" style="height:100%;width:100%">&nbsp;</div></div></div>
+---
 
 A quick, 5-minute video explaining the JavaScript portions of Gary Bernhardt's
 infamous ["Wat"][wat] talk.
