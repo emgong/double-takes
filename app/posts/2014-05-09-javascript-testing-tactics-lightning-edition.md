@@ -4,7 +4,7 @@ author:
   name: "Justin Searls"
   url: "http://twitter.com/searls"
 video:
-  url: "http://www.youtube.com/embed/gjx6SijA47I"
+  url: "https://www.youtube.com/embed/gjx6SijA47I"
   type: "youtube"
 ---
 

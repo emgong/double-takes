@@ -2,7 +2,7 @@
 title: "Building DSLs with JavaScript/CoffeeScript"
 author:
   name: "Dave Mosher"
-  url: "http://www.youtube.com/user/vidjadavemo/videos"
+  url: "https://www.youtube.com/user/vidjadavemo/videos"
 video:
   url: "https://www.youtube.com/embed/EOksrrySfwI?rel=0"
   type: "youtube"

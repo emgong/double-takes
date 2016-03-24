@@ -5,7 +5,7 @@ author:
   url: "http://twitter.com/searls"
   googlePlus: "https://plus.google.com/+JustinSearlsTestDouble"
 video:
-  url: "http://www.youtube.com/embed/9_3RsSvgRd4"
+  url: "https://www.youtube.com/embed/9_3RsSvgRd4"
   type: "youtube"
 reddit: true
 ---
@@ -16,6 +16,6 @@ The most immediate abstraction we have for wrangling the motivations and impleme
 
 This talk is an example of how to do that. Hopefully, it's at just the level of detail you'll need to ponder how to apply a similar approach to your teams and applications.
 
-The [video above](https://www.youtube.com/watch?v=9_3RsSvgRd4&feature=youtu.be) was presented at Ancient City Ruby 2014 on April 3rd, 2014. Its slides are [available on SpeakerDeck](https://speakerdeck.com/searls/breaking-up-with-your-test-suite), as always:
+The [video above](https://www.youtube.com/watch?v=9_3RsSvgRd4) was presented at Ancient City Ruby 2014 on April 3rd, 2014. Its slides are [available on SpeakerDeck](https://speakerdeck.com/searls/breaking-up-with-your-test-suite), as always:
 
 <script async class="speakerdeck-embed" data-id="372e82c09d7501316e28625017dd54d3" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>

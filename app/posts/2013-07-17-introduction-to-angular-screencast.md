@@ -2,9 +2,9 @@
 title: "introduction to angular"
 author:
   name: "Dave Mosher"
-  url: "http://www.youtube.com/user/vidjadavemo/videos"
+  url: "https://www.youtube.com/user/vidjadavemo/videos"
 video:
-  url: "http://www.youtube.com/embed/8ILQOFAgaXE?rel=0"
+  url: "https://www.youtube.com/embed/8ILQOFAgaXE?rel=0"
   type: "youtube"
 ---
 
