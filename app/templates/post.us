@@ -12,9 +12,9 @@
   <% if(post.get('video')) { %>
     <div class="embed-container">
       <% if(post.get('video').type == "youtube") { %>
-        <iframe class="u-video" src="<%= post.get('video').url %>" allowfullscreen="allowfullscreen"></iframe>
+        <iframe class="u-video" src="<%= post.get('video').url %>" allowfullscreen ></iframe>
       <% } else if(post.get('video').type == "vimeo") { %>
-        <iframe src="<%= post.get('video').url %>?portrait=0&color=75fe04" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe class="u-video" src="<%= post.get('video').url %>?portrait=0&color=75fe04" allowfullscreen ></iframe>
       <% } %>
     </div>
   <% } %>
