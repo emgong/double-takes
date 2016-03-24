@@ -13,7 +13,7 @@ tldr:
         """
 ---
 
-This talk was delivered at [Øredev](http://www.oredev.com) in Malmö, Sweden. It was a joy to have an entire week to focus on how to best discuss the trends we're experiencing in fat-client JavaScript. As a result, I feel like I finally landed at a sufficient explanation of what [Lineman](http://www.linemanjs.com) is and why it might serve you well. You can [find it on YouTube](https://youtu.be/KERJkJNV5nI).
+This talk was delivered at [Øredev](http://www.oredev.com) in Malmö, Sweden. It was a joy to have an entire week to focus on how to best discuss the trends we're experiencing in fat-client JavaScript. As a result, I feel like I finally landed at a sufficient explanation of what [Lineman](http://www.linemanjs.com) is and why it might serve you well. You can [find it on YouTube](https://www.youtube.com/embed/KERJkJNV5nI).
 
 Here are the slides, hosted on [SpeakerDeck](https://speakerdeck.com/searls/1st-class-web-development-with-lineman):
 
