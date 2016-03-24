@@ -4,7 +4,7 @@ author:
   name: "Todd Kaufman"
   url: "http://twitter.com/toddkaufman"
 video:
-  url: "http://www.youtube.com/embed/JOoULTXN75o"
+  url: "https://www.youtube.com/embed/JOoULTXN75o"
   type: "youtube"
 ---
 

@@ -2,7 +2,7 @@
 title: "what polymer and angular tell us about the future success of the web platform and javascript frameworks"
 author:
   name: "David Mosher"
-  url: "http://www.youtube.com/user/vidjadavemo/videos"
+  url: "https://www.youtube.com/user/vidjadavemo/videos"
 tldr:
   title: "don\'t try to get everything right upfront"
   body: """
@@ -133,10 +133,10 @@ the upcoming [Web
 Components](http://www.w3.org/TR/2013/WD-components-intro-20130606/) spec.
 [Eric
 Bidelman](https://www.google.ca/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CC0QFjAA&url=https%3A%2F%2Ftwitter.com%2Febidel&ei=_EDLUbuIK8iHywGUuYHoDg&usg=AFQjCNHgffvpgL9vHcpCK96uvkRqTmUkzg&bvm=bv.48340889,d.aWc)
-gave a [great overview](http://www.youtube.com/watch?v=fqULJBBEVQE) of it
+gave a [great overview](https://www.youtube.com/watch?v=fqULJBBEVQE) of it
 during Google IO this year and [Alex Komoroske](https://twitter.com/jkomoros)
 and [Matthew McNulty](https://twitter.com/mattsmcnulty) had an [amazing
-demo](http://www.youtube.com/watch?v=0g0oOOT86NY) that showcased some of the
+demo](https://www.youtube.com/watch?v=0g0oOOT86NY) that showcased some of the
 capabilities. I'm excited about Web Components because it will allow web
 developers to experiment at a lower-level by reshaping the way that we write
 markup. It will also offer true encapsulation on the web, a feature that has

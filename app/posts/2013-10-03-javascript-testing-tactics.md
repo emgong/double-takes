@@ -4,7 +4,7 @@ author:
   name: "Justin Searls"
   url: "http://twitter.com/searls"
 video:
-  url: "http://www.youtube.com/embed/HHcEjAQ46Io"
+  url: "https://www.youtube.com/embed/HHcEjAQ46Io"
   type: "youtube"
 tldr:
   title: "A different approach to JavaScript testing"

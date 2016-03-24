@@ -4,7 +4,7 @@ author:
   name: "Justin Searls"
   url: "http://about.me/searls"
 video:
-  url: "http://www.youtube.com/embed/PWHyE1Ru4X0?rel=0"
+  url: "https://www.youtube.com/embed/PWHyE1Ru4X0?rel=0"
   type: "youtube"
 tldr:
   title: "Practical Jasmine examples"
@@ -26,7 +26,7 @@ some perspective on how to test JavaScript with Jasmine. Folks have been asking
 me to share a screencast of how I write Jasmine tests for a few years, so I
 recorded the session and am providing it online, completely unedited.
 
-This screencast ([YouTube](http://www.youtube.com/watch?v=PWHyE1Ru4X0)) is
+This screencast ([YouTube](https://www.youtube.com/watch?v=PWHyE1Ru4X0)) is
 merely a conversation to provide an answer to the question, "Hey Justin, how
 would you write a test for ____ JavaScript code?" where that blank might be
 filled with "interacting with the DOM", or "binding user events", or "making

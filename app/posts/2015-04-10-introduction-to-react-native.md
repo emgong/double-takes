@@ -2,7 +2,7 @@
 title: "Introduction to React Native"
 author:
   name: "Dave Mosher"
-  url: "http://www.youtube.com/user/vidjadavemo/videos"
+  url: "https://www.youtube.com/user/vidjadavemo/videos"
 video:
   url: "https://www.youtube.com/embed/n5RhAYhTxCk?rel=0"
   type: "youtube"

@@ -4,7 +4,7 @@ author:
   name: "Zach Briggs"
   url: "http://twitter.com/theotherzach"
 video:
-  url: "http://www.youtube.com/embed/eFPpSeEhhOE"
+  url: "https://www.youtube.com/embed/eFPpSeEhhOE"
   type: "youtube"
 tldr:
   title: "Misdirection For Profit"
