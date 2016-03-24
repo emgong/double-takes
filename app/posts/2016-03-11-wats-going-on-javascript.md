@@ -42,6 +42,5 @@ What changed?
 - [ECMA-262, 5.1 Edition][spec]
 - <a rel="canonical" href="https://www.schoonology.com/technology/wats-going-on-javascript/">Schoon's original post</a>
 
-[schoon]: https://www.schoonology.com/technology/wats-going-on-javascript/
 [wat]: https://www.destroyallsoftware.com/talks/wat
 [spec]: http://www.ecma-international.org/ecma-262/5.1/
