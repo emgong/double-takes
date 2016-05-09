@@ -1168,7 +1168,7 @@ they appear:
 * [RSpec's Rails 5 announcement](http://rspec.info/blog/2016/02/rspec-3-5-0-beta1-has-been-released/)
 * [Indeed Job Trends](http://www.indeed.com/jobtrends)
 * [RubyTogether](https://rubytogether.org)
-* [The "MEAN" stack](https://en.wikipedia.org/wiki/MEAN_(software_bundle))
+* <a href="https://en.wikipedia.org/wiki/MEAN_(software_bundle)">The "MEAN" stack</a>
 * [React.js](https://facebook.github.io/react/)
 * [Hacker News](https://news.ycombinator.com)
 * [#MakeRubyGreatAgain](https://twitter.com/search?q=%23MakeRubyGreatAgain)
