@@ -19,7 +19,7 @@ most common reasons that teams become disillusioned with their tests, and offer
 some targeted advice to help teams prevent these problems from ever
 materiaizing by tweaking their tools, workflow, and perspective.
 
-The [video above](https://www.youtube.com/watch?v=a6gel0eVeNw) was recorded at
+The [video above](https://vimeo.com/145917204) was recorded at
 [RubyConf 2015](http://rubyconf.org) on November, 15, 2015 (incidentally, Test
 Double's 4th anniversary!).
 
