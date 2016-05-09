@@ -30,7 +30,7 @@ essentially asking "why should RSpec continue existing in 2016?"
 
 From there, we consider whether the maturity of its tools has lulled the Ruby and
 Rails community has into a state of complacency. In an industry that's obsessed
-with viewing technical novelty as potential panacea to its much more conmplex
+with viewing technical novelty as potential panacea to its much more complex
 root cause problems, we have to ask: can a programming language continue to thrive
 even after its tools and core libraries are mostly finished? What can the
 community do to foster continued growth in such an environment? Whose job will it
