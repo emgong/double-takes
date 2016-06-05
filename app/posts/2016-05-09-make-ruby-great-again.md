@@ -10,7 +10,7 @@ video:
 reddit: false
 ---
 
-The [video above](https://player.vimeo.com/video/165527044) was recorded at
+The [video above](https://vimeo.com/165527044) was recorded at
 [RailsConf 2016](http://railsconf.com) on May 5, 2016.
 
 ## Background
