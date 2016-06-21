@@ -2,7 +2,7 @@
 title: "My First Year At Test Double"
 author:
   name: "Josh Greenwood"
-  url: "http://twitter.com/searls"
+  url: "http://twitter.com/josh"
 ---
 
 # My First year at Test Double
