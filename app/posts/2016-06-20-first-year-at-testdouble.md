@@ -15,9 +15,7 @@ Here are a few of the things I've learned and observed.
 ## There are more important things than writing code
 When I'm consulting for a client, I'm expected to ramp up on projects and start delivering features immediately. It's important to get a good understanding of the existing code, but I've found it even more valuable to understand the business I'm working to improve.
 
-Discovering the context around the business is a tricky problem because it usually can't be found in the README or issue tracker. Gaining that context requires talking to existing members of the team and finding out what things are going well for them, what things aren't, and what things I can be doing to deliver maximum value for the business.
-
-Before starting at Test Double, I've be happy to simply grab the top item on the issue tracker and start banging out code. The first few weeks on a team are unique because you can lend a fresh set of eyes to a business and its codebase, question assumptions, and ultimately provide more value to the business than you could heads down writing code.
+Discovering the context around the business is a tricky problem because it usually can't be found in the README or issue tracker. Gaining that context requires talking to existing members of the team and finding out what things are going well for them, what things aren't, and what things I can be doing to deliver maximum value for their business.
 
 ## A great boss changes the way I work
 TLDR: Todd and Justin are great and you should come work for them.
