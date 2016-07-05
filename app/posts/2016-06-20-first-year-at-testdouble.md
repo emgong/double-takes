@@ -33,7 +33,7 @@ Every month I have a 1 on 1 with either Todd, Justin, or both. When looking back
 The amount of trust Todd and Justin have in their team is staggering. When I'm relieved of the stress of trying to make my bosses happy, I'm free to do my very best work and make decisions knowing that they will back me up even when I screw up. As a new grad, I expected to have to start at Test Double with the training wheels on but nothing could be further from reality. I've been treated with respect and trust at every step of the way which has made me that much more likely to be successful and deliver value at my clients.
 
 ## Ask Lots and Lots of Questions
-This one should be a no-brainer for me, but it has taken some time getting used to. My instinctual reaction to being the least knowledgeable person in the room is to "act the part" and hide my own ignorance. This is counterproductive for 2 reasons: I don't grown and no one really believes me anyways. At Test Double, showing your ignorance does not result in judgment. It results in people stepping up to teach. I can't stress how valuable this has been for me.
+This one should be a no-brainer for me, but it has taken some time getting used to. My instinctual reaction to being the least knowledgeable person in the room is to "act the part" and hide my own ignorance. This is counterproductive for 2 reasons: I don't grow and no one really believes me anyways. At Test Double, showing your ignorance does not result in judgment. It results in people stepping up to teach. I can't stress how valuable this has been for me.
 
 ## Working From Home Can Be Hard
 This one is the hardest to explain to my friends. The good things certainly outweigh the bad here, but it's important for me to point out the pain points.
