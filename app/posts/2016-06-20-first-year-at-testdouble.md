@@ -6,9 +6,9 @@ author:
 ---
 
 # My First year at Test Double
-I just passed my 1 year anniversary at Test Double and I'd like to share a bit about the ups and downs that came my way.
+I just celebrated my 1 year anniversary at Test Double and I'd like to share a bit about my journey thus far.
 
-A bit about me: I'm 24 years old and currently living in Louisville, Kentucky. I've been programming about 5 years. I worked as a freelance consultant and worked for a few companies in college but still had the "new college grad" badge on. I knew some stuff, but I knew that there was still so much for me to learn.
+A little about me: I'm 24 years old and currently living in Louisville, Kentucky. I've been programming about 5 years. I worked as a freelance consultant and worked for a few companies in college but still had the "new college grad" label. I knew some stuff, but I knew that there was still so much to learn.
 
 Here are a few of the things I've learned and observed.
 
@@ -42,4 +42,4 @@ This one is the hardest to explain to my friends. The good things certainly outw
 2. Work/life balance becomes weird when you watch movies in the same place you do your work. At times, it can feel as though you're always "at work", even on the weekends. I've adopted a similar strategy to separate work from life by setting hard limits on the hours I'm "at work". When I'm not in those hours, I don't respond to slack, email, or Github notifications. I was initially worried that I'd miss important notifications or that a server would catch fire and I wouldn't know about it but I've found that the world goes on just fine when I'm not around. As a worst case scenario, my teammates and clients have my cell number if an actual emergency comes up. This has worked really well for me, and I'd encourage this habit even if you work in an office. Having work time and home time prevents all the anxiety that stems from constant connectedness.
 
 ## In Summary
-I've grown more in 1 year at Test Double than I had in several previous years in school and consulting on my own. I still have a lot of areas for improvement, but I anticipate the same growth curve continuing in the coming year. If Test Double sounds like a place you would like to work, drop us a line at join@testdouble.com. Test Double is always interviewing and we would love to chat.
+I've grown more in 1 year at Test Double than I had in several previous years in school and consulting on my own. I still have a lot of areas for improvement, but I anticipate the same growth curve continuing in the coming years. If Test Double sounds like a place you would like to work, drop us a line at join@testdouble.com. Test Double is always interviewing and we would love to chat.
