@@ -41,7 +41,7 @@ module.exports = (lineman) ->
   sass:
     compile:
       options:
-        includePaths: app.sass.compile.options.includePaths.concat(
+        includePaths: lineman.config.application.sass.compile.options.includePaths.concat(
           require('bourbon').includePaths
         )
 

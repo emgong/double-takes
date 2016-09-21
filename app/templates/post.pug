@@ -2,11 +2,15 @@ if post.get('redirect')
   script.
     window.location.href = "#{post.get('redirect')}"
 
-h2.blog Post ##{_(site.posts).indexOf(post) }
-.post
-  h1
-    a(href=`/${post.htmlPath()}`) #{post.title()}
-.blogwrap
+.hero
+  .wrapper.header-wrapper
+    - var darkHeader = 'header-dark'
+    include ../partials/header.pug
+  .wrapper
+    .post-count Post ##{_(site.posts).indexOf(post) }
+    h1
+      a(href=`/${post.htmlPath()}`) #{post.title()}
+.wrapper
   if post.get('video')
     .embed-container
       if post.get('video').type == "youtube"
