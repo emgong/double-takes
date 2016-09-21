@@ -2,7 +2,7 @@ if post.get('redirect')
   script.
     window.location.href = "#{post.get('redirect')}"
 
-h2.blog Post #{_(site.posts).indexOf(post) }
+h2.blog Post ##{_(site.posts).indexOf(post) }
 .post
   h1
     a(href=`/${post.htmlPath()}`) #{post.title()}
@@ -17,8 +17,8 @@ h2.blog Post #{_(site.posts).indexOf(post) }
         iframe(allowfullscreen src=post.get('video').url)
   if post.get('tldr')
     .blogblip
-      h3 #{post.get('tldr').title}
-      p #{post.get('tldr').body}
+      h3 !{post.get('tldr').title}
+      p !{post.get('tldr').body}
   | !{post.content()}
   if post.get('author')
     .byline &mdash;
@@ -30,15 +30,15 @@ h2.blog Post #{_(site.posts).indexOf(post) }
   if !post.get('skipFeedbackRequest')
     p.call-for-feedback
       | If you enjoy this #{post.get('video') ? "video" : "post"}, let us know by
-      a(href="http://twitter.com/testdouble") twitter
-      | or
-      a(href="mailto:hello@testdouble.com") e&#8209;mail!
-      | If you'd like to discuss it,
+      a(href="http://twitter.com/testdouble")  twitter
+      |  or
+      a(href="mailto:hello@testdouble.com")  e-mail!
+      |  If you'd like to discuss it,&nbsp;
       a(href="https://github.com/testdouble/feedback/issues/new") open an issue
-      | on our feedback repo!
+      |  on our feedback repo!
       if post.get('reddit')
-        | Or share it on
-        a(href='https://news.ycombinator.com/submitlink?u=' + encodeURIComponent(site.url+'/'+post.htmlPath()) + '&amp;t=' + encodeURIComponent(post.title())) HN
+        |  Or share it on
+        a(href='https://news.ycombinator.com/submitlink?u=' + encodeURIComponent(site.url+'/'+post.htmlPath()) + '&amp;t=' + encodeURIComponent(post.title()))  HN
         | !
 .blognav
   if site.olderPost(post)
