@@ -9,7 +9,8 @@ module.exports = (lineman) ->
     common: lineman.config.application.prependTasks.common.concat("sass")
 
   removeTasks:
-    common: lineman.config.application.removeTasks.common.concat("jshint")
+    common: lineman.config.application.removeTasks.common.concat(
+      "pug:templates", "jst", "jshint")
 
   enableAssetFingerprint: if process.env.HEROKU_APP_NAME == "testdoubleblog" then true else false
 
@@ -46,4 +47,6 @@ module.exports = (lineman) ->
         "Bad value source for attribute rel on element a: The string source is not a registered keyword or absolute URL."
       ]
 
-
+  watch:
+    pugTemplates:
+      tasks: []
