@@ -2,11 +2,14 @@ module.exports = (lineman) ->
   loadNpmTasks: lineman.config.application.loadNpmTasks.concat('grunt-html-validation', 'grunt-htmlhint', 'grunt-sass')
 
   appendTasks:
-    common: "copy:dev"
-    dist: "copy:dist"
+    common: lineman.config.application.appendTasks.common.concat("copy:dev")
+    dist: lineman.config.application.appendTasks.common.concat("copy:dist")
 
   prependTasks:
     common: lineman.config.application.prependTasks.common.concat("sass")
+
+  removeTasks:
+    common: lineman.config.application.removeTasks.common.concat("jshint")
 
   enableAssetFingerprint: if process.env.HEROKU_APP_NAME == "testdoubleblog" then true else false
 
