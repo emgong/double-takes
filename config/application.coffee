@@ -38,6 +38,13 @@ module.exports = (lineman) ->
       'spec-char-escape': true, 'id-unique': true, 'src-not-empty': true, 'head-script-disabled': true,
       'img-alt-require': true, 'doctype-html5': true, 'id-class-value': true, 'style-disabled': true
 
+  sass:
+    compile:
+      options:
+        includePaths: app.sass.compile.options.includePaths.concat(
+          require('bourbon').includePaths
+        )
+
   validation:
     files:
       src: "generated/**/*.html"
@@ -48,5 +55,10 @@ module.exports = (lineman) ->
       ]
 
   watch:
+    pugPages:
+      files: [
+        "<%= files.pug.pageRoot %><%= files.pug.pages %>",
+        "<%= files.pug.templates %>", "app/partials/**/*.pug"
+      ]
     pugTemplates:
       tasks: []
