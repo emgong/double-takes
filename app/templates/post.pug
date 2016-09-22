@@ -7,10 +7,10 @@ if post.get('redirect')
     - var darkHeader = 'header-dark'
     include ../partials/header.pug
   .wrapper
-    .post-count Post ##{_(site.posts).indexOf(post) }
+    h2 Post ##{_(site.posts).indexOf(post) }
     h1
       a(href=`/${post.htmlPath()}`) #{post.title()}
-.wrapper
+.post.wrapper
   if post.get('video')
     .embed-container
       if post.get('video').type == "youtube"
