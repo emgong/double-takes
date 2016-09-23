@@ -1,12 +1,11 @@
 
 #tldr
+  float: none
+  width: auto
 
-  float: right
-  width: 30%
-
-  @media only screen and (max-width: $screen-sm)
-    float: none
-    width: auto
+  @media only screen and (min-width: $screen-sm)
+    float: right
+    width: 30%
 
   @include scale-with-screen(margin-left, 1px, 0, 20, 40)
   @include scale-with-screen(margin-bottom, 20px, 1, 1, 2)
