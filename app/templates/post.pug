@@ -28,9 +28,9 @@ div(data-name="post")
     if post.get('author')
       .byline &mdash;
         if post.get('author').url
-          a(href=post.get('author').url) #{post.get('author').name}
+          a(href=post.get('author').url)  #{post.get('author').name}
         else
-          #{post.get('author').name}
+           #{post.get('author').name}
 
     if !post.get('skipFeedbackRequest')
       p.call-for-feedback
