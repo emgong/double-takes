@@ -21,7 +21,7 @@ div(data-name="post")
         else if post.get('video').type == "wistia"
           iframe(allowfullscreen src=post.get('video').url)
     if post.get('tldr')
-      .blogblip
+      #tldr
         h3 !{post.get('tldr').title}
         p !{post.get('tldr').body}
     | !{post.content()}
