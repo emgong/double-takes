@@ -22,36 +22,16 @@ pre
     @include scale-with-screen(font-size, $type-primary * .75, 1.3, 1.4, 1.5)
     line-height: $base-line-height
 
-.inline-next-code
-  visibility: hidden
+.inline-code-block
   display: inline-block
+  vertical-align: top
+  width: 100%
+  font-size: 0.8em
 
-  &+ p
-    // cruft!
-    display: inline-block
-    margin: 0
-    padding: 0
+  @media only screen and (min-width: $screen-sm)
+    width: 49%
 
-    &+ p
-      display: inline-block
-      margin: 0
-      padding: 0
-      @include scale-with-screen(font-size, $type-primary, 1.3, 1.4, 1.5)
-      font-weight: 400
-      margin-bottom: 0
-
-      &+ pre
-        display: inline-block
-        width: 100%
-
-        @media only screen and (min-width: $screen-sm)
-          width: 49%
-
-        code
-          vertical-align: top
-          font-size: 0.8em
-
-
-        &+ p
-          display: inline-block
-
+  p
+    @include scale-with-screen(font-size, $type-primary * .75, 1.3, 1.4, 1.5)
+    font-weight: bold
+    margin-bottom: 0
