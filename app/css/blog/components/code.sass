@@ -1,3 +1,5 @@
+@import monokai
+
 code
   font-family: 'Source Code Pro', monospace
 
@@ -6,9 +8,11 @@ p, li
     background-color: $light-grey
     @include scale-with-screen(font-size, $type-primary * .95, 1.3, 1.4, 1.5)
 
+
 pre
   margin-bottom: 15px
   code
+    @extend .hljs
     border-radius: 0px
     overflow: auto
     white-space: pre
@@ -18,19 +22,36 @@ pre
     @include scale-with-screen(font-size, $type-primary * .75, 1.3, 1.4, 1.5)
     line-height: $base-line-height
 
-.inline-code-block
+.inline-next-code
+  visibility: hidden
   display: inline-block
-  vertical-align: top
-  width: 49%
-  font-size: 0.8em
 
-  p
-    font-weight: bold
-    margin-bottom: 0
+  &+ p
+    // cruft!
+    display: inline-block
+    margin: 0
+    padding: 0
+
+    &+ p
+      display: inline-block
+      margin: 0
+      padding: 0
+      @include scale-with-screen(font-size, $type-primary, 1.3, 1.4, 1.5)
+      font-weight: 400
+      margin-bottom: 0
+
+      &+ pre
+        display: inline-block
+        width: 100%
+
+        @media only screen and (min-width: $screen-sm)
+          width: 49%
+
+        code
+          vertical-align: top
+          font-size: 0.8em
 
 
-@media only screen and (max-width: 767px)
-
-  .inline-code-block
-    width: 100%
+        &+ p
+          display: inline-block
 
