@@ -21,6 +21,6 @@ I hope you enjoy it! As always, feel free to [reach out to me](mailto:justin@tes
 
 Below is [video of the talk](https://www.youtube.com/watch?v=amFtMIRBtZs) as I presented it at [Kalamazoo X](http://kalamazoox.org) in April 2013:
 
-<div class="embed-container">
+<div class="video">
   <iframe src="https://www.youtube.com/embed/amFtMIRBtZs" allowfullscreen="allowfullscreen"></iframe>
 </div>

@@ -1,0 +1,81 @@
+$navigation-items: 4
+
+.primary-nav-sidebar
+  @extend %flexbox
+  flex-direction: column
+  justify-content: space-between
+  @include size(260px 100%)
+  padding: $small-spacing
+  padding-top: $big-spacing
+  @include scale-with-screen(padding-bottom, $small-spacing, 1.2, 2, 2.5)
+  background: $green
+  transition: transform $base-duration
+
+  visibility: hidden
+  @include position(fixed, 0px 0px null null)
+
+  p
+    font-weight: 200
+    margin-bottom: 0
+
+.is-nav-trigger
+  display: none
+
+.is-nav-trigger:checked
+  & ~ .primary-nav-sidebar
+    visibility: visible
+    @include position(fixed, 0px -260px null null)
+
+  & ~ .primary-nav-sidebar, & ~ .site-container
+    transform: translate3d(-260px, 0, 0)
+
+    & .primary-nav-item
+      transform: translate3d(0, 0, 0)
+
+      @for $i from 1 through $navigation-items
+        &:nth-child(#{$i})
+          transition-delay: (0.25 * $i) * $short-duration
+
+.primary-nav-item
+  color: $black
+  display: block
+  font-size: 20px
+  margin-bottom: $small-spacing
+  text-decoration: none
+  transform: translate3d($big-spacing, 0, 0)
+  transition: transform $base-duration
+
+.navigation-close
+  @include position(absolute, 17px $small-spacing null null)
+  display: block
+
+.menu-close
+  cursor: pointer
+  @include size(44px 39px)
+  background: url(/img/close-menu-icon.svg) center no-repeat
+
+  &:focus
+    outline: none
+
+.social
+  .icon
+    height: 20px
+    width: 20px
+    margin: 5px
+    display: inline-block
+
+    text-indent: 100%
+    white-space: nowrap
+    overflow: hidden
+
+  .twitter
+    background: url(/img/twitter.svg) no-repeat
+
+  .github
+    background: url(/img/github.svg) no-repeat
+
+.contact
+  a
+    font-weight: 300
+    color: $black
+    text-decoration: none

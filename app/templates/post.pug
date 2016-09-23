@@ -2,47 +2,52 @@ if post.get('redirect')
   script.
     window.location.href = "#{post.get('redirect')}"
 
-h2.blog Post ##{_(site.posts).indexOf(post) }
-.post
-  h1
-    a(href=`/${post.htmlPath()}`) #{post.title()}
-.blogwrap
-  if post.get('video')
-    .embed-container
-      if post.get('video').type == "youtube"
-        iframe.u-video(allowfullscreen src=post.get('video').url)
-      else if post.get('video').type == "vimeo"
-        iframe.u-video(allowfullscreen src=`${post.get('video').url}?portrait=0&color=75fe04`)
-      else if post.get('video').type == "wistia"
-        iframe(allowfullscreen src=post.get('video').url)
-  if post.get('tldr')
-    .blogblip
-      h3 !{post.get('tldr').title}
-      p !{post.get('tldr').body}
-  | !{post.content()}
-  if post.get('author')
-    .byline &mdash;
-      if post.get('author').url
-        a(href=post.get('author').url) #{post.get('author').name}
-      else
-        #{post.get('author').name}
+div(data-name="post")
+  .hero
+    .wrapper.header-wrapper
+      - var darkHeader = 'header-dark'
+      include ../partials/header.pug
+    .wrapper
+      h2 Post ##{_(site.posts).indexOf(post) }
+      h1
+        a(href=`/${post.htmlPath()}`) #{post.title()}
+  .main.wrapper
+    if post.get('video')
+      .video
+        if post.get('video').type == "youtube"
+          iframe.u-video(allowfullscreen src=post.get('video').url)
+        else if post.get('video').type == "vimeo"
+          iframe.u-video(allowfullscreen src=`${post.get('video').url}?portrait=0&color=75fe04`)
+        else if post.get('video').type == "wistia"
+          iframe(allowfullscreen src=post.get('video').url)
+    if post.get('tldr')
+      #tldr
+        h3 !{post.get('tldr').title}
+        p !{post.get('tldr').body}
+    | !{post.content()}
+    if post.get('author')
+      .byline &mdash;
+        if post.get('author').url
+          a(href=post.get('author').url)  #{post.get('author').name}
+        else
+           #{post.get('author').name}
 
-  if !post.get('skipFeedbackRequest')
-    p.call-for-feedback
-      | If you enjoy this #{post.get('video') ? "video" : "post"}, let us know by
-      a(href="http://twitter.com/testdouble")  twitter
-      |  or
-      a(href="mailto:hello@testdouble.com")  e-mail!
-      |  If you'd like to discuss it,&nbsp;
-      a(href="https://github.com/testdouble/feedback/issues/new") open an issue
-      |  on our feedback repo!
-      if post.get('reddit')
-        |  Or share it on
-        a(href='https://news.ycombinator.com/submitlink?u=' + encodeURIComponent(site.url+'/'+post.htmlPath()) + '&amp;t=' + encodeURIComponent(post.title()))  HN
-        | !
-.blognav
-  if site.olderPost(post)
-    a.left(href=`/${site.olderPost(post).htmlPath()}`) Previous
-  if site.newerPost(post)
-    a.right(href=`/${site.newerPost(post).htmlPath()}`) Newer
-  .clear
+    if !post.get('skipFeedbackRequest')
+      p.call-for-feedback
+        | If you enjoy this #{post.get('video') ? "video" : "post"}, let us know by
+        a(href="http://twitter.com/testdouble")  twitter
+        |  or
+        a(href="mailto:hello@testdouble.com")  e-mail!
+        |  If you'd like to discuss it,&nbsp;
+        a(href="https://github.com/testdouble/feedback/issues/new") open an issue
+        |  on our feedback repo!
+        if post.get('reddit')
+          |  Or share it on
+          a(href='https://news.ycombinator.com/submitlink?u=' + encodeURIComponent(site.url+'/'+post.htmlPath()) + '&amp;t=' + encodeURIComponent(post.title()))  HN
+          | !
+  .blognav
+    if site.olderPost(post)
+      a.left(href=`/${site.olderPost(post).htmlPath()}`) Previous
+    if site.newerPost(post)
+      a.right(href=`/${site.newerPost(post).htmlPath()}`) Newer
+    .clear

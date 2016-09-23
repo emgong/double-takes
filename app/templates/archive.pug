@@ -1,11 +1,18 @@
-h2.blog Posts #0-#{site.posts.length - 1}
-.post
-  h1 Nice Thinking.
-.blogwrap.archive
-  ul
-    - _(site.posts).chain().clone().reverse().each( function(post){
-      li(class=`${post.get('redirect') ? "redirected" : "" }`)
-        span.ordinal ##{_(site.posts).indexOf(post)}
-        a(href=`${post.get('redirect') ? post.get('redirect') : '/'+post.htmlPath() }`)
-          | #{_(post.title()).truncate(75)}
-    - })
+div(data-name="archive")
+  .hero
+    .wrapper.header-wrapper
+      - var darkHeader = 'header-dark'
+      include ../partials/header.pug
+    .wrapper
+      h2 Posts #0-#{site.posts.length - 1}
+      h1 Nice thinking.
+  .main.wrapper
+    section
+      ul
+        - _(site.posts).chain().clone().reverse().each( function(post){
+          li(class=`${post.get('redirect') ? "redirected" : "" }`)
+            span.ordinal ##{_(site.posts).indexOf(post)}
+            a(href=`${post.get('redirect') ? post.get('redirect') : '/'+post.htmlPath() }`)
+              | #{_(post.title()).truncate(75)}
+        - })
+
