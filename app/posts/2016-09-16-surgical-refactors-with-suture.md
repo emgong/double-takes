@@ -1182,7 +1182,7 @@ questions.
 [46:45.937] for coffee or curry in Kyoto or Osaka, we
 [46:49.108] would love to meet you.
 [46:50.588] One more time, thank you!
-46:53.891] [Subtitles were sponsored by @testdouble]
+[46:53.891] [Subtitles were sponsored by @testdouble]
 </pre>
 
 ## Slides
