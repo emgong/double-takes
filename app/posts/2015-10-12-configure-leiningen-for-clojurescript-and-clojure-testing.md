@@ -12,7 +12,7 @@ We are currently using Midje to test our Clojure code and have decided to use cl
 
 Let's begin to get cljs.test working! First, you'll need a place to put your new ClojureScript tests. I added a new `cljs` folder in the `test` directory and moved all of the existing Clojure tests to a new `clj` folder.  The new structure looks like this:
 
-```
+``` bash
 resources
 ├── public
 │   ├── js
@@ -29,7 +29,7 @@ test
 │   │   ├── foo_test.clj
 └── cljs
     └── my_namespaced_app
-        ├── foo_test.cljs
+        └── foo_test.cljs
 ```
 
 Next, to ensure our existing Midje tests can run, you'll need to add `:test-paths ["test/clj"]` to your project.clj.  This lets Leiningen know that you're using a different directory structure. Now, `lein midje 'my_namespaced_app.*` will find and execute your Midje tests!

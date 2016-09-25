@@ -468,14 +468,14 @@ AssertionError: false == true
 
 The above error message isn't particularly helpful, and would require some
 debugging or `console.log()`'ing to figure out why the assertion failed. As it
-happens, Sinon does provide its own assertion tools, but their messages are 
+happens, Sinon does provide its own assertion tools, but their messages are
 still pretty limited:
 
 <div class="wide"></div>
 ``` javascript
 sinon.assert.calledWithExactly(save, 'Jane') /* will throw:
 AssertError: expected spy to be called with exact arguments Jane
-    spy(Joe) 
+    spy(Joe)
 */
 ```
 
@@ -565,3 +565,17 @@ foster consistent, readable isolated unit tests. If you're ready to take the
 next step, I'd encourage you to check out [its
 documentation](https://github.com/testdouble/testdouble.js#docs).
 
+<script>
+  (function(){
+    if (![].filter) return
+    [].slice.call(document.getElementsByTagName('pre')).filter(function (pre) {
+      return pre.previousElementSibling.previousElementSibling.getAttribute('class') !== 'wide'
+    }).forEach(function (pre) {
+      var wrap = document.createElement('div')
+      wrap.setAttribute('class', 'inline-code-block')
+      pre.parentNode.insertBefore(wrap, pre.nextSibling)
+      wrap.appendChild(pre.previousElementSibling)
+      wrap.appendChild(pre)
+    })
+  })()
+</script>

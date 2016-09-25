@@ -2,11 +2,15 @@ module.exports = (lineman) ->
   loadNpmTasks: lineman.config.application.loadNpmTasks.concat('grunt-html-validation', 'grunt-htmlhint', 'grunt-sass')
 
   appendTasks:
-    common: "copy:dev"
-    dist: "copy:dist"
+    common: lineman.config.application.appendTasks.common.concat("copy:dev")
+    dist: lineman.config.application.appendTasks.common.concat("copy:dist")
 
   prependTasks:
     common: lineman.config.application.prependTasks.common.concat("sass")
+
+  removeTasks:
+    common: lineman.config.application.removeTasks.common.concat(
+      "pug:templates", "jst", "jshint")
 
   enableAssetFingerprint: if process.env.HEROKU_APP_NAME == "testdoubleblog" then true else false
 
@@ -34,6 +38,13 @@ module.exports = (lineman) ->
       'spec-char-escape': true, 'id-unique': true, 'src-not-empty': true, 'head-script-disabled': true,
       'img-alt-require': true, 'doctype-html5': true, 'id-class-value': true, 'style-disabled': true
 
+  sass:
+    compile:
+      options:
+        includePaths: lineman.config.application.sass.compile.options.includePaths.concat(
+          require('bourbon').includePaths
+        )
+
   validation:
     files:
       src: "generated/**/*.html"
@@ -43,4 +54,11 @@ module.exports = (lineman) ->
         "Bad value source for attribute rel on element a: The string source is not a registered keyword or absolute URL."
       ]
 
-
+  watch:
+    pugPages:
+      files: [
+        "<%= files.pug.pageRoot %><%= files.pug.pages %>",
+        "<%= files.pug.templates %>", "app/partials/**/*.pug"
+      ]
+    pugTemplates:
+      tasks: []

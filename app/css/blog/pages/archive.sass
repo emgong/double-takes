@@ -1,0 +1,24 @@
+[data-name=archive]
+  .hero
+    margin-bottom: $base-spacing
+
+  .main
+    @include scale-with-screen(max-width, 90%, .95, .7, .5)
+
+  ul
+    list-style-type: none
+    margin: 0
+    padding-bottom: 15px
+
+    li
+      line-height: $base-line-height * 1.2
+
+      &.redirected
+        text-decoration: line-through
+
+      .ordinal
+        display: inline-block
+        color: $dark-grey
+        margin-right: 10px
+        @include scale-with-screen(margin-right, 4px, 1.1, 1.5, 2)
+

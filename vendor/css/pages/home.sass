@@ -1,0 +1,19 @@
+body[data-name=homepage]
+  .site-container
+    background: url(/img/home-bg.jpg) no-repeat
+    background-size: cover
+    color: $white
+    height: calc(100vh - 28px)
+    @include scale-with-screen(padding-bottom, $base-spacing, 1.2, 2, 2.5)
+
+    p
+      font-weight: 600
+      animation: slide-in $long-duration
+      margin-bottom: 0
+      text-shadow: 0 0 4px $black
+
+  .wrapper
+    @extend %flexbox
+    flex-direction: column
+    height: 100%
+    justify-content: space-between

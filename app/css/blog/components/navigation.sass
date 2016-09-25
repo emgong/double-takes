@@ -1,0 +1,24 @@
+.blognav
+  display: flex
+
+  a
+    @include scale-with-screen(font-size, $type-primary * 1.8, 1.4, 1.9, 2.5)
+    padding: 0
+    @include scale-with-screen(padding-top, 40px, 1.2, 1.6, 2)
+    @include scale-with-screen(padding-bottom, 40px, 1.2, 1.6, 2)
+    font-weight: 300
+    display: block
+    width: 50%
+    text-align: center
+    color: $white
+    text-decoration: none
+    &.right
+      background: $black
+    &.left
+      background: $mid-grey
+    &:hover
+      text-decoration: underline
+      background: $green
+      color: $black
+
+

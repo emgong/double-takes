@@ -1,0 +1,37 @@
+@import monokai
+
+code
+  font-family: 'Source Code Pro', monospace
+
+p, li
+  code
+    background-color: $light-grey
+    @include scale-with-screen(font-size, $type-primary * .95, 1.3, 1.4, 1.5)
+
+
+pre
+  margin-bottom: 15px
+  code
+    @extend .hljs
+    border-radius: 0px
+    overflow: auto
+    white-space: pre
+    word-wrap: normal
+    word-break: none
+
+    @include scale-with-screen(font-size, $type-primary * .75, 1.3, 1.4, 1.5)
+    line-height: $base-line-height
+
+.inline-code-block
+  display: inline-block
+  vertical-align: top
+  width: 100%
+  font-size: 0.8em
+
+  @media only screen and (min-width: $screen-sm)
+    width: 49%
+
+  p
+    @include scale-with-screen(font-size, $type-primary * .75, 1.3, 1.4, 1.5)
+    font-weight: bold
+    margin-bottom: 0
