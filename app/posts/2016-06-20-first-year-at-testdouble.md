@@ -24,7 +24,7 @@ I can hear you groaning from across the Internet: "oh no, Josh is just sucking u
 
 What sets Todd and Justin apart is that I could fill this section with a rant about how awful they are and they would still publish this and ask me how they could be doing better. They are the very first to admit they don't have all the answers and the very last to blame anyone but themselves when things don't go well.
 
-These qualities have influenced the rest of the Team and are manifested in 2 ways.
+These qualities have influenced the rest of the team and are manifested in 2 ways.
 
 ### Introspection
 Every month I have a 1 on 1 with either Todd, Justin, or both. When looking back through my notes from those meetings, I found a pattern. They ask me what I want to improve and then they ask me what they can do to help me meet my goals. The only thing I've been asked to do is take a close look at myself and find the areas I'm lacking. Recently, I've been focused on how I can improve communication on my client team and how we can leverage each person's skills to level each other up. On the more techinical side, I've been focused on learning clojure and iOS. My motivation to improve has skyrocketed when I see the problems for myself and I'm not told I need to do x, y, and z.
