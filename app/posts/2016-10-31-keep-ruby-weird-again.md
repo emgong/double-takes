@@ -751,6 +751,7 @@ information on many of them:
 * [Sandi Metz](http://sandimetz.com)
 * [Code Climate](http://codeclimate.com)
 * [Ryan Davis](http://www.zenspider.com)
+* [Gary Bernhardt](http://www.destroyallsoftware.com)
 * [Seattle.rb](http://www.seattlerb.org)
 * ["Seattle-style" Ruby](https://heartmindcode.com/2013/09/05/parentheses-in-ruby/)
 * [The Failing Hacker News](https://news.ycombinator.com)
