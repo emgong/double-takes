@@ -11,7 +11,7 @@ reddit: false
 ---
 
 The [video above](https://vimeo.com/182947603) was recorded as the Day 2 keynote
-at [Ruby Kaigi](http://http://rubykaigi.org/2016) on September 9th, 2016.
+at [Ruby Kaigi](http://rubykaigi.org/2016) on September 9th, 2016.
 
 ## Background
 
