@@ -5,14 +5,15 @@ author:
   url: "http://twitter.com/testdouble"
   googlePlus: "https://plus.google.com/+JustinSearlsTestDouble"
 video:
-  url: "https://player.vimeo.com/video/TODO"
+  url: "https://player.vimeo.com/video/189525997"
   type: "vimeo"
 reddit: false
 ---
 
-The [video above](https://vimeo.com/TODO) was recorded by a campaign tracker at
-the private Ruby fundraising event, [Keep Ruby Weird](http://keeprubyweird.com)
-on October 28, 2016, in the final days of the campaign.
+The [video above](https://vimeo.com/189525997) was recorded by a campaign
+tracker at the private Ruby fundraising event, [Keep Ruby
+Weird](http://keeprubyweird.com) on October 28, 2016, in the final days of the
+campaign.
 
 The video depicts known JavaScript agitant [Justin
 Searls](https://twitter.com/searls), who spoke for approximately 27 minutes at
