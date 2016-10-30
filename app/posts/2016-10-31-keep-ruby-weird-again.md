@@ -14,11 +14,11 @@ The [video above](https://vimeo.com/TODO) was recorded by a campaign tracker at
 the private Ruby fundraising event, [Keep Ruby Weird](http://keeprubyweird.com)
 on October 28, 2016, in the final days of the campaign.
 
-The video depicts known JavaScript agitant [Justin Searls](https://twitter.com),
-who spoke for approximately 27 minutes at the rally with a message that
-advocated restoring Ruby to its former prominence in the open source software
-community. While the content of the speech contained pointed populist rhetoric,
-it did not contain any specific policy proposals.
+The video depicts known JavaScript agitant [Justin
+Searls](https://twitter.com/searls), who spoke for approximately 27 minutes at
+the rally with a message that advocated restoring Ruby to its former prominence
+in the open source software community. While the content of the speech contained
+pointed populist rhetoric, it did not present any specific policy proposals.
 
 Opponents to Ruby have raised concerns that the strong language used by Searls
 will only embolden Ruby's most radical proponents to take action against
@@ -26,16 +26,19 @@ JavaScript, the open, standards-based language of the Future™.
 
 Sources in the campaign say that prominent JavaScript leaders are alarmed,
 fearing that the Ruby community's counter-cultural message could attract
-developers frustrated by their slow-moving, deliberate standards bodies to move
-the web forward. Campaign officials worry that if a cohesive movement organizes
-around a non-JavaScript language, it could set back their goal of establishing a
-new world order in which 100% of new software across the world is finally
-written in JavaScript.
+developers frustrated by JavaScript's slow-moving, deliberate standards bodies
+to move the web forward. Campaign officials worry that if a cohesive movement
+organizes around a non-JavaScript language, it could set back their goal of
+establishing a new world order in which 100% of new software across the world is
+finally written in JavaScript.
 
 *Test Double does not endorse the contents of this video and Searls has been
-placed on paid conference speaking leave, pending an internal investigation.*
+placed on paid conference speaking leave, pending the outcome of an internal
+investigation.*
 
 ## Transcript
+
+A transcript of the event follows:
 
 <pre class="transcript">
 [00:00:24.033] > Brandon: Ok. While
@@ -82,11 +85,11 @@ placed on paid conference speaking leave, pending an internal investigation.*
                guy isn't he? Thank you Brandon!
 [00:02:48.133] Alright, please
 [00:02:51.133] live-tweet all of your grievance to
-@searls
+               @searls
 [00:02:57.133] Alright. Alright
 [00:03:00.133] Oh No!
 [00:03:03.133] > Audience: Bum Mic!
-> Justin: I got a bum mic?
+               > Justin: I got a bum mic?
 [00:03:06.133] Oh, right, yeah
 [00:03:09.133] This is a
 [00:03:12.133] dongle conspiracy
@@ -136,7 +139,7 @@ placed on paid conference speaking leave, pending an internal investigation.*
 [00:05:36.133] that today is the biggest source of
 [00:05:39.133] biased technology books on the planet
 [00:05:42.133] Later, "cheeky" Chad Fowler and
-"Jolly" Jim
+               "Jolly" Jim
 [00:05:45.133] Weirich—so called "community
                organizers"
 [00:05:48.133] went on to create a national ruby
@@ -188,7 +191,7 @@ placed on paid conference speaking leave, pending an internal investigation.*
 [00:07:54.133] Aloof Yehuda made bundler, a hostile
 [00:07:57.133] takeover of your dependency
 [00:08:00.133] And everyone's favorite,
-"Chicken" Tenderlove
+               "Chicken" Tenderlove
 [00:08:03.133] Spent years of his life
 [00:08:06.133] rewriting the slow and confusing
 [00:08:09.133] for Rails's ActiveRecord,
