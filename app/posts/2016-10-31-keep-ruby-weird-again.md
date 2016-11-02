@@ -941,7 +941,7 @@ information on many of them:
 
 * [Fail Whale](https://en.wikipedia.org/wiki/File:Failwhale.png)
 * [Brandon Hays](http://brandonhays.com)
-* [Test Double & Ruby](http://testdouble.com/ruby)
+* [Test Double & Ruby](http://testdouble.com/ruby.html)
 * [@searls](https://twitter.com/searls)
 * [@testdouble](https://twitter.com/testdouble)
 * [Ruby](https://www.ruby-lang.org/en/)
