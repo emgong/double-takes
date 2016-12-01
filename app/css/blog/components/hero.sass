@@ -1,7 +1,4 @@
 .hero
-  h2
-    @include scale-with-screen(margin-bottom, $base-spacing * 0.5, 1.2, 1.35, 1.35)
-
   h1
     line-height: 1.2
     @include scale-with-screen(font-size, $type-h1 * 0.6, 1.2, 1.7, 2.4)
@@ -9,3 +6,10 @@
     a
       color: $white
       text-decoration: none
+
+  h2
+    @include scale-with-screen(margin-bottom, $base-spacing * 0.5, 1.2, 1.35, 1.35)
+
+  h3
+    color: $white
+    text-align: center

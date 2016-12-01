@@ -11,6 +11,9 @@ div(data-name="post")
       h2 Post ##{_(site.posts).indexOf(post) }
       h1
         a(href=`/${post.htmlPath()}`) #{post.title()}
+      if post.get('subtitle')
+        h3 #{post.get('subtitle')}
+
   .main.wrapper
     if post.get('video')
       .video
