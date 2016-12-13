@@ -1,5 +1,5 @@
 header(class=`primary-header ${darkHeader}` role="banner")
-  a(href="//testdouble.com")
+  a(id="logo" href="//testdouble.com")
     h1(class=`primary-header-item logo ${darkHeader}`) Test Double
   label(for="navigation-trigger" role="button")
-    .menu-trigger(class=`primary-header-item ${darkHeader}`)
+    .menu-trigger(class=`primary-header-item ${darkHeader}` tabindex='0' aria-label='Toggle Navigation' aria-controls='sidebar-navigation')

@@ -1,0 +1,49 @@
+script.
+  (function() {
+    function checkbox() {
+      return document.getElementById('navigation-trigger')
+    }
+    function openMenu() {
+      checkbox().checked = true
+      document.getElementsByClassName('primary-nav-item')[0].focus()
+      document.getElementById('logo').setAttribute('tabindex', -1)
+    }
+    function closeMenu() {
+      checkbox().checked = false
+      document.getElementsByClassName('menu-trigger')[0].focus()
+      document.getElementById('logo').setAttribute('tabindex', 0)
+    }
+    function toggleMenu() {
+      var shouldOpen = !checkbox().checked
+      if (shouldOpen) {
+        openMenu()
+      } else {
+        closeMenu()
+      }
+    }
+
+    function isKeyCode(keyCode) {
+      return function(event) {
+        return event.keyCode === keyCode
+      }
+    }
+    var isEscape = isKeyCode(27)
+    var isEnter = isKeyCode(13)
+
+    function toggleMenuOnEnter(event) {
+      isEnter(event) && toggleMenu()
+    }
+    function closeMenuOnEnter(event) {
+      isEnter(event) && closeMenu()
+    }
+    function closeMenuOnEscape(event) {
+      isEscape(event) && closeMenu()
+    }
+    document.querySelectorAll('.menu-close').forEach(function(element) {
+      element.addEventListener('keydown', closeMenuOnEnter, false)
+    })
+    document.querySelectorAll('.menu-trigger').forEach(function(element) {
+      element.addEventListener('keydown', toggleMenuOnEnter, false)
+    })
+    document.addEventListener('keydown', closeMenuOnEscape, false)
+  })()
