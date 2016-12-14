@@ -30,5 +30,6 @@ html(lang="en")
 
   body
     input.is-nav-trigger#navigation-trigger(type="checkbox")
-    main(class="site-container" role="main").content !{yield}
     include ../partials/navigation.pug
+    main(class="site-container").content !{yield}
+    include ../partials/accessible-menu.pug
