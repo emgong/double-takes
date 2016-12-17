@@ -176,7 +176,7 @@ require "minitest/autorun"
 class UnitTest < Minitest::Test
 end
 
-MiniTest::Unit.after_tests do
+MiniTest.after_run do
   if ENV['NO_RAILS'] && defined?(Rails)
     raise "Rails wound up getting loaded by a unit test! Failing!"
   end
