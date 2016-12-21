@@ -23,12 +23,6 @@ module.exports = (lineman) ->
       title: "<%= pkg.title %>"
       dateFormat: 'MMMM Do, YYYY'
 
-  copy:
-    dev:
-      files: [ expand: true, cwd: 'static', src: '**', dest: 'generated' ]
-    dist:
-      files: [ expand: true, cwd: 'static', src: '**', dest: 'dist' ]
-
   htmlhint:
     files:
       src: "generated/**/*.html"
