@@ -5,7 +5,7 @@ author:
   url: "http://twitter.com/joshtgreenwood"
 ---
 
-The last few weeks I've been working on slides for an upcoming talk I'm giving about [Elm](http://elm-lang.org). One of the most painful parts has been has been formatting code in a way that's both readable and aesthetically pleasing. If you've spent much time in Keynote or PowerPoint, you know there is no magic button for this. Determined to find an easier way, I polled other [Double Agents](testdouble.com/agency#agents) and have aggregated their collective knowledge.
+The last few weeks I've been working on slides for an upcoming talk I'm giving about [Elm](http://elm-lang.org). One of the most painful parts has been has been formatting code in a way that's both readable and aesthetically pleasing. If you've spent much time in Keynote or PowerPoint, you know there is no magic button for this. Determined to find an easier way, I polled other [Double Agents](http://testdouble.com/agency#agents) and have aggregated their collective knowledge.
 
 # The Goal
 There is nothing more intimidating to me as a listener than a giant block of code thrown at me all at once. As a professional reader of code, my mind immediately starts parsing through the code and looking for patterns. At this point, I've totally forgotten that I am supposed to be listening to the speaker explain it, have fallen hopelessly behind, and will likely miss the speaker's point.
