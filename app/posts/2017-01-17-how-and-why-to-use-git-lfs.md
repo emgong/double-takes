@@ -9,11 +9,11 @@ reddit: false
 
 ## Why might I need Git LFS?
 
-To some extent, all software is _obsessed_ with data. Facebook, GitHub, and Dropbox are not very compelling without the data they manage, and Rails wouldn't be near as widely used without ActiveRecord (or some equivalent). That said, all of these examples—and most web applications in general—defer responsibility of that data to a database like Postgres. While they require data to be compelling, their core behaviour still exists without it, and users can continue to use the software to _add_ interesting data.
+To some extent, all software is _obsessed_ with data. Facebook, GitHub, and Dropbox are not very compelling without the data they manage, and Rails wouldn't be near as widely used without ActiveRecord (or some equivalent). That said, all of these examples—and most web applications in general—defer responsibility of that data to a database like Postgres. While they require data to be compelling, their core behavior still exists without it, and users can continue to use the software to _add_ interesting data.
 
 Some applications, on the other hand, _require data to function_. In game development this is often referred to as [data-driven design][ddd-games] or data-oriented design. (Not to be confused with the [UX paradigm][ddd-ux], nor [domain-driven design][ddd-software]) (For a more concrete example, check out the [entity-component-system][ecs] architecture for game engines.)
 
-For our earlier examples, the relationship between data and behaviour is loose, and it's managed equally loosely, with ["migrations"][migration-example] to update the database schema as the various [data-access models][model-example] change over time. For these data-driven applications, the data _is_ the behaviour, requiring all the care and attention typically paid to code.
+For our earlier examples, the relationship between data and behavior is loose, and it's managed equally loosely, with ["migrations"][migration-example] to update the database schema as the various [data-access models][model-example] change over time. For these data-driven applications, the data _is_ the behavior, requiring all the care and attention typically paid to code.
 
 Because of this tight coupling between data and the code interpreting it, versioning the two _together_ becomes critical to maintaining this relationship over time: as the code changes, the data changes, and vice-versa. Historically, this need has been met with specialized version-control software like [Perforce][perforce]. (Notably, there are still features unique to Perforce that make it particularly _effective_ in these types of projects, but we'll leave that for another day and another post.)
 
@@ -23,7 +23,7 @@ Recently, there is another option: [Git Large File Storage][git-lfs] (Git LFS fo
 
 While data-driven game engines are a convenient example, many applications have a similar relationship:
 
-- A parser for a binary file format and a set of binary test fixtures verifying the parser's behaviour.
+- A parser for a binary file format and a set of binary test fixtures verifying the parser's behavior.
 - A static web site that wants to include images and fonts alongside markup, all [deployable via git push][git-push-deploy].
 - A repository for a company's style guide, with source files (such as the `.sketch` files, naturally) versioned alongside the resulting style guide.
 
@@ -140,7 +140,7 @@ All of these alternatives come with a maintenance burden over time—buyer, bewa
 For more information, check out the core [Git LFS documentation][core-docs]. In particular, the following documents are useful jumping-off points:
 
 - [This document][server-discovery] on "server discovery": pointing uploads at a specific server _independent_ of the location of the Git remote.
-- [This document][extensions] on "extensions": hooking and wrapping the core LFS behaviour, e.g. adding a wrapper to sign files before upload.
+- [This document][extensions] on "extensions": hooking and wrapping the core LFS behavior, e.g. adding a wrapper to sign files before upload.
 - [The spec for Git LFS][spec], which goes into further detail of the inner-workings of Git LFS.
 
 [git-lfs]: https://git-lfs.github.com/
