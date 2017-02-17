@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+  include ../partials/mixins.pug
+  include ../partials/head.pug
+
+  body(data-name="404")
+    input.is-nav-trigger#navigation-trigger(type="checkbox")
+    include ../partials/navigation.pug
+    main(class="site-container")
+      .hero
+        .wrapper.header-wrapper
+          - var darkHeader = 'header-dark'
+          include ../partials/header.pug
+        .wrapper
+          h1 😳
+      .wrapper
+        section
+          h2 So, about that page #[br.sm] you asked for.
+          p.
+            Our server can't find the page you navigated to. Sorry! Remember
+            when we said #[a(href="agency.html") software was broken]?
+            It turns out, bugs happen even to the best of us!
+          p.
+            No one likes landing at a
+            #[a(href="https://en.wikipedia.org/wiki/HTTP_404") 404]
+            page (especially a cheeky one like this), so hopefully we can
+            quickly send you on your way. Perhaps you meant to get to:
+          ul
+            li #[a(href="//testdouble.com/agency.html") A bit about our agency]
+            li #[a(href="//blog.testdouble.com") Our blog]
+            li #[a(href="//testdouble.com/work.html") A description of our work]
+            li #[a(href="//blog.testdouble.com/archive.html") Our blog archive]
+            li #[a(href="https://github.com/testdouble") Some of our open source]
+            li #[a(href="https://vimeo.com/testdouble") Our conference talks]
+          p.
+            Or maybe you were just curious what on earth a "test double" is and
+            wound up at our homepage looking for a definition. If that's the
+            case, you might check
+              #[a(href="https://github.com/testdouble/contributing-tests/wiki/Test-Double") this]
+            or #[a(href="https://en.wikipedia.org/wiki/Test_double") that] wiki
+            page.
+        section
+          h2 We're only as strong #[br.sm] as our weakest 🔗.
+          p.bottom-of-page.
+            If you think you arrived here via a broken link, we'd love if you
+            could help us by letting us know where you found it by
+            #[a(href="mailto:hello+404@testdouble.com") e-mail] or
+            #[a(href="https://twitter.com/testdouble") twitter] and we'll do
+            our best to fix it quickly. 💚
+
+    include ../partials/accessible-menu.pug
+
