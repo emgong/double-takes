@@ -10,7 +10,7 @@ tldr:
 reddit: false
 ---
 
-Many of my favorite languages have testing libraries that support specs. Specs allow us to define testing contexts that help isolate and focus our specific unit tests. To see some of my favorites check out this [list][spec-frameworks-list] at the end of this post! However, not all do. Two distinct standouts are C# and Java. Luckily, their language features still allow the same goals to be achieved! Before we look at how to do it, though, let's talk about why test contexts are awesome!
+Many of my favorite languages have testing libraries that support specs. Specs allow us to define testing contexts that help isolate and focus our unit tests. Many of my favorite languages have [testing libraries that support specs][spec-frameworks-list]. Two distinct standouts that do not support contexts are C# and Java; luckily, their language features still allow the same goals to be achieved. Before we look at how to use them, let's talk about why contexts are awesome!
 
 ## Defining Contexts For Test Separation
 It’s beneficial to separate the setup and the “context” around a method call within a class. This allows a single test or set of tests to use similar setup or default values. The setup will be focused on one entry into the method under test, and extraneous noise can be eliminated.
@@ -28,7 +28,7 @@ Most importantly we want to improve the focus of each of our tests. We want a si
 We want to ensure that the setup for one test doesn’t accidentally affect another. We also want a way to group common setup between related tests without polluting the scope of unrelated tests.
 
 ### Naming Conventions
-We want our naming conventions to help identify the level of abstraction for each context within our tests. We want to top level to describe the class under test, the next level to describe the method under test, subsequent levels to describe setup as it becomes refined, and finally the test to describe it’s unique inputs and outputs.
+We want our naming conventions to help identify the level of abstraction for each context within our tests. We want the top level to describe the class under test, the next level to describe the method under test, subsequent levels to describe setup as it becomes refined, and finally the test to describe it’s unique inputs and outputs.
 
 ## An Example
 These benefits are a little abstract, so let’s analyze them with an example. We have a class `FancyClass` with two related public methods: `ExecuteOnReversedResults` and `SortFilteredResults`. Both methods need to be tested, and it makes sense to group them together into a single test class. Here’s an example of what that class may look like. This simplistic class let’s us focus on how we would break up tests contexts with more focus. This example, and the tests defined for it are available in an [example-repo][example-repo].
@@ -69,7 +69,7 @@ namespace Fancy
 }
 ```
 
-This is a fairly common pattern. The class is defined with a couple collaborators. It has related public methods that interact with those collaborators. When we’re testing a class like this, we can follow these steps to define a test.
+This is a fairly common pattern. The class is defined with a couple collaborators, and has related public methods that interact with those collaborators. When we’re testing a class like this, it can be helpful to follow a script when testing a class like this:
 
 1. Arrange
   - Instantiate mocks for our `subject`’s dependencies..
@@ -83,7 +83,7 @@ This is a fairly common pattern. The class is defined with a couple collaborator
   - Verify that command objects are invoked as we expect.
 
 ### Problem
-The problem that we face for this class is one of setup data. When we’re testing `ExecuteOnReversedResults`, we have a different goal than when we’re testing `SortFilteredResults`, and therefore different test setup.
+The problem that we face for this class is one of setup data. A test for `ExecuteOnReversedResults` than a test for `SortFilteredResults`. Therefore, ti should have different test setup.
 
 Unless we define separate test contexts for each method under test, we only have two options
 
@@ -92,7 +92,7 @@ Unless we define separate test contexts for each method under test, we only have
 
 ## Creating Contexts
 
-Here is the technique used to create test contexts. It accomplishes our goals of refining our test as we move in, isolating one context from another, and using names to describe the more specific levels within our tests.
+The following code showcases the technique used to create test contexts; notice how it refines the test as we move in. It isolates one context from another and uses names to describe more specific levels within the tests.
 
 
 ``` c-sharp
@@ -141,7 +141,7 @@ namespace FancyTest
 }
 ```
 
-When we run our tests, we end up with the following executed test descriptions.
+Running our tests creates the following descriptions:
 
 <img src="/img/test-contexts/test-setup-with-contexts.png">
 
@@ -245,17 +245,19 @@ namespace FancyTest
 
 ## Summary
 
-By defining contexts around this test, we allow the test to focus on the things that control the flow through this method. We aren’t distracted by noise, and it’s easy to see what is in charge of the logical branching through the method. We're able to use the Arrange/Act/Assert pattern for the test with a lot of clarity around what’s being tested, and how this method functions. The contexts also work as great documentation.
+By defining contexts around this test, we allow the test to focus on the things that control the flow through this method. We aren’t distracted by noise, making it easy to see what is in charge of the logical branching through the method. We're able to use the Arrange/Act/Assert pattern for the test with a lot of clarity around what’s being tested. The contexts also work as great documentation to show how this method functions.
 
 ## Additional Notes
 
-### To make this work in `C#`
+This technique works in C# and Java by creating a nested subclass to the parent context. Inheritance rules ensure that parent constructors are invoked before the current context's constructor. This allows a context to further refine what was defined by a parent. See examples [here][example-repo].
 
-Create a class for a test context, and refine it with a nested subclass. Be sure to declare the nested subclass as `public`, and each constructor as `public`. C#'s inheritance rules allow `private` fields to be accessed by nested classes, so use this to your advantage. A parent's accessible no-args constructor will be called before a subclass's, this allows a context to further refine what was previously defined by a parent. See the examples [here][example-repo].
+**Details in C#**
 
-### To make this work in `Java`
+Be sure to declare the nested subclass as `public`, and each constructor as `public`. C#'s inheritance rules allow `private` fields to be accessed by nested classes.
 
-Create a class for a test context, and refine it with a nested subclass. Be sure to declare the nested subclass as `public static` and each constructor as `public`. Java's inheritance rules allow protected fields to be accessed by subclasses, so use this to your advantage. Each constructor will act to refine the current context, and will be executed after it's parents. The constructor acts similarly a typical `@Before` method in JUnit, but adds one important thing. A parent's accessible no-args constructor will be called before a subclass's, this allows a context to further refine what was defined by a parent. See the examples [here][example-repo].
+**Details in Java**
+
+Be sure to declare the nested subclass as `public static` and each constructor as `public`. Java's inheritance rules allow `protected` fields to be accessed by subclasses. The constructor acts similarly a typical `@Before` method in JUnit while allowing the inheritance rules to work as described above.
 
 ### Spec Frameworks
 
