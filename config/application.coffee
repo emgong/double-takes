@@ -11,6 +11,7 @@ module.exports = (lineman) ->
   removeTasks:
     common: lineman.config.application.removeTasks.common.concat(
       "pug:templates", "jst", "jshint")
+    dist: lineman.config.application.removeTasks.dist.concat("pages:dist")
 
   enableAssetFingerprint: if process.env.HEROKU_APP_NAME == "testdoubleblog" then true else false
 
