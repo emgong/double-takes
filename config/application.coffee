@@ -49,6 +49,14 @@ module.exports = (lineman) ->
         "Bad value source for attribute rel on element a: The string source is not a registered keyword or absolute URL."
       ]
 
+  pug:
+    pagesDev:
+      (pugOptions = options:
+        data:
+          site:
+            title: "Test Double | Custom Software Development | Columbus Ohio")
+    pagesDist: pugOptions
+
   watch:
     pugPages:
       files: [
