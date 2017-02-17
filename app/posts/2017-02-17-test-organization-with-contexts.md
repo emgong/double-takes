@@ -273,6 +273,7 @@ These language's testing frameworks support test contexts. If you're already usi
 - [Arrange Act Assert - C2 Wiki](http://wiki.c2.com/?ArrangeActAssert)
 - [Arrange Act Assert - Test Double Wiki](https://github.com/testdouble/contributing-tests/wiki/Arrange-Act-Assert)
 - [Mock Objects in Discovery Tests](http://blog.testdouble.com/posts/2014-05-14-mock-objects-in-discovery-tests.html)
+- <a rel="canonical" href="https://samljones.com/2017-02-17/test-organization-with-contexts/">Sam's original post</a>
 
 [spec-frameworks-list]: #spec-frameworks
 [example-repo]: https://github.com/testdouble/test-contexts-example
