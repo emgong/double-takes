@@ -83,7 +83,7 @@ This is a fairly common pattern. The class is defined with a couple collaborator
   - Verify that command objects are invoked as we expect.
 
 ### Problem
-The problem that we face for this class is one of setup data. A test for `ExecuteOnReversedResults` than a test for `SortFilteredResults`. Therefore, ti should have different test setup.
+The problem that we face for this class is one of setup data. A test for `ExecuteOnReversedResults` than a test for `SortFilteredResults`. Therefore, it should have different test setup.
 
 Unless we define separate test contexts for each method under test, we only have two options
 
