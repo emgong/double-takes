@@ -215,6 +215,6 @@ form screencast series on this blog on [Discovery
 Testing](2015-09-10-how-i-use-test-doubles.html) or [asking me something on
 twitter](https://twitter.com/searls).
 
-Most importantly of all, we hope you'll enjoy the improvements made in today's
+Most important of all, we hope you'll enjoy the improvements made in today's
 2.0 release. If you find working with testdouble.js to be valuable, we'd love to
 hear about it!
