@@ -10,14 +10,14 @@ Our goal when creating an accessible experience is to ensure that users with [vi
 
 ## Accessibility Benefits Everyone
 
-While accessibility techniques are extremely advantageous to people with disabilities, the techniques have a much wider impact. Here are some examples of how accessibility techniques can impact a much broader user base. Don't think about accessibility as helping a small group of people. Accessibility helps all people. 
+While accessibility techniques are extremely advantageous to people with disabilities, the techniques have a much wider impact. Here are some examples of how accessibility techniques can impact a much broader user base. Don't think about accessibility as helping a small group of people. Accessibility helps all people.
 
-- Ensuring navigation is possible for users that are unable to use a mouse also means that power users are able to keep our hands planted on the keyboard.
-- Increasing the size of touch targets to support unsteady hands also supports a one-handed parent who is trying to purchase your product while making a bottle.
-- Using semantic web elements to provide more context to screen readers also provides that same context to search engine spiders, and to the development team maintaining the content.
-- Using contrast to convey differences in addition to color ensures that users with visual disabilities are able to discern content. It also means that users viewing the content on a phone in the sun can discern the content as well.
+- Ensuring navigation is possible for users that are [unable to use a mouse][keyboard-accessibility] also means that power users are able to keep our hands planted on the keyboard.
+- Increasing the size of touch targets to [support unsteady hands][motor-accessibility] also supports a one-handed parent who is trying to purchase your product while making a bottle.
+- Using [semantic web elements][semantic-accessibility] to provide more context to screen readers also provides that same context to search engine spiders, and to the development team maintaining the content.
+- Using contrast to convey differences in addition to color ensures that users with [visual disabilities][visual-accessibility] are able to discern content. It also means that users viewing the content on a phone in the sun can discern the content as well.
 - Providing textual representations of audio and video content means that the content is searchable.
-- Ensuring that text can be resized for users with visual disabilities means that it can also be shared during a meeting or within a screen share.
+- Ensuring that text can be resized for users with [visual disabilities][visual-accessibility] means that it can also be shared during a meeting or within a screen share.
 
 In addition to this list, improving accessibility specifically for users with [cognitive disabilities][cognitive-accessibility] has very wide-reaching value.
 - Navigation that is simple and consistent makes content more discoverable to ALL users.
@@ -55,7 +55,11 @@ When you're thinking about getting started with accessibility, there are rules d
 [Section 508][section-508] is a set of standards defined by the US government. It requires that all technology developed, procured, maintained, or used by the federal government be accessible to people with disabilities. This is a set of hard rules to be met to ensure accessibility.
 
 [disabilities]: http://webaim.org/intro/#people
-[cognitive-accessibility]: http://webaim.org/articles/evaluatingcognitive/
+[keyboard-accessibility]: http://webaim.org/techniques/keyboard/
+[motor-accessibility]: http://webaim.org/articles/motor/
+[semantic-accessibility]: http://webaim.org/techniques/semanticstructure/
+[visual-accessibility]: http://webaim.org/articles/visual/
+[cognitive-accessibility]: http://webaim.org/articles/cognitive/
 [javascript-accessibility]: http://webaim.org/techniques/javascript/#reliance
 [wcag]: https://www.w3.org/WAI/intro/wcag
 [wcag-levels]: https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-levels-head
