@@ -1,5 +1,6 @@
 ---
-title: "Accessibility For One - Accessibility For All"
+title: "Accessibility Is Usability"
+subtitle: "How Accessibility Improvements Help Everyone"
 author:
   name: "Sam Jones"
   url: "http://twitter.com/samjonester"
@@ -20,19 +21,27 @@ While accessibility techniques are extremely advantageous to people with disabil
 - Ensuring that text can be resized for users with [visual disabilities][visual-accessibility] means that it can also be shared during a meeting or within a screen share.
 
 In addition to this list, improving accessibility specifically for users with [cognitive disabilities][cognitive-accessibility] has very wide-reaching value.
-- Navigation that is simple and consistent makes content more discoverable to **all** users.
+- Navigation that is simple and consistent makes content more discoverable to all users.
 - Clear, focused, consistent messaging is valuable marketing.
 - Avoiding distractions and using white space to focus attention creates a deeper and more memorable impression.
 
-## Accessibility is a Spectrum
 
-> Accessibility isn't a badge. It's not a checklist of equally weighted dos and don'ts.
+<figure>
+  <h3 style="text-align: center;">The wide reaching nature of accessibility improvements.</h3>
+  <img src="ms-inclusive-design.png" />
+  <figcaption style="text-align: left;">
+    A spectrum of permanent, temporary, and situational disabilities (credit: [Microsoft’s Inclusive Design](https://www.microsoft.com/en-us/design/inclusive)).
+  </figcaption>
+</figure>
+
+## Accessibility is a Continuum
+
+>   Accessibility isn't a badge. It's not an item on a checklist.<br/>
+>   Increasing usability through accessibility is a continuous process.
 
 Have you held off on "adding accessibility" to a web site or UI component, for fear that you're not an accessibility expert? Don't hold back! Each action taken will have an impact. As you learn about more advanced techniques, you'll still be providing a better experience through your previous actions.
 
 The spectrum flows from ensuring that content is navigable in the correct order by a keyboard to becoming compliant in the important web accessibility standards. There are many techniques to be learned. Each one builds off the previous and will still be creating a more equal experience for all of your users.
-
-**TODO Graphic?**
 
 ## Getting Started is Easy
 
@@ -48,11 +57,8 @@ JavaScript is a dominating force on the web today. Not surprisingly, even people
 
 When you're thinking about getting started with accessibility, there are rules defined to help standardize techniques. These techniques are captured in the [Web Content Accessibility Guidelines][wcag] (WCAG) and [Section 508 Standards][section-508]. Focusing on them while starting out can add confusion and create an intimidating experience, however it's important to understand the origin and purpose of these guidelines and standards. It's also important to revisit them throughout your journey.
 
-### WCAG 2.0 - Web Content Accessibility Guidelines
-[WCAG 2.0][wcag] exists as a set of 12 guidelines to ensure that content is accessible under [4 principles][wcag-principles]: *perceivable, operable, understandable, and robust*. Each guideline has testable success criteria defined to at [3 levels][wcag-levels] to differentiate importance and ease of implementation.
-
-### Section 508 Standards
-[Section 508][section-508] is a set of standards defined by the US government. It requires that all technology developed, procured, maintained, or used by the federal government be accessible to people with disabilities. This is a set of hard rules to be met to ensure accessibility.
+* [WCAG 2.0][wcag] exists as a set of 12 guidelines to ensure that content is accessible under [4 principles][wcag-principles]: *perceivable, operable, understandable, and robust*. Each guideline has testable success criteria defined to at [3 levels][wcag-levels] to differentiate importance and ease of implementation.
+* [Section 508][section-508] is a set of standards defined by the US government. It requires that all technology developed, procured, maintained, or used by the federal government be accessible to people with disabilities.
 
 [disabilities]: http://webaim.org/intro/#people
 [ada-census]: https://www.census.gov/newsroom/facts-for-features/2015/cb15-ff10.html
