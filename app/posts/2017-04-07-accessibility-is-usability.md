@@ -60,6 +60,11 @@ When you're thinking about getting started with accessibility, there are rules d
 * [WCAG 2.0][wcag] exists as a set of 12 guidelines to ensure that content is accessible under [4 principles][wcag-principles]: *perceivable, operable, understandable, and robust*. Each guideline has testable success criteria defined to at [3 levels][wcag-levels] to differentiate importance and ease of implementation.
 * [Section 508][section-508] is a set of standards defined by the US government. It requires that all technology developed, procured, maintained, or used by the federal government be accessible to people with disabilities.
 
+<hr/>
+<p><a rel="canonical" href="https://samljones.com/2017-04-07/accessibility-is-usability/">Sam's original post</a></p>
+
+
+
 [disabilities]: http://webaim.org/intro/#people
 [ada-census]: https://www.census.gov/newsroom/facts-for-features/2015/cb15-ff10.html
 [keyboard-accessibility]: http://webaim.org/techniques/keyboard/
