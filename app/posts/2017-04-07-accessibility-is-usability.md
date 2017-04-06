@@ -28,7 +28,7 @@ In addition to this list, improving accessibility specifically for users with [c
 
 <figure>
   <h3 style="text-align: center;">The wide reaching nature of accessibility improvements.</h3>
-  <img src="ms-inclusive-design.png" />
+  <img src="/ms-inclusive-design.png" />
   <figcaption style="text-align: left;">
     A spectrum of permanent, temporary, and situational disabilities (credit: [Microsoft’s Inclusive Design](https://www.microsoft.com/en-us/design/inclusive)).
   </figcaption>
