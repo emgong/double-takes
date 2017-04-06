@@ -7,18 +7,18 @@ author:
 reddit: false
 ---
 
-Our goal when creating an accessible experience is to ensure that users with [vision, auditory, motor, or cognitive disabilities][disabilities] are able to navigate all web content. Accessibility guidelines exist to eliminate barriers that would otherwise provide equal access to a [significant percentage][ada-census] of the population. The great thing about following accessibility guidelines is that techniques have an impact on **all** users. Getting started with accessibility is easy, and any action you take benefits users now!
+Our goal when creating an accessible experience is to ensure that users with [vision, auditory, motor, or cognitive disabilities][disabilities] are able to navigate all web content. Accessibility guidelines exist to eliminate barriers that would otherwise hinder equal access to a [significant percentage][ada-census] of the population. The great thing about following accessibility guidelines is that techniques have an impact on **all** users. Getting started with accessibility is easy, and any action you take benefits users now!
 
 ## Accessibility Benefits Everyone
 
-While accessibility techniques are extremely advantageous to people with disabilities, the techniques have a much wider impact. Here are some examples of how accessibility techniques can impact a much broader user base.
+While accessibility techniques are extremely advantageous to people with disabilities, the improvements you make have a much wider impact. Here are some examples of how accessibility techniques can impact a much broader user base.
 
-- Ensuring navigation is possible for users that are [unable to use a mouse][keyboard-accessibility] also means that power users are able to keep our hands planted on the keyboard.
+- Ensuring navigation is possible for users that are [unable to use a mouse][keyboard-accessibility] also means that power users are able to keep their hands planted on the keyboard.
 - Increasing the size of touch targets to [support unsteady hands][motor-accessibility] also supports a one-handed parent who is trying to purchase your product while making a bottle.
 - Using [semantic web elements][semantic-accessibility] to provide more context to screen readers also provides that same context to search engine spiders, and to the development team maintaining the content.
 - Using contrast to convey differences in addition to color ensures that users with [visual disabilities][visual-accessibility] are able to discern content. It also means that users viewing the content on a phone in the sun can discern the content as well.
 - Providing textual representations of audio and video content means that the content is searchable.
-- Ensuring that text can be resized for users with [visual disabilities][visual-accessibility] means that it can also be shared during a meeting or within a screen share.
+- Ensuring that text can be resized for users with [visual disabilities][visual-accessibility] means that it can also be shared more easily when projected during a meeting or during a video conference.
 
 In addition to this list, improving accessibility specifically for users with [cognitive disabilities][cognitive-accessibility] has very wide-reaching value.
 - Navigation that is simple and consistent makes content more discoverable to all users.
@@ -39,19 +39,19 @@ In addition to this list, improving accessibility specifically for users with [c
 >   Accessibility isn't a badge. It's not an item on a checklist.<br/>
 >   Increasing usability through accessibility is a continuous process.
 
-Have you held off on "adding accessibility" to a web site or UI component, for fear that you're not an accessibility expert? Don't hold back! Each action taken will have an impact. As you learn about more advanced techniques, you'll still be providing a better experience through your previous actions.
+Have you held off on "adding accessibility" to a web site or UI component, for fear that you're not an accessibility expert? Don't hold back! Each action taken will have an impact. As you learn more advanced techniques, you'll still be providing a better experience through your previous actions.
 
-The spectrum flows from ensuring that content is navigable in the correct order by a keyboard to becoming compliant in the important web accessibility standards. There are many techniques to be learned. Each one builds off the previous and will still be creating a more equal experience for all of your users.
+The continuum ranges from simply ensuring content is navigable by a keyboard all the way up to becoming fully compliant with the many web accessibility standards. There are many techniques to be learned. Each one builds off the previous and will still be creating a more equal experience for all of your users.
 
 ## Getting Started is Easy
 
-Accessibility can feel intimidating if you aren't familiar with the standards, rules, and techniques used to create accessible web content. I remember feeling overwhelmed by everything involved wit creating something that is accessible. Unfortunately, this left me afraid and I failed to act at all! I've since learned a few things that have made accessibility feel more accessible.
+Accessibility can feel intimidating if you aren't familiar with the standards, rules, and techniques used to create accessible web content. I remember feeling overwhelmed by everything involved with creating something that is accessible. Unfortunately, this left me afraid and I failed to act at all! I've since learned a few things that have made accessibility feel more approachable.
 
 Much of the benefits can be achieved with easy-to-implement techniques. By thinking about accessibility while initially creating web content, it's even easier to ingrain equal access.
 
 ## JavaScript *is* Accessible
 
-JavaScript is a dominating force on the web today. Not surprisingly, even people with disabilities have [JavaScript enabled][javascript-accessibility]. Using JavaScript does not preclude your content from being accessible. There are steps to take to ensure that your JavaScript does not prevent accessibility. However, these techniques are more focused on ensuring that dynamic content controlled by JavaScript is presented to all users.
+JavaScript is a dominating force on the web today. Not surprisingly, even people with disabilities have [JavaScript enabled][javascript-accessibility]. Using JavaScript does not preclude your content from being accessible. Many accessibility improvements are actually implemented through and rely on JavaScript. However, these techniques are more focused on ensuring that dynamic content controlled by JavaScript is presented to all users.
 
 ## Guidelines Standards and Rules
 
