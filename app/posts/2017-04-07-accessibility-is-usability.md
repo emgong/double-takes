@@ -34,6 +34,7 @@ In addition to this list, improving accessibility specifically for users with [c
   </figcaption>
 </figure>
 
+<a name="continuum"></a>
 ## Accessibility is a Continuum
 
 >   Accessibility isn't a badge. It's not an item on a checklist.<br/>
