@@ -13,7 +13,7 @@ Meh. War is tiresome and I have had enough of war. This post is about some small
 
 # The Makefile
 
-Make has been around for a [long time](https://en.wikipedia.org/wiki/Make_(software). It has some neat features but it's not always the friendliest to neophytes. Imagine you have a new developer joining your team, and your project has a Makefile that looks something like this:
+Make has been around for a <a href="https://en.wikipedia.org/wiki/Make_(software)">long time</a>. It has some neat features but it's not always the friendliest to neophytes. Imagine you have a new developer joining your team, and your project has a Makefile that looks something like this:
 
 ```Makefile
 VERSION ?= $(shell cat VERSION)
