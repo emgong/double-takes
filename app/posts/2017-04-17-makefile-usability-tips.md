@@ -122,12 +122,12 @@ Yay! This is a much nicer developer-experience than what we started with. To tak
 
 # Acknowledgements / Links
 
-There are a few sources that come up when you google for "self-documenting makefile" along with a few different ways of solving this problem. I drew inspiration for this post mostly from https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html, but felt like there were enough interesting points and general make tips added that it was worth another post.
+There are a few sources that come up when you google for "self-documenting makefile" along with a few different ways of solving this problem. I drew inspiration for this post mostly from [this marmelab entry](https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html), but felt like there were enough interesting points and general make tips added that it was worth another post.
 
 Other links you may find useful:
 
 - [Full Makefile as Gist](https://gist.github.com/davemo/c0462e8196289e0fb0210ee63ff02962)
 - [VERSION bump script as Gist](https://gist.github.com/davemo/88de90577a57698dd72d722bcfc44964)
-- https://www.gnu.org/software/make/
-- https://www.cmcrossroads.com/print/article/self-documenting-makefiles
-- https://explainshell.com
+- [GNU Make](https://www.gnu.org/software/make/)
+- [Self Documenting Makefiles](https://www.cmcrossroads.com/print/article/self-documenting-makefiles)
+- [Explain Shell](https://explainshell.com)
