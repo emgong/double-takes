@@ -7,7 +7,7 @@ author:
 reddit: false
 ---
 
-Our goal when creating an accessible experience is to ensure that users with [vision, auditory, motor, or cognitive disabilities][disabilities] are able to navigate all web content. Accessibility guidelines exist to eliminate barriers that would otherwise hinder equal access to a [significant percentage][ada-census] of the population. The great thing about following accessibility guidelines is that techniques have an impact on **all** users. Getting started with accessibility is easy, and any action you take benefits users now!
+Our goal when creating an accessible experience is to ensure that users with [vision, auditory, motor, or cognitive disabilities][disabilities] are able to navigate all web content. Accessibility guidelines exist to eliminate barriers that would otherwise hinder equal access to a [significant percentage][ada-census] of the population. The great thing about following accessibility guidelines is that [techniques][accessibility-techniques] have an impact on **all** users. Getting started with accessibility is easy, and any action you take benefits users now!
 
 ## Accessibility Benefits Everyone
 
@@ -34,6 +34,7 @@ In addition to this list, improving accessibility specifically for users with [c
   </figcaption>
 </figure>
 
+<a name="continuum"></a>
 ## Accessibility is a Continuum
 
 >   Accessibility isn't a badge. It's not an item on a checklist.<br/>
@@ -47,7 +48,7 @@ The continuum ranges from simply ensuring content is navigable by a keyboard all
 
 Accessibility can feel intimidating if you aren't familiar with the standards, rules, and techniques used to create accessible web content. I remember feeling overwhelmed by everything involved with creating something that is accessible. Unfortunately, this left me afraid and I failed to act at all! I've since learned a few things that have made accessibility feel more approachable.
 
-Much of the benefits can be achieved with easy-to-implement techniques. By thinking about accessibility while initially creating web content, it's even easier to ingrain equal access.
+Much of the benefits can be achieved with [easy-to-implement techniques][accessibility-techniques]. By thinking about accessibility while initially creating web content, it's even easier to ingrain equal access.
 
 ## JavaScript *is* Accessible
 
@@ -65,6 +66,7 @@ When you're thinking about getting started with accessibility, there are rules d
 
 
 
+[accessibility-techniques]: /posts/2017-04-18-accessibility-impactful-techniques.html
 [disabilities]: http://webaim.org/intro/#people
 [ada-census]: https://www.census.gov/newsroom/facts-for-features/2015/cb15-ff10.html
 [keyboard-accessibility]: http://webaim.org/techniques/keyboard/
