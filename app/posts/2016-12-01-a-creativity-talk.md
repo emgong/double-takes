@@ -997,3 +997,17 @@ Here's a transcript of the remarks, generated from the subtitles by our gem
 [47:55] really humbling. Thank you so much for your time today.
 </pre>
 
+## Follow-up interview
+
+After giving this presentation at [NG Conf](https://www.ng-conf.org) 2017, I
+sat down with the famous [@EmberSherpa](https://twitter.com/EmberSherpa) from
+[This Dot Media](https://www.thisdot.co) for a discussion about this
+presentation and how it fits the context of the JavaScript community as
+frameworks like Angular, React, and Ember have become more mature. If you're
+interested in additional thoughts behind this talk and its implications for open
+source work, please enjoy this 20 minute interview:
+
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/NwsPydCF-9A" allowfullscreen="allowfullscreen"></iframe>
+</div>
+
