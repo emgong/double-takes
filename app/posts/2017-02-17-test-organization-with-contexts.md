@@ -269,6 +269,8 @@ These language's testing frameworks support test contexts. If you're already usi
 **Python**: [Mamba](http://nestorsalceda.github.io/mamba/).
 **Haskell**: [Hspec](http://hspec.github.io/).
 
+Edit: After posting a kind reader has informed me of an RSpec style testing framework for C# called [NSpec](http://nspec.org/). I encourage you to take a look!
+
 ## Additional Reading
 - [Arrange Act Assert - C2 Wiki](http://wiki.c2.com/?ArrangeActAssert)
 - [Arrange Act Assert - Test Double Wiki](https://github.com/testdouble/contributing-tests/wiki/Arrange-Act-Assert)
