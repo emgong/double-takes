@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="310" height="290" viewBox="0, 0, 310, 290">
+  <g id="Background">
+    <rect x="0" y="0" width="310" height="290" fill="#FFFFFF"/>
+  </g>
+  <g id="Layer_1">
+    <g>
+      <text transform="matrix(1, 0, 0, 1, 259.287, 283.5)">
+        <tspan x="-60.339" y="-5.5" font-family="Helvetica" font-size="21" fill="#222222">Aesthetic</tspan>
+      </text>
+      <path d="M193.948,270.8 C193.948,274.114 191.262,276.8 187.948,276.8 C184.634,276.8 181.948,274.114 181.948,270.8 C181.948,267.486 184.634,264.8 187.948,264.8 C191.262,264.8 193.948,267.486 193.948,270.8 z" fill="#0B5394"/>
+    </g>
+    <g>
+      <text transform="matrix(1, 0, 0, 1, 88.156, 38.3)">
+        <tspan x="-55.165" y="-5.5" font-family="Helvetica" font-size="21" fill="#222222">Inventive</tspan>
+      </text>
+      <path d="M28.991,27.8 C28.991,31.114 26.304,33.8 22.991,33.8 C19.677,33.8 16.991,31.114 16.991,27.8 C16.991,24.486 19.677,21.8 22.991,21.8 C26.304,21.8 28.991,24.486 28.991,27.8 z" fill="#3D85C6"/>
+    </g>
+    <g>
+      <g>
+        <path d="M154.999,145 L84.048,234.23 C46.104,204.059 31.391,153.192 47.37,107.425 C63.348,61.657 106.522,31 154.999,31 L154.999,145" fill="#3D85C6"/>
+        <path d="M154.999,145 L84.048,234.23 C46.104,204.059 31.391,153.192 47.37,107.425 C63.348,61.657 106.522,31 154.999,31 L154.999,145" fill-opacity="0" stroke="#FFFFFF" stroke-width="1"/>
+      </g>
+      <text transform="matrix(1, 0, 0, 1, 105.308, 138.022)">
+        <tspan x="-38.013" y="-5.5" font-family="Helvetica" font-size="21" fill="#FFFFFF">39.3%</tspan>
+      </text>
+    </g>
+    <g>
+      <g>
+        <path d="M154.999,145 L154.999,31 C204.996,31 249.159,63.577 263.918,111.346 C278.678,159.115 260.59,210.927 219.307,239.13 C178.024,267.334 123.181,265.347 84.048,234.23 L154.999,145" fill="#0B5394"/>
+        <path d="M154.999,145 L154.999,31 C204.996,31 249.159,63.577 263.918,111.346 C278.678,159.115 260.59,210.927 219.307,239.13 C178.024,267.334 123.181,265.347 84.048,234.23 L154.999,145" fill-opacity="0" stroke="#FFFFFF" stroke-width="1"/>
+      </g>
+      <text transform="matrix(1, 0, 0, 1, 215.126, 184.378)">
+        <tspan x="-35.178" y="-5.5" font-family="Helvetica" font-size="21" fill="#FFFFFF">60.7%</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
