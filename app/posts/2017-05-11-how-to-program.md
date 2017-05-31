@@ -2,7 +2,7 @@
 title: "How to program."
 author:
   name: "Justin Searls"
-  url: "http://twitter.com/testdouble"
+  url: "http://twitter.com/searls"
   googlePlus: "https://plus.google.com/+JustinSearlsTestDouble"
 video:
   url: "https://player.vimeo.com/video/216068726"
