@@ -15,6 +15,7 @@ So here's an example post, with all the goodies filled out.
 ``` markdown
 ---
 title: "Kramer sure is super cool"
+description: "Kramer writes good meta descriptions for the google juice"
 tldr:
   title: "Kramer writes great code"
   body: """
