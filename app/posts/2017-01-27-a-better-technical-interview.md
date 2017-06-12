@@ -1,5 +1,6 @@
 ---
 title: "A Better Technical Interview"
+description: "It's easy to find fault in the way we interview in tech. Let's analyze the things we don't like, and design a better process. Let's make a better technical interview with honesty, transparency, and a more realistic experience."
 author:
   name: "Sam Jones"
   url: "http://twitter.com/samjonester"
