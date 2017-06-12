@@ -1,5 +1,6 @@
 ---
 title: "Life After Nil"
+description: 'Learn about the benifits that a type system can add to your coding by comparing Ruby to Haskell. We will “forget about nil”, “declaratively model your domain”, and “allow your compiler to drive your design”.'
 author:
   name: "Sam Jones"
   url: "http://twitter.com/samjonester"

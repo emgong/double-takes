@@ -1,6 +1,7 @@
 head
   meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
   meta(name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no")
+  meta(name="description" content=`${( post && post.get('description')) || "Test Double is an agency of highly-skilled developers on a mission to improve how the world writes software. Need JavaScript or Ruby help? hello@testdouble.com"}`)
   title #{site.title}#{post ? ' | ' + post.title() : ''}
   link(rel="alternate" type="application/rss+xml" title=`${site.title} | feed` href="/index.xml")
   link(rel='shortcut icon' type='image/x-icon' href='favicon.ico')
