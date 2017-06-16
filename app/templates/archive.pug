@@ -12,7 +12,7 @@ div(data-name="archive")
         - _(site.posts).chain().clone().reverse().each( function(post){
           li(class=`${post.get('redirect') ? "redirected" : "" }`)
             span.ordinal ##{_(site.posts).indexOf(post)}
-            a(href=`${post.get('redirect') ? post.get('redirect') : '/'+post.htmlPath() }`)
+            a(href=`${post.get('redirect') ? post.get('redirect') : '/'+post.prettyPath() }`)
               | #{_(post.title()).truncate(75)}
         - })
 
