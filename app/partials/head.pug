@@ -1,5 +1,7 @@
 head
   meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+  if post
+    link(rel="canonical" href=`http://blog.testdouble.com/${post.prettyPath()}`)
   meta(name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no")
   meta(name="description" content=`${( post && post.get('description')) || "Test Double is an agency of highly-skilled developers on a mission to improve how the world writes software. Need JavaScript or Ruby help? hello@testdouble.com"}`)
   title #{site.title}#{post ? ' | ' + post.title() : ''}
