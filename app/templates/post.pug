@@ -10,7 +10,7 @@ div(data-name="post")
     .wrapper
       h2 Post ##{_(site.posts).indexOf(post) }
       h1
-        a(href=`/${post.htmlPath()}`) #{post.title()}
+        a(href=`/${post.prettyPath()}`) #{post.title()}
       if post.get('subtitle')
         h3 #{post.get('subtitle')}
 
@@ -46,11 +46,11 @@ div(data-name="post")
         |  on our feedback repo!
         if post.get('reddit')
           |  Or share it on
-          a(href='https://news.ycombinator.com/submitlink?u=' + encodeURIComponent(site.url+'/'+post.htmlPath()) + '&amp;t=' + encodeURIComponent(post.title()))  HN
+          a(href='https://news.ycombinator.com/submitlink?u=' + encodeURIComponent(site.url+'/'+post.prettyPath()) + '&amp;t=' + encodeURIComponent(post.title()))  HN
           | !
   .blognav
     if site.olderPost(post)
-      a.left(href=`/${site.olderPost(post).htmlPath()}`) Previous
+      a.left(href=`/${site.olderPost(post).prettyPath()}`) Previous
     if site.newerPost(post)
-      a.right(href=`/${site.newerPost(post).htmlPath()}`) Newer
+      a.right(href=`/${site.newerPost(post).prettyPath()}`) Newer
     .clear

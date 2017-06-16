@@ -32,6 +32,6 @@
     "lineman-pug": "^0.2.0",
     "grunt-html-validation": "~0.1.13",
     "grunt-htmlhint": "~0.4.0",
-    "lineman-blog": "^1.1.0"
+    "lineman-blog": "^1.2.0"
   }
 }
