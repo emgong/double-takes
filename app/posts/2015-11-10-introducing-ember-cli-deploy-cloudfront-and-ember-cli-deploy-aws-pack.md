@@ -12,7 +12,7 @@ tldr:
         """
 ---
 
-Last week, I blogged about [deploying Ember to AWS CloudFront](/posts/2015-11-03-deploying-ember-to-aws-cloudfront-using-ember-cli-deploy.html). At the end of the post, I noted two improvements I'd like to make:
+Last week, I blogged about [deploying Ember to AWS CloudFront](/posts/2015-11-03-deploying-ember-to-aws-cloudfront-using-ember-cli-deploy). At the end of the post, I noted two improvements I'd like to make:
 
 1. Automate the CloudFront cache invalidation step
 2. Package up the ember-cli-deploy plugins needed into a plugin pack

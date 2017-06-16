@@ -31,7 +31,7 @@ The `TAB` key is used for navigation through actions within a web application. A
 As dynamic content is displayed or hidden, ensure that keyboard navigation is still meaningful.
 
 - **Preserve a Meaningful Tab Order**<br/>Newly presented content should gain the focus of both the user and the keyboard. It should be added to the DOM in the most logical order for [presentation to screen readers][dynamic-order]. Move focus outside the hidden content after closing, because it's very disorienting when focus is completely lost from the page.
-- **Close with Escape**<br/>When new content is presented on screen with modals, slide out side-bars, etc, ensure there is an "escape path" to [close the content][dismissing-content] by pressing the `ESC` key. 
+- **Close with Escape**<br/>When new content is presented on screen with modals, slide out side-bars, etc, ensure there is an "escape path" to [close the content][dismissing-content] by pressing the `ESC` key.
 - **Buttons vs Links**<br/>What would happen if a screen reader user asks for support and is told to click a button in the UI, but it's actually a styled link? Buttons and links have [specific purposes][buttons-links]. The decision to use one over the other does have an impact on the conveyed meaning of an action.
 
 <br/>
@@ -72,8 +72,8 @@ Start taking action today, as any action will improve the [usability][accessibil
 
 
 
-[accessibility-usability]: /posts/2017-04-07-accessibility-is-usability.html
-[accessibility-continuum]: /posts/2017-04-07-accessibility-is-usability.html#continuum
+[accessibility-usability]: /posts/2017-04-07-accessibility-is-usability
+[accessibility-continuum]: /posts/2017-04-07-accessibility-is-usability#continuum
 [keyboard-accessibility]: https://www.nngroup.com/articles/keyboard-accessibility/
 [native-elements]: https://marcysutton.com/links-vs-buttons-in-modern-web-applications/
 [tabindex]: http://accessibleculture.org/articles/2010/05/tabindex/
@@ -83,7 +83,7 @@ Start taking action today, as any action will improve the [usability][accessibil
 [dismissing-content]: https://www.smashingmagazine.com/2014/09/making-modal-windows-better-for-everyone/#dismissing
 [buttons-links]: https://marcysutton.com/links-vs-buttons-in-modern-web-applications/
 [aria]: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
-[aria-roles]: http://www.webteacher.ws/2010/10/14/aria-roles-101/ 
+[aria-roles]: http://www.webteacher.ws/2010/10/14/aria-roles-101/
 [aria-states]: http://www.webteacher.ws/2010/10/15/aria-states-101/
 [aria-landmarks]: https://dequeuniversity.com/assets/html/jquery-summit/html5/slides/landmarks.html
 [contrast]: https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html

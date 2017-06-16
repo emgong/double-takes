@@ -212,7 +212,7 @@ to dive in and better understand how thoughtful use of test doubles can improve
 the design of your code. Consider exploring our [wiki on
 testing](https://github.com/testdouble/contributing-tests/wiki) or the longer
 form screencast series on this blog on [Discovery
-Testing](2015-09-10-how-i-use-test-doubles.html) or [asking me something on
+Testing](2015-09-10-how-i-use-test-doubles) or [asking me something on
 twitter](https://twitter.com/searls).
 
 Most important of all, we hope you'll enjoy the improvements made in today's

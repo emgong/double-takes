@@ -13,7 +13,7 @@ tldr:
   body: """
         This is Part 2 of a series of
         <a href="http://emberjs.com">Ember</a> screencasts.
-        <a href="/posts/2014-04-19-setting-up-a-serious-ember-project.html">Part 1</a>
+        <a href="/posts/2014-04-19-setting-up-a-serious-ember-project">Part 1</a>
         """
 ---
 

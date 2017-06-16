@@ -13,7 +13,7 @@ tldr:
   body: """
         This is Part 1 of a series of
         <a href="http://emberjs.com">Ember</a> screencasts.
-        <a href="/posts/2014-05-02-ember-routes-models-templates-and-controllers.html">Part 2</a>
+        <a href="/posts/2014-05-02-ember-routes-models-templates-and-controllers">Part 2</a>
         """
 
 ---

@@ -39,11 +39,11 @@ content.
 * [teenytest](https://github.com/testdouble/teenytest)
 * The [unusual spending kata](https://github.com/testdouble/unusual-spending)
 * [A 4-part screencast
-series](http://blog.testdouble.com/posts/2015-09-10-how-i-use-test-doubles.html)
+series](http://blog.testdouble.com/posts/2015-09-10-how-i-use-test-doubles)
 which demonstrates discovery testing in Java with a [Game of
 Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life)
 * A [comparison between td.js and
-sinon](http://blog.testdouble.com/posts/2016-03-13-testdouble-vs-sinon.html)
+sinon](http://blog.testdouble.com/posts/2016-03-13-testdouble-vs-sinon)
 * The google results for [tdd
 failure](http://www.google.com/search?q=tdd%20failure)
 

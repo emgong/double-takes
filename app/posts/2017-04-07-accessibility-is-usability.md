@@ -67,7 +67,7 @@ When you're thinking about getting started with accessibility, there are rules d
 
 
 
-[accessibility-techniques]: /posts/2017-04-18-accessibility-impactful-techniques.html
+[accessibility-techniques]: /posts/2017-04-18-accessibility-impactful-techniques
 [disabilities]: http://webaim.org/intro/#people
 [ada-census]: https://www.census.gov/newsroom/facts-for-features/2015/cb15-ff10.html
 [keyboard-accessibility]: http://webaim.org/techniques/keyboard/

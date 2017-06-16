@@ -1163,7 +1163,7 @@ they appear:
 * [Corinthian leather](https://en.wikipedia.org/wiki/Corinthian_leather)
 * [Zeitgeist](https://github.com/seattlerb/minitest)
 * [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
-* [Video: How to Stop Hating Your Tests](2015-11-16-how-to-stop-hating-your-tests.html)
+* [Video: How to Stop Hating Your Tests](2015-11-16-how-to-stop-hating-your-tests)
 * [Sam's abstract](http://railsconf.com/program#prop_1682)
 * [RSpec's Rails 5 announcement](http://rspec.info/blog/2016/02/rspec-3-5-0-beta1-has-been-released/)
 * [Indeed Job Trends](http://www.indeed.com/jobtrends)
@@ -1173,5 +1173,5 @@ they appear:
 * [Hacker News](https://news.ycombinator.com)
 * [#MakeRubyGreatAgain](https://twitter.com/search?q=%23MakeRubyGreatAgain)
 * [Joining Test Double](mailto:join@testdouble.com)
-* [Test Double's Agency](http://testdouble.com/agency.html)
+* [Test Double's Agency](//testdouble.com/agency)
 
