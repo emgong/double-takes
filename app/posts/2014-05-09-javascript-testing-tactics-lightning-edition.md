@@ -11,7 +11,7 @@ video:
 This talk, as delivered at [ScotlandJS](http://www.scotlandjs.com) in Edinburgh, Scotland,
 is the snappy, 20 minute version of my hour-long talk of the same name. If you like
 punchy sweeping generalizations and rapid-fire slide transitions, this one may better
-suit you than the [long-form version](/posts/2013-10-03-javascript-testing-tactics.html).
+suit you than the [long-form version](/posts/2013-10-03-javascript-testing-tactics).
 
 The goal of this presentation is to impart some lessons about unit testing JavaScript
 that one may find counter-intuitive, not obvious, or poorly documented by the community.

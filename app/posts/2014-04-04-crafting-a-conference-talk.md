@@ -7,7 +7,7 @@ author:
 reddit: true
 ---
 
-I recently [gave a conference talk](/posts/2014-04-03-breaking-up-with-your-test-suite.html) at [Ancient City Ruby](http://ancientcityruby.com). I'd like to share a variety of notes about the process I go through when I develop a new talk.
+I recently [gave a conference talk](/posts/2014-04-03-breaking-up-with-your-test-suite) at [Ancient City Ruby](http://ancientcityruby.com). I'd like to share a variety of notes about the process I go through when I develop a new talk.
 
 ## Wait for an idea
 
@@ -29,7 +29,7 @@ The abstract for the talk I'm discussing today is [on Github](https://github.com
 
 ## Be accepted
 
-If you get accepted to speak at a conference, take a moment to celebrate! These days, conferences are absolutely inundated with talk proposals. It's not unheard of for a conference to receive 50-80 proposals per spot that's being selected competitively (nearly all conferences [invite a portion](/posts/2013-12-04-calls-for-transparency.html) of their lineup). It's a huge accomplishment to be accepted to speak at a conference.
+If you get accepted to speak at a conference, take a moment to celebrate! These days, conferences are absolutely inundated with talk proposals. It's not unheard of for a conference to receive 50-80 proposals per spot that's being selected competitively (nearly all conferences [invite a portion](/posts/2013-12-04-calls-for-transparency) of their lineup). It's a huge accomplishment to be accepted to speak at a conference.
 
 If you feel discouraged in the face of frequent rejection, please accept my commiseration: I only get into a small fraction of the conferences I submit to.
 
@@ -48,7 +48,7 @@ Those goals are the primary source of tension in each of my talks: the former cr
 
 ## Arrive at a rhetorical structure
 
-By the time you're accepted, hopefully you already have some idea of your talk's desired outcome. My favorite talks build up to a strong call-to-action, giving attendees concrete tools with which to try a new approach or adopt a different perspective. If your talk is technical in nature, I [wrote some opinions on that topic](/posts/2013-08-29-great-technical-talks.html) late last year.
+By the time you're accepted, hopefully you already have some idea of your talk's desired outcome. My favorite talks build up to a strong call-to-action, giving attendees concrete tools with which to try a new approach or adopt a different perspective. If your talk is technical in nature, I [wrote some opinions on that topic](/posts/2013-08-29-great-technical-talks) late last year.
 
 Structuring the talk well is crucial, but how it ought to be structured is highly dependent on the nature of the message you hope to convey.
 
@@ -56,16 +56,16 @@ If a talk's title is "Top 10 Angular Tips", I'm probably not going to expect any
 
 If a talk is presented as a creative narrative, like [Carin Meier](http://twitter.com/gigasquid)'s beautiful "[Once Upon a Time in Clojureland](http://www.slideshare.net/gigasquidcm/fairy-taleclojure)", then the structure has the freedom to adopt any of the myriad forms found in storytelling. This can lead in all sorts of fascinating directions (if anything, the greater risk becomes losing focus on the content itself).
 
-Talks sharing insights gleaned from personal experiences—like my own collection of war stories in [Office Politics for the Thin-Skinned Developer](http://blog.testdouble.com/posts/2013-08-24-office-politics.html)—can get away with a "here are [three simple stories](http://www.thejakartapost.com/news/2011/10/06/three-stories-my-life-steve-jobs.html)" structure. That may be all it takes to have a huge impact, as the anecdotes themselves will do most of the heavy-lifting. The challenges with such talks aren't structural per se, but it is important that their high-level plan figures out a common design language and clear, grounding theme throughout.
+Talks sharing insights gleaned from personal experiences—like my own collection of war stories in [Office Politics for the Thin-Skinned Developer](http://blog.testdouble.com/posts/2013-08-24-office-politics)—can get away with a "here are [three simple stories](http://www.thejakartapost.com/news/2011/10/06/three-stories-my-life-steve-jobs.html)" structure. That may be all it takes to have a huge impact, as the anecdotes themselves will do most of the heavy-lifting. The challenges with such talks aren't structural per se, but it is important that their high-level plan figures out a common design language and clear, grounding theme throughout.
 
-Introductory talks, meanwhile, present numerous structural challenges. First, the speaker must convince the audience that it has a problem in need of a solution. Next, they must convey all the persuasive aspects of said solution. Finally, they must leave enough undiscovered ground to inspire the audience to traverse it on their own, rather than risk sating their curiosity. On this note, I delivered at least five absolutely awful talks about [Lineman.js](http://linemanjs.com) before I gave a good one. There are simply too many competing priorities to get away without carefully planning an introductory talk's structure. When I [rebooted the talk](http://blog.testdouble.com/posts/2013-11-12-1st-class-web-development-with-lineman.html) for [Oredev](http://oredev.org/), I spent over **thirty hours** before finalizing its rhetorical approach. An intermediate tool I used in that process was a mind map (specifically [MindNode](https://mindnode.com/)), which helped me discover that I could break the content into three well-understood concerns and contrast them before & after my proposed solution.
+Introductory talks, meanwhile, present numerous structural challenges. First, the speaker must convince the audience that it has a problem in need of a solution. Next, they must convey all the persuasive aspects of said solution. Finally, they must leave enough undiscovered ground to inspire the audience to traverse it on their own, rather than risk sating their curiosity. On this note, I delivered at least five absolutely awful talks about [Lineman.js](http://linemanjs.com) before I gave a good one. There are simply too many competing priorities to get away without carefully planning an introductory talk's structure. When I [rebooted the talk](http://blog.testdouble.com/posts/2013-11-12-1st-class-web-development-with-lineman) for [Oredev](http://oredev.org/), I spent over **thirty hours** before finalizing its rhetorical approach. An intermediate tool I used in that process was a mind map (specifically [MindNode](https://mindnode.com/)), which helped me discover that I could break the content into three well-understood concerns and contrast them before & after my proposed solution.
 
 <figure>
   [![My Lineman talk's mind map](/img/conf-talks/mind-map.jpg)](/img/conf-talks/mind-map.jpg)
   <figcaption>My Lineman talk's mind map (three problems, a pivot, and three solutions)</figcaption>
 </figure>
 
-Finally, the testing talk that [I just gave](/posts/2014-04-03-breaking-up-with-your-test-suite.html) differs from those discussed above because the main thrust is merely an exhortation to say, "let's be more thoughtful". My approach with the talk was to expound on example outcomes that could be reached by way of an increase in thoughtfulness about test suite design. This demanded a structure that supported broad and deep exposition, but with an added hypothetical flair, too. That is to say, I didn't want people to watch the talk and adopt my five test suites; I wanted them to go forth and create their own.
+Finally, the testing talk that [I just gave](/posts/2014-04-03-breaking-up-with-your-test-suite) differs from those discussed above because the main thrust is merely an exhortation to say, "let's be more thoughtful". My approach with the talk was to expound on example outcomes that could be reached by way of an increase in thoughtfulness about test suite design. This demanded a structure that supported broad and deep exposition, but with an added hypothetical flair, too. That is to say, I didn't want people to watch the talk and adopt my five test suites; I wanted them to go forth and create their own.
 
 <figure>
   [![Structural planning](/img/conf-talks/structure-notes.jpg)](/img/conf-talks/structure-notes.jpg)

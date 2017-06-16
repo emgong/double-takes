@@ -12,7 +12,7 @@ video:
 
 This screencast examines some of the more advanced features in Angular, specifically Directives. We'll see how we can leverage the power of custom elements and attributes to map Domain Specific concepts through HTML and translate those into Value Objects in our Domain, resulting in cleaner HTML output. Also discussed: complexity, creating a DSL with directives, debugging techniques, and other tips and tricks.
 
-If you're interested in some more context prior to watching, check out my other [angular screencasts](https://www.youtube.com/user/vidjadavemo/videos) and an earlier post on the [power of web components as abstractions](http://blog.testdouble.com/posts/2013-06-26-what-polymer-and-angular-tell-us-about-the-future-success-of-the-web-platform-and-javascript-frameworks.html). This screencast covers:
+If you're interested in some more context prior to watching, check out my other [angular screencasts](https://www.youtube.com/user/vidjadavemo/videos) and an earlier post on the [power of web components as abstractions](http://blog.testdouble.com/posts/2013-06-26-what-polymer-and-angular-tell-us-about-the-future-success-of-the-web-platform-and-javascript-frameworks). This screencast covers:
 
 * html as a dsl
 * abstractions in html

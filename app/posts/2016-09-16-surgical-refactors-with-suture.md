@@ -16,7 +16,7 @@ at [Ruby Kaigi](http://rubykaigi.org/2016) on September 9th, 2016.
 ## Background
 
 I've been occasionally criticized since my [Make Ruby Great
-Again](http://blog.testdouble.com/posts/2016-05-09-make-ruby-great-again.html)
+Again](http://blog.testdouble.com/posts/2016-05-09-make-ruby-great-again)
 talk that it's been a while since I'd contributed much to the Ruby community. I
 was thinking about this when I was asked to design a talk for Ruby Kaigi (Japan's
 national Ruby conference) that was about something other than testing or

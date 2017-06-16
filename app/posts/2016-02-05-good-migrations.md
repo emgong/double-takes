@@ -24,9 +24,9 @@ Need some background first? Okay.
 ## Some background
 
 A little over a year ago, we [shared some
-tips](/posts/2014-11-04-healthy-migration-habits.html) for writing better database
+tips](/posts/2014-11-04-healthy-migration-habits) for writing better database
 migrations in Rails. In the [last
-section](/posts/2014-11-04-healthy-migration-habits.html#habit-4-don-t-reference-models)
+section](/posts/2014-11-04-healthy-migration-habits#habit-4-don-t-reference-models)
 of that post, we explained why it's important to _resist the temptation_ to
 reference your app's ActiveRecord models from your migration code.
 

@@ -941,7 +941,7 @@ information on many of them:
 
 * [Fail Whale](https://en.wikipedia.org/wiki/File:Failwhale.png)
 * [Brandon Hays](http://brandonhays.com)
-* [Test Double & Ruby](http://testdouble.com/ruby.html)
+* [Test Double & Ruby](http://testdouble.com/join)
 * [@searls](https://twitter.com/searls)
 * [@testdouble](https://twitter.com/testdouble)
 * [Ruby](https://www.ruby-lang.org/en/)
@@ -971,7 +971,7 @@ information on many of them:
 * [Richard Schneeman](http://www.schneems.com)
 * [Elixir](http://elixir-lang.org)
 * [Rust](https://www.rust-lang.org/en-US/)
-* [Make Ruby Great Again](http://blog.testdouble.com/posts/2016-05-09-make-ruby-great-again.html)
+* [Make Ruby Great Again](http://blog.testdouble.com/posts/2016-05-09-make-ruby-great-again)
 * [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming)
 * [NIH](https://en.wikipedia.org/wiki/Not_invented_here)
 * [SemVer](http://semver.org)

@@ -118,7 +118,7 @@ sparing your colleagues any grief if they forget about your custom Rakefile and
 the two seconds it can save them. (If you're befuddled why two seconds should
 matter to you, check out [this tiny portion](https://vimeo.com/145917204#t=1911)
 of my [How to Stop Hating Your
-Tests](2015-11-16-how-to-stop-hating-your-tests.html) talk.)
+Tests](2015-11-16-how-to-stop-hating-your-tests) talk.)
 
 New, isolated Rakefile in  hand, let's try to run it with `rake --rakefile
 Rakefile.norails`:
