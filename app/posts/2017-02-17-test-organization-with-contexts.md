@@ -1,6 +1,6 @@
 ---
 title: "Test Organization With Contexts"
-description: "When testing we create a test file for each class. This practice recognizes that classes group common behavior and ideas.  We can extend this idea further by using test contexts around the natural shared contexts of a subject under test."
+description: "When testing we group common behavior and ideas. We can extend this further by using test contexts around the natural shared contexts of a subject under test."
 author:
   name: "Sam Jones"
   url: "http://twitter.com/samjonester"
