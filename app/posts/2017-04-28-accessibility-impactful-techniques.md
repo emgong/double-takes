@@ -1,6 +1,6 @@
 ---
 title: "Accessibility Techniques"
-description: "Accessibility techniques are a way to create a more usable experience for all users. This post covers accessibility techniques that are most likely to fix issues that block users with disabilities from successfully navigating your application, and techniques that create a more inclusive experience and provide equal access to even more people."
+description: "Accessibility techniques that are most likely to fix issues that block users with disabilities from successfully navigating your application."
 subtitle: "Impactful Tools and Techniques to Get You Started"
 author:
   name: "Sam Jones"

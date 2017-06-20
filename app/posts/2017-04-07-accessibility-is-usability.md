@@ -1,6 +1,6 @@
 ---
 title: "Accessibility Is Usability"
-description: "Accessibility guidelines exist to eliminate barriers that would otherwise hinder equal access to a significant percentage of the population. The great thing about following accessibility guidelines is that techniques have an impact on all users. Getting started with accessibility is easy, and any action you take benefits users now!"
+description: "Accessibility guidelines help eliminate barriers to equal access. When following accessibility guidelines, techniques have an impact on all users."
 subtitle: "How Accessibility Improvements Help Everyone"
 author:
   name: "Sam Jones"
