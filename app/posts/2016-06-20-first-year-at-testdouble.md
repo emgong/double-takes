@@ -1,5 +1,6 @@
 ---
 title: "My First Year At Test Double"
+description: "What it's like to work at Test Double. What I've learned by working at Test Double."
 author:
   name: "Josh Greenwood"
   url: "http://twitter.com/joshtgreenwood"
