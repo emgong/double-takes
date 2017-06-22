@@ -1,5 +1,6 @@
 ---
 title: "Code examples in Keynote"
+description: "Simple instructions for formatting code slides in Keynote. Tips for adding code to slideshow presentations."
 author:
   name: "Josh Greenwood"
   url: "http://twitter.com/joshtgreenwood"
