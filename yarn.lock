@@ -364,12 +364,12 @@ cli@0.4.x:
   dependencies:
     glob ">= 3.1.4"
 
-cli@0.6.x:
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/cli/-/cli-0.6.6.tgz#02ad44a380abf27adac5e6f0cdd7b043d74c53e3"
+cli@~1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/cli/-/cli-1.0.1.tgz#22817534f24bfa4950c34d532d48ecbc621b8c14"
   dependencies:
     exit "0.1.2"
-    glob "~ 3.2.1"
+    glob "^7.1.1"
 
 cliui@^2.1.0:
   version "2.1.0"
@@ -1240,14 +1240,14 @@ github-url-from-username-repo@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/github-url-from-username-repo/-/github-url-from-username-repo-0.1.0.tgz#fe398af670692e91af7bcfc5ae1d99ff97b1df89"
 
-glob@3.x, "glob@~ 3.2.1", glob@~3.2.9:
+glob@3.x, glob@~3.2.9:
   version "3.2.11"
   resolved "https://registry.yarnpkg.com/glob/-/glob-3.2.11.tgz#4a973f635b9190f715d10987d5c00fd2815ebe3d"
   dependencies:
     inherits "2"
     minimatch "0.3"
 
-"glob@>= 3.1.4", glob@~7.1.1:
+"glob@>= 3.1.4", glob@^7.1.1, glob@~7.1.1:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
   dependencies:
@@ -1388,12 +1388,13 @@ grunt-contrib-handlebars@0.8.0:
     grunt-lib-contrib "~0.5.1"
     handlebars "~1.3.0"
 
-grunt-contrib-jshint@0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/grunt-contrib-jshint/-/grunt-contrib-jshint-0.11.0.tgz#2ba17953d30471c3ba58792a5aa92e447059de45"
+grunt-contrib-jshint@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/grunt-contrib-jshint/-/grunt-contrib-jshint-1.1.0.tgz#369d909b2593c40e8be79940b21340850c7939ac"
   dependencies:
-    hooker "~0.2.3"
-    jshint "~2.6.0"
+    chalk "^1.1.1"
+    hooker "^0.2.3"
+    jshint "~2.9.4"
 
 grunt-contrib-jst@0.5.1:
   version "0.5.1"
@@ -1409,7 +1410,7 @@ grunt-contrib-pug@^1.0.0:
     chalk "^1.0.0"
     pug "^2.0.0-alpha3"
 
-grunt-contrib-sass@linemanjs/grunt-contrib-sass:
+"grunt-contrib-sass@github:linemanjs/grunt-contrib-sass":
   version "0.9.2"
   resolved "https://codeload.github.com/linemanjs/grunt-contrib-sass/tar.gz/cac384efe5facc3dcd44e947925239b3d9cd2252"
   dependencies:
@@ -1669,7 +1670,7 @@ hoek@2.x.x:
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
 
-hooker@~0.2.3:
+hooker@^0.2.3, hooker@~0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/hooker/-/hooker-0.2.3.tgz#b834f723cc4a242aa65963459df6d984c5d3d959"
 
@@ -1934,18 +1935,18 @@ jshint@1.1.0:
     shelljs "0.1.x"
     underscore "1.4.x"
 
-jshint@~2.6.0:
-  version "2.6.3"
-  resolved "https://registry.yarnpkg.com/jshint/-/jshint-2.6.3.tgz#84b470b8e5d5cd7adf0a3bd4975250443c9d311a"
+jshint@~2.9.4:
+  version "2.9.5"
+  resolved "https://registry.yarnpkg.com/jshint/-/jshint-2.9.5.tgz#1e7252915ce681b40827ee14248c46d34e9aa62c"
   dependencies:
-    cli "0.6.x"
+    cli "~1.0.0"
     console-browserify "1.1.x"
     exit "0.1.x"
     htmlparser2 "3.8.x"
-    minimatch "1.0.x"
+    lodash "3.7.x"
+    minimatch "~3.0.2"
     shelljs "0.3.x"
     strip-json-comments "1.0.x"
-    underscore "1.6.x"
 
 json-schema@0.2.3:
   version "0.2.3"
@@ -2018,9 +2019,9 @@ lineman-pug@^0.2.0:
   dependencies:
     grunt-contrib-pug "^1.0.0"
 
-lineman@^0.36.6:
-  version "0.36.6"
-  resolved "https://registry.yarnpkg.com/lineman/-/lineman-0.36.6.tgz#60133ab08127a8395f95f28d67a4b56f06e25399"
+lineman@^0.37.0:
+  version "0.37.0"
+  resolved "https://registry.yarnpkg.com/lineman/-/lineman-0.37.0.tgz#4084ddd0a397fc68b0e93b23dddc89cabde67538"
   dependencies:
     coffee-script "1.6.3"
     commander "1.3.2"
@@ -2036,7 +2037,7 @@ lineman@^0.36.6:
     grunt-contrib-copy "0.4.1"
     grunt-contrib-cssmin "0.6.1"
     grunt-contrib-handlebars "0.8.0"
-    grunt-contrib-jshint "0.11.0"
+    grunt-contrib-jshint "1.1.0"
     grunt-contrib-jst "0.5.1"
     grunt-contrib-sass linemanjs/grunt-contrib-sass
     grunt-contrib-uglify "0.2.4"
@@ -2080,6 +2081,10 @@ lodash.padend@^4.1.0:
 lodash.padstart@^4.1.0:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/lodash.padstart/-/lodash.padstart-4.6.1.tgz#d2e3eebff0d9d39ad50f5cbd1b52a7bce6bb611b"
+
+lodash@3.7.x:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.7.0.tgz#3678bd8ab995057c07ade836ed2ef087da811d45"
 
 lodash@^4.0.0, lodash@~4.3.0:
   version "4.3.0"
@@ -2206,13 +2211,6 @@ minimatch@0.3:
 minimatch@0.x, minimatch@0.x.x, minimatch@~0.2.11, minimatch@~0.2.12, minimatch@~0.2.9:
   version "0.2.14"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-0.2.14.tgz#c74e780574f63c6f9a090e90efbe6ef53a6a756a"
-  dependencies:
-    lru-cache "2"
-    sigmund "~1.0.0"
-
-minimatch@1.0.x:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-1.0.0.tgz#e0dd2120b49e1b724ce8d714c520822a9438576d"
   dependencies:
     lru-cache "2"
     sigmund "~1.0.0"
@@ -3391,10 +3389,6 @@ underscore@1.4.x:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.4.4.tgz#61a6a32010622afa07963bf325203cf12239d604"
 
-underscore@1.6.x, underscore@~1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.6.0.tgz#8b38b10cacdef63337b8b24e4ff86d45aea529a8"
-
 underscore@>=1.8.3:
   version "1.8.3"
   resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.8.3.tgz#4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022"
@@ -3402,6 +3396,10 @@ underscore@>=1.8.3:
 underscore@^1.6.0, underscore@~1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.7.0.tgz#6bbaf0877500d36be34ecaa584e0db9fef035209"
+
+underscore@~1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.6.0.tgz#8b38b10cacdef63337b8b24e4ff86d45aea529a8"
 
 unpipe@~1.0.0:
   version "1.0.0"
