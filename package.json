@@ -27,14 +27,15 @@
   "devDependencies": {
     "bourbon": "^4.2.7",
     "grunt": "^1.0.1",
-    "grunt-sass": "^1.2.0",
-    "lineman": "^0.37.0",
-    "lineman-pug": "^0.2.0",
     "grunt-html-validation": "~0.1.13",
     "grunt-htmlhint": "~0.4.0",
-    "lineman-blog": "^1.2.0"
+    "grunt-sass": "^1.2.0",
+    "lineman": "^0.37.0",
+    "lineman-blog": "^1.2.0",
+    "lineman-pug": "^0.2.0"
   },
   "engines": {
     "yarn": "^0.27.5"
-  }
+  },
+  "dependencies": {}
 }
