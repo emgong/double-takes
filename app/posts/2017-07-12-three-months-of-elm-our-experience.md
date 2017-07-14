@@ -6,10 +6,7 @@ author:
   url: "http://twitter.com/joshtgreenwood"
 ---
 
-For the last 3 months we have been hard at work building out an ambitious Elm front-end project with one of our clients. What follows is a loose collection of our thoughts about Elm as a language and a tool to leverage for front-end projects.
-
-# The Application
-We can't get into the specifics, but it's helpful to note some of the constraints going into this application to understand how Elm fit into the puzzle. The client is building products for a very complex industrial scale business domain. Their customers need to view and edit very large and constantly changing domain specific maps, stream event data, and investigate telemetry data. Much of the application uses SVG to drive the display of complex maps and figures. For the purposes of this post, it's just important to know that this project was not the typical CRUD-y form and table based application.
+For the last 3 months we have been hard at work building out an ambitious Elm front-end project with one of our clients. We are building products for a very complex industrial-scale business domain. Our customers need to view and edit very large and very dynamic domain specific maps, stream event data, and investigate telemetry data. Much of the application uses SVG to drive the display of complex maps and figures. What follows is a loose collection of our thoughts about Elm as a language and a tool to leverage for front-end projects.
 
 # Type System
 Elm's type system is its hallmark feature. Defining your types, their relationships, and how they relate to the outside world allows the language to have its own controlled environment where safety can be guaranteed. All functions must be pure, state cannot be mutated, and all input must be verified by Elm before it flows into the system. If this sounds like a lot of work, it is! But spending that work up front has saved us countless hours of later debugging when we can be assured that the system is behaving correctly (or at least won't blow up).
