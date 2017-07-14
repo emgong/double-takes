@@ -1,6 +1,6 @@
 ---
 title: "3 Months of Elm: Our Experience"
-description: "What it is like to write Elm. Our elm experience."
+description: "What it is like to write Elm. Our Elm experience."
 author:
   name: "Josh Greenwood"
   url: "http://twitter.com/joshtgreenwood"
