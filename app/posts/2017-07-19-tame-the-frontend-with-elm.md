@@ -1,5 +1,5 @@
 ---
-title: "Tame the Frontend with Elm"
+title: "Tame the frontend with Elm"
 description: "Discover the benefits of Elm such as no runtime exceptions and helpful compiler error messages. Learn some of Elm's syntax and how to structure applications with the Elm Architecture."
 author:
   name: "Jeremy Fairbank"
