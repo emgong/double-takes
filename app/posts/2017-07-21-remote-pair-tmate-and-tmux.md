@@ -22,7 +22,7 @@ Then you've created a bunch of windows, splits, and running processes, and **now
 ## Possible solutions
 
 💔 **Jump Box**
-You could [set up a jump box][remote-pairing-ssh] to allow a remote pair to ssh directly into your machine. This uses ssh to create a reverse tunnel to the public jumpbox, exposing your ssh port to your pair, who connects with an ssh key. This solution is secure, but it's complicated to set up. You'll also need to pay for a public jump box on digital ocean (or similar cloud service).
+You could [set up a jump box][remote-pairing-ssh] to allow a remote pair to ssh directly into your machine. This uses ssh to create a reverse tunnel to the public jumpbox, exposing your ssh port to your pair, who connects with an ssh key. This solution is secure, but it's complicated to set up. You'll also need to pay for a public jump box on Digital Ocean (or similar cloud service).
 
 💚 **Tmate**
 [Tmate][tmate] does all of that jump box work for you, and it's REALLY easy to use. It's a fork of tmux that allows you to share a terminal work session via a shareable ssh key. It even provides a read-only ssh key if you'd like to provide that instead. It isn't quite as secure because a key is not required to connect, but it sure is convenient! Just be careful to pair responsibly, with those you trust giving access to your computer. Also don't forget to shut down the tmate session when you're done to close off unsupervised access to all your stuff.
@@ -57,7 +57,7 @@ set -s escape-time 0
 ```
 
 ### Scripting the Integration
-The following functions script the integration between tmate and tmux. This allows a new tmate session to be started and automatically, loading an existing tmux session for sharing. To do this, add the following functions to your `~/.bashrc`.
+The following functions script the integration between tmate and tmux. This allows a new tmate session to be started and stopped with a simple function. This function can load an existing tmux session for sharing. To do this, add the following functions to your `~/.bashrc`.
 
 ``` sh
 # TMATE Functions
