@@ -8,26 +8,37 @@ author:
 reddit: false
 ---
 
+
 ## Here's the situation.
 
-You love [tmux][tmux], and you use it all the time to organize your terminal and create a workspace. You've created a new tmux session where you will do your work named `awesomework`.
+You LOVE [tmux][tmux], and you use it all the time to organize your terminal and create a workspace. You've created a new tmux session where you will do your work named `funproject`.
 
 ``` sh
-tmux new-session -s awesomework
+tmux new-session -s funproject
 ```
 
 Then you've created a bunch of windows, splits, and running processes, and **now you would like to pair**.
 
-Uh-Oh! tmate won't work because you want share this existing session.... *or will it*???
+## Possible solutions
+
+💔 **Jump Box**
+You could [set up a jump box][remote-pairing-ssh] to allow a remote pair to ssh directly into your machine. This uses ssh to create a reverse tunnel to the public jumpbox, exposing your ssh port to your pair, who connects with an ssh key. This solution is secure, but it's complicated to set up. You'll also need to pay for a public jump box on digital ocean (or similar cloud service).
+
+💚 **Tmate**
+[Tmate][tmate] does all of that jump box work for you, and it's REALLY easy to use. It's a fork of tmux that allows you to share a terminal work session via a shareable ssh key. It even provides a read-only ssh key if you'd like to provide that instead. It isn't quite as secure because a key is not required to connect, but it sure is convenient!
 
 
 -------------
 
-## Turns out you can share that tmux session with tmate
+## Sharing with tmate
 
-[Tmate][tmate] is used as a way to share your terminal. It is not super secure because a key is not required to connect, but it sure is convenient. Inside that shared terminal we will connect to our tmux session and continue development with our pair.
+When you first start tmate, you'll notice that it creates a new tmux session for you to share your work. You'll also frustratingly find that since it's a fork of tmux, you're unable to start sharing by attaching to your existing `funproject`.
 
-### Tmate Configuration
+Luckily, there is a solution! Tmate can be used strictly as the sharing vessel, and you can connect to that tmux session inside the sharing vessel with one handy command `TMUX='' tmux attach-session -t funproject`. This command allows you to nest a tmux session inside tmate.
+
+Cool 😎! Now, let's clean up those status bars and do some scripting to make them play nicely together.
+
+### Configure tmate to be invisible
 
 Tmate allows a configuration file to overlay your `~/.tmux.conf` file. You can do this by creating the following file at `~/.tmate.conf`. This example will set up tmate to be as non-intrusive as possible, allowing you to focus on the tmux session you're working in.
 
@@ -46,7 +57,7 @@ set -s escape-time 0
 ```
 
 ### Scripting the Integration
-The following functions script the integration between tmate and tmux. This allows a new tmate session to be started and automatically load an existing tmux session for sharing. To do this, add the following functions to your `~/.bashrc`.
+The following functions script the integration between tmate and tmux. This allows a new tmate session to be started and automatically, loading an existing tmux session for sharing. To do this, add the following functions to your `~/.bashrc`.
 
 ``` sh
 # TMATE Functions
@@ -105,7 +116,7 @@ tmate-unpair() {
 
 ### Sharing with tmate
 
-Open a pair session and attach to you existing tmux session. The tmate share url is printed and copied to your (OS X) clipboard.
+Open a pair session and attach to your existing tmux session. The tmate share url is printed and copied to your (OS X) clipboard.
 
 ``` sh
 tmate-pair foo
@@ -119,7 +130,7 @@ tmate-pair
 
 ### Ending a pair
 
-After your done, close down tmate. This will detach all clients from the shared tmux session if one was provided when starting the pair.
+After your done, close down tmate. This will also detach all clients from the shared tmux session if one was provided when starting the pair.
 
 ``` sh
 tmate-unpair
@@ -128,5 +139,6 @@ tmate-unpair
 <hr/>
 <p><a rel="canonical" href="https://samljones.com/2017-07-19/remote-pair-tmate-tmux/">Sam's original post</a></p>
 
+[remote-pairing-ssh]: http://www.zeespencer.com/building-a-remote-pairing-setup/
 [tmux]: https://github.com/tmux/tmux/wiki
 [tmate]: https://tmate.io/
