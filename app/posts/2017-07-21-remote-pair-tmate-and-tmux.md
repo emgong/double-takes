@@ -25,7 +25,7 @@ Then you've created a bunch of windows, splits, and running processes, and **now
 You could [set up a jump box][remote-pairing-ssh] to allow a remote pair to ssh directly into your machine. This uses ssh to create a reverse tunnel to the public jumpbox, exposing your ssh port to your pair, who connects with an ssh key. This solution is secure, but it's complicated to set up. You'll also need to pay for a public jump box on digital ocean (or similar cloud service).
 
 💚 **Tmate**
-[Tmate][tmate] does all of that jump box work for you, and it's REALLY easy to use. It's a fork of tmux that allows you to share a terminal work session via a shareable ssh key. It even provides a read-only ssh key if you'd like to provide that instead. It isn't quite as secure because a key is not required to connect, but it sure is convenient!
+[Tmate][tmate] does all of that jump box work for you, and it's REALLY easy to use. It's a fork of tmux that allows you to share a terminal work session via a shareable ssh key. It even provides a read-only ssh key if you'd like to provide that instead. It isn't quite as secure because a key is not required to connect, but it sure is convenient! Just be careful to pair responsibly, with those you trust giving access to your computer. Also don't forget to shut down the tmate session when you're done to close off unsupervised access to all your stuff.
 
 
 -------------
@@ -130,7 +130,7 @@ tmate-pair
 
 ### Ending a pair
 
-After your done, close down tmate. This will also detach all clients from the shared tmux session if one was provided when starting the pair.
+After you're done, close down tmate. This will also detach all clients from the shared tmux session if one was provided when starting the pair. Remember to do this to close off unsupervised access to all your stuff!
 
 ``` sh
 tmate-unpair
