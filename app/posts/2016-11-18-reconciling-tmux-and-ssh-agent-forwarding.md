@@ -2,6 +2,7 @@
 title: "Reconciling Tmux and SSH Agent Forwarding."
 author:
   name: "Adam Lukens"
+  description: "Tmux and SSH agent forwarding don't have to be at odds. Here's a setup that allows you to use agent forwarding without worry."
   url: "https://twitter.com/McPolemic"
 ---
 
