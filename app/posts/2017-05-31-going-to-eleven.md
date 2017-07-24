@@ -1,6 +1,7 @@
 ---
 title: "Going to Eleven"
 subtitle: "How I Learned to Stop Worrying and Love the Swarm"
+description: "Load testing with locust to prepare for a large-scale product launch.  Learn about evolving an architecture to handle heavy loads and external dependencies."
 author:
   name: "Steve Jackson"
   url: "https://twitter.com/stevejxsn"

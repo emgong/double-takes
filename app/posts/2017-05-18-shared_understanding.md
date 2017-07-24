@@ -1,5 +1,6 @@
 ---
 title: "Better Software Through Shared Understanding"
+description: "Avoid tool lock-in.  Look to build shared understanding through examples and pick tools that match the maturity of a project"
 author:
   name: "Steve Jackson"
   url: "https://twitter.com/stevejxsn"
