@@ -47,7 +47,7 @@ remove(reportDirectory)
   .each(report => success(report.filePath))
 ```
 
-Now we've got the initial integration test in place and ready to validate our reports. Since we used `flatMap` to flatten the stream produced by `validReports` into our original stream. That function will need to return a stream of valid reports for a given directory. Let's build that out now!
+Now we've got the initial integration test in place and ready to validate our reports. Since we used `flatMap` to flatten the stream produced by `validReports` into our original stream, that function will need to return a stream of valid reports for a given directory. Let's build that out now!
 
 ## Finding valid reports
 
@@ -59,6 +59,7 @@ const walk = require('klaw')
 const readJson = stream.wrapCallback(require('fs-extra').readJson)
 const endsWith = require('lodash/fp/endsWith')
 const set = require('lodash/fp/set')
+
 const validReport = require('./valid-report')
 
 const read = filePath => readJson(filePath).map(set('filePath', filePath))
@@ -116,21 +117,13 @@ const traditionalFunc = x => transformY(transformX(x))
 const composedTransformation = compose(transformY, transformX)
 ```
 
-## Validating a report
+## The shape of a valid report.
 
-The two functional programming concepts from above can both be used to perform the validation on a report. We're building on small units of functionality from Lodash FP to build more complex validations for a report.
+The two functional programming concepts from above can both be used to perform the validation on a report. We're building on small units of functionality create more complex validations for a report. Let's start by defining the validations that we care about.
 
 ``` javascript
 const allPass = require('lodash/fp/allPass')
-const any = require('lodash/fp/any')
-const compose = require('lodash/fp/compose')
-const get = require('lodash/fp/get')
-const has = require('lodash/fp/has')
-const map = require('lodash/fp/map')
-
-const hasFields = compose(allPass, map(has))
-const anyAt = (path, check) => compose(any(check), get(path))
-
+const { hasFields, anyAt } = require('./validation-utils')
 
 const reportFields = [
   'name',
@@ -153,7 +146,34 @@ module.exports = function validReport(report) {
 }
 ```
 
-Something really cool has happened by writing our validations this way. To understand the purpose of `validReport` we can just read the function names, we don't need to translate "how the functions operate" into "what is the purpose of this code". That's the most powerful concept to understand when getting started with functional programming.
+Something really cool has happened by writing our validations this way. To understand the purpose of `validReport` we can just read the function names, we don't need to translate "how the functions operate" into "what is the purpose of this code". That's the most powerful concept to understand when getting started with functional programming. We've declared what the shape of a valid report is without getting distracted by the details of how to validate.
+
+## Building validation utilities
+
+Based on the validations that we need to perform, we need a few functional utilities. We will compose them from small utilities provided by [Lodash FP][lodash-fp].
+
+``` javascript
+const any = require('lodash/fp/any')
+const compose = require('lodash/fp/compose')
+const get = require('lodash/fp/get')
+const has = require('lodash/fp/has')
+const map = require('lodash/fp/map')
+
+module.exports.hasfields = compose(allPass, map(has))
+module.exports.anyAt = (path, check) => compose(any(check), get(path))
+```
+What we've done is use function composition to glue together smaller things into utilities that check that an object has values for given fields with `hasFields`, and that an object passes a validation check for a certain leaf node.
+
+# Conclusion
+
+The goal of this post was to test the shape of JSON data produced by a command line utility, in this case a maven plugin. The **shape test** was necessary because we can't guarantee the values within the objects that are produced, we just need to ensure that we're populating data into all the fields we need. We have specific unit tests to ensure each piece of data is transformed properly, so this is an [integration level test][test-pyramid].
+
+To perform our **shape test**, we need to execute our utility, then validate that we've created results with the right shape. This is where the fun started! We chose node for our shape test because of it's ability to stream io tasks, and it's strength in working with JSON data. 
+
+There were 3 main steps in within our test: test preperation, code execution, and walking the results for validation. Each of these steps is an I/O task which could be managed with [Highland][highland-js] streams. For validation, we walked the filesystem, adding a report to the stream for validation, then we filtered valid reports. This is where [Lodash FP][lodash-fp] entered the picture. The validation steps for the reports could be represented clearly, with great purpose-focused names by using functional programming concepts like `currying`, & `function composition`. *This allowed us to express what shape a valid report has without getting distracted by how to perform the validation!*
+
+<hr/>
+<p><a rel="canonical" href="https://samljones.com/2017-08-03/shape-testing-with-javascript-streams/">Sam's original post</a></p>
 
 [test-pyramid]: https://github.com/testdouble/contributing-tests/wiki/Testing-Pyramid
 [node-streams]: https://nodejs.org/api/stream.html
