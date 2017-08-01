@@ -39,10 +39,10 @@ script.
     function closeMenuOnEscape(event) {
       isEscape(event) && closeMenu()
     }
-    document.querySelectorAll('.menu-close').forEach(function(element) {
+    Array.prototype.forEach.call(document.querySelectorAll('.menu-close'), function(element) {
       element.addEventListener('keydown', closeMenuOnEnter, false)
     })
-    document.querySelectorAll('.menu-trigger').forEach(function(element) {
+    Array.prototype.forEach.call(document.querySelectorAll('.menu-trigger'), function(element) {
       element.addEventListener('keydown', toggleMenuOnEnter, false)
     })
     document.addEventListener('keydown', closeMenuOnEscape, false)
