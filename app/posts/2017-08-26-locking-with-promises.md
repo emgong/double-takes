@@ -14,7 +14,7 @@ promisify it and ran in to a funny problem. Here is what I initially wrote:
     const prompt = require('prompt')
 
     const promisePrompt = (name) => {
-      return new Promise((resolve) => {
+      return new Promise((resolve, reject) => {
         prompt.get(name, (err, result) => {
           if (err) {
             reject(err)
@@ -104,7 +104,7 @@ Here is the full code of our fixed version:
     const prompt = require('prompt')
 
     const promisePrompt = (name) => {
-      return new Promise((resolve) => {
+      return new Promise((resolve, reject) => {
         prompt.get(name, (err, result) => {
           if (err) {
             reject(err)
