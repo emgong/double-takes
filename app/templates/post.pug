@@ -28,12 +28,15 @@ div(data-name="post")
         h3 !{post.get('tldr').title}
         p !{post.get('tldr').body}
     | !{post.content()}
-    if post.get('author')
-      .byline &mdash;
-        if post.get('author').url
-          a(href=post.get('author').url)  #{post.get('author').name}
-        else
-           #{post.get('author').name}
+    .byline-wrapper
+      if post.get('author')
+        .byline &mdash;
+          if post.get('author').url
+            a(href=post.get('author').url)  #{post.get('author').name}
+          else
+             #{post.get('author').name}
+      if post.get('date')
+        time.post-date #{post.get('date')}
 
     if !post.get('skipFeedbackRequest')
       p.call-for-feedback
