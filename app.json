@@ -6,9 +6,7 @@
     "NPM_CONFIG_PRODUCTION":{
       "required":true
     },
-    "HEROKU_APP_NAME": {
-      "required": true
-    }
+    "HEROKU_APP_NAME": ""
   },
   "addons":[],
   "buildpacks": [
