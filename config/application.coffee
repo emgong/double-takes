@@ -17,7 +17,7 @@ module.exports = (lineman) ->
 
   assetFingerprint:
     options:
-      cdnPrefixForRootPaths: "cdn.testdouble.com"
+      cdnPrefixForRootPaths: "//cdn.testdouble.com"
 
   markdown:
     options:
