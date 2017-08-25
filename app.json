@@ -4,7 +4,10 @@
   },
   "env":{
     "NPM_CONFIG_PRODUCTION":{
-      "required":true
+      "required": true
+    },
+    "GITHUB_AUTH_TOKEN": {
+      "required": true
     },
     "HEROKU_APP_NAME": ""
   },
