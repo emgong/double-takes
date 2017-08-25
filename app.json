@@ -11,6 +11,9 @@
   "addons":[],
   "buildpacks": [
     {
+      "url": "https://github.com/timshadel/heroku-buildpack-github-netrc.git"
+    },
+    {
       "url": "https://github.com/heroku/heroku-buildpack-nodejs"
     },
     {
