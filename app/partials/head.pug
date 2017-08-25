@@ -38,8 +38,25 @@ head
           a.appendChild(r);
       })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 
-  <!--[if lte IE 9]>
-  script(src=`flexibility-2.0.1.js`)
-  script flexibility(document.documentElement);
-  <![endif]-->
+  //- SEO Code Schema JSON-LD Code
+  script(type='application/ld+json').
+      {
+        "@context": "http://schema.org",
+        "@type": "Corporation",
+        "description": "Test Double is an agency of highly-skilled developers on a mission to improve how the world writes software.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "columbus",
+          "addressRegion": "OH"
+        },
+        "name": "Test Double",
+        "telephone": "(614) 349-4279",
+        "url": "https://blog.testdouble.com",
+        "image": "https://blog.testdouble.com/img/logo-dark.svg",
+        "email": "hello@testdouble.com",
+        "sameAs" : [ "https://testdouble.com", "https://github.com/testdouble",
+          "https://twitter.com/testdouble"]
+      }
+
+
 
