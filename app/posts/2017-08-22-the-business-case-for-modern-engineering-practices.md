@@ -32,7 +32,7 @@ benefit the organization?
 Working at [Pillar Technology](http://pillartechnology.com) the past eight
 years, I've had the chance to see several dozen teams using these practices,
 including pair programming,
-[SOLID](https://en.m.wikipedia.org/wiki/SOLID_(object-oriented_design))
+[SOLID](https://en.m.wikipedia.org/wiki/SOLID_%28object-oriented_design%29)
 principles, test-driven development (TDD), continuous integration and DevOps.
 Some of the practices seem counter-intuitive, at best, and downright
 nonsensical, at worst. Especially to managers and businesspeople. But I've seen
@@ -110,7 +110,7 @@ developer of banging my head against the wall for hours because I missed one
 small thing is often reduced to seconds, because the other person can bring
 their unique perspective and can point out the error in no time.
 
-#3 - Faster Ramp-up Time
+## 3 - Faster Ramp-up Time
 
 Pairing also helps with ramping up a new team member. Remember how intimidating
 it was to have to jump in to a new application and figure out what was
