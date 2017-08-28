@@ -1,14 +1,14 @@
 ---
 title: "The business case for modern engineering practices."
-description: "Why business managers should concern themselves with coding practices."
+description: "Why business executives should concern themselves with coding practices."
 tldr:
   title: "A guest post from Daryl"
   body: """
         Our longtime friend and colleague <a
         href="https://en.m.wikipedia.org/wiki/SOLID_(object-oriented_design)">Daryl
-        Kulak</a> recently finished a
+        Kulak</a> recently recently co-authored a
         <a href="https://smile.amazon.com/Journey-Enterprise-Agility-Thinking-Organizational/dp/3319540866">great
-        book</a> on the future of agile software. To celebrate, we
+        book</a> book with Dr. Hong Li on the future of agile software. To celebrate, we
         invited him to share some of what he's learned about the intersection
         of smart engineering practices & smart business decision-making. Enjoy!
         <div class="rt">— Todd & Justin</div>
