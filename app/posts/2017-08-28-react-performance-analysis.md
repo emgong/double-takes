@@ -4,7 +4,7 @@ author:
   name: "Dave Mosher"
   url: "https://www.youtube.com/c/DavidMosher"
 video:
-  url: "https://www.youtube.com/watch?v=sVDnCMIkmTM?rel=0"
+  url: "https://www.youtube.com/embed/sVDnCMIkmTM?ecver=1&rel=0"
   type: "youtube"
 ---
 
