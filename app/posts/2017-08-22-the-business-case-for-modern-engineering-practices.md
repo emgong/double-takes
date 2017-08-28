@@ -63,7 +63,7 @@ accomplish five years later.
 
 But engineering practices go far beyond variable naming. Developers look at the
 lengths of methods, keeping them short and simple and only trying to accomplish
-one thing. They try not to have embedded IF-THEN or FOR LOOPS, because that
+one thing. They try not to have embedded `if`/`then` or `for` loops, because that
 always creates confusion when you're trying to debug.
 
 In fact, if we can just reduce debugging time after an app is in production,
