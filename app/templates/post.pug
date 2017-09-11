@@ -35,8 +35,7 @@ div(data-name="post")
             a(href=post.get('author').url)  #{post.get('author').name}
           else
              #{post.get('author').name}
-      if post.get('date')
-        time.post-date #{post.get('date')}
+      time.post-date #{post.get('date') || post.path.match(/\d\d\d\d-\d\d-\d\d/)[0]}
 
     if !post.get('skipFeedbackRequest')
       p.call-for-feedback
