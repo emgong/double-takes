@@ -32,6 +32,12 @@ promisify it and ran in to a funny problem. Here is what I initially wrote:
       .then(console.log.bind(console))
       .catch(console.error.bind(console))
 
+*(If you're a bit fuzzy on how promises work, last year I recorded
+[a conference talk on Javascript promises][patterns] that you might want to
+watch.)*
+
+[patterns]: /posts/2016-01-14-common-patterns-using-promises
+
 Don't worry if you don't see anything wrong here. The problem isn't in the code
 per se, I just made an incorrect assumption about how `prompt.get()` works.
 
@@ -55,38 +61,32 @@ Here is a function that takes a promise-returning function (`f`) and wraps it so
 it will wait until any previous call is finished:
 
     const lockify = (f) => {
-      // initialize our lock as an "already resolved" promise
       var lock = Promise.resolve()
       return (...params) => {
-        // run our `f` when previous lock is done
         const result = lock.then(() => f(...params))
-        // next lock waits for result to finish
         lock = result.catch(() => {})
         return result
       }
     }
 
-*(If you're a bit fuzzy on how promises work, last year I recorded
-[a conference talk on Javascript promises][patterns] that you might want to
-watch.)*
-
-[patterns]: /posts/2016-01-14-common-patterns-using-promises
-
 When you call `lockify` it immediately creates an internal `lock` promise and
-returns a new function. `lock` is already resolved, so it will not block
-anything the first time we call the returned function.
+returns a new function.
 
-The returned function also does two things immediately when you invoke it. It
-creates a `result` promise, then it overwrites the `lock` variable with a new
-promise that waits on `result`.
+The returned function also does two things when you invoke it. It creates a
+`result` promise, then it overwrites `lock` with a new promise that waits on
+`result`.
 
-Later, after the initial `lock` finishes, `f` will be called. Whenever the
+Eventually, after the initial `lock` finishes, `f` will be called. Whenever the
 promise that `f` returns is done, `result` and the new `lock` will both resolve.
 
--------------
+> As a bonus, [`lockify` is now a node module][lockify-npm].
 
-`lock` is the heart of the function and is being used in a very unusual way for
-a promise: we never care what its value is. Instead, it's being used exclusively
+[lockify-npm]: https://www.npmjs.com/package/lockify
+
+## Why does this work?
+
+`lock` is the heart of `lockify` and is being used in a very unusual way for a
+promise: we never care what its value is. Instead, it's being used exclusively
 for timing.
 
 Notice that `lock` is the only identifier defined as a `var`. Everything else is
@@ -140,15 +140,21 @@ prompt: last:  Lindsay
 [ 'Neal', 'Danger', 'Lindsay' ]
 $ ">
 
+## What does this mean?
+
 It's very rare that you have to worry about resource contention this way when
 writing promise code. Most of the asynchronous calls you make are also perfectly
 happy to run concurrently (like HTTP requests and file reads).
 
 So then what can we take away from this exercise? First, promises are abstract
 things that can benefit from being thought about in a very "math-y" way, similar
-to how you think about higher-order functions. Our `lockify` function doesn't
-care what `f` does, other than that it is a function that could return a
-promise.
+to how you think about other data types. You might have date utility functions
+that tell you when next Tuesday is, or weather a date is on a leap year. Your
+string utility library might have functions to capitalize words or normalize
+whitespace. Promises can also be manipulated in standard ways because of how we
+know they work, regardless of their enclosed values. Our `lockify` function
+doesn't care what `f()` does, other than that it is a function that could return
+a promise.
 
 Second, when you're writing a function to explicitly manipulate promises, it's
 important to keep in mind what happens immediately and what happens later.
