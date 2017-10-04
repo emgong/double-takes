@@ -27,4 +27,4 @@ While powerful in its simplicity and important to computation, the boolean can b
 3. Combine disparate boolean values in application state into one union type like a finite state machine. This makes [impossible states impossible](https://youtu.be/IcgmSRJHu_8).
 4. Use radio buttons instead of checkboxes to offer explicit options to users. This is similar to using union types to replace booleans in code.
 
-The overarching theme to this talk is to have empathy for our teammates by writing clear, self-documenting code and for our users by designing intuitive UIs.
+The overarching theme to this talk is to have empathy for our teammates and users by writing clear, self-documenting code and designing intuitive UIs.
