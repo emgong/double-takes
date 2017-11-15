@@ -17,7 +17,7 @@ Keynote](https://www.youtube.com/watch?v=AVs90EsAi3o)
 ## Kindness
 
 * [Matz's 2008 RubyConf keynote](http://confreaks.tv/videos/rubyconf2008-reasons-behind-ruby)
-* [Scotland Ruby 2011 - Closing Keynote](https://www.youtube.com/watch?v=LhqWZscmTD4)
+* [Scotland Ruby 2011 Closing Keynote](https://www.youtube.com/watch?v=LhqWZscmTD4)
 * [Programming Ruby (The Pickaxe Book)](https://pragprog.com/book/ruby/programming-ruby)
 * [Railscasts](http://railscasts.com/)
 * [Why Ruby](https://blog.codinghorror.com/why-ruby)
@@ -32,8 +32,7 @@ Keynote](https://www.youtube.com/watch?v=AVs90EsAi3o)
 ## Productive and pragmatic
 
 * [Ruby on Rails demo](https://www.youtube.com/watch?v=Gzj723LkRJY)
-* [Agile Web Development with Ruby on
-  Rails](https://pragprog.com/book/rails51/agile-web-development-with-rails-5-1)
+* [Agile Web Development with Ruby on Rails](https://pragprog.com/book/rails51/agile-web-development-with-rails-5-1)
 * [Refactoring from Good to Great](https://www.youtube.com/watch?v=DC-pQPq0acs)
 * [Heroku](https://www.heroku.com)
 * [James Lindenbaum's interview about Heroku's founding](http://sazbean.com/2008/05/29/interview-with-james-lindenbaum-ceo-of-heroku/)
@@ -44,7 +43,7 @@ Keynote](https://www.youtube.com/watch?v=AVs90EsAi3o)
 * [EnvyLabs](https://envylabs.com)
 * [Code School](http://codeschool.com)
 * [Rails for Zombies](http://railsforzombies.org)
-* [why's (poignant) Guide to Ruby](https://web.archive.org/web/20040219080354)
+* [why's (poignant) Guide to Ruby](https://poignant.guide/)
   [(Amazon)](https://www.amazon.com/whys-poignant-guide-Ruby-color/dp/1512212938)
 * [Try Ruby](http://tryruby.org/)
 * [Shoes](http://shoesrb.com)
