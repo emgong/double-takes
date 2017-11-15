@@ -35,7 +35,6 @@ Keynote](https://www.youtube.com/watch?v=AVs90EsAi3o)
 * [Agile Web Development with Ruby on Rails](https://pragprog.com/book/rails51/agile-web-development-with-rails-5-1)
 * [Refactoring from Good to Great](https://www.youtube.com/watch?v=DC-pQPq0acs)
 * [Heroku](https://www.heroku.com)
-* [James Lindenbaum's interview about Heroku's founding](http://sazbean.com/2008/05/29/interview-with-james-lindenbaum-ceo-of-heroku/)
 
 ## Creative
 
@@ -52,7 +51,7 @@ Keynote](https://www.youtube.com/watch?v=AVs90EsAi3o)
 
 * [TATFT - Test All the F'in Time](https://www.youtube.com/watch?v=QMU6SjMZq1Q)
 * [All the small things](https://www.youtube.com/watch?time_continue=2&v=8bZh5LMaSmE)
-* [Practical OO Design in Ruby](www.amazon.com/Practical-Object-Oriented-Design-Ruby-Addison-Wesley-ebook/dp/B0096BYG7C)
+* [Practical OO Design in Ruby](https://www.amazon.com/Practical-Object-Oriented-Design-Ruby-Addison-Wesley-ebook/dp/B0096BYG7C)
 * [Functional Princles for OO development](http://confreaks.tv/videos/rmw2013-functional-principles-for-oo-development)
 * [Connascence Examined](https://www.youtube.com/watch?v=HQXVKHoUQxY)
 * [Jim Weirich's Github Memorial Page](https://github.com/jimweirich/wyriki/commit/d28fac7f18aeacb00d8ad3460a0a5a901617c2d4)
@@ -87,7 +86,7 @@ Here are some other links that just barely missed the cut to make the talk:
 * [Advanced Ruby Class Design](https://confreaks.tv/videos/rubyconf2007-advanced-ruby-class-design)
 * [Imperative to OO to Functional](https://www.destroyallsoftware.com/screencasts/catalog/imperative-to-oo-to-functional)
 * [Your code is my hell](http://www.virtuouscode.com/2011/08/22/your-code-is-my-hell/)
-* [Programming Ruby](http://hrogz.net/programmingruby/)
+* [Programming Ruby](http://phrogz.net/programmingruby/)
 * [Writing Software](https://www.youtube.com/watch?v=9LfmrkyP81M)
 * [Test Isolation Without Mocks](https://www.destroyallsoftware.com/screencasts/catalog/test-isolation-without-mocks)
 * [Functional Core, Imperative Shell](https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell)
@@ -101,6 +100,5 @@ Here are some other links that just barely missed the cut to make the talk:
 * [37 Signals Mac ad](https://www.youtube.com/watch?v=bTM19XLnzPU)
 * [Building RSpec from scratch](https://www.destroyallsoftware.com/screencasts/catalog/building-rspec-from-scratch)
 * [My Introduction to Ruby](http://blog.jayfields.com/2005/04/my-introduction-to-ruby.html)
-* [Agile Web Development with Rails](https://pragprog.com/book/rails1/agile-web-development-with-rails)
 
 Do you know about a fantastic resource we missed? [Let us know!](http://twitter.com/testdouble)
