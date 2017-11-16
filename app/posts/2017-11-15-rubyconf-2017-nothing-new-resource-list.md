@@ -1,18 +1,28 @@
 ---
-title: "There's Nothing.new Under the Sun."
-description: "Rubyconf 2017 Nothing New Resource List"
+title: "There's Nothing.new"
+subtitle: "Under the Sun"
+description: "Rubyconf 2017 presentation: There's Nothing New Under the Sun"
 author:
   name: "Josh Greenwood"
   url: "http://twitter.com/joshtgreenwood"
+video:
+  url: "https://player.vimeo.com/video/243136241"
+  type: "vimeo"
 ---
 
-[Justin](http://twitter.com/searls) and I were honored to co-present at Rubyconf
-this year in New Orleans. Our goal was to rediscover what drew people to Ruby in
-the years before we joined the community. In the talk, we shared a bunch of
-talks and blog posts from other Rubyists in the past, and this post shares all
-of those links here, in the order that they appeared, starting with [Chris
-Wanstrath's Ruby Hoedown 2008
-Keynote](https://www.youtube.com/watch?v=AVs90EsAi3o)
+**[Note: the video above is an early sneak peek of the talk while we wait for a
+video feed (and a higher quality audio feed) from our friends at
+[Confreaks](http://confreaks.tv). If you find the audio to be a little hard to
+understand, we recommend holding out for an updated version, which we hope to
+release over the next couple weeks.]**
+
+[Justin](http://twitter.com/searls) and I were honored to co-present [this
+presentation](https://vimeo.com/testdouble/nothing-new) at Rubyconf 2017 in New
+Orleans. Our goal was to rediscover what drew people to Ruby in the years before
+we joined the community. In the talk, we shared a bunch of talks and blog posts
+from other Rubyists in the past, and this post shares all of those links here,
+in the order that they appeared, starting with [Chris Wanstrath's Ruby Hoedown
+2008 Keynote](https://www.youtube.com/watch?v=AVs90EsAi3o)
 
 ## Kindness
 
