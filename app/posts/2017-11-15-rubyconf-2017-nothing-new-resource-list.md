@@ -10,12 +10,6 @@ video:
   type: "vimeo"
 ---
 
-**[Note: the video above is an early sneak peek of the talk while we wait for a
-video feed (and a higher quality audio feed) from our friends at
-[Confreaks](http://confreaks.tv). If you find the audio to be a little hard to
-understand, we recommend holding out for an updated version, which we hope to
-release over the next couple weeks.]**
-
 [Justin](http://twitter.com/searls) and I were honored to co-present [this
 presentation](https://vimeo.com/testdouble/nothing-new) at Rubyconf 2017 in New
 Orleans. Our goal was to rediscover what drew people to Ruby in the years before
