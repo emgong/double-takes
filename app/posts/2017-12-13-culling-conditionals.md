@@ -118,3 +118,6 @@ export default function applyDiscounts (shoppingCart, discountCalculators = disc
 export function canBeApplied (shoppingCart) { ... }
 export function apply (shoppingCart) { ... }
 ```
+
+<hr/>
+<p><a rel="canonical" href="https://samljones.com/2017-12-13/culling-conditionals/">Sam's original post</a></p>
