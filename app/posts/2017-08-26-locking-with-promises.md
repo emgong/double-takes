@@ -32,14 +32,14 @@ promisify it and ran in to a funny problem. Here is what I initially wrote:
       .then(console.log.bind(console))
       .catch(console.error.bind(console))
 
-*(If you're a bit fuzzy on how promises work, last year I recorded
+*(If you're a bit fuzzy on how promises work, I recorded
 [a conference talk on Javascript promises][patterns] that you might want to
 watch.)*
 
 [patterns]: /posts/2016-01-14-common-patterns-using-promises
 
 Don't worry if you don't see anything wrong here. The problem isn't in the code
-per se, I just made an incorrect assumption about how `prompt.get()` works.
+exactly, I just made an incorrect assumption about how `prompt.get()` works.
 
 If you call `prompt.get()` again before the user is done typing into your first
 invocation, `prompt` will just use the same input for both. In other words,
@@ -85,19 +85,16 @@ promise that `f` returns is done, `result` and the new `lock` will both resolve.
 
 ## Why does this work?
 
-`lock` is the heart of `lockify` and is being used in a very unusual way for a
+`lock` is the heart of `lockify` and is being used in an unusual way for a
 promise: we never care what its value is. Instead, it's being used exclusively
 for timing.
 
-Notice that `lock` is the only identifier defined as a `var`. Everything else is
-a `const`. That's so we can overwrite `lock` each time our function is called.
+Notice that `lock` is the only identifier defined as a `var`. That's so we can
+overwrite `lock` each time our function is called.
 
 Also notice that we create each `lock` except the first by calling
 `result.catch(() => {})`. This means that `lock` will resolve immediately after
-and with the same value as `result`. The only time it will have a different
-value is if `result` rejects with an error. By creating `lock` with a call to
-`result.catch`, we make sure that our `lock` still resolves successfully even
-when `result` rejects.
+`result`, ignoring weather `result` rejected or was fulfilled successfully.
 
 Here is the full code of our fixed version:
 
@@ -166,5 +163,5 @@ Third, at all other times it is important to *forget about all that temporal
 stuff*. The beauty of promises is that most of your code doesn't worry about
 when it will run. It just says "when we have the data, do this stuff". I love
 mapping across some data with a promise-returning function and then throwing the
-result into `Promise.all`. When does that stuff get done? We don't need to think
-about it.
+result into `Promise.all`. When does that stuff get done? Most of the time we
+don't need to think about it.
