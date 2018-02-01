@@ -36,7 +36,7 @@ Like every piece of advice, when to jump into technical overdrive is highly cont
 
 # Closing Thoughts & Recommended Reading
 
-As a consultant, building trust should be our number one goal, but we have to remember that it takes time and is a skill that needs to be cultivated over the course of many engagements. If you are interested in spending time honing your skills and improving your "consultants code" I would recommend investing some time into the following resources:
+As a consultant, building trust should be our number one goal, but we have to remember that it takes time and is a skill that needs to be cultivated over the course of many engagements. If you are interested in spending time honing your skills and improving your "consultant's code" I would recommend investing in the following resources:
 
 * [The Secrets of Consulting: A Guide to Giving and Getting Advice Successfully](https://www.amazon.ca/Secrets-Consulting-Giving-Getting-Successfully/dp/0932633013)
 * [More Secrets of Consulting: The Consultant's Tool Kit](https://www.amazon.com/More-Secrets-Consulting-Consultants-Tool-ebook/dp/B004J35LH6)
