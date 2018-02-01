@@ -1,5 +1,5 @@
 ---
-title: "The Consultants Code"
+title: "The Consultant's Code"
 author:
   name: "Dave Mosher"
   url: "https://www.twitter.com/dmosher"
@@ -39,6 +39,9 @@ Like every piece of advice, when to jump into technical overdrive is highly cont
 As a consultant, building trust should be our number one goal, but we have to remember that it takes time and is a skill that needs to be cultivated over the course of many engagements. If you are interested in spending time honing your skills and improving your "consultants code" I would recommend investing some time into the following resources:
 
 * [The Secrets of Consulting: A Guide to Giving and Getting Advice Successfully](https://www.amazon.ca/Secrets-Consulting-Giving-Getting-Successfully/dp/0932633013)
-* [Crucial Conversations Tools for Talking When Stakes Are High](https://www.amazon.ca/Crucial-Conversations-Talking-Stakes-Second/dp/0071771328)
+* [More Secrets of Consulting: The Consultant's Tool Kit](https://www.amazon.com/More-Secrets-Consulting-Consultants-Tool-ebook/dp/B004J35LH6)
+* [Crucial Conversations: Tools for Talking When Stakes Are High](https://www.amazon.ca/Crucial-Conversations-Talking-Stakes-Second/dp/0071771328)
+* [Influencer: The New Science of Leading Change](https://www.amazon.com/Influencer-Science-Leading-Change-Second/dp/0071808868)
+* [How to Win Friends & Influence People](https://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034)
 
 Also, if you're looking for a great opportunity to develop your consulting skills, we're hiring here at Test Double, you should [apply](http://testdouble.com/join/) :)
