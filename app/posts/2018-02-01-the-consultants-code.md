@@ -45,5 +45,6 @@ As a consultant, building trust should be our number one goal, but we have to re
 * [Crucial Conversations: Tools for Talking When Stakes Are High](https://www.amazon.ca/Crucial-Conversations-Talking-Stakes-Second/dp/0071771328)
 * [Influencer: The New Science of Leading Change](https://www.amazon.com/Influencer-Science-Leading-Change-Second/dp/0071808868)
 * [How to Win Friends & Influence People](https://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034)
+* [Spin Selling](https://www.amazon.ca/SPIN-Selling-Neil-Rackham/dp/0070511136)
 
 Also, if you're looking for a great opportunity to develop your consulting skills, we're hiring here at Test Double, you should [apply](http://testdouble.com/join/). :)
