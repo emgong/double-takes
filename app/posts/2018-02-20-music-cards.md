@@ -40,9 +40,35 @@ The full code is located here: [https://github.com/McPolemic/nika_tunes/](https:
 
 It consists of two parts: a [`reader.py`](https://github.com/McPolemic/nika_tunes/blob/master/reader.py) that connects to the USB reader and outputs the serial numbers, and [`nika_tunes.rb`](https://github.com/McPolemic/nika_tunes/blob/master/nika_tunes.rb), which reads in the unique codes, looks up songs via Spotify, and plays them.
 
-I didn't realize I'd need `reader.py` at first. I was going to read the codes from STDIN. Unfortunately, I didn't think ahead. When I started putting things together, I realized that I wanted this to work without logging in (which means no STDIN). I needed to read raw keys from the RFID reader, which means digging down into Linux's `evdev` system. I looked through Rubygems but didn't find a library that worked to my liking. Luckily, Python has quite good `evdev` support, so I wrote this small script to handle decoding keyboard events into strings.
+### Reader
 
-The output is piped into `nika_tunes.rb`, which has the bulk of the logic.
+I didn't realize I'd need `reader.py` at first. I was going to read the codes from STDIN. Unfortunately, I didn't think ahead. When I started putting things together, I realized that I wanted this to work without logging in (which means no STDIN). I needed to read raw keys from the RFID reader, which means digging down into Linux's `evdev` system. I looked through Rubygems but didn't find a library that worked to my liking.
+
+Python is the one of the main programming languages of the Raspberry Pi and as such has really good libraries for any number of lower-level concerns. In particular, it has good support for the `evdev` Linux subsystem. Rather than continue trying to get Ruby to play nice, I used Python to handle the keyboard. `reader.py` takes keyboard events from the reader that look like this:
+
+```
+KEYBOARD DOWN KEY_0
+KEYBOARD UP KEY_0
+KEYBOARD DOWN KEY_1
+KEYBOARD UP KEY_1
+KEYBOARD DOWN KEY_ENTER
+KEYBOARD UP KEY_ENTER
+KEYBOARD DOWN KEY_2
+KEYBOARD UP KEY_2
+KEYBOARD DOWN KEY_ENTER
+KEYBOARD UP KEY_ENTER
+```
+
+and translates it into nice, pipeable output like this:
+
+```
+01
+2
+```
+
+The output from this is piped to `nika_tunes.rb`, which handles searching for songs and playing them on a Sonos speaker.
+
+### Nika Tunes
 
 This file has three classes:
 * Spotify
