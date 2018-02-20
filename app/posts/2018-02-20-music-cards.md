@@ -17,6 +17,8 @@ Our family loves music. We almost have some sort of music going on in the backgr
 
 Unfortunately, having the world's music at the ready has some downsides. Especially if you're four years old.
 
+![My daughter, Nika](https://dl.dropboxusercontent.com/s/i7c9e1pinuuwf9f/nika.jpg?raw=1)
+
 This is Nika. She also loves music. Unfortunately, she does not yet know how to read, which is a real pain when she wants to pick out music. One option would be to buy CDs, but then she has to keep them from getting scratched and remember which tracks are the songs she likes. Also, we'd have to buy a huge amount of CDs (or burn a similar number of CDs) and a CD player when we already have three subscription music services and speakers throughout the house. I hoped for a better way.
 
 ## Hardware
@@ -25,7 +27,7 @@ What I wanted was something sturdier and cheaper than CDs. I don't really need t
 
 RFID cards were a good candidate than this. They're sturdy, relatively cheap (I bought 50 for $13), and have good support for USB readers. I bought [this RFID reader](https://www.amazon.com/gp/product/B018C8C162/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1) and [these RFID cards](https://www.amazon.com/gp/product/B00GXV4IGC/ref=oh_aui_detailpage_o03_s01?ie=UTF8&psc=1). I hooked them both up to a Raspberry Pi 3 running Raspbian.
 
-![RFID card reader and RFID cards](https://dl.dropboxusercontent.com/s/edw1sjop1upsm7n/cards%20and%20reader.jpg?raw=1)
+![RFID card reader and RFID cards](https://dl.dropboxusercontent.com/s/hwvnz6jcjbtef97/cards%20and%20reader.jpg?raw=1)
 
 Each RFID card has a serial number encoded in it. This is the value the reader will be picking up. The RFID reader acts like a USB keyboard. When you scan one of the cards, it "types" in the eight character serial number printed on the front of the card. We'll map that eight digit code to a song, album, or playlist that Nika wants to play and send that to a specified speaker.
 
@@ -59,8 +61,8 @@ By scanning a card, it finds and plays the specified song pretty quickly.
 
 We printed out pictures and glued them to the various RFID cards. I started out with nine to see how she felt.
 
-![The RFID reader and RFID cards with graphics glued on the front](https://dl.dropboxusercontent.com/s/bpdbox5iw9ruspv/assembled%20reader.jpg?raw=1)
-![A text message from Liz stating, "Nika is really excited about her 'music cards'. :)"](https://dl.dropboxusercontent.com/s/cj8cuvnec374gdd/nika_excited.jpg?raw=1)
+![The RFID reader and RFID cards with graphics glued on the front](https://dl.dropboxusercontent.com/s/gt4x6ntorsvbx1v/assembled%20reader.jpg?raw=1)
+![A text message from Liz stating, "Nika is really excited about her 'music cards'. :)"](https://dl.dropboxusercontent.com/s/xx9czjvjii7wq5h/nika_excited.jpg?raw=1)
 
 ## Challenges
 
