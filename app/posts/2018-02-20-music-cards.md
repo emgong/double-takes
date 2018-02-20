@@ -25,11 +25,13 @@ This is Nika. She also loves music. Unfortunately, she does not yet know how to 
 
 What I wanted was something sturdier and cheaper than CDs. I don't really need them to _store_ audio. We have Spotify for that. I'd rather they just _identify_ what audio Nika would like to play.
 
-RFID cards were a good candidate than this. They're sturdy, relatively cheap (I bought 50 for $13), and have good support for USB readers. I bought [this RFID reader](https://www.amazon.com/gp/product/B018C8C162/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1) and [these RFID cards](https://www.amazon.com/gp/product/B00GXV4IGC/ref=oh_aui_detailpage_o03_s01?ie=UTF8&psc=1). I hooked them both up to a Raspberry Pi 3 running Raspbian.
+RFID cards were a good candidate than this. They're sturdy, relatively cheap (I bought 50 for $13), and have good support for USB readers. I bought [this RFID reader](https://www.amazon.com/gp/product/B018C8C162/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1) and [these RFID cards](https://www.amazon.com/gp/product/B00GXV4IGC/ref=oh_aui_detailpage_o03_s01?ie=UTF8&psc=1).
 
 ![RFID card reader and RFID cards](https://dl.dropboxusercontent.com/s/hwvnz6jcjbtef97/cards%20and%20reader.jpg?raw=1)
 
 Each RFID card has a serial number encoded in it. This is the value the reader will be picking up. The RFID reader acts like a USB keyboard. When you scan one of the cards, it "types" in the eight character serial number printed on the front of the card. We'll map that eight digit code to a song, album, or playlist that Nika wants to play and send that to a specified speaker.
+
+I hooked the RFID reader up to a Raspberry Pi 3 running Raspbian. I'll normally use a Raspberry Pi for projects like this because they're small enough to embed into a project and cheap enough to dedicate one entirely for one purpose. Arduinos are another popular choice, but are much lower-level than what I needed for this project. A Raspberry Pi 3 also comes with wireless LAN support, so I don't have to run an ethernet cable to connect to Spotify/Sonos.
 
 ## Software
 _Disclaimer: This is a hobby project. There are no tests. It's not well-factored. I hope it helps you all the same._
