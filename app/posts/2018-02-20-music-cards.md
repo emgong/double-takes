@@ -13,7 +13,7 @@ reddit: false
 
 # Music Cards
 
-Our family loves music. We almost have some sort of music going on in the background at our house. We have a number of Sonos speakers and subscriptions to the major music providers, giving us a lot of flexibility in what to listen to and where. 
+Our family loves music. We almost always have some sort of music going on in the background at our house. We have a number of Sonos speakers and subscriptions to the major music providers, giving us a lot of flexibility in what to listen to and where. 
 
 Unfortunately, having the world's music at the ready has some downsides. Especially if you're four years old.
 
@@ -51,7 +51,7 @@ This file has three classes:
 
 `Jukebox` wraps all interactions with the Sonos speakers. It takes in a speaker name and a Spotify wrapper. Notably, because I ran into some problems getting the `sonos` gem to work with Spotify URLs, it handles the less-than-pleasant encoding workarounds.
 
-Finally, `CodeReader` orchestrates the whole thing. It has a dictionary that maps between our unique codes (e.g. '08931021') and the action we'd like the jukebox to play (`jukebox.play_spotify_track('Remember Me')`). By using Spotify to search for the track instead of encode specific tracks, I've (hopefully) made it easier to read and easier to manage down the road as we add more songs and albums. It runs forever in the `repl` method, which waits for input, runs the resulting action, and repeats.
+Finally, `CodeReader` orchestrates the whole thing. It has a dictionary that maps between our unique codes (e.g. '08931021') and the action we'd like the jukebox to play (`jukebox.play_spotify_track('Remember Me')`). By using Spotify to search for the track instead of encoding specific tracks, I've (hopefully) made it easier to read and easier to manage down the road as we add more songs and albums. It runs forever in the `repl` method, which waits for input, runs the resulting action, and repeats.
 
 ## Result
 
@@ -73,7 +73,7 @@ Often, I feel like posts like this don't delve enough into the challenges someon
 * Sonos apparently rolled out some encrypted method of retrieving metadata from Spotify, breaking third-party integration. I don't really understand this, but it means that I have to escape the URL and do without song/artist name in the Sonos controller. In practice, this isn't a big deal.
 * I was really worried about the responsiveness of this. If Nika scanned a card and it played two seconds later, it would feel broken. I ended up adding a lot of timing logging and caching to ensure it feels snappy.
 * I originally used Nika's glitter glue to glue the printed out pictures to the RFID cards. You can imagine my surprise when I realized glitter glue doesn't work super well. Luckily, Liz has more craft experience than I do and had some recommendations.
-I used Docker so I could develop on my fast desktop and then deploy it to the Raspberry Pi. I didn't realize/remember that they are different platforms (x86 vs ARM), which comes with a whole mess of problems. I still like Docker for packaging, but I should've moved it sooner onto the Raspberry Pi.
+* I used Docker so I could develop on my fast desktop and then deploy it to the Raspberry Pi. I didn't realize/remember that they are different platforms (x86 vs ARM), which comes with a whole mess of problems. I still like Docker for packaging, but I should've moved it sooner onto the Raspberry Pi.
 
 ## Future Plans
 
