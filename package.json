@@ -33,6 +33,6 @@
     "lineman": "0.*",
     "lineman-blog": "^1.2.0",
     "lineman-pug": "^0.2.1",
-    "testdouble-dot-com": "testdouble/site"
+    "testdouble-style": "github:testdouble/style"
   }
 }

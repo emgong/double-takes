@@ -38,18 +38,16 @@ module.exports = (lineman) ->
       options:
         includePaths: lineman.config.application.sass.compile.options.includePaths.concat(
           require('bourbon').includePaths,
-          "node_modules/testdouble-dot-com/app/css",
-          "node_modules/testdouble-dot-com/vendor/css"
+          require('testdouble-style').includePaths
         )
 
   images:
     files:
-      "node_modules/testdouble-dot-com/app/img": "node_modules/testdouble-dot-com/app/img/**/*.*"
-      "node_modules/testdouble-dot-com/vendor/img": "node_modules/testdouble-dot-com/vendor/img/**/*.*"
+      "node_modules/testdouble-style/img": "node_modules/testdouble-style/img/**/*.*"
 
   webfonts:
     files:
-      "node_modules/testdouble-dot-com/vendor/webfonts": "node_modules/testdouble-dot-com/vendor/webfonts/**/*.*"
+      "node_modules/testdouble-style/webfonts": "node_modules/testdouble-style/webfonts/**/*.*"
 
   validation:
     files:
