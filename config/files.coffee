@@ -1,13 +1,8 @@
 module.exports = require(process.env["LINEMAN_MAIN"]).config.extend "files",
 
-  sass:
-    main: [
-      "app/css/blog.sass"
-    ]
-
   css:
     vendor: [
-      "node_modules/testdouble-dot-com/vendor/css/**/*.css",
+      "node_modules/testdouble-style/css/**/*.css",
       "vendor/css/**/*.css"
     ]
   coffee:
