@@ -5,29 +5,6 @@ author:
   url: "https://www.twitter.com/dmosher"
 ---
 
-At Test Double we are passionate about open source; so much so that we have created quite a lot of it over the past 5 years! Here's a snapshot of just _some_ of the open source libraries and tools we've released:
-
-* [testdouble.js](https://github.com/testdouble/testdouble.js)
-* [suture](https://github.com/testdouble/suture)
-* [teenytest](https://github.com/testdouble/teenytest)
-* [lineman.js](http://www.linemanjs.com/)
-* [scripty](https://github.com/testdouble/scripty)
-
-In addition to creating and curating our own open source, we encourage all of our Double Agents to contribute to existing open source projects out in the wild. We're proud of our contributions to some really cool projects:
-
-* [axe-core](https://axe-core.org/)
-* [axe-matchers](https://github.com/dequelabs/axe-matchers)
-* [nodenv](https://github.com/nodenv/nodenv)
-* [node-sandboxed-module](https://github.com/felixge/node-sandboxed-module)
-* [pester](https://github.com/sethgrid/pester)
-* [angular](https://github.com/angular/angular)
-* [rails](https://github.com/rails/rails)
-* [mocha](https://mochajs.org/)
-
-We also tend to [talk](https://changelog.com/podcast/128) [frequently](https://devchat.tv/ruby-rogues/197-rr-the-social-coding-contract-with-justin-searls) about open source and think hard about what it means to be [good stewards in the open source community](http://blog.testdouble.com/posts/2014-12-02-the-social-coding-contract)... did I mention open source is pretty core to the DNA of Test Double? ;)
-
-# Introducing Dependable
-
 Recently, [Michael Schoonmaker](https://twitter.com/Schoonology), [Joshua Starkey](https://twitter.com/primarilysnark), and [myself](https://twitter.com/dmosher) got together to brainstorm some improvements we wanted to make to an open source library called Dependable that we had used on a client project.
 
 [Dependable](https://github.com/testdouble/dependable) is billed as "A minimalist dependency injection framework for node.js", but I feel like it only took on the "minimalist" moniker after we shipped version 2.0 just a few weeks ago. As we sat down to discuss what we wanted to do there were a number of questions that shook out that I feel need to be asked by any team working on an open source project:
