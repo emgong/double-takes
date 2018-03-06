@@ -16,16 +16,16 @@ at the inaugural [Assert.js 2018](https://www.assertjs.com) conference in San
 Antonio, Texas.
 
 If you've ever been frustrated with how a test faked out a network request,
-mocked something out, or otherwise kept passing while production burned, then
+mocked something out, or continued passing while production burned, then
 this talk is for you. In it, I do my best to boil down nearly a decade of
-practicing & teaching test-driven development with JavaScript to summarize the
-Do's and Don'ts of faking things out in your tests.
+practicing test-driven development with JavaScript to summarize the
+Do's and Don'ts of poking holes in reality when writing tests.
 
-By watching this talk, you'll learn about nine common abuses and misuses of
-mocks, and one workflow that puts them to productive use—each explained
-at a level of detail you probably haven't seen elsewhere. While you're at it,
-you'll also get a pretty good handle on how to use our
-[testdouble.js](https://github.com/testdouble/testdouble.js) library, as well.
+By watching this talk, you'll learn about 9 abuses of mocks and 1 workflow that
+uses test doubles effectively—each explained at a level of detail you probably
+haven't seen elsewhere. While you're at it, you'll also get a pretty good handle
+on how to use our [testdouble.js](https://github.com/testdouble/testdouble.js)
+library, as well.
 
 If you enjoy the talk, please share it with your friends and colleagues! And if
 you know a team that could use additional developers and is looking to improve
