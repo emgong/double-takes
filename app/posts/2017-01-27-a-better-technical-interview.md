@@ -20,6 +20,4 @@ The [video above](https://vimeo.com/244900751) was presented at [DevOps Days Phi
 
 ## Relevant links
 - <a rel="canonical" href="https://samljones.com/2017-01-26/a-better-technical-interview/">Sam's original post</a>
-- Apply [Here][join-email]
-
-[join-email]: mailto:join@testdouble.com
+- Apply [Here](https://testdouble.com/join/)
