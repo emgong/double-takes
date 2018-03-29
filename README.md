@@ -44,3 +44,26 @@ In fact, if you don't supply a header at all, your post should still render okay
 ## Running and building the blog
 
 Here's [a screencast](https://www.youtube.com/watch?v=raznFJedCZM) that shows how the site is built.
+
+
+### Installing
+
+After cloning this repo, we'll need to install [lineman](http://linemanjs.com) globally.
+
+```
+$ npm install -g lineman
+```
+
+After that, we can install dependencies.
+
+```
+$ npm install
+```
+
+### Running
+
+You can run a local copy of the blog by running
+
+```
+lineman serve
+```
