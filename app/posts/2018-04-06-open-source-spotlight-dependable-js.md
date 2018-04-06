@@ -9,15 +9,11 @@ Recently, [Michael Schoonmaker](https://twitter.com/Schoonology), [Joshua Starke
 
 [Dependable](https://github.com/testdouble/dependable) is billed as "A minimalist dependency injection framework for node.js", but I feel like it only took on the "minimalist" moniker after we shipped version 2.0 just a few weeks ago. As we sat down to discuss what we wanted to do there were a number of questions that shook out that I feel need to be asked by any team working on an open source project:
 
-> How can we make this smaller?
-
-> What features are core and what can we prune?
-
-> How can we write the test-suite in a way that demonstrates real-world examples?
-
-> What should the README communicate?
-
-> How are we going to maintain this going forward?
+* How can we make this smaller?
+* What features are core and what can we prune?
+* How can we write the test-suite in a way that demonstrates real-world examples?
+* What should the README communicate?
+* How are we going to maintain this going forward?
 
 As we worked towards the backlog of features, we built up a list of _nice-to-haves_ and _must-haves_, choosing to defer the former and focus our efforts on the latter. [Github Projects](https://github.com/testdouble/dependable/projects/1) actually worked pretty well for a lightweight project management tool.
 
