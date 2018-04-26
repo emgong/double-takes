@@ -1,5 +1,5 @@
 ---
-title: "Business Q & A"
+title: "Running a business, demystified"
 author:
   name: "Justin Searls & Todd Kaufman"
   url: "https://testdouble.com/contact"
