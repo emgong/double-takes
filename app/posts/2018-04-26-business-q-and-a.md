@@ -1,5 +1,5 @@
 ---
-title: "Business Q&A"
+title: "Business Q & A"
 author:
   name: "Justin Searls & Todd Kaufman"
   url: "https://testdouble.com/contact"
