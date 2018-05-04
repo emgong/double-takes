@@ -18,7 +18,7 @@ In-line objects and anonymous functions create a poor signal to noise ratio, mak
 
 Learn ways to give confusing things names, focus on what's important, and write nicer code.
 
-The [video above](https://vimeo.com/267418198) was presented at [Software Craftsmanship North America - New York City](https://scna.softwarecraftsmanship.org/) on April 19, 2018.
+The [video above](https://vimeo.com/267418198) was presented at [SCNA - New York City](https://scna.softwarecraftsmanship.org/) on April 19, 2018.
 
 ## Relevant links
 - <a rel="canonical" href="https://samljones.com/2018-05-02/javascript-is-too-convenient/">Sam's original post</a>
