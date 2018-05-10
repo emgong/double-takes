@@ -5,7 +5,7 @@ author:
   name: "Josh Greenwood"
   url: "http://twitter.com/joshtgreenwood"
 video:
-  url: "https://vimeo.com/267312982"
+  url: "https://player.vimeo.com/video/267312982"
   type: "vimeo"
 reddit: false
 ---
