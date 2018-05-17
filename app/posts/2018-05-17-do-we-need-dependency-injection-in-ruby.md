@@ -46,7 +46,7 @@ end
 
 ```
 require 'rspec'
-require_relative 'shirt_with_class_methods'
+require_relative 'shirt'
 
 describe Shirt do
   it "doesn't buy shirts when there are none left" do
@@ -78,8 +78,6 @@ another way of writing your code so that testing was even possible.
 The ruby version of that code might look something like this:
 
 ```
-# Again, these methods don't *do* anything, but,
-# we made them instance methods this time
 class Inventory
   def check_availability(product_code); end
 end
@@ -88,7 +86,7 @@ class Purchaser
 end
 
 class Shirt
-  def initialize(product_code, inventory, purchaser)
+  def initialize(product_code, inventory=Inventory, purchaser=Purchaser)
     @product_code = product_code
     @inventory = inventory
     @purchaser = purchaser
@@ -151,15 +149,16 @@ I tried to come up with some reasons myself. I realized that I'm a big fan of th
 
 I asked the Test Double #ruby slack channel for some other thoughts.
 
-Dave Mosher pointed out that the `allow(x).to_receive(y)` syntax is a little weird. My thoughts are that it's common enough though that its intent is probably clear. But if I have a spec that's failing and I don't understand why, I'll probably find myself questioning the weird bits; and the implementation of `to_receive` is going to be hard to debug.  Having a preference for code that's too-dumb-to-fail over a complex library like rspec-mocks is probably a good thing.
+[Dave Mosher](https://twitter.com/dmosher) pointed out that the `allow(x).to_receive(y)` syntax is a little weird. My thoughts are that it's common enough though that its intent is probably clear. But if I have a spec that's failing and I don't understand why, I'll probably find myself questioning the weird bits; and the implementation of `to_receive` is going to be hard to debug.  Having a preference for code that's too-dumb-to-fail over a complex library like rspec-mocks is probably a good thing.
 
-Steven Harman gave me the answer I was really looking for, but couldn't find myself. The second version of the code has a much clearer dependency structure than the first. Even in the first example, it's not hard to see that Shirt depends on Inventory and Purchaser, but classes often grow. If this class were a hundred lines long or more, it would be nice to have its dependencies explicitly laid out.  In fact, if we explicitly lay out a class' dependencies, it probably won't ever grow to a hundred lines or more. Someone will probably (hopefully?) notice that its list of dependencies is getting long and try to split it up.
+[Steven Harman](https://twitter.com/stevenharman) gave me the answer I was really looking for, but couldn't find myself. The second version of the code has a much clearer dependency structure than the first. Even in the first example, it's not hard to see that Shirt depends on Inventory and Purchaser, but classes often grow. If this class were a hundred lines long or more, it would be nice to have its dependencies explicitly laid out.  In fact, if we explicitly lay out a class' dependencies, it probably won't ever grow to a hundred lines or more. Someone will probably (hopefully?) notice that its list of dependencies is getting long and try to split it up.
 
-Lastly, Alex Burkhart pointed me at the section on Dependency Injection in Sandi Metz's excellent book: Practical Object-Oriented Design in Ruby. Sandi brings up the excellent point that "...knowing the name of a class and the responsibility for knowing the name of a message to send to that class may belong in different objects". The whole section is great; you should go read it.
+Lastly, [Alex Burkhart](https://twitter.com/saterus) pointed me at the section on Dependency Injection in Sandi Metz's excellent book: Practical Object-Oriented Design in Ruby. Sandi brings up the excellent point that "...knowing the name of a class and the responsibility for knowing the name of a message to send to that class may belong in different objects". The whole section is great; you should go read it.
 
-I now think I'm convinced that doing Dependency Injection is a Good Thing™, even when you have a mocking framework that makes DI optional. I like all of these arguments:
+I now think I'm convinced that doing Dependency Injection is a Good Thing, even when you have a mocking framework that makes DI optional. I like all of these arguments:
 
    * Objects that support DI tend to have a much clearer set of dependencies
    * Some mocking frameworks force you to avoid the Arrange, Act, Assert pattern in your tests
    * Most mocking frameworks are hard to debug, you don't want some poor future maintainer to waste time on that; especially if the mocking framework isn't broken and the problem is actually somewhere else.
-   * Sandi Metz has more to say on this topic. We should all go read her books
+   * Sandi Metz has more to say on this topic. We should all go read her books.
+
