@@ -71,18 +71,14 @@ describe Shirt do
 end
 ```
 
-A long time ago, in Java-land, I worked on a team that was doing lots of TDD; but at the
-time, mocking a class method was a technical impossibility. So you would have to come up with
-another way of writing your code so that testing was even possible.
-
-The ruby version of that code might look something like this:
+Let's say you wanted to avoid hard-coding which classes got called from Shirt. Maybe you might try something like this:
 
 ```
 class Inventory
-  def check_availability(product_code); end
+  def self.check_availability(product_code); end
 end
 class Purchaser
-  def purchase_item(product_code); end
+  def self.purchase_item(product_code); end
 end
 
 class Shirt
@@ -107,7 +103,7 @@ class Shirt
 end
 ```
 
-And you would have specs that look like this:
+And then, your specs could look like this:
 
 ```
 require 'rspec'
