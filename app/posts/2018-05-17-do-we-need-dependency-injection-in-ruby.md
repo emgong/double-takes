@@ -1,6 +1,6 @@
 ---
 title: "Do we need Dependency Injection in ruby?"
-description: "It's easy to find fault in the way we interview in tech. Let's make a better technical interview with honesty, transparency, and a more realistic experience."
+description: "What is Dependency Injection anyway? Do we need it at all in ruby? We'll go over a small example and review how being familiar with DI can lead to a better design."
 author:
   name: "Kevin Baribeau"
   url: "http://twitter.com/kbaribeau"
