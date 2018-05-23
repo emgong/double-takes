@@ -1,5 +1,5 @@
 ---
-title: "Open Source Spotlight: Dependable"
+title: "Open source spotlight: Dependable"
 author:
   name: "Dave Mosher"
   url: "https://www.twitter.com/dmosher"

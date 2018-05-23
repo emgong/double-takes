@@ -1,5 +1,5 @@
 ---
-title: "The Test Double Interviewing Process"
+title: "The Test Double interviewing process"
 description: "What it is like to interview at Test Double."
 author:
   name: "Josh Greenwood"

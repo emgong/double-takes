@@ -11,7 +11,7 @@ If you'd like a preview before the videos become available, read on!
 
 ## Common Themes
 
-This is a list of ideas that came up in multiple talks (not a lot of disagreement between the speakers). 
+This is a list of ideas that came up in multiple talks (not a lot of disagreement between the speakers).
 
 - "What got us here won't get us there". This exact phrase came up in at least two talks. It's applicable to developers that become lead developers. The roles require different priorities and skills.
 - People over process. Most of the talks weren't directly agile-related, but I kept coming back to this. Many of the challenges you face as a lead developer don't have solutions that guarantee success - teams vary, situations vary, and most of all people vary. Leaders need to accept a world where there may not be a "right" answer.
@@ -24,11 +24,11 @@ I definitely wasn't expecting to come out of Austin with a greater knowledge of 
 
 Human error is a tricky thing. It's always tempting to blame the people involved without analyzing _why_ they made the decisions they did. We deal with this as dev leads every day. Why aren't the users hitting our flashy new page? How did a developer manage to drop production tables? Why didn't we see the team was struggling and try to head off the crisis? In the TMI incident, the engineers made reasonable decisions based on the data they had available - it was their interface with the machines themselves that led to false assumptions. It was a UI problem the whole time.
 
-Hanlon's Razor tells us "never attribute to malice that which is adequately explained by incompetence". While it's true in a technical sense, it does disregard a third option. I might restate the aphorism as: "never attribute to malice or incompetence that which can be attributed to bad data". Sometimes it's so easy to get sucked into cost-effectiveness or style that we forget the _users_ behind our systems. 
+Hanlon's Razor tells us "never attribute to malice that which is adequately explained by incompetence". While it's true in a technical sense, it does disregard a third option. I might restate the aphorism as: "never attribute to malice or incompetence that which can be attributed to bad data". Sometimes it's so easy to get sucked into cost-effectiveness or style that we forget the _users_ behind our systems.
 
 ## Tech and Humans
 
-The talk "Do The Most Good" covered [Mina Markham's](https://twitter.com/minamarkham) role in the Hilary Clinton campaign, and activism in tech. It's an amazing story, told with some beautiful slides. There were also some really great points about data bias and marginalized groups (Heidi Waterhouse's entire talk focused on similarly "poisoned" data). 
+The talk "Do The Most Good" covered [Mina Markham's](https://twitter.com/minamarkham) role in the Hilary Clinton campaign, and activism in tech. It's an amazing story, told with some beautiful slides. There were also some really great points about data bias and marginalized groups (Heidi Waterhouse's entire talk focused on similarly "poisoned" data).
 
 My biggest takeaway from here was "be an accomplice, not an ally". I can't state it better than Mina (and many others) already have, so I'm not going to try. But I _am_ going to learn what it means to be a good accomplice, and I'd encourage everyone to do the same.
 

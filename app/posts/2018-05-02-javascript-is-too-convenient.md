@@ -1,5 +1,5 @@
 ---
-title: "JavaScript Is Too Convenient"
+title: "JavaScript is too convenient"
 description: "Which conveniences do we take advantage of everyday? Which are taking advantage of us?"
 author:
   name: "Sam Jones"

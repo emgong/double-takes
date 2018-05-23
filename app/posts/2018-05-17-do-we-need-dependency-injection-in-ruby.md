@@ -1,5 +1,5 @@
 ---
-title: "Do we need Dependency Injection in ruby?"
+title: "Do we need dependency injection in Ruby?"
 description: "What is Dependency Injection anyway? Do we need it at all in ruby? We'll go over a small example and review how being familiar with DI can lead to a better design."
 author:
   name: "Kevin Baribeau"

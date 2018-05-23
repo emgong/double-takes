@@ -1,5 +1,5 @@
 ---
-title: "Effective React Testing"
+title: "Effective React testing"
 description: "Learn the ins and outs of different types of tests and how to test your React application."
 author:
   name: "Jeremy Fairbank"
