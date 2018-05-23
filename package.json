@@ -1,6 +1,6 @@
 {
   "name": "double-takes",
-  "title": "Test Double | Our Thinking",
+  "title": "Test Double | Our Blog",
   "version": "0.0.1",
   "private": true,
   "homepage": "http://blog.testdouble.com",
@@ -11,14 +11,6 @@
   },
   "bugs": "https://github.com/testdouble/double-takes/issues",
   "author": "Test Double Agents <everyone@testdouble.com> (http://testdouble.com)",
-  "contributors": [
-    "Justin Searls <justin@testdouble.com>",
-    "Dave Mosher <dave@testdouble.com>",
-    "Jason Karns <jason@testdouble.com>",
-    "Joel Helbling <joel@testdouble.com>",
-    "Zach Briggs <zach@testdouble.com>",
-    "Todd Kaufman <todd@testdouble.com>"
-  ],
   "scripts": {
     "clean": "lineman clean",
     "start": "lineman run",
@@ -34,5 +26,8 @@
     "lineman-blog": "^1.2.0",
     "lineman-pug": "^0.2.1",
     "testdouble-style": "github:testdouble/style"
+  },
+  "engines": {
+    "node": "^8.11.1"
   }
 }
