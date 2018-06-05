@@ -38,21 +38,16 @@ div(data-name="post")
       time.post-date #{post.get('date') || post.path.match(/\d\d\d\d-\d\d-\d\d/)[0]}
 
     if !post.get('skipFeedbackRequest')
-      p.call-for-feedback
-        | If you enjoy this #{post.get('video') ? "video" : "post"}, let us know by
-        a(href="http://twitter.com/testdouble")  twitter
-        |  or
-        a(href="mailto:hello@testdouble.com")  e-mail!
-        |  If you'd like to discuss it,&nbsp;
-        a(href="https://github.com/testdouble/feedback/issues/new") open an issue
-        |  on our feedback repo!
-        if post.get('reddit')
-          |  Or share it on
-          a(href='https://news.ycombinator.com/submitlink?u=' + encodeURIComponent(site.url+'/'+post.prettyPath()) + '&amp;t=' + encodeURIComponent(post.title()))  HN
-          | !
+      p.call-for-feedback.
+        If you enjoy this #{post.get('video') ? "video" : "post"}, let us know by
+        #[a(href="http://twitter.com/testdouble")  twitter] or
+        #[a(href="mailto:hello@testdouble.com")  e-mail]! If you think Test
+        Double might be able to help your team,
+        #[a(href="//testdouble.com/contact") let's talk]!
+
   .blognav
     if site.olderPost(post)
       a.left(href=`/${site.olderPost(post).prettyPath()}`) Previous
     if site.newerPost(post)
-      a.right(href=`/${site.newerPost(post).prettyPath()}`) Newer
+      a.right(href=`/${site.newerPost(post).prettyPath()}`) Next
     .clear
