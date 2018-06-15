@@ -2,7 +2,7 @@
 title: "Agent Dossier: Brittany Moore"
 author:
   name: "M"
-  url: "http://twitter.com/crebma"
+  url: "http://twitter.com/testdouble"
 reddit: false
 ---
 <figure>
