@@ -6,7 +6,7 @@ author:
 reddit: false
 ---
 <figure>
-	![cat1](/img/dossiers/bam_cat1.jpg)
+	![brittany](/img/dossiers/brittany-moore.jpg)
 </figure>
 
 **NAME**: Brittany Moore
