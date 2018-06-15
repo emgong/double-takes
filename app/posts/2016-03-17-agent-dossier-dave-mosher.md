@@ -5,9 +5,9 @@ author:
   url: "http://twitter.com/testdouble"
 reddit: false
 ---
-<figure>
+<photo>
 	![airmo](/img/dossiers/airmo.jpg)
-</figure>
+</photo>
 
 **NAME**: Dave Mosher
 
@@ -23,9 +23,9 @@ reddit: false
 - The redux documentation is fantastic: http://redux.js.org/index.html
 - Dan Abramov's intro series on egghead.io is also fantastic: https://egghead.io/series/getting-started-with-redux
 
-<figure>
+<photo>
 	![slashmo](/img/dossiers/slashmo.jpg)
-</figure>
+</photo>
 
 **BACKGROUND**: Agent 007 is married with two children, and is also a musician (plays piano, drums, guitar, and bass).
 
@@ -40,6 +40,6 @@ Agent 007 loves music. His favorite bands are Ratatat, Hans Zimmer, Deadmau5, Gr
 - [@dmosher](http://twitter.com/dmosher)
 - [dave@testdouble.com](mailto:dave@testdouble.com)
 
-<figure>
+<photo>
 	![davemo](/img/dossiers/davemo.jpg)
-</figure>
+</photo>

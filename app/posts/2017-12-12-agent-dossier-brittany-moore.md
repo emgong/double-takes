@@ -5,9 +5,9 @@ author:
   url: "http://twitter.com/testdouble"
 reddit: false
 ---
-<figure>
+<photo>
 	![brittany](/img/dossiers/brittany-moore.jpg)
-</figure>
+</photo>
 
 **NAME**: Brittany Moore
 
@@ -21,9 +21,9 @@ reddit: false
 
 - This is the first time I've seen Docker in action, and it's very cool.
 
-<figure>
+<photo>
 	![cat2](/img/dossiers/bam_cat2.jpg)
-</figure>
+</photo>
 
 **BACKGROUND**: Agent 0035 is married with three cats.
 
@@ -38,6 +38,6 @@ Agent 0035 has also been observed reading books. Her favorites appear to be Wild
 - [@bannmoore](http://twitter.com/bannmoore)
 - [brittany@testdouble.com](mailto:brittany@testdouble.com)
 
-<figure>
+<photo>
 	![cat3](/img/dossiers/bam_cat3.jpg)
-</figure>
+</photo>
